@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "output_file": "astra6_opus55_tasks_0_1_4_static_minimal_4x_preview.gif",
+  "output_sha256": "1ff271950be1f24412aaacda68088591721a4270d275c49ddc4cadc70de42502",
+  "source_file": "astra6_opus55_tasks_0_1_4_static_minimal_4x.mp4",
+  "source_sha256": "0c9862eb93be41db8e8932aeca4a45419e3ae8be5ec508b2587cb68d81f43554",
+  "source_unchanged": true,
+  "source_verification": "minimal_branded_replay_verification.json",
+  "source_verification_sha256": "46f5217974addbdecb5aa802752a0251ed65cdcfb69a514252546f1c83f65b1f",
+  "output_video": {
+    "codec_name": "gif",
+    "width": 800,
+    "height": 556,
+    "pix_fmt": "bgra",
+    "avg_frame_rate": "25/3",
+    "nb_read_frames": "267",
+    "duration_seconds": 33.38,
+    "fps": 8.333333333333334,
+    "frames": 267
+  },
+  "decoded_frames": 267,
+  "target_fps": 8,
+  "palette_colors": 128,
+  "loop": "forever",
+  "style": "Same logo badges, model names, bold underlined task headings and bottom-right \u00d74 badge as the source MP4.",
+  "playback": "4x recorded simulation motion; API waiting omitted; shorter clips hold their final frame.",
+  "evaluation_views": "Static and wrist were supplied during evaluation; this replay shows static only."
+}

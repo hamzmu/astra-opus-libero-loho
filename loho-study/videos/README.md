@@ -2,21 +2,21 @@
 
 ## Combined static-camera video
 
-[Watch Tasks 0, 1 and 4 together](astra_opus_tasks_0_1_4_static_grid_4x.mp4)
+[Watch Tasks 0, 1 and 4 together](astra6_opus55_tasks_0_1_4_static_minimal_4x.mp4)
 
-The main README displays a looping [GIF preview](astra_opus_tasks_0_1_4_static_grid_4x_preview.gif), linked to the original MP4. It shows the same six examples at 4× speed, with a white background and only neutral task/model labels. The preview is 800 × 612, targets 8 fps and uses 64 palette colors; recorded RGB colors are retained. The original MP4 keeps its detailed labels, resolution and frame rate. GitHub removes repository-relative HTML video embeds from rendered READMEs.
+The main README displays a looping [GIF preview](astra6_opus55_tasks_0_1_4_static_minimal_4x_preview.gif), linked to this MP4. Both show model/logo badges, bold underlined task headings and a bottom-right ×4 badge. The preview is 800 × 556, targets 8 fps and uses 128 palette colors. GitHub removes repository-relative HTML video embeds from rendered READMEs.
 
-Rebuild the preview offline with `wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_readme_video_preview.py`. [Preview verification](readme_video_preview_verification.json).
+Rebuild the preview offline with `wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_branded_readme_preview.py`. [Preview verification](branded_readme_preview_verification.json).
 
 Columns are **Task 0, Task 1 and Task 4**; rows are **Astra on top and Opus below**. All six static-camera clips start together at **4× simulation speed**, with shorter runs holding their final frame. API waiting is omitted.
 
-**Wrist camera view omitted from this video, but used in evaluation.** This note also appears within the MP4. Both camera views were supplied to each model during every selected episode.
+**Wrist camera view omitted from this video, but used in evaluation.** Both camera views were supplied to each model during every selected episode.
 
-The video uses the same six successful examples as the per-task videos below. Each was selected as the successful run closest to its model/task cohort's median wall-clock duration. Output is **1568 × 1320**, H.264 MP4 at **40 fps**, lasting **33.35 seconds**; views are enlarged without cropping.
+The video uses the same six successful examples as the per-task videos below. Each was selected as the successful run closest to its model/task cohort's median wall-clock duration. Output is **1568 × 1090**, H.264 MP4 at **40 fps**, lasting **33.35 seconds**; views are enlarged without cropping.
 
-[Sources and hashes](astra_opus_tasks_0_1_4_static_grid_4x_sources.json) · [Verification](astra_opus_tasks_0_1_4_static_grid_4x_verification.json)
+[Sources and hashes](astra_opus_tasks_0_1_4_static_grid_4x_sources.json) · [Verification](minimal_branded_replay_verification.json)
 
-Rebuild with `wsl -d Ubuntu-24.04 -u root --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_static_task_grid.py`.
+Rebuild with `wsl -d Ubuntu-24.04 -u root --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_minimal_branded_replay.py`.
 
 ## Per-task wrist and static videos
 
