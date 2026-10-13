@@ -28,4 +28,4 @@ Each primary figure/table also has PDF and SVG exports with the same filename st
 
 Rebuild with `wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_figure_options.py` from the workspace.
 
-[Total tokens and estimated cost: dot and scatter alternatives](tokens_cost/README.md).
+[Total tokens and estimated cost: alternative layouts](tokens_cost/README.md).

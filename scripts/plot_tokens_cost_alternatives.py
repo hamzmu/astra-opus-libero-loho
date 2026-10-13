@@ -1,4 +1,5 @@
-"""Export dot and scatter alternatives using the 30 saved study episodes."""
+"""Export dot, scatter and two-panel bar layouts using the 30 saved study episodes."""
+import argparse
 import json
 
 import matplotlib
@@ -9,7 +10,8 @@ from matplotlib.patches import Patch
 from matplotlib.ticker import FuncFormatter, MaxNLocator
 import numpy as np
 
-from plot_study_comparison import WORKSPACE, TASKS, MODELS, COLORS, LABELS, gather, save
+from plot_study_comparison import (WORKSPACE, TASKS, MODELS, COLORS, LABELS,
+                                   gather, panel, readme_legend, save)
 
 OUT = WORKSPACE / "loho-study/plots/options/tokens_cost"
 
@@ -115,7 +117,26 @@ def scatter_plot(rows, statistics):
     save(fig, OUT / '02_tokens_cost_scatter', tight=False)
 
 
+def split_bar_plot(statistics):
+    fig, axes = plt.subplots(1, 2, figsize=(12.8, 5.8))
+    fig.subplots_adjust(left=.09, right=.98, top=.84, bottom=.23, wspace=.25)
+    for ax, key, heading, units in (
+            (axes[0], 'total_tokens', 'Total tokens', 'Total tokens per run (millions)'),
+            (axes[1], 'estimated_api_cost_usd', 'Estimated API cost', 'Estimated API cost per run (USD)')):
+        panel(ax, key, statistics)
+        ax.set_title('', loc='left')
+        ax.set_title(heading, loc='center', fontsize=14, fontweight='semibold',
+                     color='#1b2430', pad=14)
+        ax.set_ylabel(units, fontsize=10.5)
+        ax.tick_params(axis='y', labelsize=10)
+    readme_legend(fig)
+    save(fig, OUT / '03_tokens_cost_split_bars', tight=False)
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--only', choices=('bars',), help='Regenerate only the two-panel bar figure')
+    args = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 10,
                          'svg.fonttype': 'none', 'pdf.fonttype': 42})
@@ -123,8 +144,10 @@ def main():
     previous = json.loads((WORKSPACE / 'loho-study/plots/comparison_statistics.json').read_text())
     assert previous['runs'] == rows and previous['statistics'] == statistics
     assert previous['source_comparison_sha256'] == sources
-    dot_plot(rows, statistics)
-    scatter_plot(rows, statistics)
+    if args.only != 'bars':
+        dot_plot(rows, statistics)
+        scatter_plot(rows, statistics)
+    split_bar_plot(statistics)
     provenance = {
         'passed': True, 'source_runs': len(rows), 'episodes_per_model_task': 5,
         'source_comparison_sha256': sources,
@@ -135,11 +158,17 @@ def main():
         'dot_jitter': 'Small deterministic vertical offsets separate episode dots; token and cost values are unchanged.',
         'scatter_whiskers': 'Horizontal and vertical whiskers are separate marginal sample SDs for tokens and cost.',
         'scatter_axes_shared_across_tasks': True,
+        'figure_files': ['01_tokens_cost_dot_plot.png', '02_tokens_cost_scatter.png',
+                         '03_tokens_cost_split_bars.png'],
         'cohort_statistics': {key: statistics[key] for key in ('total_tokens', 'estimated_api_cost_usd')},
     }
     (OUT / 'sources.json').write_text(json.dumps(provenance, indent=2) + '\n', encoding='utf-8')
     (OUT / 'README.md').write_text(
         '# Tokens and cost alternatives\n\n'
+        '## Two-panel bar chart\n\n![Two-panel bars](03_tokens_cost_split_bars.png)\n\n'
+        'Tokens and estimated cost use separate panels with matching task groups and one shared model legend. '
+        'Bars show mean values across five episodes per model/task; whiskers show sample SD. '
+        'Labels give the mean token counts and USD costs.\n\n'
         '## Dot plot\n\n![Dot plot](01_tokens_cost_dot_plot.png)\n\n'
         'Compare the models separately on token volume and estimated cost. Small dots show each episode; '
         'white diamonds and whiskers show mean ± sample SD across five episodes per model/task.\n\n'
@@ -152,7 +181,9 @@ def main():
         'Rebuild from the repository root with '
         '`wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/plot_tokens_cost_alternatives.py`.\n',
         encoding='utf-8')
-    print(json.dumps({'outdir': str(OUT), 'episodes': len(rows), 'figures': 2, 'formats': ['png', 'pdf', 'svg']}))
+    print(json.dumps({'outdir': str(OUT), 'episodes': len(rows),
+                      'updated': ['03_tokens_cost_split_bars'] if args.only == 'bars' else 'all three',
+                      'formats': ['png', 'pdf', 'svg']}))
 
 
 if __name__ == '__main__':

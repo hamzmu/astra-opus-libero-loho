@@ -135,6 +135,11 @@
   "dot_jitter": "Small deterministic vertical offsets separate episode dots; token and cost values are unchanged.",
   "scatter_whiskers": "Horizontal and vertical whiskers are separate marginal sample SDs for tokens and cost.",
   "scatter_axes_shared_across_tasks": true,
+  "figure_files": [
+    "01_tokens_cost_dot_plot.png",
+    "02_tokens_cost_scatter.png",
+    "03_tokens_cost_split_bars.png"
+  ],
   "cohort_statistics": {
     "total_tokens": {
       "0": {

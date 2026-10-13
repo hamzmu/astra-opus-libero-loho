@@ -1,5 +1,11 @@
 # Tokens and cost alternatives
 
+## Two-panel bar chart
+
+![Two-panel bars](03_tokens_cost_split_bars.png)
+
+Tokens and estimated cost use separate panels with matching task groups and one shared model legend. Bars show mean values across five episodes per model/task; whiskers show sample SD. Labels give the mean token counts and USD costs.
+
 ## Dot plot
 
 ![Dot plot](01_tokens_cost_dot_plot.png)
