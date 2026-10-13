@@ -2,7 +2,7 @@
 
 We compare GPT-6 Astra and Claude Opus 5.5 on [LIBERO-LoHo](https://github.com/markli1hoshipu/LIBERO-LOHO), a long-horizon robotic manipulation benchmark, to assess whether frontier models can control a simulated robot and plan and execute sequential tasks zero-shot, without task demonstrations or robot-policy training. Across five saved episodes per model on Tasks 0, 1, and 4, Astra matched Opus's full-task success rate and achieved equal or higher mean goal completion while using approximately 88% fewer output tokens overall. Astra's estimated API cost was 42% lower ($3.91 vs Opus's $6.75 mean per run), and its wall-clock time was 57% shorter (14.8 vs Opus's 34.2 minutes mean per run).
 
-See [setup.md](setup.md) to install the dependencies and reproduce the evaluation runs.
+Reproduce the runs: [setup.md](setup.md).
 
 ## Findings
 
@@ -22,13 +22,11 @@ See [setup.md](setup.md) to install the dependencies and reproduce the evaluatio
 
 ## Results
 
-Overall comparisons use the mean across **15 saved episodes per model**. Figures show the five episodes per model/task, with whiskers indicating **±1 sample standard deviation**. [Exact statistics](loho-study/plots/comparison_statistics.json).
+Overall comparisons use the mean across **15 saved episodes per model**. Figures show the five episodes per model/task, with whiskers indicating **±1 sample standard deviation**.
 
 ### Astra matched task success and achieved equal or higher goal completion
 
 Both models fully completed **13 of 15 episodes (86.7%)**: **5/5 on each of Tasks 0 and 4**, and **3/5 on Task 1**. In the two incomplete Task 1 episodes, Astra completed **2/3 sub-tasks (66.7%) in each**. Opus completed **1/3 sub-tasks (33.3%) in one** and **2/3 (66.7%) in the other**.
-
-Mean goal completion was **100% for both** on Tasks 0 and 4, and **86.7% for Astra vs 80.0% for Opus** on Task 1, a difference of **6.7 percentage points**.
 
 ![Mean final goal completion by task, with sample standard deviation](loho-study/plots/completion_percent.png)
 
