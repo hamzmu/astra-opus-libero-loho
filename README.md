@@ -9,7 +9,7 @@ See [setup.md](setup.md) to install the dependencies and reproduce the evaluatio
 ### Setup
 
 - **Benchmark:** LIBERO-LoHo, a long-horizon manipulation benchmark derived from LIBERO.
-- **Coverage:** Tasks **0, 1, and 4**, with **5 saved episodes per model per task**—30 episodes total.
+- **Coverage:** Tasks **0, 1, and 4**, with **5 saved episodes per model per task**, for **30 episodes total**.
 - **Models:** GPT-6 Astra **max** and Claude Opus 5.5 **max**.
 - **Prompts:** Same task-specific system prompt and motion-tool definitions for both models.
 - **Visual inputs:** Static and wrist cameras, **224 × 224 RGB** per view; no depth.
@@ -55,7 +55,9 @@ Overall comparisons use the mean across **15 saved episodes per model**. Figures
 
 ### Astra matched task success and achieved equal or higher goal completion
 
-Both models fully completed **13 of 15 episodes (86.7%)**: 5/5 on Tasks 0 and 4, and 3/5 on Task 1. Mean goal completion was **100% for both** on Tasks 0 and 4, and **86.7% for Astra vs 80.0% for Opus** on Task 1—a **6.7 percentage-point** difference.
+Both models fully completed **13 of 15 episodes (86.7%)**: **5/5 on each of Tasks 0 and 4**, and **3/5 on Task 1**. In the two incomplete Task 1 episodes, Astra completed **2/3 sub-tasks (66.7%) in each**. Opus completed **1/3 sub-tasks (33.3%) in one** and **2/3 (66.7%) in the other**.
+
+Mean goal completion was **100% for both** on Tasks 0 and 4, and **86.7% for Astra vs 80.0% for Opus** on Task 1, a difference of **6.7 percentage points**.
 
 ![Mean final goal completion by task, with sample standard deviation](loho-study/plots/completion_percent.png)
 
@@ -75,7 +77,7 @@ Measured wall-clock time averaged **14.8 minutes for Astra vs 34.2 minutes for O
 
 ### Opus used fewer model calls and action steps on average
 
-Opus averaged **44.7 model calls and 781 action steps per episode**, compared with Astra’s **53.3 calls and 981 steps**—**16.1% fewer calls and 20.4% fewer steps**. Task 1 reversed this pattern: Astra averaged **41.2 calls and 667.8 steps**, versus Opus’s **58.0 calls and 991.4 steps**.
+Opus averaged **44.7 model calls and 781 action steps per episode**, compared with Astra’s **53.3 calls and 981 steps**. Opus used **16.1% fewer calls and 20.4% fewer steps**. Task 1 reversed this pattern: Astra averaged **41.2 calls and 667.8 steps**, versus Opus’s **58.0 calls and 991.4 steps**.
 
 | Task | Astra calls | Opus calls | Astra action steps | Opus action steps |
 |---|---:|---:|---:|---:|
