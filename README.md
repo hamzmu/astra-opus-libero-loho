@@ -42,7 +42,7 @@ The executor moves the robot, then returns fresh images, measured pose, target e
 
 ### Task comparison video
 
-One combined video shows **Tasks 0, 1 and 4 from left to right**, with **Astra on top and Opus below**, using static-camera views at **4× simulation speed**. API waiting is omitted. Each example is the successful run closest to its model/task cohort's median wall-clock duration.
+One combined video shows **Tasks 0, 1 and 4 from left to right**, with **Astra on top and Opus below**, using static-camera views at **4× simulation speed**. API waiting is omitted. Each example is the successful run closest to its model/task cohort's median wall-clock duration. Select the animated preview to open the original MP4.
 
 **Wrist camera view omitted from this video, but used in evaluation.**
 
@@ -52,7 +52,7 @@ One combined video shows **Tasks 0, 1 and 4 from left to right**, with **Astra o
 | **1** | Pick up the alphabet soup, butter, and tomato sauce, in that order, and place each into the basket. | [Runs and videos](<loho-study/task 1/README.md>) |
 | **4** | Put the back butter and chocolate pudding into the top drawer, close it, and place the black bowl on top of the cabinet. | [Runs and videos](<loho-study/task 4/README.md>) |
 
-<video controls playsinline preload="metadata" width="720" src="loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x.mp4"></video>
+<a href="loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x.mp4?raw=true"><img src="loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x_preview.gif" alt="Animated 4× replay of Astra and Opus on Tasks 0, 1 and 4; select to open the MP4" width="720"></a>
 
 ## Results
 

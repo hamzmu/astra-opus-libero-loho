@@ -4,6 +4,10 @@
 
 [Watch Tasks 0, 1 and 4 together](astra_opus_tasks_0_1_4_static_grid_4x.mp4)
 
+The main README displays a looping [GIF preview](astra_opus_tasks_0_1_4_static_grid_4x_preview.gif), linked to the original MP4. The preview uses the same full clip at 800-pixel width, 8 fps and 64 palette colors; the MP4 retains the original resolution and frame rate. GitHub removes repository-relative HTML video embeds from rendered READMEs.
+
+Rebuild the preview offline with `wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_readme_video_preview.py`. [Preview verification](readme_video_preview_verification.json).
+
 Columns are **Task 0, Task 1 and Task 4**; rows are **Astra on top and Opus below**. All six static-camera clips start together at **4× simulation speed**, with shorter runs holding their final frame. API waiting is omitted.
 
 **Wrist camera view omitted from this video, but used in evaluation.** This note also appears within the MP4. Both camera views were supplied to each model during every selected episode.

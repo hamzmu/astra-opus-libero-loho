@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "source_file": "astra_opus_tasks_0_1_4_static_grid_4x.mp4",
+  "source_sha256": "d0d1f6e968c55af3c0109416aad7242533940062625322a0ffbd0bc3a6b0db65",
+  "source_unchanged": true,
+  "output_file": "astra_opus_tasks_0_1_4_static_grid_4x_preview.gif",
+  "output_sha256": "745524bf4bcff82e6801c4ede5616642dfb206bddfdbbfd47c178b9184d84395",
+  "output_video": {
+    "codec_name": "gif",
+    "width": 800,
+    "height": 673,
+    "pix_fmt": "bgra",
+    "avg_frame_rate": "25/3",
+    "nb_read_frames": "267",
+    "duration_seconds": 33.38,
+    "fps": 8.333333333333334,
+    "frames": 267
+  },
+  "target_fps": 8,
+  "palette_colors": 64,
+  "loop": "forever",
+  "notes": "Full 4x simulation replay; GIF frame delays have centisecond precision. Original MP4 is linked for playback at full resolution."
+}
