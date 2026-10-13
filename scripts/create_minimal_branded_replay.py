@@ -37,6 +37,14 @@ def create_labels(sources, assets, review, width, height, tile, gap, row_gap, he
         labels.alpha_composite(logos[source["model"]], (x + 11, y + 7))
         painter.text((x + 49, y + (badge_height - (box[3] - box[1])) / 2 - box[1]),
                      text, font=model_font, fill="#171717")
+    text = "×4"
+    box = painter.textbbox((0, 0), text, font=model_font)
+    badge_width, badge_height = (box[2] - box[0]) + 22, 40
+    x, y = width - badge_width - 12, height - badge_height - 12
+    painter.rounded_rectangle((x, y, x + badge_width, y + badge_height), radius=5,
+                              fill="#ffffff", outline="#e6e6e6", width=1)
+    painter.text((x + 11, y + (badge_height - (box[3] - box[1])) / 2 - box[1]),
+                 text, font=model_font, fill="#171717")
     path = review / "labels.png"
     labels.save(path)
     return path
@@ -127,6 +135,7 @@ def main():
         "sources": [{key: s[key] for key in ("task_id", "model", "display_trial", "source_file",
                                                "source_sha256", "source_summary_sha256")} for s in sources],
         "logo_sources": logo_sources, "labels": {"astra": "Astra 6", "opus": "Opus 5.5"},
+        "speed_badge": {"label": "×4", "position": "bottom right", "margin_pixels": 12},
         "layout": "Rows Astra 6 / Opus 5.5; columns Tasks 0 / 1 / 4; logo badge at the top left of each view.",
         "playback": "4x recorded simulation motion; API waiting omitted; shorter clips hold their final frame.",
         "evaluation_views": "Static and wrist were supplied during evaluation; this replay shows static only.",
