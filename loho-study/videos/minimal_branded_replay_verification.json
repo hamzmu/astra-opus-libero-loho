@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "output_file": "astra6_opus55_tasks_0_1_4_static_minimal_4x.mp4",
+  "output_sha256": "64e134b09139b80adf0a32150a298d464415ef92da8cc792d344a4e562817837",
+  "output_video": {
+    "codec_name": "h264",
+    "width": 1568,
+    "height": 1090,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "40/1",
+    "nb_read_frames": "1334",
+    "duration_seconds": 33.35,
+    "fps": 40.0,
+    "frames": 1334
+  },
+  "source_files_unchanged": true,
+  "source_manifest": "astra_opus_tasks_0_1_4_static_grid_4x_sources.json",
+  "source_manifest_sha256": "7c85162593ece27233d41002a51e9d488bc1aa83a5565e6a3030ad922b2bb062",
+  "sources": [
+    {
+      "task_id": 0,
+      "model": "astra",
+      "display_trial": 5,
+      "source_file": "loho-study/task 0/astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/episode.mp4",
+      "source_sha256": "b2e5878527eee4c3b99657cb22b878183e2a66affa1173e493af1645a01cab34",
+      "source_summary_sha256": "19c41ede6922f145965f2d3879970205bd36ca80cad48a63a33dc4253021a762"
+    },
+    {
+      "task_id": 0,
+      "model": "opus",
+      "display_trial": 1,
+      "source_file": "loho-study/task 0/opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025/episode.mp4",
+      "source_sha256": "d324cca04051a380701938e668ae65208de6870d5f0a0b91e4d58b2ce9805eb8",
+      "source_summary_sha256": "5ae2c771d6257403cb487d260e69a9ce026bedaddc78d690d2dd7c00c5d5a600"
+    },
+    {
+      "task_id": 1,
+      "model": "astra",
+      "display_trial": 1,
+      "source_file": "loho-study/task 1/astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048/episode.mp4",
+      "source_sha256": "dfa06a32d01e9fb3cd6fa927ed60472de7c896d9d8a5d556ee605ffc478c6832",
+      "source_summary_sha256": "f8a27fa9c87bfa4343174a87e8fc513e44784932c283463ffe95c0b14ed01cf4"
+    },
+    {
+      "task_id": 1,
+      "model": "opus",
+      "display_trial": 3,
+      "source_file": "loho-study/task 1/opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048/episode.mp4",
+      "source_sha256": "f467bb608c019ccb646c642eb10e55844072879bc10ed13492d22124512ce0f6",
+      "source_summary_sha256": "377c9715872f2c526cd6264642cbd04de8be770565f57bbf9026cf819b83bb48"
+    },
+    {
+      "task_id": 4,
+      "model": "astra",
+      "display_trial": 3,
+      "source_file": "loho-study/task 4/astra_task4_max_nocost_trial3_task4_uncapped_20261012_110427/episode.mp4",
+      "source_sha256": "34caa7df72d1e0cee09613efae59114bbe4100b1a25fc0010f21f147f3b4ee56",
+      "source_summary_sha256": "4c956c06a4f6f3a25f981c2002787283d24cca8412b036f1ca13beaaa5608dbd"
+    },
+    {
+      "task_id": 4,
+      "model": "opus",
+      "display_trial": 2,
+      "source_file": "loho-study/task 4/opus55_task4_max_nocost_trial2_task4_uncapped_20261012_110427/episode.mp4",
+      "source_sha256": "fa2b09c838f8fdbdceabc01fe8be9add1207f84f7576a2196574ecb4f715bea3",
+      "source_summary_sha256": "ef5eee7aa4d9ad525365e9fe99cf2873539e490be3cc757f7f6336211f8b6ee0"
+    }
+  ],
+  "logo_sources": [
+    {
+      "file": "openai-blossom.svg",
+      "owner": "OpenAI",
+      "source_url": "https://cdn.openai.com/brand/OpenAI-Logos-2025.zip",
+      "guidelines_url": "https://openai.com/brand/",
+      "archive_member": "OpenAI-logos(new)/SVGs/OpenAI-black-monoblossom.svg",
+      "preparation": "Unmodified official black Blossom SVG.",
+      "sha256": "7be72f1fea831d3ba81a545cee79b7e0ae69449d5d7837c9571ccbfb4aa1e00b"
+    },
+    {
+      "file": "claude-spark.svg",
+      "owner": "Anthropic",
+      "source_url": "https://claude.com/",
+      "preparation": "Standalone spark path extracted from the official inline Claude wordmark; path and #D97757 fill unchanged.",
+      "sha256": "11c0f14e0e4048d7c32ae5713732c0ec494bef1d7249ad20706c25a80551731e"
+    }
+  ],
+  "labels": {
+    "astra": "Astra 6",
+    "opus": "Opus 5.5"
+  },
+  "layout": "Rows Astra 6 / Opus 5.5; columns Tasks 0 / 1 / 4; logo badge at the top left of each view.",
+  "playback": "4x recorded simulation motion; API waiting omitted; shorter clips hold their final frame.",
+  "evaluation_views": "Static and wrist were supplied during evaluation; this replay shows static only."
+}

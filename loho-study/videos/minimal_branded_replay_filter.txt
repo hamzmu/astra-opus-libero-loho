@@ -1,0 +1,9 @@
+[0:v]setpts=(PTS-STARTPTS)/4,fps=40,scale=512:512:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=33.35,trim=end_frame=1334,setpts=N/(40*TB)[v0];
+[1:v]setpts=(PTS-STARTPTS)/4,fps=40,scale=512:512:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=33.35,trim=end_frame=1334,setpts=N/(40*TB)[v1];
+[2:v]setpts=(PTS-STARTPTS)/4,fps=40,scale=512:512:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=33.35,trim=end_frame=1334,setpts=N/(40*TB)[v2];
+[3:v]setpts=(PTS-STARTPTS)/4,fps=40,scale=512:512:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=33.35,trim=end_frame=1334,setpts=N/(40*TB)[v3];
+[4:v]setpts=(PTS-STARTPTS)/4,fps=40,scale=512:512:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=33.35,trim=end_frame=1334,setpts=N/(40*TB)[v4];
+[5:v]setpts=(PTS-STARTPTS)/4,fps=40,scale=512:512:flags=lanczos,setsar=1,tpad=stop_mode=clone:stop_duration=33.35,trim=end_frame=1334,setpts=N/(40*TB)[v5];
+[v0][v1][v2][v3][v4][v5]xstack=inputs=6:layout=0_42|0_578|528_42|528_578|1056_42|1056_578:fill=white:shortest=1,pad=1568:1090:0:0:color=white[grid];
+[6:v]format=rgba,trim=end_frame=1334,setpts=N/(40*TB)[labels];
+[grid][labels]overlay=shortest=1:format=auto,format=yuv420p[final]

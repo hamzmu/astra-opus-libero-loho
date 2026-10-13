@@ -1,15 +1,5 @@
 # Astra and Opus video comparisons
 
-## Replay with figures
-
-[Download the replay with figures](astra_opus_tasks_0_1_4_replay_with_figures_4x.mp4).
-
-The minimal README animation plays on the left, with goal completion, tokens/cost and wall-clock figures stacked on the right. This separate MP4 is **3840 × 2160**, lasts **33.4 seconds** and preserves the GIF's **4× simulation speed**, with API waiting omitted from the replay. Its 40-fps container repeats the GIF frames without motion interpolation.
-
-The replay shows six successful examples; the figures summarize all 30 saved episodes, with five episodes per model/task. Wrist views were used in evaluation and are omitted from this replay.
-
-Rebuild offline with `wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_video_with_figures.py`. [Sources and verification](replay_with_figures_verification.json).
-
 ## Combined static-camera video
 
 [Watch Tasks 0, 1 and 4 together](astra_opus_tasks_0_1_4_static_grid_4x.mp4)

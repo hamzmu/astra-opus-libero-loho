@@ -1,0 +1,18 @@
+[
+  {
+    "file": "openai-blossom.svg",
+    "owner": "OpenAI",
+    "source_url": "https://cdn.openai.com/brand/OpenAI-Logos-2025.zip",
+    "guidelines_url": "https://openai.com/brand/",
+    "archive_member": "OpenAI-logos(new)/SVGs/OpenAI-black-monoblossom.svg",
+    "preparation": "Unmodified official black Blossom SVG.",
+    "sha256": "7be72f1fea831d3ba81a545cee79b7e0ae69449d5d7837c9571ccbfb4aa1e00b"
+  },
+  {
+    "file": "claude-spark.svg",
+    "owner": "Anthropic",
+    "source_url": "https://claude.com/",
+    "preparation": "Standalone spark path extracted from the official inline Claude wordmark; path and #D97757 fill unchanged.",
+    "sha256": "11c0f14e0e4048d7c32ae5713732c0ec494bef1d7249ad20706c25a80551731e"
+  }
+]
