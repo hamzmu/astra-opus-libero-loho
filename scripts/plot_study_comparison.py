@@ -178,11 +178,16 @@ def tokens_cost_panel(ax, statistics, encoding_legend=True):
         mean = [statistics["estimated_api_cost_usd"][str(task)][model]["mean"] for task in TASKS]
         std = [statistics["estimated_api_cost_usd"][str(task)][model]["sample_std"] for task in TASKS]
         outward = -.23 if model == "astra" else .23
-        price_axis.errorbar(np.arange(3) + offset + outward, mean, yerr=std,
+        cost_positions = np.arange(3) + offset + outward
+        price_axis.errorbar(cost_positions, mean, yerr=std,
                             fmt="D", markersize=6.5, markerfacecolor="white",
                             markeredgecolor=COLORS[model], markeredgewidth=1.6,
                             ecolor=COLORS[model], elinewidth=1.2, capsize=3.5,
                             capthick=1.2, zorder=5)
+        for x, value in zip(cost_positions, mean):
+            price_axis.annotate(label_number(value, "usd"), (x, value), xytext=(6, 0),
+                                textcoords="offset points", ha="left", va="center",
+                                fontsize=10, color="#22272e", zorder=6)
     if encoding_legend:
         ax.legend(handles=[Patch(facecolor="#939aa3", label="Tokens: bars, left axis"),
                            Line2D([], [], marker="D", color="#404852", markerfacecolor="white",
@@ -230,13 +235,14 @@ def readme_legend(fig, encoding=False):
                ncol=2, frameon=False, fontsize=12, handlelength=1.5, columnspacing=2.5)
 
 
-def readme_figures(out, statistics):
-    fig, ax = plt.subplots()
-    panel(ax, "completion_percent", statistics)
-    readme_layout(fig, ax, "Goal completion score")
-    ax.tick_params(axis="x", labelsize=11)
-    readme_legend(fig)
-    save(fig, out / "completion_percent", tight=False)
+def readme_figures(out, statistics, selection=None):
+    if selection != "tokens-cost":
+        fig, ax = plt.subplots()
+        panel(ax, "completion_percent", statistics)
+        readme_layout(fig, ax, "Goal completion score")
+        ax.tick_params(axis="x", labelsize=11)
+        readme_legend(fig)
+        save(fig, out / "completion_percent", tight=False)
     fig, ax = plt.subplots()
     tokens_cost_panel(ax, statistics, encoding_legend=False)
     readme_layout(fig, ax, "Total tokens and estimated API cost")
@@ -248,19 +254,22 @@ def readme_figures(out, statistics):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--outdir", type=Path, default=WORKSPACE / "loho-study/plots")
-    parser.add_argument("--only", choices=("readme",), help="Regenerate only the README completion and tokens/cost figures")
+    parser.add_argument("--only", choices=("readme", "tokens-cost"), help="Regenerate the README figures or only the tokens/cost figure")
     args = parser.parse_args()
     out = args.outdir.resolve()
     out.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10,
                          "svg.fonttype": "none", "pdf.fonttype": 42})
     rows, statistics, sources = gather()
-    if args.only == "readme":
+    if args.only:
         previous = json.loads((out / "comparison_statistics.json").read_text(encoding="utf-8"))
         assert previous["source_comparison_sha256"] == sources
         assert previous["runs"] == rows and previous["statistics"] == statistics
-        readme_figures(out, statistics)
-        print(json.dumps({"runs": len(rows), "updated": ["completion_percent", "tokens_and_cost_tasks_0_1_4"]}))
+        readme_figures(out, statistics, selection=args.only)
+        updated = ["tokens_and_cost_tasks_0_1_4"]
+        if args.only == "readme":
+            updated.insert(0, "completion_percent")
+        print(json.dumps({"runs": len(rows), "updated": updated}))
         return
     data = {"created_at": datetime.now(timezone.utc).isoformat(), "n_per_task_model": 5,
             "std_definition": "Sample standard deviation across five independent run values, ddof=1; not SEM or a confidence interval.",
