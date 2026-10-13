@@ -4,7 +4,9 @@ We compare GPT-6 Astra and Claude Opus 5.5 on [LIBERO-LoHo](https://github.com/m
 
 See [setup.md](setup.md) to install the dependencies and reproduce the evaluation runs.
 
-## Setup
+## Findings
+
+### Setup
 
 - **Benchmark:** LIBERO-LoHo, a long-horizon manipulation benchmark derived from LIBERO.
 - **Coverage:** Tasks **0, 1, and 4**, with **5 saved episodes per model per task**—30 episodes total.
@@ -18,7 +20,7 @@ See [setup.md](setup.md) to install the dependencies and reproduce the evaluatio
 - **Scoring:** Native simulator goal predicates; full success requires every final condition.
 - **Reporting:** Mean ± sample standard deviation across the five saved episodes per model/task.
 
-### Sample control loop
+#### Sample control loop
 
 Both models receive the [same control instructions](prompts/pose-tools-v1_task0_max.txt), task, camera images and robot state, then return one motion-tool call with a short explanation.
 
@@ -32,8 +34,6 @@ For Task 0, an example model response is a `move_to` call with these arguments:
 ```
 
 Targets are absolute positions in metres; gripper `1` opens and `0` closes. After execution, fresh images and measured feedback guide the next call until success, a stop call or a limit. The simulator determines the score.
-
-## Findings
 
 ### Task comparison video
 
