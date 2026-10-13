@@ -1,0 +1,300 @@
+{
+  "passed": true,
+  "source_runs": 30,
+  "episodes_per_model_task": 5,
+  "source_comparison_sha256": {
+    "loho-study/task 0/task0_uncapped_extend_20261011_221112_combined_comparison.json": "fd5107a14ac1299e41af38cbaaf739a2ea51ab25f5c09848b101fcd4726aa78a",
+    "loho-study/task 1/task1_uncapped_20261011_234048_comparison.json": "6e0057cc76617c9889728e4515ad8368f6a2a9adee65706da827ee6542eeaf3a",
+    "loho-study/task 4/task4_retained_20261012_135134_comparison.json": "367eed01c8d80fd089e9aa7a9de6c21aaef54f8834621d0d8a5da012729bb9fe"
+  },
+  "source_summaries": [
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial1_task0_uncapped_20261011_203025/summary.json",
+      "sha256": "d1c96f7d4dc865d503deac3f90e81872d627e4fc86fd5680e235b6d9df658a49"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial2_task0_uncapped_20261011_203025/summary.json",
+      "sha256": "6842ec30fa60f730928602244dadf93f0af114e491fe55af833113ba013d6073"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025/summary.json",
+      "sha256": "9f3cb69b4842a5d9dd38c4a9f08b35d3735581154ba6b5179456fbcc53f43509"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/summary.json",
+      "sha256": "721781ee5da3c709cc6dbe8bdbf42b97feefa4b319fcffac90b9a3f7bc05b4a9"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/summary.json",
+      "sha256": "19c41ede6922f145965f2d3879970205bd36ca80cad48a63a33dc4253021a762"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025/summary.json",
+      "sha256": "5ae2c771d6257403cb487d260e69a9ce026bedaddc78d690d2dd7c00c5d5a600"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial2_task0_uncapped_20261011_203025/summary.json",
+      "sha256": "900e613555b44b4afb6422b04bb81f5940a04954143475e183a5b330c6bdd417"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial3_task0_uncapped_20261011_203025/summary.json",
+      "sha256": "d202aabbffe5fd6f4a8180137c6fd140a6dd7d43381279a7a6dfe0c07c7b3c14"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/summary.json",
+      "sha256": "6664af5390b5ca9f34fe66914b0770583b04dfb29c7c492b238b71633a9b4955"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/summary.json",
+      "sha256": "0ead9311e01c8bfd23edfc047162f459ec4b26f243402194ebcc0586d1a30b32"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "f8a27fa9c87bfa4343174a87e8fc513e44784932c283463ffe95c0b14ed01cf4"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial2_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "2df5cbec47ae7235d45459f286994570d355bbc30dd8a3a128f24a2f4e745630"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial3_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "b73a47c142138d3af8cd7f63af61c5cf32e8cc40f2224956c42df94a09bd168b"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial4_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "b26dc7219ee5a047ac58891132bb31e0bc73088584899b78bc9a9b11b314f758"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial5_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "87ec52e878b5ef7ca96f4fa1893ec2b6118a1e7a45f4d5521b7613285e62eaaa"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "b197516262dc8e4a4c48393ac38ad318e02ad9444a5d82f8a8d47d86b384caf1"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial2_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "25a5bcb871cb12b97f5be6138cc2610d66f579736aaf95d4447a210bfa7e7dad"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "377c9715872f2c526cd6264642cbd04de8be770565f57bbf9026cf819b83bb48"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial4_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "5f735808190fb6b8d6f64902a9af00643a9d016b0a2a1ddedb7b8b5a3a560a27"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial5_task1_uncapped_20261011_234048/summary.json",
+      "sha256": "86d393aa79ed560ed11317b526788c84b68c50db7e463d74e1f13604827358bd"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial1_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "cd0ebd1a82861029891fecafe22bdde8c3ea75a9e75c450c1eb240d135bfd8fb"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial2_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "821737ee9495a5b192e65081ef3b518ed521cb444f1b47853144cbbce2038333"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial3_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "4c956c06a4f6f3a25f981c2002787283d24cca8412b036f1ca13beaaa5608dbd"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial4_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "aa83379ba16834c5f593c745340edcdacccf735f93ef637620d27c33e6aeba92"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial5_task4_20261012_132742/summary.json",
+      "sha256": "b8c64a1dc26ae102476859a5abbd5dea95c507bfcc9189ee6923a8282f7598f4"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial1_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "306c6074795ce7e6d08c8a3fef0c5abed3bc83de454f8ed7e06e21d6a41d782f"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial2_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "ef5eee7aa4d9ad525365e9fe99cf2873539e490be3cc757f7f6336211f8b6ee0"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial3_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "d381e30d078a70455093b03ce5a3a6572795ba02c63bb7d07d8830352f0766de"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial4_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "66c860c1bdccd7f125b28172a83119ebd0f1605e148b07bea8811c087a4d1948"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial5_task4_uncapped_20261012_110427/summary.json",
+      "sha256": "9d57c2a035fc7bde909e23711f946f7adaa45bfa4419807aafee4f1457f1d75e"
+    }
+  ],
+  "total_tokens_definition": "Provider-reported total input plus output across all requests per run. Includes cache reads/writes within input, once, and reported reasoning tokens within output. Repeated conversation context counts again when reported again.",
+  "cost_definition": "Recorded per-run public-rate estimate using actual reported cache usage; USD.",
+  "std_definition": "Sample SD across the five episodes, ddof=1; not SEM or a confidence interval.",
+  "dot_jitter": "Small deterministic vertical offsets separate episode dots; token and cost values are unchanged.",
+  "scatter_whiskers": "Horizontal and vertical whiskers are separate marginal sample SDs for tokens and cost.",
+  "scatter_axes_shared_across_tasks": true,
+  "cohort_statistics": {
+    "total_tokens": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 2088487.8,
+          "sample_std": 523550.78212977585,
+          "values": [
+            2655913.0,
+            2606497.0,
+            1977282.0,
+            1503421.0,
+            1699326.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 4564210.4,
+          "sample_std": 1048326.934887824,
+          "values": [
+            4241374.0,
+            3778276.0,
+            3851330.0,
+            4607097.0,
+            6342975.0
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 1216433.2,
+          "sample_std": 612578.6587228614,
+          "values": [
+            867987.0,
+            831632.0,
+            2256576.0,
+            1289408.0,
+            836563.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 11081645.0,
+          "sample_std": 2934123.0070101866,
+          "values": [
+            11114529.0,
+            11699235.0,
+            10983684.0,
+            14921915.0,
+            6688862.0
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 2353501.4,
+          "sample_std": 620441.3754463834,
+          "values": [
+            1604635.0,
+            3191324.0,
+            2577428.0,
+            2495348.0,
+            1898772.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 5924620.0,
+          "sample_std": 2460110.161589009,
+          "values": [
+            6859788.0,
+            5379332.0,
+            9707849.0,
+            3747377.0,
+            3928754.0
+          ]
+        }
+      }
+    },
+    "estimated_api_cost_usd": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 4.3053454,
+          "sample_std": 0.9045267645068195,
+          "values": [
+            5.144795,
+            5.4024435,
+            3.886863,
+            3.4103235,
+            3.682302
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 5.5265511599999995,
+          "sample_std": 1.0318337222454728,
+          "values": [
+            5.3490556,
+            4.9309286,
+            4.237351,
+            6.3529702,
+            6.7624504
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 2.8913149999999996,
+          "sample_std": 0.8749318629772691,
+          "values": [
+            2.475965,
+            2.293924,
+            4.3264605,
+            3.118163,
+            2.2420625
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 8.81201532,
+          "sample_std": 1.8391487067520809,
+          "values": [
+            8.3283206,
+            10.2675758,
+            8.9478738,
+            10.5543752,
+            5.9619312
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 4.5460533000000005,
+          "sample_std": 0.9949931276704629,
+          "values": [
+            3.5351825,
+            6.045154,
+            4.64343,
+            4.758192,
+            3.748308
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 5.9199776,
+          "sample_std": 1.6710735533852303,
+          "values": [
+            6.5199426,
+            5.7710124,
+            8.4428918,
+            4.4506324,
+            4.4154088
+          ]
+        }
+      }
+    }
+  }
+}

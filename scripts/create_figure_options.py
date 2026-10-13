@@ -397,6 +397,8 @@ def main():
         lines.append("- [Task {} table](06_task{}_run_table.png)".format(task, task))
     lines += ["", "Each primary figure/table also has PDF and SVG exports with the same filename stem. [Source manifest](figure_sources.json).", "",
               "Rebuild with `wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_figure_options.py` from the workspace.", ""]
+    if (OUT / "tokens_cost/README.md").exists():
+        lines += ["[Total tokens and estimated cost: dot and scatter alternatives](tokens_cost/README.md).", ""]
     (OUT / "README.md").write_text("\n".join(lines), encoding="utf-8")
     manifest = {"source_comparison_sha256": sources, "runs": [{key:row[key] for key in ("task_id", "model", "display_trial", "run_id", "source_summary", "summary_sha256")} for row in RECORDS],
                 "n_per_task_model": 5, "primary_options": 7, "figures": FIGURES,
