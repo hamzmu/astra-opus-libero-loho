@@ -1,4 +1,5 @@
 """Create publication figure options from the 30 current saved study runs."""
+import argparse
 import json
 from pathlib import Path
 import statistics
@@ -73,7 +74,11 @@ def footer(fig, text, y=.035):
 
 def save(fig, name, heading, description, primary=True):
     for extension in ("png", "pdf", "svg"):
-        fig.savefig(str(OUT / (name + "." + extension)), dpi=220, facecolor="white", bbox_inches="tight", pad_inches=.22)
+        destination = OUT / (name + "." + extension)
+        fig.savefig(str(destination), dpi=220, facecolor="white", bbox_inches="tight", pad_inches=.22)
+        if extension == "svg":
+            destination.write_text("\n".join(line.rstrip() for line in destination.read_text(encoding="utf-8").splitlines())
+                                   + "\n", encoding="utf-8")
     plt.close(fig)
     FIGURES.append({"file": name + ".png", "title": heading, "description": description, "primary": primary})
     print("SAVED " + name, flush=True)
@@ -111,29 +116,34 @@ def individual_dots():
 
 def time_breakdown():
     fig, ax = plt.subplots(figsize=(12.8, 7.6))
-    fig.subplots_adjust(left=.18, right=.96, top=.80, bottom=.17)
-    title(fig, 2, "Where the wall-clock time goes", "Measured API request time + remaining episode time; mean ± sample SD, n=5")
-    legend(fig, .902, [Patch(facecolor="#cfd6df", label="Other elapsed time")])
+    fig.subplots_adjust(left=.15, right=.96, top=.85, bottom=.17)
+    fig.suptitle("Where the wall-clock time goes", y=.986, fontsize=21,
+                 fontweight="semibold", color="#1b2430")
+    legend(fig, .925, [Patch(facecolor="#cfd6df", label="Other elapsed time")])
+    bar_height = .74
     for task_index, task in enumerate(TASKS):
         for model_index, model in enumerate(MODELS):
-            y = task_index * 2.8 + model_index
+            y = task_index * 2.8 + (model_index - .5) * bar_height
             rows = cohort(task, model)
             api = statistics.mean(row["total_api_latency_seconds"] for row in rows) / 60
             remainder = statistics.mean(row["elapsed_seconds"] - row["total_api_latency_seconds"] for row in rows) / 60
             assert remainder >= 0
             mean, sd = stats(task, model, "elapsed_seconds", 1 / 60)
-            ax.barh(y, api, height=.62, color=COLORS[model], zorder=3)
-            ax.barh(y, remainder, left=api, height=.62, color="#cfd6df", zorder=3)
+            ax.barh(y, api, height=bar_height, color=COLORS[model], linewidth=0,
+                    antialiased=False, zorder=3)
+            ax.barh(y, remainder, left=api, height=bar_height, color="#cfd6df", linewidth=0,
+                    antialiased=False, zorder=3)
             ax.errorbar(mean, y, xerr=sd, fmt="none", color="#242a33", capsize=4, elinewidth=1.15, zorder=5)
             ax.text(api / 2, y, "API {:.1f} min".format(api), ha="center", va="center", color="white" if model == "astra" else "#242a33", fontsize=10)
             ax.text(mean + sd + .6, y, "{:.1f} ± {:.1f}".format(mean, sd), va="center", fontsize=10)
-    locations = [task_index * 2.8 + model_index for task_index in range(3) for model_index in range(2)]
+    locations = [task_index * 2.8 for task_index in range(3)]
     ax.set_yticks(locations)
-    ax.set_yticklabels(["Task {}  ·  {}".format(task, NAMES[model]) for task in TASKS for model in MODELS])
+    ax.set_yticklabels(["Task {}".format(task) for task in TASKS], fontweight="semibold")
     ax.invert_yaxis()
     ax.set_xlim(0, 63)
     ax.set_xlabel("Episode wall-clock time (minutes)")
     axes_style(ax, "x")
+    ax.tick_params(axis="y", labelcolor="black", labelsize=16, pad=12)
     footer(fig, "Other time = recorded elapsed time minus API latency: simulation, rendering, observation processing and logging.\nAPI time includes network/provider waiting; the total-time SD is computed from episode totals. Task 4: retained run set.")
     save(fig, "02_wallclock_breakdown", "Wall-clock time breakdown", "Explains why shorter physical trajectories can still take longer overall when API waiting dominates.")
 
@@ -348,9 +358,22 @@ def gallery():
 
 def main():
     global RECORDS
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--only", choices=("wallclock",), help="Regenerate only the wall-clock figure and gallery")
+    args = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "svg.fonttype": "none", "pdf.fonttype": 42})
     RECORDS, _, sources = gather()
+    if args.only == "wallclock":
+        manifest = read_json(OUT / "figure_sources.json")
+        assert manifest["source_comparison_sha256"] == sources
+        time_breakdown()
+        assert FIGURES[0] == next(item for item in manifest["figures"] if item["file"] == FIGURES[0]["file"])
+        FIGURES[:] = manifest["figures"]
+        gallery()
+        print(json.dumps({"outdir": str(OUT), "runs": len(RECORDS),
+                          "updated": "02_wallclock_breakdown", "gallery": "00_gallery.png"}), flush=True)
+        return
     individual_dots()
     time_breakdown()
     progress_curves()

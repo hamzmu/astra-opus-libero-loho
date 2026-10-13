@@ -14,5 +14,6 @@
   "progress_step_counts_match_summaries": true,
   "time_decomposition_uses_measured_api_and_residual_elapsed": true,
   "local_links_checked": 76,
-  "visual_review": "All seven primary figures inspected; title/subtitle spacing corrected and tables readable. Separate ten-row per-task tables accompany the thirty-row table."
+  "visual_review": "All seven primary figures inspected; title/subtitle spacing corrected and tables readable. Separate ten-row per-task tables accompany the thirty-row table.",
+  "wallclock_visual_review": "Title has no numeric prefix or subtitle; paired model bars touch; one larger black label is centered beside each task pair. Recorded means and sample SD are unchanged."
 }

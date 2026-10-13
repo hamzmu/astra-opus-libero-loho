@@ -40,7 +40,7 @@ Bars show total input plus output tokens on the left axis; diamonds show estimat
 
 ### Astra’s wall-clock time was 57% shorter
 
-Measured wall-clock time averaged **14.8 minutes for Astra vs 34.2 minutes for Opus per episode**, a **56.8% reduction**. API requests, including network/provider waiting, accounted for most elapsed time: **12.9 vs 32.7 minutes** on average.
+Measured wall-clock time averaged **14.8 minutes for Astra vs 34.2 minutes for Opus per episode**, a **56.8% reduction**.
 
 ![Wall-clock time split into API request time and other elapsed time, with total-time sample standard deviation](loho-study/plots/options/02_wallclock_breakdown.png)
 
