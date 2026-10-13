@@ -39,8 +39,6 @@ Targets are absolute positions in metres; gripper `1` opens and `0` closes. Afte
 
 **Tasks 0, 1 and 4** appear left to right, with **Astra above Opus**, at **4× simulation speed**; API waiting is omitted. Examples are successful runs closest to each cohort's median wall-clock duration. Select the preview for the MP4.
 
-**Wrist camera view omitted from this video, but used in evaluation.**
-
 | Task | Objective |
 |---|---|
 | **0** | Put the front butter and chocolate pudding into the cabinet’s top drawer, then close it. |
@@ -48,6 +46,8 @@ Targets are absolute positions in metres; gripper `1` opens and `0` closes. Afte
 | **4** | Put the back butter and chocolate pudding into the top drawer, close it, and place the black bowl on top of the cabinet. |
 
 <a href="loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x.mp4?raw=true"><img src="loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x_preview.gif" alt="Animated 4× replay of Astra and Opus on Tasks 0, 1 and 4; select to open the MP4" width="720"></a>
+
+**Wrist camera view omitted from this video, but used in evaluation.**
 
 ## Results
 

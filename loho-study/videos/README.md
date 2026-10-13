@@ -4,7 +4,7 @@
 
 [Watch Tasks 0, 1 and 4 together](astra_opus_tasks_0_1_4_static_grid_4x.mp4)
 
-The main README displays a looping [GIF preview](astra_opus_tasks_0_1_4_static_grid_4x_preview.gif), linked to the original MP4. The preview uses the same full clip at 800-pixel width, 8 fps and 64 palette colors; the MP4 retains the original resolution and frame rate. GitHub removes repository-relative HTML video embeds from rendered READMEs.
+The main README displays a looping [GIF preview](astra_opus_tasks_0_1_4_static_grid_4x_preview.gif), linked to the original MP4. It shows the same six examples at 4× speed, with a white background and only neutral task/model labels. The preview is 800 × 612, targets 8 fps and uses 64 palette colors; recorded RGB colors are retained. The original MP4 keeps its detailed labels, resolution and frame rate. GitHub removes repository-relative HTML video embeds from rendered READMEs.
 
 Rebuild the preview offline with `wsl -d Ubuntu-24.04 --exec /root/projects/LIBERO-LOHO/.venv/bin/python scripts/create_readme_video_preview.py`. [Preview verification](readme_video_preview_verification.json).
 
