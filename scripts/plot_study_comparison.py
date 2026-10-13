@@ -158,7 +158,7 @@ def panel(ax, key, statistics):
         ax.yaxis.set_major_formatter(FuncFormatter(lambda value, _: "${:g}".format(value)))
 
 
-def tokens_cost_panel(ax, statistics):
+def tokens_cost_panel(ax, statistics, encoding_legend=True):
     panel(ax, "total_tokens", statistics)
     ax.set_title("Total tokens and estimated API cost", fontsize=14, fontweight="semibold", loc="left", pad=14, color="#1b2430")
     price_axis = ax.twinx()
@@ -183,11 +183,12 @@ def tokens_cost_panel(ax, statistics):
                             markeredgecolor=COLORS[model], markeredgewidth=1.6,
                             ecolor=COLORS[model], elinewidth=1.2, capsize=3.5,
                             capthick=1.2, zorder=5)
-    ax.legend(handles=[Patch(facecolor="#939aa3", label="Tokens: bars, left axis"),
-                       Line2D([], [], marker="D", color="#404852", markerfacecolor="white",
-                              linestyle="none", label="Cost: diamonds, right axis")],
-              loc="upper left", frameon=False, fontsize=8.5, handlelength=1.4,
-              borderaxespad=.6)
+    if encoding_legend:
+        ax.legend(handles=[Patch(facecolor="#939aa3", label="Tokens: bars, left axis"),
+                           Line2D([], [], marker="D", color="#404852", markerfacecolor="white",
+                                  linestyle="none", label="Cost: diamonds, right axis")],
+                  loc="upper left", frameon=False, fontsize=8.5, handlelength=1.4,
+                  borderaxespad=.6)
     return price_axis
 
 
@@ -197,22 +198,70 @@ def legend(fig, top):
                ncol=2, frameon=False, fontsize=12, handlelength=1.5, columnspacing=2.5)
 
 
-def save(fig, destination):
+def save(fig, destination, tight=True):
     for extension in ("png", "pdf", "svg"):
-        fig.savefig(str(destination.with_suffix("." + extension)), dpi=240,
-                    facecolor="white", bbox_inches="tight", pad_inches=.22)
+        export = destination.with_suffix("." + extension)
+        fig.savefig(str(export), dpi=240, facecolor="white",
+                    bbox_inches="tight" if tight else None, pad_inches=.22)
+        if extension == "svg":
+            export.write_text("\n".join(line.rstrip() for line in export.read_text(encoding="utf-8").splitlines())
+                              + "\n", encoding="utf-8")
     plt.close(fig)
+
+
+def readme_layout(fig, ax, heading):
+    """Use one canvas and typography for the three figures displayed in the README."""
+    fig.set_size_inches(9.3, 5.8)
+    fig.subplots_adjust(left=.13, right=.88, top=.86, bottom=.22)
+    ax.set_title("", loc="left")
+    fig.suptitle(heading, fontsize=14, fontweight="semibold", y=.975, color="#1b2430")
+    ax.tick_params(axis="both", labelsize=10, length=0, pad=7, labelcolor="#404852")
+    ax.xaxis.label.set_size(10.5)
+    ax.yaxis.label.set_size(10.5)
+
+
+def readme_legend(fig, encoding=False):
+    handles = [Patch(facecolor=COLORS[model], label=LABELS[model]) for model in MODELS]
+    if encoding:
+        handles = [handles[0], Patch(facecolor="#939aa3", label="Total tokens"), handles[1],
+                   Line2D([], [], marker="D", color="#404852", markerfacecolor="white",
+                          linestyle="none", label="Estimated API cost")]
+    fig.legend(handles=handles, loc="lower center", bbox_to_anchor=(.5, .025),
+               ncol=2, frameon=False, fontsize=12, handlelength=1.5, columnspacing=2.5)
+
+
+def readme_figures(out, statistics):
+    fig, ax = plt.subplots()
+    panel(ax, "completion_percent", statistics)
+    readme_layout(fig, ax, "Goal completion score")
+    ax.tick_params(axis="x", labelsize=11)
+    readme_legend(fig)
+    save(fig, out / "completion_percent", tight=False)
+    fig, ax = plt.subplots()
+    tokens_cost_panel(ax, statistics, encoding_legend=False)
+    readme_layout(fig, ax, "Total tokens and estimated API cost")
+    ax.tick_params(axis="x", labelsize=11)
+    readme_legend(fig, encoding=True)
+    save(fig, out / "tokens_and_cost_tasks_0_1_4", tight=False)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--outdir", type=Path, default=WORKSPACE / "loho-study/plots")
+    parser.add_argument("--only", choices=("readme",), help="Regenerate only the README completion and tokens/cost figures")
     args = parser.parse_args()
     out = args.outdir.resolve()
     out.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10,
                          "svg.fonttype": "none", "pdf.fonttype": 42})
     rows, statistics, sources = gather()
+    if args.only == "readme":
+        previous = json.loads((out / "comparison_statistics.json").read_text(encoding="utf-8"))
+        assert previous["source_comparison_sha256"] == sources
+        assert previous["runs"] == rows and previous["statistics"] == statistics
+        readme_figures(out, statistics)
+        print(json.dumps({"runs": len(rows), "updated": ["completion_percent", "tokens_and_cost_tasks_0_1_4"]}))
+        return
     data = {"created_at": datetime.now(timezone.utc).isoformat(), "n_per_task_model": 5,
             "std_definition": "Sample standard deviation across five independent run values, ddof=1; not SEM or a confidence interval.",
             "selection": "Current five saved runs per model in each task's latest result pointer; task 4 uses its retained run set.",
@@ -244,13 +293,7 @@ def main():
              "All runs: state 0, seed 0, max effort, static + wrist RGB and proprioception.",
              fontsize=8.5, color="#626a73", linespacing=1.6)
     save(fig, out / "astra_opus_tasks_0_1_4")
-    fig, ax = plt.subplots(figsize=(9.3, 5.8))
-    fig.subplots_adjust(left=.13, right=.88, top=.79, bottom=.19)
-    tokens_cost_panel(ax, statistics)
-    legend(fig, .98)
-    fig.text(.13, .075, "5 saved runs per model/task | mean ±1 sample SD (ddof=1)", fontsize=9.5, color="#626a73")
-    fig.text(.13, .035, "Bars: total tokens. Diamonds: estimated USD. Task 4: retained run set.", fontsize=8.5, color="#626a73")
-    save(fig, out / "tokens_and_cost_tasks_0_1_4")
+    readme_figures(out, statistics)
     fig, axes = plt.subplots(1, 2, figsize=(14.4, 5.5))
     fig.subplots_adjust(left=.08, right=.98, top=.74, bottom=.18, wspace=.28)
     fig.suptitle("LIBERO-LoHo | Calls and action steps", fontsize=21, fontweight="semibold", y=.995, color="#1b2430")
@@ -261,6 +304,8 @@ def main():
     fig.text(.08, .025, "Calls include rejected returned tools. Action steps exclude initial settling and API waiting.", fontsize=9, color="#626a73")
     save(fig, out / "calls_and_steps_tasks_0_1_4")
     for key in keys:
+        if key == "completion_percent":
+            continue
         fig, ax = plt.subplots(figsize=(8.5, 5.5))
         fig.subplots_adjust(left=.13, right=.98, top=.79, bottom=.19)
         panel(ax, key, statistics)

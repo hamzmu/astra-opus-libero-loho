@@ -257,8 +257,8 @@
     },
     {
       "file": "02_wallclock_breakdown.png",
-      "title": "Wall-clock time breakdown",
-      "description": "Explains why shorter physical trajectories can still take longer overall when API waiting dominates.",
+      "title": "API request time",
+      "description": "Compares measured API request time per episode, with mean and sample SD; other episode time is excluded.",
       "primary": true
     },
     {
@@ -310,5 +310,7 @@
       "primary": true
     }
   ],
-  "note": "Figure options use the current saved cohorts. Requested output-token statistics include reported reasoning; time decomposition uses measured API and residual episode time."
+  "note": "Figure options use the current saved cohorts. Output-token statistics include reported reasoning; the time figure uses measured API request time only.",
+  "time_figure_metric": "total_api_latency_seconds",
+  "time_figure_includes_other_elapsed_time": false
 }

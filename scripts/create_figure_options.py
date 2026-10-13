@@ -13,7 +13,8 @@ from matplotlib.ticker import FuncFormatter, MaxNLocator
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-from plot_study_comparison import WORKSPACE, TASKS, MODELS, COLORS, gather
+from plot_study_comparison import (WORKSPACE, TASKS, MODELS, COLORS, gather,
+                                   readme_layout, readme_legend, save as save_readme)
 
 OUT = WORKSPACE / "loho-study/plots/options"
 NAMES = {"astra": "Astra", "opus": "Opus"}
@@ -115,37 +116,31 @@ def individual_dots():
 
 
 def time_breakdown():
-    fig, ax = plt.subplots(figsize=(12.8, 7.6))
-    fig.subplots_adjust(left=.15, right=.96, top=.85, bottom=.17)
-    fig.suptitle("Where the wall-clock time goes", y=.986, fontsize=21,
-                 fontweight="semibold", color="#1b2430")
-    legend(fig, .925, [Patch(facecolor="#cfd6df", label="Other elapsed time")])
+    fig, ax = plt.subplots()
     bar_height = .74
     for task_index, task in enumerate(TASKS):
         for model_index, model in enumerate(MODELS):
             y = task_index * 2.8 + (model_index - .5) * bar_height
-            rows = cohort(task, model)
-            api = statistics.mean(row["total_api_latency_seconds"] for row in rows) / 60
-            remainder = statistics.mean(row["elapsed_seconds"] - row["total_api_latency_seconds"] for row in rows) / 60
-            assert remainder >= 0
-            mean, sd = stats(task, model, "elapsed_seconds", 1 / 60)
-            ax.barh(y, api, height=bar_height, color=COLORS[model], linewidth=0,
-                    antialiased=False, zorder=3)
-            ax.barh(y, remainder, left=api, height=bar_height, color="#cfd6df", linewidth=0,
+            mean, sd = stats(task, model, "total_api_latency_seconds", 1 / 60)
+            ax.barh(y, mean, height=bar_height, color=COLORS[model], linewidth=0,
                     antialiased=False, zorder=3)
             ax.errorbar(mean, y, xerr=sd, fmt="none", color="#242a33", capsize=4, elinewidth=1.15, zorder=5)
-            ax.text(api / 2, y, "API {:.1f} min".format(api), ha="center", va="center", color="white" if model == "astra" else "#242a33", fontsize=10)
             ax.text(mean + sd + .6, y, "{:.1f} ± {:.1f}".format(mean, sd), va="center", fontsize=10)
     locations = [task_index * 2.8 for task_index in range(3)]
     ax.set_yticks(locations)
-    ax.set_yticklabels(["Task {}".format(task) for task in TASKS], fontweight="semibold")
+    ax.set_yticklabels(["Task {}".format(task) for task in TASKS], fontweight="normal")
     ax.invert_yaxis()
     ax.set_xlim(0, 63)
-    ax.set_xlabel("Episode wall-clock time (minutes)")
+    ax.set_xlabel("API request time per run (minutes)")
     axes_style(ax, "x")
-    ax.tick_params(axis="y", labelcolor="black", labelsize=16, pad=12)
-    footer(fig, "Other time = recorded elapsed time minus API latency: simulation, rendering, observation processing and logging.\nAPI time includes network/provider waiting; the total-time SD is computed from episode totals. Task 4: retained run set.")
-    save(fig, "02_wallclock_breakdown", "Wall-clock time breakdown", "Explains why shorter physical trajectories can still take longer overall when API waiting dominates.")
+    readme_layout(fig, ax, "API request time")
+    ax.tick_params(axis="y", labelsize=11)
+    readme_legend(fig)
+    save_readme(fig, OUT / "02_wallclock_breakdown", tight=False)
+    FIGURES.append({"file": "02_wallclock_breakdown.png", "title": "API request time",
+                    "description": "Compares measured API request time per episode, with mean and sample SD; other episode time is excluded.",
+                    "primary": True})
+    print("SAVED 02_wallclock_breakdown", flush=True)
 
 
 def progress_curves():
@@ -368,9 +363,15 @@ def main():
         manifest = read_json(OUT / "figure_sources.json")
         assert manifest["source_comparison_sha256"] == sources
         time_breakdown()
-        assert FIGURES[0] == next(item for item in manifest["figures"] if item["file"] == FIGURES[0]["file"])
+        updated = FIGURES[0]
+        assert sum(item["file"] == updated["file"] for item in manifest["figures"]) == 1
+        manifest["figures"] = [updated if item["file"] == updated["file"] else item for item in manifest["figures"]]
+        manifest["time_figure_metric"] = "total_api_latency_seconds"
+        manifest["time_figure_includes_other_elapsed_time"] = False
+        manifest["note"] = "Figure options use the current saved cohorts. Output-token statistics include reported reasoning; the time figure uses measured API request time only."
         FIGURES[:] = manifest["figures"]
         gallery()
+        (OUT / "figure_sources.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
         print(json.dumps({"outdir": str(OUT), "runs": len(RECORDS),
                           "updated": "02_wallclock_breakdown", "gallery": "00_gallery.png"}), flush=True)
         return
@@ -390,7 +391,7 @@ def main():
     for index, item in enumerate((item for item in FIGURES if item["primary"]), 1):
         lines.append("| {} | [{}]({}) | {} |".format(index, item["title"], item["file"], item["description"]))
     lines += ["", "The requested headline metrics are goal completion, output tokens (including reasoning), estimated API cost and measured episode wall-clock time. Individual dots and the summary table present all four. Other figures focus on the relationships or recorded conditions best suited to their layout.", "",
-              "API request time includes network/provider waiting. Other elapsed time is measured as episode elapsed minus API latency; it is not treated as pure robot motion. Goal-progress curves use observed decision-end scores against action steps, with no reconstructed wall-clock timing. Cost/completion points show exact recorded values. The heatmap shows final native conditions, including any conditions lost during a run.", "",
+              "API request time includes network/provider waiting. The API time figure excludes other episode time, and its whiskers use the sample SD of API time across five runs. Goal-progress curves use observed decision-end scores against action steps, with no reconstructed wall-clock timing. Cost/completion points show exact recorded values. The heatmap shows final native conditions, including any conditions lost during a run.", "",
               "## Individual run tables", ""]
     for task in TASKS:
         lines.append("- [Task {} table](06_task{}_run_table.png)".format(task, task))
@@ -399,7 +400,8 @@ def main():
     (OUT / "README.md").write_text("\n".join(lines), encoding="utf-8")
     manifest = {"source_comparison_sha256": sources, "runs": [{key:row[key] for key in ("task_id", "model", "display_trial", "run_id", "source_summary", "summary_sha256")} for row in RECORDS],
                 "n_per_task_model": 5, "primary_options": 7, "figures": FIGURES,
-                "note": "Figure options use the current saved cohorts. Requested output-token statistics include reported reasoning; time decomposition uses measured API and residual episode time."}
+                "time_figure_metric": "total_api_latency_seconds", "time_figure_includes_other_elapsed_time": False,
+                "note": "Figure options use the current saved cohorts. Output-token statistics include reported reasoning; the time figure uses measured API request time only."}
     (OUT / "figure_sources.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print(json.dumps({"outdir": str(OUT), "runs": len(RECORDS), "primary_options": 7, "individual_exports": len(FIGURES), "gallery": "00_gallery.png"}), flush=True)
 

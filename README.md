@@ -38,11 +38,11 @@ Estimated API cost averaged **$3.91 for Astra vs $6.75 for Opus per episode**, a
 
 Bars show total input plus output tokens on the left axis; diamonds show estimated USD cost on the right. Both use mean ± sample standard deviation across five episodes per model/task.
 
-### Astra’s wall-clock time was 57% shorter
+### Astra’s API request time was 61% shorter
 
-Measured wall-clock time averaged **14.8 minutes for Astra vs 34.2 minutes for Opus per episode**, a **56.8% reduction**.
+Measured API request time averaged **12.9 minutes for Astra vs 32.7 minutes for Opus per episode**, a **60.7% reduction**.
 
-![Wall-clock time split into API request time and other elapsed time, with total-time sample standard deviation](loho-study/plots/options/02_wallclock_breakdown.png)
+![Mean API request time per episode, with sample standard deviation](loho-study/plots/options/02_wallclock_breakdown.png)
 
 ### Opus used fewer model calls and action steps on average
 
@@ -53,8 +53,6 @@ Opus averaged **44.7 model calls and 781 action steps per episode**, compared wi
 | 0 | 56.8 ± 7.7 | **34.0** ± 2.9 | 1,071.6 ± 131.3 | **612.0** ± 96.9 |
 | 1 | **41.2** ± 10.6 | 58.0 ± 9.7 | **667.8** ± 213.5 | 991.4 ± 182.7 |
 | 4 | 61.8 ± 7.7 | **42.0** ± 8.7 | 1,204.4 ± 161.5 | **739.8** ± 130.3 |
-
-Mean ± sample SD across five episodes per model/task. **Bold means fewer calls or steps**; task success is scored separately.
 
 ## Setup
 

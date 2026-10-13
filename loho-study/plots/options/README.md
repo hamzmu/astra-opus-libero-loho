@@ -7,7 +7,7 @@ All figures use the current five saved runs per model on Tasks 0, 1 and 4: 30 ep
 | Option | PNG | Best use |
 |---|---|---|
 | 1 | [Individual-run dot plots](01_individual_run_dots.png) | Best for seeing all five observations, their variability and outliers across the four headline metrics. |
-| 2 | [Wall-clock time breakdown](02_wallclock_breakdown.png) | Explains why shorter physical trajectories can still take longer overall when API waiting dominates. |
+| 2 | [API request time](02_wallclock_breakdown.png) | Compares measured API request time per episode, with mean and sample SD; other episode time is excluded. |
 | 3 | [Goal-progress curves](03_goal_progress_curves.png) | Shows observed subtask progress, recoveries and final partial outcomes against executed action steps. |
 | 4 | [Cost versus completion](04_cost_completion_scatter.png) | Shows cost/performance trade-offs and whether expensive episodes also achieved their goals. |
 | 5 | [Subtask completion heatmap](05_subtask_heatmap.png) | Best for explaining the partial Task 1 outcomes by object/condition rather than only a percentage. |
@@ -16,7 +16,7 @@ All figures use the current five saved runs per model on Tasks 0, 1 and 4: 30 ep
 
 The requested headline metrics are goal completion, output tokens (including reasoning), estimated API cost and measured episode wall-clock time. Individual dots and the summary table present all four. Other figures focus on the relationships or recorded conditions best suited to their layout.
 
-API request time includes network/provider waiting. Other elapsed time is measured as episode elapsed minus API latency; it is not treated as pure robot motion. Goal-progress curves use observed decision-end scores against action steps, with no reconstructed wall-clock timing. Cost/completion points show exact recorded values. The heatmap shows final native conditions, including any conditions lost during a run.
+API request time includes network/provider waiting. The API time figure excludes other episode time, and its whiskers use the sample SD of API time across five runs. Goal-progress curves use observed decision-end scores against action steps, with no reconstructed wall-clock timing. Cost/completion points show exact recorded values. The heatmap shows final native conditions, including any conditions lost during a run.
 
 ## Individual run tables
 
