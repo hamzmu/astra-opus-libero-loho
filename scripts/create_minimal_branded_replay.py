@@ -5,7 +5,7 @@ import subprocess
 import cv2
 from PIL import Image, ImageDraw, ImageFont
 
-from create_study_montage import BOLD, FONT, WORKSPACE, probe, read_json, sha256
+from create_study_montage import BOLD, WORKSPACE, probe, read_json, sha256
 
 
 def create_labels(sources, assets, review, width, height, tile, gap, row_gap, header):
@@ -18,14 +18,17 @@ def create_labels(sources, assets, review, width, height, tile, gap, row_gap, he
         logos[model] = Image.open(raster).convert("RGBA").resize((30, 30), Image.LANCZOS)
     labels = Image.new("RGBA", (width, height), (0, 0, 0, 0))
     painter = ImageDraw.Draw(labels)
-    task_font = ImageFont.truetype(FONT, 24)
+    task_font = ImageFont.truetype(BOLD, 24)
     model_font = ImageFont.truetype(BOLD, 22)
     for column, task in enumerate((0, 1, 4)):
         text = "Task {}".format(task)
         box = painter.textbbox((0, 0), text, font=task_font)
-        painter.text((column * (tile + gap) + (tile - (box[2] - box[0])) / 2,
-                      (header - (box[3] - box[1])) / 2 - box[1]), text,
-                     font=task_font, fill="#333333")
+        text_width, text_height = box[2] - box[0], box[3] - box[1]
+        x = column * (tile + gap) + (tile - text_width) / 2
+        top = (header - text_height) / 2
+        painter.text((x, top - box[1]), text, font=task_font, fill="#333333")
+        painter.line((x, top + text_height + 3, x + text_width, top + text_height + 3),
+                     fill="#333333", width=2)
     for source in sources:
         text = "Astra 6" if source["model"] == "astra" else "Opus 5.5"
         x = source["column"] * (tile + gap) + 12
@@ -136,6 +139,7 @@ def main():
                                                "source_sha256", "source_summary_sha256")} for s in sources],
         "logo_sources": logo_sources, "labels": {"astra": "Astra 6", "opus": "Opus 5.5"},
         "speed_badge": {"label": "×4", "position": "bottom right", "margin_pixels": 12},
+        "task_heading_style": {"font_weight": "bold", "underlined": True},
         "layout": "Rows Astra 6 / Opus 5.5; columns Tasks 0 / 1 / 4; logo badge at the top left of each view.",
         "playback": "4x recorded simulation motion; API waiting omitted; shorter clips hold their final frame.",
         "evaluation_views": "Static and wrist were supplied during evaluation; this replay shows static only.",

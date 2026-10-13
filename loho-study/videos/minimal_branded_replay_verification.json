@@ -1,7 +1,7 @@
 {
   "passed": true,
   "output_file": "astra6_opus55_tasks_0_1_4_static_minimal_4x.mp4",
-  "output_sha256": "1c8d27e36720901c4642bdb925640cb6ed4ce0802bab329c4d83669e3ecfb59d",
+  "output_sha256": "0c9862eb93be41db8e8932aeca4a45419e3ae8be5ec508b2587cb68d81f43554",
   "output_video": {
     "codec_name": "h264",
     "width": 1568,
@@ -92,6 +92,10 @@
     "label": "\u00d74",
     "position": "bottom right",
     "margin_pixels": 12
+  },
+  "task_heading_style": {
+    "font_weight": "bold",
+    "underlined": true
   },
   "layout": "Rows Astra 6 / Opus 5.5; columns Tasks 0 / 1 / 4; logo badge at the top left of each view.",
   "playback": "4x recorded simulation motion; API waiting omitted; shorter clips hold their final frame.",
