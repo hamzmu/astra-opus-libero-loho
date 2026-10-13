@@ -10,7 +10,7 @@ import cv2
 import numpy as np
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 from loho_pose_tools import PoseTools
 
@@ -79,7 +79,7 @@ results = []
 for scenario in ["default", "motion", "steps", "errors", "calls", "incomplete"]:
     folder = out / scenario
     session = Session(scenario)
-    argv = ["loho_frontier_eval.py", "control", "--model", "luna", "--repo", str(repo), "--task", "0", "--outdir", str(folder)]
+    argv = ["src/loho_frontier_eval.py", "control", "--model", "luna", "--repo", str(repo), "--task", "0", "--outdir", str(folder)]
     if scenario == "steps":
         argv += ["--max-steps", "3"]
     with patch.object(sys, "argv", argv), patch.object(runner, "load_key", lambda: "offline-no-secret"), \

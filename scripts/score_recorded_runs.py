@@ -7,7 +7,7 @@ from pathlib import Path
 import sys
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 from loho_scoring import GoalScorer, trial_status
 

@@ -10,7 +10,7 @@ import cv2
 import numpy as np
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 
 repo = Path("C:/loho-libero") if os.name == "nt" else Path.home() / "projects" / "LIBERO-LOHO"

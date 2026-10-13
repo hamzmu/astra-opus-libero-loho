@@ -1,6 +1,6 @@
 ﻿# LIBERO-LoHo study
 
-- [Installation and reproduction guide](../setup.md)
+- [Installation and reproduction guide](../docs/setup.md)
 - [Three-sentence findings](post.md)
 - [Astra versus Opus static-camera comparison with API waiting: 40x overview and 4x replay](videos/README.md)
 - [Astra versus Opus bar plots: scores, tokens, cost, time, calls and steps](plots/README.md)
@@ -20,4 +20,4 @@ Task 4 contains five retained Astra max runs and five retained Opus 5.5 max runs
 
 The linked comparison reports are the authoritative completed result sets.
 
-Controller scripts and pricing snapshots remain in the parent workspace. The simulator is installed separately through the setup guide; credentials stay in the ignored local `.env`. [Workspace README](../README.md).
+Runtime code is in [src/](../src/), with model settings and pricing snapshots in [config/](../config/). The simulator is installed separately through the setup guide; credentials stay in the ignored local `.env`. [Workspace README](../README.md).

@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 from loho_telemetry import aggregate_episode_reports, read_attempt_journal, summarize_attempts
 from loho_scoring import trial_status
 

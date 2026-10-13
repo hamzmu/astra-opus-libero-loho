@@ -10,7 +10,7 @@ import cv2
 import numpy as np
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 from loho_cameras import camera_frames, camera_names
 from loho_telemetry import aggregate_episode_reports

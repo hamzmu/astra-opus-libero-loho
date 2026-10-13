@@ -5,5 +5,5 @@ repo="${LOHO_REPO:-$HOME/projects/LIBERO-LOHO}"
 export LOHO_REPO="$repo"
 export MUJOCO_GL="${MUJOCO_GL:-osmesa}"
 if [[ "$MUJOCO_GL" == osmesa ]]; then export PYOPENGL_PLATFORM=osmesa; fi
-exec "$repo/.venv/bin/python" -u "$workspace/loho_frontier_eval.py" "$@"
+exec "$repo/.venv/bin/python" -u "$workspace/src/loho_frontier_eval.py" "$@"
 

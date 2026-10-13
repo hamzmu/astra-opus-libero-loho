@@ -12,7 +12,7 @@ import sys
 import threading
 
 WORKSPACE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(WORKSPACE))
+sys.path.insert(0, str(WORKSPACE / "src"))
 import loho_frontier_eval as runner
 
 
@@ -21,10 +21,10 @@ def now():
 
 
 def hashes():
-    names = ["loho_frontier_eval.py", "loho_pose_policy.py", "loho_pose_tools.py",
-             "loho_anthropic.py", "loho_telemetry.py", "loho_scoring.py",
-             "loho_control_feedback.py", "loho_cameras.py", "pricing-astra.json",
-             "pricing-opus.json", "comparison-models.json", "scripts/record_opus_trial.py"]
+    names = ["src/loho_frontier_eval.py", "src/loho_pose_policy.py", "src/loho_pose_tools.py",
+             "src/loho_anthropic.py", "src/loho_telemetry.py", "src/loho_scoring.py",
+             "src/loho_control_feedback.py", "src/loho_cameras.py", "config/pricing-astra.json",
+             "config/pricing-opus.json", "config/comparison-models.json", "scripts/record_opus_trial.py"]
     return {name: hashlib.sha256((WORKSPACE / name).read_bytes()).hexdigest() for name in names}
 
 
@@ -57,7 +57,7 @@ def main():
     manifest_path = results / (args.batch_id + ".json")
     if manifest_path.exists():
         raise ValueError("Batch already exists; refusing to duplicate paid episodes")
-    profile = json.loads((WORKSPACE / "comparison-models.json").read_text())["shared_defaults"]
+    profile = json.loads((WORKSPACE / "config/comparison-models.json").read_text())["shared_defaults"]
     profile = dict(profile, task_id=args.task)
     assert profile["max_decisions"] == 80 and profile["max_steps"] == 2000
     assert profile["max_api_cost_usd"] is None and profile["cost_guard_enabled"] is False
@@ -139,7 +139,7 @@ def main():
                 continue
             directory = results / trial["directory"]
             directory.mkdir()
-            command = [sys.executable, "-u", str(WORKSPACE / "loho_frontier_eval.py"), "control",
+            command = [sys.executable, "-u", str(WORKSPACE / "src/loho_frontier_eval.py"), "control",
                        "--repo", str(repo), "--model", model, "--task", str(args.task), "--initial-state", "0", "--seed", "0",
                        "--policy", "pose-tools", "--prompt-profile", "pose-tools-v1", "--effort", "max",
                        "--cameras", "agentview-wrist", "--orientation", "rotate180", "--wrist-orientation", "flip_vertical",
@@ -153,7 +153,7 @@ def main():
                       "cost_guard_enabled": False, "estimated_trial_cost_cap_usd": None,
                       "task_id": args.task,
                       "reference_trial": Path(os.path.relpath(reference, directory)).as_posix(), "source_sha256": source_hashes,
-                      "pricing": json.loads((WORKSPACE / ("pricing-opus.json" if model == "opus" else "pricing-astra.json")).read_text()),
+                      "pricing": json.loads((WORKSPACE / ("config/pricing-opus.json" if model == "opus" else "config/pricing-astra.json")).read_text()),
                       "automatic_retries": 0, "fresh_conversation": True, "prior_run_hindsight_supplied": False}
             runner.write_json(directory / "launch_record.json", launch)
             with (directory / "controller.log").open("w", encoding="utf-8") as log:

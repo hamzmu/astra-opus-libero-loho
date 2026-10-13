@@ -10,12 +10,12 @@ import unittest
 from unittest.mock import patch
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 from loho_anthropic import OpusConversation, send_response, normalized_usage, request_body
 from loho_telemetry import AttemptLedger
 
-PRICING = json.loads((workspace/'pricing-opus.json').read_text())
+PRICING = json.loads((workspace/'config/pricing-opus.json').read_text())
 USAGE = {'input_tokens': 100, 'cache_read_input_tokens': 200,
          'cache_creation_input_tokens': 50, 'output_tokens': 80}
 
@@ -138,7 +138,7 @@ class OpusTests(unittest.TestCase):
         base=workspace/'loho_runs/opus_test_posix'; base.mkdir(exist_ok=True)
         out=Path(tempfile.mkdtemp(prefix='run_',dir=str(base)))
         session=Session(expensive=True)
-        argv=['loho_frontier_eval.py','control','--model','opus','--task','0','--repo',str(repo),'--outdir',str(out)]
+        argv=['src/loho_frontier_eval.py','control','--model','opus','--task','0','--repo',str(repo),'--outdir',str(out)]
         with patch.object(sys,'argv',argv),patch.object(runner,'load_key',lambda variable: 'offline'), \
              patch.object(runner,'runtime_info',lambda unused:{'test':'Opus integration','real_api_calls':0}),patch('requests.Session',lambda:session):
             runner.main()

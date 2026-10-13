@@ -15,7 +15,7 @@ $python = Join-Path $runtime 'Scripts\python.exe'
 # Robomimic's training dependencies include a Linux-only egl-probe build.
 # The LIBERO environment and benchmark imports do not require Robomimic.
 $requirements = Join-Path $workspace 'setup_logs\requirements-windows-sim.txt'
-Get-Content -LiteralPath (Join-Path $workspace 'requirements-sim.txt') | Where-Object { $_ -notmatch '^robomimic==' } | Set-Content -LiteralPath $requirements
+Get-Content -LiteralPath (Join-Path $workspace 'requirements\requirements-sim.txt') | Where-Object { $_ -notmatch '^robomimic==' } | Set-Content -LiteralPath $requirements
 uv pip install --python $python --extra-index-url https://download.pytorch.org/whl/cpu --index-strategy unsafe-best-match -r $requirements
 if ($LASTEXITCODE -ne 0) { throw 'Windows dependency installation failed' }
 uv pip install --python $python -e (Join-Path $workspace 'LIBERO-LOHO')

@@ -8,7 +8,7 @@ import unittest
 import numpy as np
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 from loho_pose_tools import PoseTools, MotionRejected
 from loho_pose_policy import Conversation
 

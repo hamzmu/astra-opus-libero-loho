@@ -16,10 +16,10 @@ from loho_scoring import GoalScorer, trial_status
 from loho_control_feedback import PROMPT_PROFILE, decision_context, motion_feedback, panda_rig_facts
 from loho_cameras import CAMERA_CONFIGS, CAMERA_LABELS, camera_configuration, camera_names, camera_orientations, camera_frames, validate_camera_frame
 
-WORKSPACE = Path(__file__).resolve().parent
+WORKSPACE = Path(__file__).resolve().parents[1]
 MODEL_IDS = {"luna": "gpt-6-luna", "astra": "gpt-6-astra", "opus": "claude-opus-5-5"}
-MODEL_PRICING = {"luna": DEFAULT_PRICING, "astra": WORKSPACE / "pricing-astra.json",
-                 "opus": WORKSPACE / "pricing-opus.json"}
+MODEL_PRICING = {"luna": DEFAULT_PRICING, "astra": WORKSPACE / "config/pricing-astra.json",
+                 "opus": WORKSPACE / "config/pricing-opus.json"}
 NEUTRAL = [0, 0, 0, 0, 0, 0, -1]
 
 

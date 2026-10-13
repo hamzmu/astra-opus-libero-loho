@@ -6,7 +6,7 @@ import sys
 from unittest.mock import patch
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 
 
@@ -41,7 +41,7 @@ def main():
         result = real_runtime_info(repo)
         result.update(test="Simulator-only task reference", real_api_calls=0)
         return result
-    argv = ["loho_frontier_eval.py", "control", "--repo", "/root/projects/LIBERO-LOHO",
+    argv = ["src/loho_frontier_eval.py", "control", "--repo", "/root/projects/LIBERO-LOHO",
             "--model", "astra", "--task", str(args.task), "--initial-state", "0", "--seed", "0",
             "--policy", "pose-tools", "--effort", "max", "--effort-fallback", "xhigh",
             "--max-decisions", "80", "--max-steps", "2000", "--max-output-tokens", "128000",

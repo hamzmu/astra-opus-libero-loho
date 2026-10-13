@@ -15,7 +15,7 @@ from matplotlib.ticker import FuncFormatter, MaxNLocator
 import numpy as np
 
 WORKSPACE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(WORKSPACE))
+sys.path.insert(0, str(WORKSPACE / "src"))
 from loho_telemetry import read_attempt_journal, summarize_attempts
 
 TASKS = (0, 1, 4)

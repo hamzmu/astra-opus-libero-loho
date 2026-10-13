@@ -12,7 +12,7 @@ import numpy as np
 import requests
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 from loho_telemetry import AttemptLedger, aggregate_episode_reports, price_attempt, read_attempt_journal, summarize_attempts
 

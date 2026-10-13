@@ -3,7 +3,7 @@ import copy,json,os
 from pathlib import Path
 import sys,tempfile
 from unittest.mock import patch
-workspace=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(workspace))
+workspace=Path(__file__).resolve().parents[1]; sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 
 
@@ -47,7 +47,7 @@ base=workspace/'loho_runs/astra_max_test_posix'; base.mkdir(exist_ok=True)
 out=Path(tempfile.mkdtemp(prefix='run_',dir=str(base))); results=[]
 for name in ['default','expensive_history','unknown_failure','known_failure','call_cap','ordinary_error']:
     session=Session(name); folder=out/name
-    argv=['loho_frontier_eval.py','control','--repo','/root/projects/LIBERO-LOHO','--task','0','--outdir',str(folder)]
+    argv=['src/loho_frontier_eval.py','control','--repo','/root/projects/LIBERO-LOHO','--task','0','--outdir',str(folder)]
     if name=='call_cap':argv+=['--max-decisions','1']
     with patch.object(sys,'argv',argv),patch.object(runner,'load_key',lambda:'offline'), \
          patch.object(runner,'runtime_info',lambda unused:{'test':'Astra max fallback','real_api_calls':0}),patch('requests.Session',lambda:session):

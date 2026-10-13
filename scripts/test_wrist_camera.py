@@ -11,7 +11,7 @@ import cv2
 import numpy as np
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 from loho_cameras import camera_frames, camera_names
 
@@ -80,7 +80,7 @@ controls = []
 for config in ["wrist", "agentview-wrist"]:
     directory = out / ("control_" + config)
     session = Session()
-    argv = ["loho_frontier_eval.py", "control", "--repo", str(repo), "--task", "0",
+    argv = ["src/loho_frontier_eval.py", "control", "--repo", str(repo), "--task", "0",
             "--policy", "direct", "--max-decisions", "2", "--outdir", str(directory), "--cameras", config]
     with patch.object(sys, "argv", argv), patch.object(runner, "load_key", lambda: "offline-no-credential"), \
          patch.object(runner, "runtime_info", lambda unused: {"test": "offline wrist integration", "real_api_calls": 0}), \

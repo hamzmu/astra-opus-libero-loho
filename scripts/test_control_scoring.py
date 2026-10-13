@@ -7,7 +7,7 @@ from types import SimpleNamespace
 import unittest
 
 workspace = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(workspace))
+sys.path.insert(0, str(workspace / "src"))
 import loho_frontier_eval as runner
 from loho_control_feedback import decision_context, motion_feedback
 from loho_scoring import GoalScorer, trial_status

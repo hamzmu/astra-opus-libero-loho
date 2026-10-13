@@ -2,7 +2,7 @@
 
 We compare GPT-6 Astra and Claude Opus 5.5 on [LIBERO-LoHo](https://github.com/markli1hoshipu/LIBERO-LOHO), a long-horizon robotic manipulation benchmark, to assess whether frontier models can control a simulated robot and plan and execute sequential tasks zero-shot, without task demonstrations or robot-policy training. Across five saved episodes per model on Tasks 0, 1, and 4, Astra matched Opus's full-task success rate and achieved equal or higher mean goal completion while using approximately 88% fewer output tokens overall. Astra's estimated API cost was 42% lower ($3.91 vs Opus's $6.75 mean per run), and its wall-clock time was 57% shorter (14.8 vs Opus's 34.2 minutes mean per run).
 
-Reproduce the runs: [setup.md](setup.md).
+Reproduce the runs: [setup.md](docs/setup.md).
 
 ## Findings
 

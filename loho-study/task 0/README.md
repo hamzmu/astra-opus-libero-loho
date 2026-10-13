@@ -1,6 +1,6 @@
 # Task 0 recorded results
 
-This folder contains the current five-trial-per-model study and the earlier task-0 experiments. See the [study index](../README.md) for all three tested tasks and the [setup guide](../../setup.md) to reproduce the evaluation protocol. Original launch commands and absolute path fields are historical execution records; the run folders and relative video/report links now live here.
+This folder contains the current five-trial-per-model study and the earlier task-0 experiments. See the [study index](../README.md) for all three tested tasks and the [setup guide](../../docs/setup.md) to reproduce the evaluation protocol. Original launch commands and absolute path fields are historical execution records; the run folders and relative video/report links now live here.
 
 **Media retention:** Only camera MP4s are retained as visual files. On October 11, 2026, 1,140 standalone PNGs were removed from this folder, while all 28 existing MP4 hashes stayed unchanged. JSON summaries, prompts, traces and cost records are preserved. Historical PNG references are explained by each run's `media_retention.json`; future control runs record video frame indices and timestamps instead. [Cleanup audit](png_cleanup_20261011_220849.json).
 

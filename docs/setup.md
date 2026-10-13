@@ -8,7 +8,7 @@ This guide installs the simulator and reproduces the Astra/Opus evaluation proto
 - **WSL2 with Ubuntu 24.04** for the validated Windows workflow.
 - **Ubuntu rendering/build libraries**, installed below.
 - **uv and Python 3.8**, installed by the included setup script. uv manages an isolated environment; see its [installation documentation](https://docs.astral.sh/uv/getting-started/installation/).
-- **Python dependencies** from [requirements-sim.txt](requirements-sim.txt), including the simulator, HTTP clients, plotting and video libraries.
+- **Python dependencies** from [requirements-sim.txt](../requirements/requirements-sim.txt), including the simulator, HTTP clients, plotting and video libraries.
 - **FFmpeg and DejaVu fonts** for rebuilding comparison videos.
 - **Provider API credentials and model access** for paid episodes. Simulator-only smoke tests need no credentials.
 
@@ -50,7 +50,7 @@ From the repository root in PowerShell, enter Bash in that distribution:
 wsl -d Ubuntu-24.04 --exec bash
 ```
 
-Run the following **inside Bash**, from the Linux path to this repository. For a Windows clone, that path is under `/mnt/c/...`; `pwd` should show the directory containing `requirements-sim.txt` and `scripts/`.
+Run the following **inside Bash**, from the Linux path to this repository. For a Windows clone, that path is under `/mnt/c/...`; `pwd` should show the repository root containing `src/`, `requirements/` and `scripts/`.
 
 ```bash
 sudo apt update
@@ -72,7 +72,7 @@ bash scripts/setup_wsl.sh
 git -C "$task_sim_repo" rev-parse HEAD
 ```
 
-Pin the revision **before** running the installer: [setup_wsl.sh](scripts/setup_wsl.sh) otherwise clones the latest upstream default branch. It installs uv if needed, creates `$HOME/projects/LIBERO-LOHO/.venv`, installs the pinned requirements and editable simulator package, checks dependency consistency, and writes resolved package versions to `setup_logs/wsl-freeze.txt`.
+Pin the revision **before** running the installer: [setup_wsl.sh](../scripts/setup_wsl.sh) otherwise clones the latest upstream default branch. It installs uv if needed, creates `$HOME/projects/LIBERO-LOHO/.venv`, installs the pinned requirements and editable simulator package, checks dependency consistency, and writes resolved package versions to `setup_logs/wsl-freeze.txt`.
 
 The main runtime versions used in the study are:
 
@@ -112,24 +112,24 @@ OPENAI_API_KEY=your_openai_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
 ```
 
-Astra uses `OPENAI_API_KEY`; Opus uses `ANTHROPIC_API_KEY`. Account access must cover the model IDs configured in [comparison-models.json](comparison-models.json): `gpt-6-astra` and `claude-opus-5-5`.
+Astra uses `OPENAI_API_KEY`; Opus uses `ANTHROPIC_API_KEY`. Account access must cover the model IDs configured in [comparison-models.json](../config/comparison-models.json): `gpt-6-astra` and `claude-opus-5-5`.
 
-Credentials are read from the runner's process environment first, then the repository-root `.env`. This file supplies credentials only; renderer settings and other options are configured by the launcher or command-line flags. The existing `.gitignore` excludes `.env` and permits the blank [.env.example](.env.example).
+Credentials are read from the runner's process environment first, then the repository-root `.env`. This file supplies credentials only; renderer settings and other options are configured by the launcher or command-line flags. The existing `.gitignore` excludes `.env` and permits the blank [.env.example](../.env.example).
 
 ## 5. Run an episode
 
-From this directory in PowerShell, use the WSL environment installed above. Credentials are read from the environment or local `.env`: `OPENAI_API_KEY` for Astra and `ANTHROPIC_API_KEY` for Opus.
+From the repository root in PowerShell, use the WSL environment installed above. Credentials are read from the environment or local `.env`: `OPENAI_API_KEY` for Astra and `ANTHROPIC_API_KEY` for Opus.
 
 ```powershell
 # Simulator-only check; no model requests
-.\run-loho.ps1 -Platform wsl smoke --task 0 --states 1
+.\scripts\run-loho.ps1 -Platform wsl smoke --task 0 --states 1
 
 # Optional: smoke-test all five tasks and five stored states per task
-.\run-loho.ps1 -Platform wsl smoke --states 5
+.\scripts\run-loho.ps1 -Platform wsl smoke --states 5
 
 # One fresh episode with the comparison defaults
-.\run-loho.ps1 -Platform wsl control --model astra --task 0 --initial-state 0 --seed 0
-.\run-loho.ps1 -Platform wsl control --model opus --task 0 --initial-state 0 --seed 0
+.\scripts\run-loho.ps1 -Platform wsl control --model astra --task 0 --initial-state 0 --seed 0
+.\scripts\run-loho.ps1 -Platform wsl control --model opus --task 0 --initial-state 0 --seed 0
 ```
 
 Change `--task` to select task IDs **0–4**. Episodes stop on simulator success, model-declared `done`/`give_up`, call/step limits or errors; a model's `done` claim does not establish success. Astra's configured `xhigh` fallback applies only if the API explicitly rejects `max` effort. Ordinary API failures stop the episode without automatic retries; three consecutive rejected motion tools also terminate it.
@@ -157,7 +157,7 @@ The shell launcher sets `MUJOCO_GL=osmesa` and `PYOPENGL_PLATFORM=osmesa` by def
 | Spending cap | None; estimated cost is recorded |
 | Score | Final native simulator goal predicates; all conditions required for full success |
 
-The five initial settling steps precede the action budget. See the [shared prompt example](prompts/pose-tools-v1_task0_max.txt) and [motion-tool schema](prompts/pose-tools-v1_tools.json). Prompts and workspace facts are generated for each actual task at runtime; each recorded study episode retains its exact prompt.
+The five initial settling steps precede the action budget. See the [shared prompt example](../prompts/pose-tools-v1_task0_max.txt) and [motion-tool schema](../prompts/pose-tools-v1_tools.json). Prompts and workspace facts are generated for each actual task at runtime; each recorded study episode retains its exact prompt.
 
 ## Repeat five episodes per model on Tasks 0, 1 and 4
 
@@ -187,7 +187,7 @@ Single episodes default to `loho_runs/<platform>_control_<profile>_<timestamp>/`
 
 Control episodes save `summary.json`, `api_attempts.jsonl`, `conversation.json`, the static `episode.mp4` and wrist `wrist_episode.mp4`. Summaries contain the exact prompt, actions, measured feedback, goal scores, request usage, estimated cost and latency. Standalone observation PNGs are not saved for control episodes.
 
-Cost accounting includes reported usage from failed, incomplete or invalid responses. Unknown usage remains unresolved rather than being treated as free. [Pricing snapshots](pricing-astra.json) and [Opus pricing](pricing-opus.json) supply the recorded estimates; provider billing determines actual charges.
+Cost accounting includes reported usage from failed, incomplete or invalid responses. Unknown usage remains unresolved rather than being treated as free. [Pricing snapshots](../config/pricing-astra.json) and [Opus pricing](../config/pricing-opus.json) supply the recorded estimates; provider billing determines actual charges.
 
 Published figures summarize the current five saved episodes per model/task. Plot rebuilds require the corresponding `loho-study/task 0`, `task 1` and `task 4` run folders and their `latest_task*_comparison.json` pointers. The saved episode directories, dependency freeze files and original task references are included by the repository's Git ignore rules; credentials and regenerated environments remain excluded. The reproduction loop above generates a separate aggregate JSON; it does not replace the published study pointers.
 
@@ -220,8 +220,8 @@ git -C LIBERO-LOHO fetch origin 600709f7c5f19a370c477216f51c8d6b163c6164
 git -C LIBERO-LOHO checkout --detach 600709f7c5f19a370c477216f51c8d6b163c6164
 
 .\scripts\install_windows_dependencies.ps1
-.\run-loho.ps1 -Platform windows smoke --task 0 --states 1
-.\run-loho.ps1 -Platform windows control --model astra --task 0 --initial-state 0 --seed 0
+.\scripts\run-loho.ps1 -Platform windows smoke --task 0 --states 1
+.\scripts\run-loho.ps1 -Platform windows control --model astra --task 0 --initial-state 0 --seed 0
 ```
 
 ## Troubleshooting
@@ -232,6 +232,6 @@ git -C LIBERO-LOHO checkout --detach 600709f7c5f19a370c477216f51c8d6b163c6164
 | Python environment not found | Use the same WSL user as installation and verify `$HOME/projects/LIBERO-LOHO/.venv/bin/python` exists. |
 | OSMesa/OpenGL import failure | Install the Linux libraries in step 3 and use `MUJOCO_GL=osmesa`, `PYOPENGL_PLATFORM=osmesa` in Bash. |
 | Bash reports `$'\r'` or invalid shell options | Ensure `scripts/*.sh` have LF line endings. |
-| Missing/incompatible Python packages | Rerun `bash scripts/install_wsl_dependencies.sh`; preserve the versions in `requirements-sim.txt`. |
+| Missing/incompatible Python packages | Rerun `bash scripts/install_wsl_dependencies.sh`; preserve the versions in `requirements/requirements-sim.txt`. |
 | Missing key or API access error | Check the selected provider's `.env` entry, model access and quota; inspect the saved request ledger. |
 | Native Windows Python is blocked | Use WSL. Changing PowerShell execution policy does not resolve Windows Application Control restrictions. |

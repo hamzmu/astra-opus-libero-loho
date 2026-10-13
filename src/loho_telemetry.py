@@ -8,7 +8,7 @@ import time
 import uuid
 from loho_scoring import FINISHED_REASONS
 
-DEFAULT_PRICING = Path(__file__).resolve().parent / "pricing.json"
+DEFAULT_PRICING = Path(__file__).resolve().parents[1] / "config/pricing.json"
 
 
 def utc_now():

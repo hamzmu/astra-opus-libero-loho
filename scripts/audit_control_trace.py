@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 
 WORKSPACE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(WORKSPACE))
+sys.path.insert(0, str(WORKSPACE / "src"))
 from loho_frontier_eval import make_env, reset_episode, robot_proprioception, setup_paths, write_json
 
 
