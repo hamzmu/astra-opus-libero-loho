@@ -1,0 +1,164 @@
+LUNA TASK 0 - CALIBRATED-V2 RESULT
+
+Finished at the 74-decision budget. No controller remains running.
+Configuration: WSL, task 0, stored state 0, seed 0, RGB + proprioception, high reasoning.
+Prompt: calibrated-v2; action repeat: 5; max output: 8192; estimated cost cap: $0.10.
+Task goal completion: 0% (0/3 final conditions). Full-task success: false.
+Executed 74 actions / 370 action steps plus 5 settling steps.
+Elapsed: 729.73s. API latency: 693.30s total, 9.37s mean.
+Estimated API cost: $0.04242873 USD; all 74 response usages fully priced.
+No retries or API errors. Gripper-close decision indices: [45, 46, 73].
+The model spent most actions repositioning. It attempted close/lift at decisions 45-46,
+reopened at 47, and issued another close with a small descent on its last decision (73).
+None of the required final goal conditions was satisfied at any recorded simulator step.
+Video decoded and verified: 371 frames, 20 FPS, 256x256 RGB.
+
+EXECUTED ACTIONS - [dx,dy,dz,dRx,dRy,dRz,gripper]
+Decision 00: [0.2, 0.2, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Begin with front butter, then chocolate pudding; cabinet top drawer is open at image-right. EE is above/back of table. Camera mapping: +Y image-left, +X image-down. Move over butter with clearance; fingers open.
+Decision 01: [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Target front butter: likely nearer/lower orange package at image-left (x≈64,y≈177). Drawer open at right. EE high; move +X (image-down), +Y (image-left) in measured small increments, staying clear.
+Decision 02: [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Moving above front butter (orange package at image-left/lower). Keep gripper open and stay high while advancing +X (image-down), +Y (image-left); reassess alignment before lowering.
+Decision 03: [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Advancing toward front butter (orange package at image-left/lower) with gripper open and high clearance; correct XY from the next image before descending.
+Decision 04: [0.7, 0.7, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (lower orange package, image-left) with gripper open at clearance; +X projects down and +Y left. Continue aligning XY, then inspect before lowering.
+Decision 05: [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (lower orange package, image-left); gripper open at clearance. +X projects down and +Y left. Continue XY toward butter, then inspect alignment before lowering.
+Decision 06: [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (lower orange package at image-left); gripper open and still at clearance. Continue +X,+Y toward its image down-left position, then reassess XY alignment before descending.
+Decision 07: [0.8, 0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter at image-left/lower orange package. Continue +X,+Y with gripper open at clearance; then reassess XY before descending. Cabinet drawer is on image-right.
+Decision 08: [0.8, 0.8, 0.0, -0.05, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (lower of two orange packets at image-left); keep fingers open and continue +X,+Y at clearance, then reassess alignment before lowering. Cabinet drawer is image-right.
+Decision 09: [0.5, 0.5, 0.3, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (lower orange packet at image-left); move +X,+Y at clearance, then reassess before lowering. Drawer is open at image-right. Gripper remains open; no grasp yet.
+Decision 10: [0.8, -0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter: current EEF (0.087,0.405,1.006), open and above table. Move toward lower orange packet with +X (image-down), -Y (image-right), then reassess XY before lowering.
+Decision 11: [0.5, -0.8, 0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter (lower orange packet): continue +X image-down and -Y image-right to align XY; remain open and above table. EEF (0.112,0.358,0.974); reassess before lowering.
+Decision 12: [0.4, -0.5, 0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Align above front butter (lower orange packet): continue +X image-down and -Y image-right; stay open and maintain clearance. EEF (0.134,0.298,0.966); verify XY before lowering.
+Decision 13: [0.4, -0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter (orange packet). EEF at (0.145,0.254,0.978); move toward it with +X image-down and -Y image-right, staying open and high. Recheck XY alignment before lowering.
+Decision 14: [0.5, -0.6, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (orange/brown packet near image center). EEF is still left/up of it; continue +X (image-down) and -Y (image-right) while open and high, then reassess alignment before lowering.
+Decision 15: [-0.3, -0.8, 0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter target is the orange packet near image center; approach from current pose by moving image-right (-Y) and slightly up (-X), while lifting for clearance. Then reassess XY over packet before lowering.
+Decision 16: [0.4, 0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter (orange packet left of gripper) from above; image-left maps +Y, image-down +X. Move XY toward packet with clearance, then reassess alignment before lowering. Open drawer is at image-right.
+Decision 17: [0.18, 0.12, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach orange butter packet first. Current eef is at 0.169,0.130,0.982; packet appears image-left/down of tool. Move +X/+Y with clearance, then reassess before lowering. Drawer is open at image-right.
+Decision 18: [0.35, -0.2, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach the orange butter packet first. It appears below and slightly right of the tool: move +X/-Y at clearance, then reassess alignment before lowering. Drawer is open at image-right.
+Decision 19: [-0.1, -0.25, 0.6, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter packet appears to the image-right of the gripper; +Y projects image-left. Lift slightly and shift -Y to align above it, then reassess before lowering. Drawer remains open at image-right; chocolate pudding still to retrieve.
+Decision 20: [-0.2, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Moving above front butter: target is image-right and slightly up from gripper, so shift -Y and -X with clearance. Fingers open; reassess alignment before lowering.
+Decision 21: [-0.2, -0.2, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Continuing to align above front butter: move slightly image-right/up (-Y,-X) with clearance; fingers remain open. Reassess object-to-gripper alignment before lowering.
+Decision 22: [0.4, 0.4, 0.15, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter appears as the small orange item at image-left/front; open drawer is image-right. Move toward butter with +X,+Y (image-down/left), keeping clearance; reassess alignment before lowering.
+Decision 23: [0.4, 0.5, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Working on front butter first. It appears orange at image-left/front; drawer is open image-right. Move +X,+Y for image-down/left with clearance, then recheck XY before descending.
+Decision 24: [-0.15, -0.5, 0.15, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter is the orange item just right/up of the gripper; move image-right/up with clearance, then reassess alignment before descending. Keep fingers open.
+Decision 25: [-0.25, -0.35, 0.3, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter with fingers open. Image-right/up maps roughly to world -Y/-X; move with clearance, then reassess alignment before descending.
+Decision 26: [0.45, 0.45, 0.05, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter: open, move toward table item left/down of gripper (world +Y,+X). Currently high; make XY corrections with clearance, then visually reassess before lowering. Drawer is image-right.
+Decision 27: [0.5, 0.6, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter; keep gripper open and high. Target appears image-left/down of gripper, corresponding to world +Y,+X. Shift XY, reassess visually, then lower only after alignment. Drawer is image-right.
+Decision 28: [0.2, -0.5, 0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter is image-right of gripper; shift world -Y and slightly +X while rising, fingers open. Reassess alignment before lowering; then grasp, lift-check, deliver to open drawer. Chocolate pudding remains.
+Decision 29: [0.3, -0.5, 0.35, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter is right of gripper; move toward it with world -Y and +X while maintaining clearance. Reassess visual alignment before lowering and grasping; then lift-check and place in open top drawer. Pudding remains.
+Decision 30: [0.25, -0.35, 0.15, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter; continue toward image-right/down (world -Y,+X) with open gripper and clearance. Recheck alignment before descending; then grasp, lift-check, place in open top wooden drawer. Pudding remains.
+Decision 31: [0.2, -0.25, 0.25, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter; continue image-right/down (world -Y,+X) with open gripper, staying clear of tabletop. Recheck XY over the butter before lowering; then grasp, lift-check, place in top wooden drawer. Pudding remains.
+Decision 32: [0.35, 0.35, 0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter is the lower orange pack left of the appliance; move image-left/down (+Y,+X), staying high until aligned. Then descend, close, and lift-check. Pudding remains; place both in open top wooden drawer and close it.
+Decision 33: [0.45, 0.65, 0.25, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter (orange pack left/down of appliance): move +X,+Y above it with fingers open, then reassess alignment before descending. Pudding remains; place both in open top wooden drawer and close it.
+Decision 34: [0.45, 0.65, 0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter (orange pack left/down of appliance). Move +X,+Y with fingers open and safe height; then reassess image alignment before descending. Pudding remains; place both in open top wooden drawer and close it.
+Decision 35: [0.45, -0.55, 0.45, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter first. Current view: orange pack near table foreground-center; move toward it with +X (image-down), -Y (image-right), staying open and above table. Then align/lower, grasp, verify lift; next pudding, then place both in open top drawer and close.
+Decision 36: [0.0, -0.8, 0.1, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Open fingers; move right in image toward the small item beside the open drawer (world -Y), staying clear. Reassess alignment before lowering; grasp butter and pudding separately, place both in top drawer, then close it.
+Decision 37: [0.0, 0.8, 0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Open; move +Y (image-left) toward small orange front butter, stay high. Current drawer open at right. Reassess XY and locate pudding before lowering/grasping.
+Decision 38: [0.5, 0.7, 0.1, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Open; approach front butter (small orange pack left of white appliance). Move +Y image-left and +X image-down at clearance; then reassess XY before lowering. Pudding appears gray round item near open drawer; handle butter first.
+Decision 39: [0.7, -0.5, 0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter first. +X projects image-down, +Y image-left; current EEF appears above/left of orange butter beside appliance. Lift and move toward it at clearance, then reassess XY before lowering. Pudding is gray round item beside open drawer; drawer is destination.
+Decision 40: [-0.5, -0.8, 0.6, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter first; target is small orange item right/up of gripper. +X projects image-down, +Y image-left. Move toward it at clearance; recheck XY before lowering. Pudding is gray round item by open drawer.
+Decision 41: [0.4, 0.5, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter, the small orange item left/down of the robot base. +X projects down, +Y left; move at clearance, then recheck XY before lowering. Drawer is open; gray pudding is near it.
+Decision 42: [0.6, 0.6, 0.1, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (small orange item near robot base); +X projects down, +Y left. Move in XY at clearance, then recheck alignment before lowering. Drawer is open; pudding is near it.
+Decision 43: [0.0, 0.0, -0.18, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter approach; gripper open over the robot-base area at [0.183,0.128,0.979]. Lower slightly and reassess before closing; pudding appears near the open drawer.
+Decision 44: [0.25, -0.25, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter: move toward small tan block beside robot base; image target appears down-right from gripper, so correcting +X,-Y. Keep open, verify alignment before lowering. Drawer open; pudding still to retrieve.
+Decision 45: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Attempt grasp front butter at current low pose after remembered +X,-Y alignment. Close, then lift slightly and check finger obstruction/object movement before transport; pudding remains by open drawer.
+Decision 46: [0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Front butter grasp attempt: fingers partially closed (qpos ±0.025 m), possible obstruction. Lift slightly now and check visually for butter moving with gripper; pudding remains beside open drawer.
+Decision 47: [0.0, 0.0, 0.6, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Gripper closed to near-zero qpos after lift, likely no grasp; no clear item visible attached. Raise/open to inspect. Gray item beside drawer is likely pudding; butter target may remain under/near current gripper.
+Decision 48: [-0.25, -0.35, 0.05, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Task: place front butter and chocolate pudding in wooden top drawer, then close. Prior close showed no grasp. Current likely above-left of gray pudding cup beside open drawer; move slightly -X/-Y to align above cup, stay high/open. Verify, then descend/grasp/lift; locate butter afterward.
+Decision 49: [0.25, -0.35, -0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Aligning over gray pudding cup beside open top drawer. Image target is right/down from gripper; correct with -Y and +X while staying high. Then verify alignment, descend and grasp; lift-check before transporting. Butter still remains.
+Decision 50: [0.3, -0.4, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach gray pudding beside open top drawer. From current elevated pose, continue toward its image-right/down offset with +X/-Y, keeping clear; then reassess alignment before lowering. Butter packet remains.
+Decision 51: [0.25, -0.25, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Continue approaching gray pudding beside open top drawer: move modestly +X/-Y (image down/right), gripper open, stay above table. Reassess XY in next view before lowering; butter packet still remains.
+Decision 52: [-0.3, 0.8, 0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Open drawer visible right; two small cartons left of gripper. Move toward left-side chocolate pudding first: +Y shifts image-left, -X image-up. Keep fingers open and gain clearance, then reassess alignment before lowering.
+Decision 53: [-0.25, 0.5, 0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Target the small cartons left of the gripper, starting with chocolate pudding. +Y shifts image-left and -X image-up. Move laterally with open fingers and slight clearance; reassess alignment before lowering.
+Decision 54: [0.25, 0.45, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Move toward the small cartons left of the gripper (start with chocolate pudding); +Y projects left, +X down. Current clearance is about 8 cm above tabletop. Reassess XY over the target before lowering.
+Decision 55: [0.35, -0.45, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Target chocolate pudding first; drawer is open at image-right. Small target cartons are right/down of gripper; +X projects down, -Y right. Move above likely pudding, then recheck XY before lowering.
+Decision 56: [0.4, -0.5, 0.4, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach chocolate pudding first. Drawer is open image-right; target cartons appear right/down of gripper, so shift toward -Y,+X while lifting to safe clearance. Recheck alignment before lowering.
+Decision 57: [0.15, -0.2, 0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach chocolate pudding first. Drawer is open image-right; continue toward the target with small -Y,+X corrections while lifting to safe clearance. Keep fingers open and reassess alignment before lowering.
+Decision 58: [0.1, -0.18, 0.18, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach chocolate pudding first; continue the prior small -Y,+X move toward target, keeping fingers open and lifting for clearance. Reassess object/EEF alignment before lowering.
+Decision 59: [0.25, 0.3, 0.18, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach chocolate pudding first; it appears left and slightly forward of the gripper. Correct toward image-left (+Y) and image-down (+X), staying above the tabletop; reassess alignment before lowering.
+Decision 60: [0.35, 0.4, 0.35, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach chocolate pudding at image-left/front (small orange-brown item). Move +X,+Y while staying above tabletop; then reassess alignment before lowering. Drawer is open at right.
+Decision 61: [0.7, 0.7, 0.3, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach chocolate pudding (small orange-brown item image-left/front); drawer is open at right. EEF at [0.185,0.093,0.982], fingers open. Move +X/+Y toward item, +Z for clearance; reassess visual alignment before descending.
+Decision 62: [-0.35, -0.6, 0.35, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching chocolate pudding near image-right of gripper; drawer open at right. Current EEF [0.188,0.132,0.952]. Move up and toward target (-X,-Y), then reassess alignment before lowering.
+Decision 63: [-0.5, -0.6, 0.1, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching chocolate pudding at image-right of gripper; drawer is open at right. Move toward it in -X/-Y while keeping clearance, then reassess XY before lowering.
+Decision 64: [0.2, -0.35, 0.1, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching chocolate pudding, visually just right of gripper; drawer open at right. Move laterally toward it with clearance, then reassess alignment before lowering.
+Decision 65: [0.15, -0.25, 0.05, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Pudding is just right of the gripper; drawer open on right. Continue lateral alignment with clearance, then reassess visually before lowering.
+Decision 66: [0.2, 0.8, 0.25, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Open gripper, move above the table objects at image-left/down (+Y,+X) with clearance. Then lower onto the front butter, close and lift to verify; transfer to open top drawer. Repeat for pudding, then close drawer.
+Decision 67: [0.2, 0.9, 0.15, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Gripper open; table items are image-left/down of the hand. Move +Y/+X above front butter, then align and lower. Drawer is open to image-right; verify each transfer and close it last.
+Decision 68: [0.4, -0.4, 0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter appears just image-right/down of gripper. Move +X/-Y to center above it while lifting for clearance; then lower, close, lift-check, and transfer to open drawer. Chocolate pudding still pending.
+Decision 69: [0.3, -0.8, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter target is image-right/down of gripper; approach with +X/-Y while open. Then lower only after centered, close and lift-check. Open drawer is image-right; pudding still pending.
+Decision 70: [1.0, -1.0, 0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter remains the first target, visually down/right of the gripper; continue open-finger XY approach with +X/-Y and retain clearance. Drawer is open on image-right; pudding still pending.
+Decision 71: [1.0, 1.0, 0.2, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Open and clear; current image shows front butter packet left and slightly below gripper. Move +X/+Y toward it, then inspect alignment before lowering. Pudding and drawer placement/closure remain.
+Decision 72: [0.5, 1.0, 0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Move safely above front butter: target appears image-left/down, so +Y/+X. Then inspect; remaining subgoals are grasp/lift butter, pudding, place both in top drawer, close drawer.
+Decision 73: [0.4, 0.6, -0.1, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Attempting the front butter: move toward it (+X/+Y from image offset) while closing. Grasp and placement are unverified.

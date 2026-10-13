@@ -1,0 +1,41 @@
+control on Linux, output=/mnt/c/Users/muhha/OneDrive/Desktop/loho/results/opus55_task0_max_nocost_trial2_task0_uncapped_20261011_203025
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /root/projects/LIBERO-LOHO/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+claude-opus-5-5 call 0: move_to {'x': -0.05, 'y': -0.2, 'z': 1.35}, 20 steps, residual 0.0107m
+claude-opus-5-5 call 1: move_to {'x': -0.004, 'y': 0.196, 'z': 1.02, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 30 steps, residual 0.0029m
+claude-opus-5-5 call 2: move_to {'x': 0.0, 'y': 0.197, 'z': 0.925, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 10 steps, residual 0.0023m
+claude-opus-5-5 call 3: move_to {'gripper': 0.0}, 39 steps, residual 0.0005m
+claude-opus-5-5 call 4: move_to {'gripper': 1.0}, 41 steps, residual 0.0001m
+claude-opus-5-5 call 5: move_to {'z': 0.913}, 3 steps, residual 0.0028m
+claude-opus-5-5 call 6: move_to {'gripper': 0.0}, 41 steps, residual 0.0003m
+claude-opus-5-5 call 7: move_to {'z': 0.97}, 7 steps, residual 0.0024m
+claude-opus-5-5 call 8: move_to {'z': 1.22, 'x': 0.035, 'yaw': 1.5708, 'roll': 0.0, 'pitch': 0.0}, 24 steps, residual 0.0019m
+claude-opus-5-5 call 9: move_to {'y': -0.155, 'x': 0.035, 'z': 1.22, 'yaw': 1.5708, 'roll': 0.0, 'pitch': 0.0}, 17 steps, residual 0.0014m
+claude-opus-5-5 call 10: move_to {'z': 1.1}, 12 steps, residual 0.0029m
+claude-opus-5-5 call 11: move_to {'z': 1.08}, 7 steps, residual 0.0085m
+claude-opus-5-5 call 12: move_to {'gripper': 0.75}, 31 steps, residual 0.0001m
+claude-opus-5-5 call 13: move_to {'z': 1.22}, 13 steps, residual 0.0029m
+claude-opus-5-5 call 14: move_to {'x': -0.013, 'y': 0.039, 'z': 1.2, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0, 'gripper': 1.0}, 16 steps, residual 0.0036m
+claude-opus-5-5 call 15: move_to {'x': -0.002, 'y': 0.029, 'z': 1.02, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 20 steps, residual 0.0450m
+claude-opus-5-5 call 16: move_to {'x': -0.002, 'y': 0.08, 'z': 1.08, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 5 steps, residual 0.0020m
+claude-opus-5-5 call 17: move_to {'x': 0.1, 'y': 0.0787, 'z': 0.95, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 16 steps, residual 0.0090m
+claude-opus-5-5 call 18: move_to {'x': 0.1, 'y': 0.024, 'z': 0.915, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 9 steps, residual 0.0128m
+claude-opus-5-5 call 19: move_to {'x': -0.007, 'y': 0.024, 'z': 0.915, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 10 steps, residual 0.0173m
+claude-opus-5-5 call 20: move_to {'gripper': 0.0, 'x': -0.015, 'y': 0.024, 'z': 0.915, 'roll': 0.0, 'pitch': -0.06, 'yaw': 0.0}, 41 steps, residual 0.0010m
+claude-opus-5-5 call 21: move_to {'x': -0.015, 'y': 0.1, 'z': 0.94, 'roll': 0.0, 'pitch': -0.06, 'yaw': 0.0}, 6 steps, residual 0.0022m
+claude-opus-5-5 call 22: move_to {'x': -0.05, 'y': 0.101, 'z': 1.22, 'roll': 0.0, 'pitch': 0.0, 'yaw': 1.5708}, 26 steps, residual 0.0020m
+claude-opus-5-5 call 23: move_to {'x': -0.05, 'y': -0.165, 'z': 1.22, 'roll': 0.0, 'pitch': 0.0, 'yaw': 1.5708}, 12 steps, residual 0.0022m
+claude-opus-5-5 call 24: move_to {'z': 1.1}, 12 steps, residual 0.0022m
+claude-opus-5-5 call 25: move_to {'gripper': 0.75}, 31 steps, residual 0.0003m
+claude-opus-5-5 call 26: move_to {'z': 1.22}, 12 steps, residual 0.0024m
+claude-opus-5-5 call 27: move_to {'x': 0.0, 'y': -0.012, 'z': 1.22, 'roll': 0.0, 'pitch': 0.2, 'yaw': 1.5708, 'gripper': 0.0}, 32 steps, residual 0.0029m
+claude-opus-5-5 call 28: move_to {'z': 1.105}, 12 steps, residual 0.0020m
+claude-opus-5-5 call 29: move_to {'y': -0.2}, 11 steps, residual 0.0015m
+claude-opus-5-5 call 30: move_to {'z': 1.26}, 15 steps, residual 0.0025m
+claude-opus-5-5 call 31: move_to {'x': -0.002, 'y': -0.17, 'z': 1.107}, 15 steps, residual 0.0019m
+claude-opus-5-5 call 32: move_to {'y': -0.235}, 2 steps, residual 0.0472m
+Trial task_completed: completion=100.0%, calls=33, action_steps=598

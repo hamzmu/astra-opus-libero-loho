@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.venv*/
+results/
+__pycache__/
+*.pyc
+setup_logs/*
+!setup_logs/wsl-freeze.txt
+!setup_logs/windows-freeze.txt
+!setup_logs/task1_reference_20261011_233620/
+!setup_logs/task4_reference_20261012_110427/
+LIBERO-LOHO/
+references/

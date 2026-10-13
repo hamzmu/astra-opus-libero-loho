@@ -1,0 +1,5 @@
+# Preserve recorded artifacts and source hashes across platform checkouts.
+* -text
+
+# WSL/Linux launchers require LF line endings.
+*.sh text eol=lf

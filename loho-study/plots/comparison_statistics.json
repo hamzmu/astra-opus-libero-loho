@@ -1,0 +1,1436 @@
+{
+  "created_at": "2026-10-12T18:20:44.626632+00:00",
+  "n_per_task_model": 5,
+  "std_definition": "Sample standard deviation across five independent run values, ddof=1; not SEM or a confidence interval.",
+  "selection": "Current five saved runs per model in each task's latest result pointer; task 4 uses its retained run set.",
+  "source_comparison_sha256": {
+    "loho-study/task 0/task0_uncapped_extend_20261011_221112_combined_comparison.json": "fd5107a14ac1299e41af38cbaaf739a2ea51ab25f5c09848b101fcd4726aa78a",
+    "loho-study/task 1/task1_uncapped_20261011_234048_comparison.json": "6e0057cc76617c9889728e4515ad8368f6a2a9adee65706da827ee6542eeaf3a",
+    "loho-study/task 4/task4_retained_20261012_135134_comparison.json": "367eed01c8d80fd089e9aa7a9de6c21aaef54f8834621d0d8a5da012729bb9fe"
+  },
+  "metric_definitions": {
+    "completion_percent": "Equal-weight final native goal predicates, in percent.",
+    "full_success_percent": "100 for native full-task success, otherwise 0; mean is full-success rate.",
+    "total_tokens": "Provider-reported total input plus output across all requests per run. Includes cache reads/writes within input, once, and reported reasoning tokens within output. Repeated conversation context counts again when reported again.",
+    "estimated_api_cost_usd": "Recorded per-run public-rate estimate using actual reported cache usage; USD.",
+    "elapsed_seconds": "Recorded episode wall-clock duration; plotting units are minutes.",
+    "total_api_latency_seconds": "Sum of request wall times per episode, including network and provider waiting; plotting units are minutes. This does not isolate model compute time.",
+    "mean_api_latency_seconds": "Each run's mean request latency; bars average those five run means equally, not weighted by request count.",
+    "api_calls": "Total API requests per run, including requests whose returned tools were rejected.",
+    "action_steps": "Executed simulator control steps per run; excludes the five initial settling steps and API waiting."
+  },
+  "statistics": {
+    "completion_percent": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 86.66666666666667,
+          "sample_std": 18.257418583505533,
+          "values": [
+            100.0,
+            66.66666666666667,
+            66.66666666666667,
+            100.0,
+            100.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 80.0,
+          "sample_std": 29.814239699997195,
+          "values": [
+            33.333333333333336,
+            100.0,
+            100.0,
+            66.66666666666667,
+            100.0
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      }
+    },
+    "full_success_percent": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 60.0,
+          "sample_std": 54.772255750516614,
+          "values": [
+            100.0,
+            0.0,
+            0.0,
+            100.0,
+            100.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 60.0,
+          "sample_std": 54.772255750516614,
+          "values": [
+            0.0,
+            100.0,
+            100.0,
+            0.0,
+            100.0
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 100.0,
+          "sample_std": 0.0,
+          "values": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        }
+      }
+    },
+    "total_tokens": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 2088487.8,
+          "sample_std": 523550.78212977585,
+          "values": [
+            2655913.0,
+            2606497.0,
+            1977282.0,
+            1503421.0,
+            1699326.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 4564210.4,
+          "sample_std": 1048326.934887824,
+          "values": [
+            4241374.0,
+            3778276.0,
+            3851330.0,
+            4607097.0,
+            6342975.0
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 1216433.2,
+          "sample_std": 612578.6587228614,
+          "values": [
+            867987.0,
+            831632.0,
+            2256576.0,
+            1289408.0,
+            836563.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 11081645.0,
+          "sample_std": 2934123.0070101866,
+          "values": [
+            11114529.0,
+            11699235.0,
+            10983684.0,
+            14921915.0,
+            6688862.0
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 2353501.4,
+          "sample_std": 620441.3754463834,
+          "values": [
+            1604635.0,
+            3191324.0,
+            2577428.0,
+            2495348.0,
+            1898772.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 5924620.0,
+          "sample_std": 2460110.161589009,
+          "values": [
+            6859788.0,
+            5379332.0,
+            9707849.0,
+            3747377.0,
+            3928754.0
+          ]
+        }
+      }
+    },
+    "estimated_api_cost_usd": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 4.3053454,
+          "sample_std": 0.9045267645068195,
+          "values": [
+            5.144795,
+            5.4024435,
+            3.886863,
+            3.4103235,
+            3.682302
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 5.5265511599999995,
+          "sample_std": 1.0318337222454728,
+          "values": [
+            5.3490556,
+            4.9309286,
+            4.237351,
+            6.3529702,
+            6.7624504
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 2.8913149999999996,
+          "sample_std": 0.8749318629772691,
+          "values": [
+            2.475965,
+            2.293924,
+            4.3264605,
+            3.118163,
+            2.2420625
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 8.81201532,
+          "sample_std": 1.8391487067520809,
+          "values": [
+            8.3283206,
+            10.2675758,
+            8.9478738,
+            10.5543752,
+            5.9619312
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 4.5460533000000005,
+          "sample_std": 0.9949931276704629,
+          "values": [
+            3.5351825,
+            6.045154,
+            4.64343,
+            4.758192,
+            3.748308
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 5.9199776,
+          "sample_std": 1.6710735533852303,
+          "values": [
+            6.5199426,
+            5.7710124,
+            8.4428918,
+            4.4506324,
+            4.4154088
+          ]
+        }
+      }
+    },
+    "elapsed_seconds": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 874.7363125431933,
+          "sample_std": 142.28208515505906,
+          "values": [
+            933.6047969859792,
+            1093.2954515669844,
+            768.9567784909741,
+            745.1954050210188,
+            832.6291306510102
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 1745.4172910070047,
+          "sample_std": 230.55224809082242,
+          "values": [
+            1760.7254215289722,
+            1630.8456205110415,
+            1426.7955630639917,
+            1882.1709515340044,
+            2026.5488983970135
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 663.5533312061918,
+          "sample_std": 126.6618398310906,
+          "values": [
+            655.2977720219642,
+            572.0595652160118,
+            859.4835789810168,
+            695.2111497489968,
+            535.7145900629694
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 2650.3968648307955,
+          "sample_std": 529.9512451108684,
+          "values": [
+            2480.9815354539896,
+            3127.4098111619824,
+            2759.205634453043,
+            3062.118625163974,
+            1822.2687179209897
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 1120.0821567219914,
+          "sample_std": 192.41210481400887,
+          "values": [
+            960.9978423590073,
+            1432.656495676958,
+            1088.4487739260076,
+            1150.4060806849739,
+            967.9015909630107
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 1759.0012398025951,
+          "sample_std": 373.2307727667044,
+          "values": [
+            1966.6745383280213,
+            1751.7313625530223,
+            2269.1418768509757,
+            1429.6511120600044,
+            1377.8073092209524
+          ]
+        }
+      }
+    },
+    "total_api_latency_seconds": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 748.8348201397806,
+          "sample_std": 128.9772444459603,
+          "values": [
+            792.907833279809,
+            951.2245342430542,
+            642.7652397451457,
+            643.0670663068886,
+            714.2094271240057
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 1672.9131196327623,
+          "sample_std": 227.84722080505304,
+          "values": [
+            1701.3874957298394,
+            1559.563961123,
+            1351.727425801102,
+            1811.1521655319957,
+            1940.7345499778748
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 586.4694545098115,
+          "sample_std": 105.70688318390117,
+          "values": [
+            587.933019110933,
+            509.10702161706286,
+            741.6837210161611,
+            622.5473409660044,
+            471.076169838896
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 2538.7530140381655,
+          "sample_std": 513.0362423183701,
+          "values": [
+            2355.539185214031,
+            3013.7338785954635,
+            2645.346480601118,
+            2932.423040342983,
+            1746.7224854372325
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 979.1689928725943,
+          "sample_std": 177.52199167806938,
+          "values": [
+            854.1413918400649,
+            1273.6269523769151,
+            937.0919584423536,
+            998.6756458354648,
+            832.3090158681734
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 1671.5779673491954,
+          "sample_std": 361.3829154403584,
+          "values": [
+            1882.039349018829,
+            1671.9849520542193,
+            2156.181441531866,
+            1350.442984872032,
+            1297.2411092690309
+          ]
+        }
+      }
+    },
+    "mean_api_latency_seconds": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 13.198368970505465,
+          "sample_std": 1.4716957978360803,
+          "values": [
+            12.013755049694076,
+            15.098802130842131,
+            11.477950709734744,
+            13.397230548060179,
+            14.00410641419619
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 49.47228652840822,
+          "sample_std": 7.578063504071254,
+          "values": [
+            54.88346760418837,
+            47.25951397342424,
+            37.547984050030614,
+            56.598505172874866,
+            51.07196184152302
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 14.455979398584418,
+          "sample_std": 1.6047453706217767,
+          "values": [
+            16.79808626031237,
+            14.973735929913614,
+            12.570910525697647,
+            14.47784513874429,
+            13.459319138254171
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 43.88697811960748,
+          "sample_std": 6.716127565102104,
+          "values": [
+            36.805299768969235,
+            54.795161429008424,
+            44.089108010018634,
+            43.123868240337984,
+            40.62145314970308
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 15.827041568535753,
+          "sample_std": 1.687596912865619,
+          "values": [
+            16.747870428236567,
+            18.194670748241645,
+            13.986447140930652,
+            15.604306966179138,
+            14.601912559090762
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 39.81237991059536,
+          "sample_std": 3.6818962924366834,
+          "values": [
+            41.823096644862865,
+            45.188782487951876,
+            38.50324002735475,
+            37.51230513533422,
+            36.034475257473076
+          ]
+        }
+      }
+    },
+    "api_calls": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 56.8,
+          "sample_std": 7.661592523751182,
+          "values": [
+            66.0,
+            63.0,
+            56.0,
+            48.0,
+            51.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 34.0,
+          "sample_std": 2.9154759474226504,
+          "values": [
+            31.0,
+            33.0,
+            36.0,
+            32.0,
+            38.0
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 41.2,
+          "sample_std": 10.59245014149229,
+          "values": [
+            35.0,
+            34.0,
+            59.0,
+            43.0,
+            35.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 58.0,
+          "sample_std": 9.669539802906858,
+          "values": [
+            64.0,
+            55.0,
+            60.0,
+            68.0,
+            43.0
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 61.8,
+          "sample_std": 7.726577508832743,
+          "values": [
+            51.0,
+            70.0,
+            67.0,
+            64.0,
+            57.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 42.0,
+          "sample_std": 8.689073598491383,
+          "values": [
+            45.0,
+            37.0,
+            56.0,
+            36.0,
+            36.0
+          ]
+        }
+      }
+    },
+    "action_steps": {
+      "0": {
+        "astra": {
+          "n": 5,
+          "mean": 1071.6,
+          "sample_std": 131.2832814946366,
+          "values": [
+            1172.0,
+            1206.0,
+            1088.0,
+            879.0,
+            1013.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 612.0,
+          "sample_std": 96.93038739218987,
+          "values": [
+            479.0,
+            598.0,
+            634.0,
+            599.0,
+            750.0
+          ]
+        }
+      },
+      "1": {
+        "astra": {
+          "n": 5,
+          "mean": 667.8,
+          "sample_std": 213.47529131025914,
+          "values": [
+            574.0,
+            537.0,
+            1044.0,
+            633.0,
+            551.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 991.4,
+          "sample_std": 182.6863432224752,
+          "values": [
+            1070.0,
+            990.0,
+            1025.0,
+            1181.0,
+            691.0
+          ]
+        }
+      },
+      "4": {
+        "astra": {
+          "n": 5,
+          "mean": 1204.4,
+          "sample_std": 161.48467419541709,
+          "values": [
+            938.0,
+            1351.0,
+            1273.0,
+            1284.0,
+            1176.0
+          ]
+        },
+        "opus": {
+          "n": 5,
+          "mean": 739.8,
+          "sample_std": 130.33878931461652,
+          "values": [
+            738.0,
+            631.0,
+            962.0,
+            700.0,
+            668.0
+          ]
+        }
+      }
+    }
+  },
+  "runs": [
+    {
+      "task_id": 0,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 1,
+      "run_id": "b09beeaa-7643-4902-93ee-c1e931322520",
+      "source_summary": "loho-study/task 0/astra_task0_max_nocost_trial1_task0_uncapped_20261011_203025/summary.json",
+      "summary_sha256": "d1c96f7d4dc865d503deac3f90e81872d627e4fc86fd5680e235b6d9df658a49",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 2625199,
+      "total_output_tokens": 30714,
+      "total_cached_input_tokens": 2537835,
+      "total_cache_write_tokens": 79048,
+      "total_tokens": 2655913,
+      "estimated_api_cost_usd": 5.144795,
+      "elapsed_seconds": 933.6047969859792,
+      "total_api_latency_seconds": 792.907833279809,
+      "mean_api_latency_seconds": 12.013755049694076,
+      "api_calls": 66,
+      "action_steps": 1172,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 2,
+      "run_id": "10acc44f-eb3f-478f-bf84-352bb69d4631",
+      "source_summary": "loho-study/task 0/astra_task0_max_nocost_trial2_task0_uncapped_20261011_203025/summary.json",
+      "summary_sha256": "6842ec30fa60f730928602244dadf93f0af114e491fe55af833113ba013d6073",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 2569933,
+      "total_output_tokens": 36564,
+      "total_cached_input_tokens": 2480876,
+      "total_cache_write_tokens": 81119,
+      "total_tokens": 2606497,
+      "estimated_api_cost_usd": 5.4024435,
+      "elapsed_seconds": 1093.2954515669844,
+      "total_api_latency_seconds": 951.2245342430542,
+      "mean_api_latency_seconds": 15.098802130842131,
+      "api_calls": 63,
+      "action_steps": 1206,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 3,
+      "run_id": "69256772-da7e-4f47-8909-f9f8f47030bd",
+      "source_summary": "loho-study/task 0/astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025/summary.json",
+      "summary_sha256": "9f3cb69b4842a5d9dd38c4a9f08b35d3735581154ba6b5179456fbcc53f43509",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 1954265,
+      "total_output_tokens": 23017,
+      "total_cached_input_tokens": 1884753,
+      "total_cache_write_tokens": 62456,
+      "total_tokens": 1977282,
+      "estimated_api_cost_usd": 3.886863,
+      "elapsed_seconds": 768.9567784909741,
+      "total_api_latency_seconds": 642.7652397451457,
+      "mean_api_latency_seconds": 11.477950709734744,
+      "api_calls": 56,
+      "action_steps": 1088,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 4,
+      "run_id": "b2d2611c-c15e-41b2-a862-227d0646b8b6",
+      "source_summary": "loho-study/task 0/astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/summary.json",
+      "summary_sha256": "721781ee5da3c709cc6dbe8bdbf42b97feefa4b319fcffac90b9a3f7bc05b4a9",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 1479511,
+      "total_output_tokens": 23910,
+      "total_cached_input_tokens": 1414256,
+      "total_cache_write_tokens": 59207,
+      "total_tokens": 1503421,
+      "estimated_api_cost_usd": 3.4103235,
+      "elapsed_seconds": 745.1954050210188,
+      "total_api_latency_seconds": 643.0670663068886,
+      "mean_api_latency_seconds": 13.397230548060179,
+      "api_calls": 48,
+      "action_steps": 879,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 5,
+      "run_id": "5a713482-8c7a-489c-886a-bed9232bfa02",
+      "source_summary": "loho-study/task 0/astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/summary.json",
+      "summary_sha256": "19c41ede6922f145965f2d3879970205bd36ca80cad48a63a33dc4253021a762",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 1674219,
+      "total_output_tokens": 25107,
+      "total_cached_input_tokens": 1607367,
+      "total_cache_write_tokens": 60426,
+      "total_tokens": 1699326,
+      "estimated_api_cost_usd": 3.682302,
+      "elapsed_seconds": 832.6291306510102,
+      "total_api_latency_seconds": 714.2094271240057,
+      "mean_api_latency_seconds": 14.00410641419619,
+      "api_calls": 51,
+      "action_steps": 1013,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 1,
+      "run_id": "c52e9b71-0275-4b85-9392-8d4e970c5cdc",
+      "source_summary": "loho-study/task 0/opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025/summary.json",
+      "summary_sha256": "5ae2c771d6257403cb487d260e69a9ce026bedaddc78d690d2dd7c00c5d5a600",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 4064426,
+      "total_output_tokens": 176948,
+      "total_cached_input_tokens": 3856648,
+      "total_cache_write_tokens": 207654,
+      "total_tokens": 4241374,
+      "estimated_api_cost_usd": 5.3490556,
+      "elapsed_seconds": 1760.7254215289722,
+      "total_api_latency_seconds": 1701.3874957298394,
+      "mean_api_latency_seconds": 54.88346760418837,
+      "api_calls": 31,
+      "action_steps": 479,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 2,
+      "run_id": "255bdafc-0b12-4ad1-b57f-8075a92e6675",
+      "source_summary": "loho-study/task 0/opus55_task0_max_nocost_trial2_task0_uncapped_20261011_203025/summary.json",
+      "summary_sha256": "900e613555b44b4afb6422b04bb81f5940a04954143475e183a5b330c6bdd417",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 3615003,
+      "total_output_tokens": 163273,
+      "total_cached_input_tokens": 3418628,
+      "total_cache_write_tokens": 196243,
+      "total_tokens": 3778276,
+      "estimated_api_cost_usd": 4.9309286,
+      "elapsed_seconds": 1630.8456205110415,
+      "total_api_latency_seconds": 1559.563961123,
+      "mean_api_latency_seconds": 47.25951397342424,
+      "api_calls": 33,
+      "action_steps": 598,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 3,
+      "run_id": "04deb282-7f31-4ab5-bed4-a2e83a2af8c7",
+      "source_summary": "loho-study/task 0/opus55_task0_max_nocost_trial3_task0_uncapped_20261011_203025/summary.json",
+      "summary_sha256": "d202aabbffe5fd6f4a8180137c6fd140a6dd7d43381279a7a6dfe0c07c7b3c14",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 3717463,
+      "total_output_tokens": 133867,
+      "total_cached_input_tokens": 3547325,
+      "total_cache_write_tokens": 169994,
+      "total_tokens": 3851330,
+      "estimated_api_cost_usd": 4.237351,
+      "elapsed_seconds": 1426.7955630639917,
+      "total_api_latency_seconds": 1351.727425801102,
+      "mean_api_latency_seconds": 37.547984050030614,
+      "api_calls": 36,
+      "action_steps": 634,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 4,
+      "run_id": "652f07fe-23cb-4f18-8810-fc826d6b9262",
+      "source_summary": "loho-study/task 0/opus55_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/summary.json",
+      "summary_sha256": "6664af5390b5ca9f34fe66914b0770583b04dfb29c7c492b238b71633a9b4955",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 4411603,
+      "total_output_tokens": 195494,
+      "total_cached_input_tokens": 4086416,
+      "total_cache_write_tokens": 325059,
+      "total_tokens": 4607097,
+      "estimated_api_cost_usd": 6.3529702,
+      "elapsed_seconds": 1882.1709515340044,
+      "total_api_latency_seconds": 1811.1521655319957,
+      "mean_api_latency_seconds": 56.598505172874866,
+      "api_calls": 32,
+      "action_steps": 599,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 0,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 5,
+      "run_id": "161d200f-9d16-44ec-9775-93e308e7eaee",
+      "source_summary": "loho-study/task 0/opus55_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/summary.json",
+      "summary_sha256": "0ead9311e01c8bfd23edfc047162f459ec4b26f243402194ebcc0586d1a30b32",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 6137872,
+      "total_output_tokens": 205103,
+      "total_cached_input_tokens": 5839337,
+      "total_cache_write_tokens": 298383,
+      "total_tokens": 6342975,
+      "estimated_api_cost_usd": 6.7624504,
+      "elapsed_seconds": 2026.5488983970135,
+      "total_api_latency_seconds": 1940.7345499778748,
+      "mean_api_latency_seconds": 51.07196184152302,
+      "api_calls": 38,
+      "action_steps": 750,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 1,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 1,
+      "run_id": "af31e98c-4642-4e24-9964-3af63a5224c7",
+      "source_summary": "loho-study/task 1/astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "f8a27fa9c87bfa4343174a87e8fc513e44784932c283463ffe95c0b14ed01cf4",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 847046,
+      "total_output_tokens": 20941,
+      "total_cached_input_tokens": 795490,
+      "total_cache_write_tokens": 47146,
+      "total_tokens": 867987,
+      "estimated_api_cost_usd": 2.475965,
+      "elapsed_seconds": 655.2977720219642,
+      "total_api_latency_seconds": 587.933019110933,
+      "mean_api_latency_seconds": 16.79808626031237,
+      "api_calls": 35,
+      "action_steps": 574,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 1,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 2,
+      "run_id": "89b9df05-d9d7-4c2c-ae52-7a5c3d47f1fb",
+      "source_summary": "loho-study/task 1/astra_task1_max_nocost_trial2_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "2df5cbec47ae7235d45459f286994570d355bbc30dd8a3a128f24a2f4e745630",
+      "completion_percent": 66.66666666666667,
+      "full_success_percent": 0.0,
+      "total_input_tokens": 812645,
+      "total_output_tokens": 18987,
+      "total_cached_input_tokens": 765459,
+      "total_cache_write_tokens": 42902,
+      "total_tokens": 831632,
+      "estimated_api_cost_usd": 2.293924,
+      "elapsed_seconds": 572.0595652160118,
+      "total_api_latency_seconds": 509.10702161706286,
+      "mean_api_latency_seconds": 14.973735929913614,
+      "api_calls": 34,
+      "action_steps": 537,
+      "termination_reason": "model_done"
+    },
+    {
+      "task_id": 1,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 3,
+      "run_id": "0bab8690-86dd-421f-b107-730a2284c824",
+      "source_summary": "loho-study/task 1/astra_task1_max_nocost_trial3_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "b73a47c142138d3af8cd7f63af61c5cf32e8cc40f2224956c42df94a09bd168b",
+      "completion_percent": 66.66666666666667,
+      "full_success_percent": 0.0,
+      "total_input_tokens": 2231479,
+      "total_output_tokens": 25097,
+      "total_cached_input_tokens": 2156808,
+      "total_cache_write_tokens": 67237,
+      "total_tokens": 2256576,
+      "estimated_api_cost_usd": 4.3264605,
+      "elapsed_seconds": 859.4835789810168,
+      "total_api_latency_seconds": 741.6837210161611,
+      "mean_api_latency_seconds": 12.570910525697647,
+      "api_calls": 59,
+      "action_steps": 1044,
+      "termination_reason": "model_done"
+    },
+    {
+      "task_id": 1,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 4,
+      "run_id": "cf8c2d18-ea28-4588-9972-70527155cea4",
+      "source_summary": "loho-study/task 1/astra_task1_max_nocost_trial4_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "b26dc7219ee5a047ac58891132bb31e0bc73088584899b78bc9a9b11b314f758",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 1265787,
+      "total_output_tokens": 23621,
+      "total_cached_input_tokens": 1206233,
+      "total_cache_write_tokens": 54136,
+      "total_tokens": 1289408,
+      "estimated_api_cost_usd": 3.118163,
+      "elapsed_seconds": 695.2111497489968,
+      "total_api_latency_seconds": 622.5473409660044,
+      "mean_api_latency_seconds": 14.47784513874429,
+      "api_calls": 43,
+      "action_steps": 633,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 1,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 5,
+      "run_id": "8e6441a8-f73f-45cb-b656-58ab2c5848e8",
+      "source_summary": "loho-study/task 1/astra_task1_max_nocost_trial5_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "87ec52e878b5ef7ca96f4fa1893ec2b6118a1e7a45f4d5521b7613285e62eaaa",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 818711,
+      "total_output_tokens": 17852,
+      "total_cached_input_tokens": 771600,
+      "total_cache_write_tokens": 42701,
+      "total_tokens": 836563,
+      "estimated_api_cost_usd": 2.2420625,
+      "elapsed_seconds": 535.7145900629694,
+      "total_api_latency_seconds": 471.076169838896,
+      "mean_api_latency_seconds": 13.459319138254171,
+      "api_calls": 35,
+      "action_steps": 551,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 1,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 1,
+      "run_id": "1af292ce-0f6a-4361-9653-d06250c52578",
+      "source_summary": "loho-study/task 1/opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "b197516262dc8e4a4c48393ac38ad318e02ad9444a5d82f8a8d47d86b384caf1",
+      "completion_percent": 33.333333333333336,
+      "full_success_percent": 0.0,
+      "total_input_tokens": 10878195,
+      "total_output_tokens": 236334,
+      "total_cached_input_tokens": 10581058,
+      "total_cache_write_tokens": 296881,
+      "total_tokens": 11114529,
+      "estimated_api_cost_usd": 8.3283206,
+      "elapsed_seconds": 2480.9815354539896,
+      "total_api_latency_seconds": 2355.539185214031,
+      "mean_api_latency_seconds": 36.805299768969235,
+      "api_calls": 64,
+      "action_steps": 1070,
+      "termination_reason": "model_done"
+    },
+    {
+      "task_id": 1,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 2,
+      "run_id": "97c53f86-cf88-4a7f-8fba-74fb6fd716fd",
+      "source_summary": "loho-study/task 1/opus55_task1_max_nocost_trial2_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "25a5bcb871cb12b97f5be6138cc2610d66f579736aaf95d4447a210bfa7e7dad",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 11387155,
+      "total_output_tokens": 312080,
+      "total_cached_input_tokens": 11022829,
+      "total_cache_write_tokens": 364106,
+      "total_tokens": 11699235,
+      "estimated_api_cost_usd": 10.2675758,
+      "elapsed_seconds": 3127.4098111619824,
+      "total_api_latency_seconds": 3013.7338785954635,
+      "mean_api_latency_seconds": 54.795161429008424,
+      "api_calls": 55,
+      "action_steps": 990,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 1,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 3,
+      "run_id": "0649580b-8dcf-4ee1-ac2d-acfe73ad4b37",
+      "source_summary": "loho-study/task 1/opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "377c9715872f2c526cd6264642cbd04de8be770565f57bbf9026cf819b83bb48",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 10717285,
+      "total_output_tokens": 266399,
+      "total_cached_input_tokens": 10409644,
+      "total_cache_write_tokens": 307401,
+      "total_tokens": 10983684,
+      "estimated_api_cost_usd": 8.9478738,
+      "elapsed_seconds": 2759.205634453043,
+      "total_api_latency_seconds": 2645.346480601118,
+      "mean_api_latency_seconds": 44.089108010018634,
+      "api_calls": 60,
+      "action_steps": 1025,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 1,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 4,
+      "run_id": "9454208f-fef1-4829-a369-9cb161d49787",
+      "source_summary": "loho-study/task 1/opus55_task1_max_nocost_trial4_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "5f735808190fb6b8d6f64902a9af00643a9d016b0a2a1ddedb7b8b5a3a560a27",
+      "completion_percent": 66.66666666666667,
+      "full_success_percent": 0.0,
+      "total_input_tokens": 14627192,
+      "total_output_tokens": 294723,
+      "total_cached_input_tokens": 14265786,
+      "total_cache_write_tokens": 361134,
+      "total_tokens": 14921915,
+      "estimated_api_cost_usd": 10.5543752,
+      "elapsed_seconds": 3062.118625163974,
+      "total_api_latency_seconds": 2932.423040342983,
+      "mean_api_latency_seconds": 43.123868240337984,
+      "api_calls": 68,
+      "action_steps": 1181,
+      "termination_reason": "give_up"
+    },
+    {
+      "task_id": 1,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 5,
+      "run_id": "880e0fe0-fa6c-4634-8082-437ccd6cea57",
+      "source_summary": "loho-study/task 1/opus55_task1_max_nocost_trial5_task1_uncapped_20261011_234048/summary.json",
+      "summary_sha256": "86d393aa79ed560ed11317b526788c84b68c50db7e463d74e1f13604827358bd",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 6509036,
+      "total_output_tokens": 179826,
+      "total_cached_input_tokens": 6287416,
+      "total_cache_write_tokens": 221448,
+      "total_tokens": 6688862,
+      "estimated_api_cost_usd": 5.9619312,
+      "elapsed_seconds": 1822.2687179209897,
+      "total_api_latency_seconds": 1746.7224854372325,
+      "mean_api_latency_seconds": 40.62145314970308,
+      "api_calls": 43,
+      "action_steps": 691,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 1,
+      "run_id": "0e4ed366-7bae-47e9-bbdf-41bb27c40342",
+      "source_summary": "loho-study/task 4/astra_task4_max_nocost_trial1_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "cd0ebd1a82861029891fecafe22bdde8c3ea75a9e75c450c1eb240d135bfd8fb",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 1580793,
+      "total_output_tokens": 23842,
+      "total_cached_input_tokens": 1513110,
+      "total_cache_write_tokens": 61257,
+      "total_tokens": 1604635,
+      "estimated_api_cost_usd": 3.5351825,
+      "elapsed_seconds": 960.9978423590073,
+      "total_api_latency_seconds": 854.1413918400649,
+      "mean_api_latency_seconds": 16.747870428236567,
+      "api_calls": 51,
+      "action_steps": 938,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 2,
+      "run_id": "d8f56d0c-d358-4f2b-94ba-3bf269322090",
+      "source_summary": "loho-study/task 4/astra_task4_max_nocost_trial2_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "821737ee9495a5b192e65081ef3b518ed521cb444f1b47853144cbbce2038333",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 3154982,
+      "total_output_tokens": 36342,
+      "total_cached_input_tokens": 3059754,
+      "total_cache_write_tokens": 86408,
+      "total_tokens": 3191324,
+      "estimated_api_cost_usd": 6.045154,
+      "elapsed_seconds": 1432.656495676958,
+      "total_api_latency_seconds": 1273.6269523769151,
+      "mean_api_latency_seconds": 18.194670748241645,
+      "api_calls": 70,
+      "action_steps": 1351,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 3,
+      "run_id": "d448ac49-d3e5-4767-b154-501a659ce0c2",
+      "source_summary": "loho-study/task 4/astra_task4_max_nocost_trial3_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "4c956c06a4f6f3a25f981c2002787283d24cca8412b036f1ca13beaaa5608dbd",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 2553709,
+      "total_output_tokens": 23719,
+      "total_cached_input_tokens": 2473285,
+      "total_cache_write_tokens": 71982,
+      "total_tokens": 2577428,
+      "estimated_api_cost_usd": 4.64343,
+      "elapsed_seconds": 1088.4487739260076,
+      "total_api_latency_seconds": 937.0919584423536,
+      "mean_api_latency_seconds": 13.986447140930652,
+      "api_calls": 67,
+      "action_steps": 1273,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 4,
+      "run_id": "0f990875-00ab-4790-b543-74f53898f9d4",
+      "source_summary": "loho-study/task 4/astra_task4_max_nocost_trial4_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "aa83379ba16834c5f593c745340edcdacccf735f93ef637620d27c33e6aeba92",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 2467947,
+      "total_output_tokens": 27401,
+      "total_cached_input_tokens": 2386177,
+      "total_cache_write_tokens": 73706,
+      "total_tokens": 2495348,
+      "estimated_api_cost_usd": 4.758192,
+      "elapsed_seconds": 1150.4060806849739,
+      "total_api_latency_seconds": 998.6756458354648,
+      "mean_api_latency_seconds": 15.604306966179138,
+      "api_calls": 64,
+      "action_steps": 1284,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 5,
+      "run_id": "b1826af0-66d7-4f6f-be88-c267f0bd6efa",
+      "source_summary": "loho-study/task 4/astra_task4_max_nocost_trial5_task4_20261012_132742/summary.json",
+      "summary_sha256": "b8c64a1dc26ae102476859a5abbd5dea95c507bfcc9189ee6923a8282f7598f4",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 1877334,
+      "total_output_tokens": 21438,
+      "total_cached_input_tokens": 1806288,
+      "total_cache_write_tokens": 63864,
+      "total_tokens": 1898772,
+      "estimated_api_cost_usd": 3.748308,
+      "elapsed_seconds": 967.9015909630107,
+      "total_api_latency_seconds": 832.3090158681734,
+      "mean_api_latency_seconds": 14.601912559090762,
+      "api_calls": 57,
+      "action_steps": 1176,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 1,
+      "run_id": "afa86abd-c6ad-41d2-bc7b-c80186b2fcad",
+      "source_summary": "loho-study/task 4/opus55_task4_max_nocost_trial1_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "306c6074795ce7e6d08c8a3fef0c5abed3bc83de454f8ed7e06e21d6a41d782f",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 6659369,
+      "total_output_tokens": 200419,
+      "total_cached_input_tokens": 6413563,
+      "total_cache_write_tokens": 245626,
+      "total_tokens": 6859788,
+      "estimated_api_cost_usd": 6.5199426,
+      "elapsed_seconds": 1966.6745383280213,
+      "total_api_latency_seconds": 1882.039349018829,
+      "mean_api_latency_seconds": 41.823096644862865,
+      "api_calls": 45,
+      "action_steps": 738,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 2,
+      "run_id": "800b4234-a18b-4afa-ae39-c9d89369c163",
+      "source_summary": "loho-study/task 4/opus55_task4_max_nocost_trial2_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "ef5eee7aa4d9ad525365e9fe99cf2873539e490be3cc757f7f6336211f8b6ee0",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 5196346,
+      "total_output_tokens": 182986,
+      "total_cached_input_tokens": 4972977,
+      "total_cache_write_tokens": 223221,
+      "total_tokens": 5379332,
+      "estimated_api_cost_usd": 5.7710124,
+      "elapsed_seconds": 1751.7313625530223,
+      "total_api_latency_seconds": 1671.9849520542193,
+      "mean_api_latency_seconds": 45.188782487951876,
+      "api_calls": 37,
+      "action_steps": 631,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 3,
+      "run_id": "438116ba-3b43-44ff-bc0b-4dfa42f1c1c7",
+      "source_summary": "loho-study/task 4/opus55_task4_max_nocost_trial3_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "d381e30d078a70455093b03ce5a3a6572795ba02c63bb7d07d8830352f0766de",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 9483643,
+      "total_output_tokens": 224206,
+      "total_cached_input_tokens": 9054004,
+      "total_cache_write_tokens": 429415,
+      "total_tokens": 9707849,
+      "estimated_api_cost_usd": 8.4428918,
+      "elapsed_seconds": 2269.1418768509757,
+      "total_api_latency_seconds": 2156.181441531866,
+      "mean_api_latency_seconds": 38.50324002735475,
+      "api_calls": 56,
+      "action_steps": 962,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 4,
+      "run_id": "7d1dfa65-473a-45ae-8ac0-da03047db388",
+      "source_summary": "loho-study/task 4/opus55_task4_max_nocost_trial4_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "66c860c1bdccd7f125b28172a83119ebd0f1605e148b07bea8811c087a4d1948",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 3603862,
+      "total_output_tokens": 143515,
+      "total_cached_input_tokens": 3424757,
+      "total_cache_write_tokens": 178961,
+      "total_tokens": 3747377,
+      "estimated_api_cost_usd": 4.4506324,
+      "elapsed_seconds": 1429.6511120600044,
+      "total_api_latency_seconds": 1350.442984872032,
+      "mean_api_latency_seconds": 37.51230513533422,
+      "api_calls": 36,
+      "action_steps": 700,
+      "termination_reason": "success"
+    },
+    {
+      "task_id": 4,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 5,
+      "run_id": "0495e2ef-5ac3-42bc-804a-e28e7d1f8982",
+      "source_summary": "loho-study/task 4/opus55_task4_max_nocost_trial5_task4_uncapped_20261012_110427/summary.json",
+      "summary_sha256": "9d57c2a035fc7bde909e23711f946f7adaa45bfa4419807aafee4f1457f1d75e",
+      "completion_percent": 100.0,
+      "full_success_percent": 100.0,
+      "total_input_tokens": 3788164,
+      "total_output_tokens": 140590,
+      "total_cached_input_tokens": 3611889,
+      "total_cache_write_tokens": 176131,
+      "total_tokens": 3928754,
+      "estimated_api_cost_usd": 4.4154088,
+      "elapsed_seconds": 1377.8073092209524,
+      "total_api_latency_seconds": 1297.2411092690309,
+      "mean_api_latency_seconds": 36.034475257473076,
+      "api_calls": 36,
+      "action_steps": 668,
+      "termination_reason": "success"
+    }
+  ]
+}

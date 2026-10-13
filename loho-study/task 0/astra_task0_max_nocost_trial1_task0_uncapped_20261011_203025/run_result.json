@@ -1,0 +1,145 @@
+{
+  "run_id": "b09beeaa-7643-4902-93ee-c1e931322520",
+  "model_id": "gpt-6-astra",
+  "provider": "openai",
+  "task_id": 0,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "policy": "pose-tools",
+  "action_interface": "absolute_pose_tools",
+  "prompt_profile": "pose-tools-v1",
+  "context_mode": "conversation_and_tool_results",
+  "image_history_observations": 0,
+  "image_history_mode": "all",
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "camera_configuration": "agentview-wrist",
+  "camera_orientations": {
+    "agentview": "rotate180",
+    "robot0_eye_in_hand": "flip_vertical"
+  },
+  "rgb_resolution": [
+    224,
+    224
+  ],
+  "observation_mode": "rgb-proprio",
+  "effort": "max",
+  "effective_effort": "max",
+  "effort_fallback": "xhigh",
+  "fallback_events": [],
+  "control_hz": 10,
+  "max_speed_fraction": 0.25,
+  "max_decisions": 80,
+  "max_action_steps": 2000,
+  "max_output_tokens_per_call": 128000,
+  "max_estimated_api_cost_usd": null,
+  "termination_reason": "success",
+  "trial_status": "task_completed",
+  "success": true,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": true,
+    "goals_total": 3,
+    "goals_satisfied": 3,
+    "completion_fraction": 1.0,
+    "completion_percent": 100.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 100.0,
+    "last_scored_simulator_step": 1177,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 337
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 887
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 1177
+      }
+    ]
+  },
+  "decisions_used": 66,
+  "simulator_action_steps": 1172,
+  "elapsed_seconds": 933.6047969859792,
+  "mean_api_latency_seconds": 12.013755049694076,
+  "total_api_latency_seconds": 792.907833279809,
+  "estimated_api_cost_usd": 5.144795,
+  "known_estimated_api_cost_usd": 5.144795,
+  "cost_complete": true,
+  "api_attempts_total": 66,
+  "total_input_tokens": 2625199,
+  "total_output_tokens": 30714,
+  "total_cached_input_tokens": 2537835,
+  "total_cache_write_tokens": 79048,
+  "tool_error_count": 0,
+  "cost_guard_enabled": false,
+  "budget_policy_change": {
+    "reason": "Spending guard removed for new trials; historical limits are retained in the reference.",
+    "reference_max_estimated_api_cost_usd": 23.6317058,
+    "trial_max_estimated_api_cost_usd": null
+  },
+  "local_runner_running": false,
+  "automatic_retries": 0,
+  "verification_passed": true,
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 1173,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 1173,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "api_errors": 0,
+  "pose_targets_reached": 30,
+  "pose_targets_not_reached": 36,
+  "total_thinking_tokens_reported": 25638,
+  "max_effort_requests": 66,
+  "xhigh_effort_requests": 0,
+  "reference_trial": "../opus55_task0_max_128k_20261011_125617"
+}

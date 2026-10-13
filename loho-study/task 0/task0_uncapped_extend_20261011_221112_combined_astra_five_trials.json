@@ -1,0 +1,316 @@
+{
+  "model_id": "gpt-6-astra",
+  "trials": 5,
+  "successes": 5,
+  "success_rate_percent": 100.0,
+  "mean_goal_completion_percent": 100.0,
+  "api_calls": 284,
+  "action_steps": 5358,
+  "cost_complete": true,
+  "known_estimated_api_cost_usd": 21.526727,
+  "estimated_api_cost_usd": 21.526727,
+  "total_api_latency_seconds": 3744.174100698903,
+  "weighted_mean_api_latency_seconds": 13.183711622179237,
+  "total_elapsed_seconds": 4373.681562715967,
+  "max_effort_requests": 284,
+  "xhigh_effort_requests": 0,
+  "api_errors": 0,
+  "tool_errors": 0,
+  "episodes": [
+    {
+      "model": "astra",
+      "trial": 1,
+      "directory": "astra_task0_max_nocost_trial1_task0_uncapped_20261011_203025",
+      "status": "complete",
+      "started_at": "2026-10-12T00:30:30.965197+00:00",
+      "pid": 2674,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T00:46:40.057331+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 66,
+      "action_steps": 1172,
+      "estimated_api_cost_usd": 5.144795,
+      "known_estimated_api_cost_usd": 5.144795,
+      "cost_complete": true,
+      "elapsed_seconds": 933.6047969859792,
+      "mean_api_latency_seconds": 12.013755049694076,
+      "total_api_latency_seconds": 792.907833279809,
+      "max_effort_requests": 66,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "gpt-6-astra",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 2625199,
+      "total_output_tokens": 30714,
+      "total_cached_input_tokens": 2537835,
+      "total_cache_write_tokens": 79048,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1173,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1173,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "d1c96f7d4dc865d503deac3f90e81872d627e4fc86fd5680e235b6d9df658a49"
+    },
+    {
+      "model": "astra",
+      "trial": 2,
+      "directory": "astra_task0_max_nocost_trial2_task0_uncapped_20261011_203025",
+      "status": "complete",
+      "started_at": "2026-10-12T00:46:42.639512+00:00",
+      "pid": 2826,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T01:05:38.635679+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 63,
+      "action_steps": 1206,
+      "estimated_api_cost_usd": 5.4024435,
+      "known_estimated_api_cost_usd": 5.4024435,
+      "cost_complete": true,
+      "elapsed_seconds": 1093.2954515669844,
+      "mean_api_latency_seconds": 15.098802130842131,
+      "total_api_latency_seconds": 951.2245342430542,
+      "max_effort_requests": 63,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "gpt-6-astra",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 2569933,
+      "total_output_tokens": 36564,
+      "total_cached_input_tokens": 2480876,
+      "total_cache_write_tokens": 81119,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1207,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1207,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "6842ec30fa60f730928602244dadf93f0af114e491fe55af833113ba013d6073"
+    },
+    {
+      "model": "astra",
+      "trial": 3,
+      "directory": "astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025",
+      "status": "complete",
+      "started_at": "2026-10-12T01:05:39.197353+00:00",
+      "pid": 3025,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T01:18:54.504532+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 56,
+      "action_steps": 1088,
+      "estimated_api_cost_usd": 3.886863,
+      "known_estimated_api_cost_usd": 3.886863,
+      "cost_complete": true,
+      "elapsed_seconds": 768.9567784909741,
+      "mean_api_latency_seconds": 11.477950709734744,
+      "total_api_latency_seconds": 642.7652397451457,
+      "max_effort_requests": 56,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "gpt-6-astra",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 1954265,
+      "total_output_tokens": 23017,
+      "total_cached_input_tokens": 1884753,
+      "total_cache_write_tokens": 62456,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1089,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1089,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "9f3cb69b4842a5d9dd38c4a9f08b35d3735581154ba6b5179456fbcc53f43509"
+    },
+    {
+      "model": "astra",
+      "trial": 4,
+      "directory": "astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112",
+      "status": "complete",
+      "started_at": "2026-10-12T02:11:42.097923+00:00",
+      "pid": 3870,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T02:24:34.764452+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 48,
+      "action_steps": 879,
+      "estimated_api_cost_usd": 3.4103235,
+      "known_estimated_api_cost_usd": 3.4103235,
+      "cost_complete": true,
+      "elapsed_seconds": 745.1954050210188,
+      "mean_api_latency_seconds": 13.397230548060179,
+      "total_api_latency_seconds": 643.0670663068886,
+      "max_effort_requests": 48,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "gpt-6-astra",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 1479511,
+      "total_output_tokens": 23910,
+      "total_cached_input_tokens": 1414256,
+      "total_cache_write_tokens": 59207,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 880,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 880,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "721781ee5da3c709cc6dbe8bdbf42b97feefa4b319fcffac90b9a3f7bc05b4a9"
+    },
+    {
+      "model": "astra",
+      "trial": 5,
+      "directory": "astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112",
+      "status": "complete",
+      "started_at": "2026-10-12T02:24:35.373383+00:00",
+      "pid": 4024,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T02:38:59.768648+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 51,
+      "action_steps": 1013,
+      "estimated_api_cost_usd": 3.682302,
+      "known_estimated_api_cost_usd": 3.682302,
+      "cost_complete": true,
+      "elapsed_seconds": 832.6291306510102,
+      "mean_api_latency_seconds": 14.00410641419619,
+      "total_api_latency_seconds": 714.2094271240057,
+      "max_effort_requests": 51,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "gpt-6-astra",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 1674219,
+      "total_output_tokens": 25107,
+      "total_cached_input_tokens": 1607367,
+      "total_cache_write_tokens": 60426,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1014,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1014,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "19c41ede6922f145965f2d3879970205bd36ca80cad48a63a33dc4253021a762"
+    }
+  ]
+}

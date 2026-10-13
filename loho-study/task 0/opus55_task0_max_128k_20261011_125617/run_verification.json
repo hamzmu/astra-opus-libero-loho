@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "checks": {
+    "configuration": true,
+    "calls_accounted": true,
+    "steps_accounted": true,
+    "all_goals_satisfied": true,
+    "success_stopped_trial": true,
+    "all_usage_priced": true,
+    "all_api_responses_valid": true,
+    "native_tool_result_pairing": true,
+    "observation_inputs_only_public_state": true,
+    "all_calls_opus_max": true,
+    "budgets_respected": true,
+    "video_agentview": true,
+    "video_robot0_eye_in_hand": true
+  },
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 540,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 540,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "summary_sha256": "1e5da7f400e91c6899ee98b1d578fd82e55785a983b2e364bf2b0176e7f513b6",
+  "note": "Live native Anthropic max trial. Earlier setup failures are separately retained and included in session accounting."
+}

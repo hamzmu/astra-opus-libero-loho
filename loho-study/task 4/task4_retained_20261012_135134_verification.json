@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "retained_runs": 10,
+  "retained_models": {
+    "astra": 5,
+    "opus": 5
+  },
+  "retained_full_successes": 10,
+  "mp4s": 20,
+  "pngs": 0,
+  "retained_files_hashes_unchanged": 130,
+  "markdown_links_verified": 169,
+  "retained_estimated_api_cost_usd": 52.3301545,
+  "removed_run_spend_preserved_separately": true,
+  "global_retained_episodes": 49
+}

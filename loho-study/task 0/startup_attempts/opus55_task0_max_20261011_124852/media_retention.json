@@ -1,0 +1,13 @@
+{
+    "MediaMode":  "video_only",
+    "PNGFilesRemoved":  [
+                            "decision_000.png",
+                            "decision_000_wrist.png"
+                        ],
+    "RetainedVideos":  [
+                           "episode.mp4",
+                           "wrist_episode.mp4"
+                       ],
+    "ExistingSummaryAndUsageRecordsUnchanged":  true,
+    "Note":  "Historical PNG references in summary.json now refer to deleted standalone frames; observations remain viewable in the corresponding MP4. Recorded input JPEG hashes remain available for simulator replay verification."
+}

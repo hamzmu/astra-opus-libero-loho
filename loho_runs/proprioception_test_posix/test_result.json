@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "real_api_calls": 0,
+  "platform": "posix",
+  "fields": [
+    "joint_positions_rad",
+    "joint_velocities_rad_s",
+    "end_effector_position_m",
+    "end_effector_quaternion_xyzw",
+    "gripper_joint_positions_m",
+    "gripper_joint_velocities_m_s"
+  ],
+  "first_snapshot": {
+    "joint_positions_rad": [
+      0.0,
+      -0.161037,
+      0.0,
+      -2.444597,
+      0.0,
+      2.226752,
+      0.785398
+    ],
+    "joint_velocities_rad_s": [
+      0.0,
+      -0.0,
+      0.0,
+      -0.0,
+      0.0,
+      -0.0,
+      0.0
+    ],
+    "end_effector_position_m": [
+      -0.208465,
+      0.0,
+      1.173279
+    ],
+    "end_effector_quaternion_xyzw": [
+      0.999597,
+      0.000246,
+      -0.0284,
+      -7e-06
+    ],
+    "gripper_joint_positions_m": [
+      0.033941,
+      -0.033941
+    ],
+    "gripper_joint_velocities_m_s": [
+      0.058843,
+      -0.058843
+    ]
+  },
+  "next_snapshot": {
+    "joint_positions_rad": [
+      0.0,
+      -0.148813,
+      0.0,
+      -2.435067,
+      -0.0,
+      2.233071,
+      0.785398
+    ],
+    "joint_velocities_rad_s": [
+      0.0,
+      0.066302,
+      0.0,
+      0.062425,
+      -0.0,
+      0.001482,
+      0.0
+    ],
+    "end_effector_position_m": [
+      -0.204288,
+      0.0,
+      1.172237
+    ],
+    "end_effector_quaternion_xyzw": [
+      0.999646,
+      0.000246,
+      -0.026586,
+      -7e-06
+    ],
+    "gripper_joint_positions_m": [
+      0.038723,
+      -0.038723
+    ],
+    "gripper_joint_velocities_m_s": [
+      0.003263,
+      -0.003263
+    ]
+  },
+  "robot_state_refreshed": true,
+  "oracle_fields_excluded": true,
+  "rgb_baseline_prompt_preserved": true
+}

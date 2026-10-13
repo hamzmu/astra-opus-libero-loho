@@ -1,0 +1,33 @@
+﻿{
+    "batch_id":  "task4_retained_20261012_135134",
+    "status":  "complete",
+    "collection_kind":  "retained_runs",
+    "task_id":  4,
+    "initial_state_id":  0,
+    "sim_seed":  0,
+    "max_calls_per_trial":  80,
+    "max_action_steps_per_trial":  2000,
+    "cost_guard_enabled":  false,
+    "estimated_api_cost_cap_usd":  null,
+    "completed_trials":  10,
+    "trials_per_model":  5,
+    "trial_counts_by_model":  {
+                                  "opus":  5,
+                                  "astra":  5
+                              },
+    "full_task_successes":  10,
+    "estimated_api_cost_usd":  52.3301545,
+    "cost_complete":  true,
+    "report":  "task4_retained_20261012_135134_REPORT.md",
+    "comparison":  "task4_retained_20261012_135134_comparison.json",
+    "opus_trials":  "task4_retained_20261012_135134_opus_five_trials.json",
+    "astra_trials":  "task4_retained_20261012_135134_astra_five_trials.json",
+    "launch_manifests":  [
+                             "task4_retained_20261012_135134.json"
+                         ],
+    "simulator_reference":  "../../setup_logs/task4_reference_20261012_110427",
+    "camera_videos_verified":  20,
+    "media_mode":  "video_only",
+    "pngs_retained":  0,
+    "note":  "Five retained successful runs per model. Raw records and videos retain their original bytes; display numbering is 1 through 5."
+}

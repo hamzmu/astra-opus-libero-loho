@@ -1,0 +1,52 @@
+{
+  "runtime": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.2.5",
+    "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+    "repo": "/root/projects/LIBERO-LOHO",
+    "revision": "600709f7c5f19a370c477216f51c8d6b163c6164",
+    "versions": {
+      "numpy": "1.22.4",
+      "mujoco": "2.3.7",
+      "robosuite": "1.4.0",
+      "torch": "1.11.0+cpu",
+      "gym": "0.25.2",
+      "opencv-python": "4.6.0.66"
+    },
+    "render_backend": "osmesa",
+    "local_windows_binding_patch": false
+  },
+  "benchmark": "libero_loho_new",
+  "tasks": [
+    {
+      "task_id": 0,
+      "goal": "put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it",
+      "available_initial_states": 50,
+      "tested_initial_states": [
+        {
+          "initial_state_id": 0,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "3804bff3268ffe43e553baf26b2420df34132aff14c71fefe3e4b2669d8dc55c",
+          "initial_frame_sha256_by_camera": {
+            "robot0_eye_in_hand": "3804bff3268ffe43e553baf26b2420df34132aff14c71fefe3e4b2669d8dc55c"
+          },
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.9334216830320656
+        }
+      ]
+    }
+  ],
+  "model_calls": 0,
+  "orientation": "rotate180",
+  "camera_configuration": "wrist",
+  "cameras": [
+    "robot0_eye_in_hand"
+  ],
+  "camera_orientations": {
+    "robot0_eye_in_hand": "flip_vertical"
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "runtime": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.2.5",
+    "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+    "repo": "/root/projects/LIBERO-LOHO",
+    "revision": "600709f7c5f19a370c477216f51c8d6b163c6164",
+    "versions": {
+      "numpy": "1.22.4",
+      "mujoco": "2.3.7",
+      "robosuite": "1.4.0",
+      "torch": "1.11.0+cpu",
+      "gym": "0.25.2",
+      "opencv-python": "4.6.0.66"
+    },
+    "render_backend": "osmesa",
+    "local_windows_binding_patch": false
+  },
+  "benchmark": "libero_loho_new",
+  "task_id": 0,
+  "goal": "put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it",
+  "model_id": "claude-opus-5-5",
+  "effort": "max",
+  "effective_effort": "max",
+  "effort_fallback": null,
+  "fallback_events": [],
+  "unresolved_request_cost_reservation_usd": 0,
+  "policy": "pose-tools",
+  "action_interface": "absolute_pose_tools",
+  "prompt_profile": "pose-tools-v1",
+  "provider": "anthropic",
+  "context_mode": "conversation_and_tool_results",
+  "image_history_observations": 0,
+  "image_history_mode": "all",
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "camera": "agentview",
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "camera_configuration": "agentview-wrist",
+  "camera_orientations": {
+    "agentview": "rotate180",
+    "robot0_eye_in_hand": "flip_vertical"
+  },
+  "orientation": "rotate180",
+  "rgb_resolution": [
+    224,
+    224
+  ],
+  "observation_mode": "rgb-proprio",
+  "control_hz": 10,
+  "max_speed_fraction": 0.25,
+  "max_decisions": 80,
+  "max_action_steps": 2000,
+  "settle_steps": 5,
+  "simulator_horizon": 2005,
+  "max_output_tokens_per_call": 32768,
+  "max_estimated_api_cost_usd": 25.0,
+  "run_id": "b08281d3-f1e7-45ad-a0a3-16b10292564b",
+  "pricing": {
+    "currency": "USD",
+    "verified_on": "2026-10-11",
+    "source": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+    "cache_formula_source": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+    "model": "claude-opus-5-5",
+    "long_context_threshold": 1000000,
+    "cache_write_ttl": "5m",
+    "rates_per_million_tokens": {
+      "default": {
+        "short": {
+          "input": 4,
+          "cached_input": 0.2,
+          "cache_write": 5,
+          "output": 20
+        },
+        "long": {
+          "input": 4,
+          "cached_input": 0.2,
+          "cache_write": 5,
+          "output": 20
+        }
+      }
+    }
+  },
+  "api_attempts_file": "api_attempts.jsonl",
+  "api_attempts": [
+    {
+      "attempt_id": "f9859f3d-a861-426e-8293-5a8962bc6095",
+      "run_id": "b08281d3-f1e7-45ad-a0a3-16b10292564b",
+      "decision_index": 0,
+      "started_at_utc": "2026-10-11T16:43:48.200+00:00",
+      "requested_model": "claude-opus-5-5",
+      "requested_service_tier": "default",
+      "returned_model": null,
+      "returned_service_tier": null,
+      "request_id": "req_011CfvnWzcqBErx8Eu9aa7XQ",
+      "response_id": null,
+      "http_status": 200,
+      "response_status": null,
+      "usage": null,
+      "api_latency_seconds": 184.4214316730504,
+      "outcome": "incomplete",
+      "task_id": 0,
+      "initial_state_id": 0,
+      "sim_seed": 0,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "action_interface": "absolute_pose_tools",
+      "prompt_profile": "pose-tools-v1",
+      "input_text": "{\"task\": \"put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it\", \"observation_step\": 5, \"model_calls_remaining_including_this\": 80, \"action_steps_remaining\": 2000, \"measured_absolute_pose\": {\"x\": -0.208465, \"y\": 0.0, \"z\": 1.173279, \"roll\": 0.0, \"pitch\": 0.0, \"yaw\": 0.0, \"gripper\": 0.96807}, \"robot_proprioception\": {\"joint_positions_rad\": [0.0, -0.161037, 0.0, -2.444597, 0.0, 2.226752, 0.785398], \"joint_velocities_rad_s\": [-0.0, -0.0, -0.0, 0.0, 0.0, -0.0, 0.0], \"end_effector_position_m\": [-0.208465, 0.0, 1.173279], \"end_effector_quaternion_xyzw\": [0.999597, 0.000246, -0.0284, -7e-06], \"gripper_joint_positions_m\": [0.038723, -0.038723], \"gripper_joint_velocities_m_s\": [0.003263, -0.003263]}}",
+      "provider": "anthropic",
+      "reasoning_effort": "max",
+      "request_cost_reservation_usd": 0.712325,
+      "image_jpeg_sha256_by_camera": {
+        "agentview": "24e5f000fd43fa9553a0c8c7ad8b18691c1afe594b0266b3b173bbae82870e16",
+        "robot0_eye_in_hand": "cf62e1cef97afba3ecfdeaf7cb77792b4b3d78c3a07dc20a76ed9aac6b0b3061"
+      },
+      "conversation_input_items": 1,
+      "estimated_api_cost_usd": null,
+      "cost_status": "usage_missing",
+      "raw_usage": {}
+    }
+  ],
+  "decisions": [],
+  "executed_actions": [],
+  "simulator_action_steps": 0,
+  "decisions_used": 1,
+  "success": false,
+  "termination_reason": "error",
+  "tool_error_count": 0,
+  "telemetry_schema_version": 3,
+  "video_files": {
+    "agentview": "episode.mp4",
+    "robot0_eye_in_hand": "wrist_episode.mp4"
+  },
+  "rig_calibration": {
+    "tabletop_world_z_m": 0.9,
+    "control_hz": 10.0,
+    "camera_orientation": "rotate180",
+    "camera_axes": "Near the tabletop, +Y generally projects image-left and +X image-down. The view is oblique; perspective and height change the apparent displacement.",
+    "camera_orientations": {
+      "agentview": "rotate180",
+      "robot0_eye_in_hand": "flip_vertical"
+    },
+    "grasp_site_table_contact_clearance_m_approx": 0.01,
+    "fully_open_finger_position_m_approx": 0.04
+  },
+  "workspace_bounds": {
+    "x": [
+      -0.5,
+      0.5
+    ],
+    "y": [
+      -0.6,
+      0.6
+    ],
+    "z": [
+      0.905,
+      1.4
+    ],
+    "roll": [
+      -1.5707963267948966,
+      1.5707963267948966
+    ],
+    "pitch": [
+      -1.5707963267948966,
+      1.5707963267948966
+    ],
+    "yaw": [
+      -3.141592653589793,
+      3.141592653589793
+    ],
+    "gripper": [
+      0.0,
+      1.0
+    ]
+  },
+  "start_grasp_site_rotation_xyzw": [
+    0.7066474389970282,
+    0.706995636525711,
+    -0.0200769713606414,
+    -0.02008686420351004
+  ],
+  "system_prompt": "You operate a simulated Panda arm through motion tools. Work toward the task\nusing the measured robot state and the labeled RGB views. Use one tool call per\nturn and include a short human-readable note explaining each move.\n\nmove_to accepts named ABSOLUTE grasp-site targets: x/y/z in world meters,\nroll/pitch/yaw in radians relative to the trial's start orientation, and gripper\nin [0,1] (0 fully closed, 1 fully open). Omitted pose dimensions hold measured\nvalues; an omitted gripper preserves its last command to maintain grip pressure.\nEuler rotation order is xyz; yaw rotates about world vertical\nrelative to the start pose. These are physical targets, not normalized deltas.\nUse measured_absolute_pose for targeting. The raw robot proprioception quaternion\ndescribes the end-effector body in world coordinates, not these relative site angles.\nThe executor interpolates at 25% of each dimension's range per second with a\n5%-of-range per-step ceiling. A move is limited to 10 seconds; split longer moves.\nThe result reports actual steps played, measured pose and remaining target error.\nMotion can fall short through contact, reach limits or tracking lag. Change a\nblocked target rather than repeating it. A short settling hold may be included.\n\nThe reported position is the grasp site between the fingers, not the wrist or\npalm. With downward fingers, table contact occurs with this site only about\n0.01 m above the tabletop: do not assume a 0.1 m wrist-to-finger height offset.\nUse the table reference and visual object height when choosing a grasp height.\nAlign above the object while open, descend gently, close, lift about 0.05 m and\nverify in the fixed view that the object follows before carrying it. A nonzero\nfinger opening on a close can indicate an object or obstruction; it is not proof.\nUse clearance for transport. Lower for placement, open, lift clear, then verify.\nBoth static agentview and moving robot0_eye_in_hand images are available by\ndefault. Use the overview to locate objects/destinations and verify lifts, and\nthe wrist view for close alignment. Wrist axes change when the arm rotates;\ndo not apply the fixed camera's pixel mapping to it. Occlusion is not success.\nYou receive no object coordinates, depth, rewards or private goal checks.\n\nYour observation/action/tool-result text history is retained for the trial.\nAll image-bearing observations retain their image payloads unchanged.\nUse past readbacks and tool results to improve the plan. done ends the trial\nwhen you believe the goal is achieved; give_up ends an unsuccessful attempt.\nBoth ask for hindsight: concrete rig/task facts you wish you knew at the start.\nThe evaluator determines full-task success independently of your declaration.\nYou have 80 model calls and 2000 action steps at 10 Hz, with max reasoning.\n\nWorkspace bounds: {\"x\": [-0.5, 0.5], \"y\": [-0.6, 0.6], \"z\": [0.905, 1.4], \"roll\": [-1.5707963267948966, 1.5707963267948966], \"pitch\": [-1.5707963267948966, 1.5707963267948966], \"yaw\": [-3.141592653589793, 3.141592653589793], \"gripper\": [0.0, 1.0]}\nFixed rig facts (no object locations): {\"tabletop_world_z_m\": 0.9, \"control_hz\": 10.0, \"camera_orientation\": \"rotate180\", \"camera_axes\": \"Near the tabletop, +Y generally projects image-left and +X image-down. The view is oblique; perspective and height change the apparent displacement.\", \"camera_orientations\": {\"agentview\": \"rotate180\", \"robot0_eye_in_hand\": \"flip_vertical\"}, \"grasp_site_table_contact_clearance_m_approx\": 0.01, \"fully_open_finger_position_m_approx\": 0.04}",
+  "api_attempts_total": 1,
+  "known_api_attempts_total": 1,
+  "attempt_coverage_complete": true,
+  "api_attempts_unknown_usage": 1,
+  "api_attempts_unresolved_cost": 1,
+  "token_totals_complete": false,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "total_cached_input_tokens": 0,
+  "total_cache_write_tokens": 0,
+  "known_estimated_api_cost_usd": 0.0,
+  "estimated_api_cost_usd": null,
+  "cost_complete": false,
+  "total_api_latency_seconds": 184.4214316730504,
+  "mean_api_latency_seconds": 184.4214316730504,
+  "api_latency_totals_complete": true,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 0,
+    "completion_fraction": 0.0,
+    "completion_percent": 0.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 0.0,
+    "last_scored_simulator_step": 5,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      }
+    ]
+  },
+  "elapsed_seconds": 187.6697134160204,
+  "next_request_cost_reservation_usd": 0.712325,
+  "error": "Opus response incomplete: None",
+  "trial_status": "error"
+}

@@ -1,0 +1,75 @@
+{
+  "run_id": "b08281d3-f1e7-45ad-a0a3-16b10292564b",
+  "model_id": "claude-opus-5-5",
+  "provider": "anthropic",
+  "effort": "max",
+  "task_id": 0,
+  "termination_reason": "error",
+  "success": false,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 0,
+    "completion_fraction": 0.0,
+    "completion_percent": 0.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 0.0,
+    "last_scored_simulator_step": 5,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      }
+    ]
+  },
+  "decisions_used": 1,
+  "simulator_action_steps": 0,
+  "elapsed_seconds": 187.6697134160204,
+  "api_attempts_total": 1,
+  "cost_complete": false,
+  "estimated_api_cost_usd": null,
+  "known_estimated_api_cost_usd": 0.0,
+  "api_attempts_unknown_usage": 1,
+  "api_attempts_unresolved_cost": 1,
+  "setup_failure": true,
+  "local_runner_running": false,
+  "automatic_retries": 0,
+  "reason": "Adapter omitted API stream flag and failed to parse the complete JSON response. Full receipt usage is unavailable; cost is unresolved, never assigned zero.",
+  "request_id": "req_011CfvnWzcqBErx8Eu9aa7XQ",
+  "reserved_allowance_usd": 0.712325,
+  "replacement_trial": "opus55_task0_max_20261011_124852"
+}

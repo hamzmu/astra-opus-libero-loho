@@ -1,0 +1,55 @@
+{
+  "configuration_verified": true,
+  "checks": {
+    "model_id": true,
+    "provider": true,
+    "task_id": true,
+    "initial_state_id": true,
+    "sim_seed": true,
+    "policy": true,
+    "effort": true,
+    "max_decisions": true,
+    "max_action_steps": true,
+    "max_estimated_api_cost_usd": true,
+    "control_hz": true,
+    "max_speed_fraction": true,
+    "rgb_resolution": true,
+    "cameras": true,
+    "max_output_tokens_per_call": true,
+    "image_history_observations": true,
+    "image_history_mode": true,
+    "simulator_horizon": true,
+    "max_prompt_matches": true,
+    "initial_proprioception_matches_previous_astra": true,
+    "initial_camera_hashes_match_previous_astra": true
+  },
+  "expected": {
+    "model_id": "claude-opus-5-5",
+    "provider": "anthropic",
+    "task_id": 0,
+    "initial_state_id": 0,
+    "sim_seed": 0,
+    "policy": "pose-tools",
+    "effort": "max",
+    "max_decisions": 80,
+    "max_action_steps": 2000,
+    "max_estimated_api_cost_usd": 23.6317058,
+    "control_hz": 10,
+    "max_speed_fraction": 0.25,
+    "rgb_resolution": [
+      224,
+      224
+    ],
+    "cameras": [
+      "agentview",
+      "robot0_eye_in_hand"
+    ],
+    "max_output_tokens_per_call": 128000,
+    "image_history_observations": 0,
+    "image_history_mode": "all",
+    "simulator_horizon": 2005
+  },
+  "overall_cap_usd": 25,
+  "prior_known_cost_usd": 0.6559692,
+  "prior_unknown_cost_reservation_usd": 0.712325
+}

@@ -1,0 +1,32 @@
+﻿{
+    "passed":  true,
+    "output_sha256":  "3433e970d150fee1afeb873e1745d83a72d04f23d08b082f01e68d5a885acde4",
+    "output_video":  {
+                         "codec_name":  "h264",
+                         "width":  1024,
+                         "height":  1260,
+                         "pix_fmt":  "yuv420p",
+                         "avg_frame_rate":  "40/1",
+                         "nb_read_frames":  "1074",
+                         "duration_seconds":  26.85,
+                         "fps":  40.0,
+                         "frames":  1074
+                     },
+    "source_videos_and_summaries_sha256_unchanged":  true,
+    "selected_episodes":  2,
+    "camera_views":  4,
+    "successes":  2,
+    "column_gap_pixels":  0,
+    "model_row_gap_pixels":  24,
+    "camera_pairs_same_episode_and_frame_count":  true,
+    "visual_review":  {
+                          "passed":  true,
+                          "checks":  [
+                                         "Astra top / Opus bottom",
+                                         "Wrist left / static right",
+                                         "No camera-column gap",
+                                         "Gap between model rows",
+                                         "Legible titles and completion labels"
+                                     ]
+                      }
+}

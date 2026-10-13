@@ -1,0 +1,16 @@
+{
+  "profiles": [
+    {"model": "gpt-6-astra", "cli_model": "astra", "provider": "openai", "effort": "max", "effort_fallback": "xhigh", "fallback_trigger": "Explicit unsupported-reasoning-effort API error only; same model"},
+    {"model": "claude-opus-5-5", "cli_model": "opus", "provider": "anthropic", "effort": "max", "effort_fallback": null}
+  ],
+  "shared_defaults": {
+    "task_id": 0, "initial_state_id": 0, "sim_seed": 0,
+    "policy": "pose-tools", "cameras": ["agentview", "robot0_eye_in_hand"],
+    "observation": "rgb-proprio", "max_decisions": 80, "max_steps": 2000,
+    "max_api_cost_usd": null, "cost_guard_enabled": false, "max_output_tokens": 128000,
+    "image_history_observations": 0, "image_history_mode": "all, append-only",
+    "control_hz": 10, "resolution": 224,
+    "media_mode": "video_only", "png_frames_saved": false
+  },
+  "notes": "Max is each provider's effort setting, not a guarantee of equal internal compute. No cross-model fallback. Cost is recorded from reported usage without a spending guard or request reservations. Earlier medium/40-call/900-step trials remain separate."
+}

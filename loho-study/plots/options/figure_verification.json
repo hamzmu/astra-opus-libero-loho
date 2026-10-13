@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_runs": 30,
+  "n_per_task_model": 5,
+  "primary_options": 7,
+  "figure_exports": 10,
+  "png_files": 11,
+  "other_formats": [
+    "pdf",
+    "svg"
+  ],
+  "source_summary_hashes_unchanged": true,
+  "native_goal_heatmap_scores_match_summaries": true,
+  "progress_step_counts_match_summaries": true,
+  "time_decomposition_uses_measured_api_and_residual_elapsed": true,
+  "local_links_checked": 76,
+  "visual_review": "All seven primary figures inspected; title/subtitle spacing corrected and tables readable. Separate ten-row per-task tables accompany the thirty-row table."
+}

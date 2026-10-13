@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "real_api_calls": 0,
+  "tasks": [
+    {
+      "task_id": 0,
+      "both_views_nonblank": true,
+      "wrist_follows_arm": true,
+      "same_observation_timestep": 10,
+      "initial_rgb_sha256": {
+        "agentview": "c6ce47436e915c488ec2381b8dd89595320c8a1868c89f371bc9ec27e1c952e1",
+        "robot0_eye_in_hand": "3804bff3268ffe43e553baf26b2420df34132aff14c71fefe3e4b2669d8dc55c"
+      }
+    },
+    {
+      "task_id": 1,
+      "both_views_nonblank": true,
+      "wrist_follows_arm": true,
+      "same_observation_timestep": 10,
+      "initial_rgb_sha256": {
+        "agentview": "d78b854f35000641c43b689d5880bd7a1894622f90a76527ca5eadb40eb41af9",
+        "robot0_eye_in_hand": "6c4892352b6edbc5fb3bc46d509c88ed1dcbe4db32fcb1a491f5429a995ce3ae"
+      }
+    },
+    {
+      "task_id": 2,
+      "both_views_nonblank": true,
+      "wrist_follows_arm": true,
+      "same_observation_timestep": 10,
+      "initial_rgb_sha256": {
+        "agentview": "fa826412e470aa8c2e24f9bb7963deda6d276b02c3c1bcf996847f7df2521482",
+        "robot0_eye_in_hand": "40cd58d0bb94951f6f3bf301e8ad277f4e49e91989f7481a465d9c9ef8f17e75"
+      }
+    },
+    {
+      "task_id": 3,
+      "both_views_nonblank": true,
+      "wrist_follows_arm": true,
+      "same_observation_timestep": 10,
+      "initial_rgb_sha256": {
+        "agentview": "6064b3e71c2a44515ee72d3ca9200a80be806a7f394d5f64327bb498c60cb309",
+        "robot0_eye_in_hand": "0f6f73ef70211014528d20dce717300e0d31070acdab075423a318214985660c"
+      }
+    },
+    {
+      "task_id": 4,
+      "both_views_nonblank": true,
+      "wrist_follows_arm": true,
+      "same_observation_timestep": 10,
+      "initial_rgb_sha256": {
+        "agentview": "cd4c5bc5c7db6e366e6ae184dabef729c03aae95723df5a46e91f3dd36f3ef7d",
+        "robot0_eye_in_hand": "0466e7d39864a2e3b17c7fcd89c7ea81381557075800f69f84c5dfd152e30775"
+      }
+    }
+  ],
+  "controls": [
+    {
+      "requested": "default",
+      "effective": "wrist",
+      "cameras": [
+        "robot0_eye_in_hand"
+      ],
+      "verified_video_frames": {
+        "robot0_eye_in_hand": 11
+      },
+      "recorded_observation_steps": [
+        5,
+        10
+      ]
+    },
+    {
+      "requested": "agentview-wrist",
+      "effective": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "verified_video_frames": {
+        "agentview": 11,
+        "robot0_eye_in_hand": 11
+      },
+      "recorded_observation_steps": [
+        5,
+        10
+      ]
+    }
+  ]
+}

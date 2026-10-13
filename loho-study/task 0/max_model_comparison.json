@@ -1,0 +1,21 @@
+{
+  "configuration_file": "../../comparison-models.json",
+  "astra_max_paid_trials": [
+    "astra_task0_max_128k_trial1_20261011_155328",
+    "astra_task0_max_128k_trial2_20261011_160114",
+    "astra_task0_max_128k_trial3_20261011_160114"
+  ],
+  "opus_max_completed_trials": [
+    "opus55_task0_max_128k_20261011_125617",
+    "opus55_task0_max_128k_trial2_20261011_140109",
+    "opus55_task0_max_128k_trial3_20261011_142433"
+  ],
+  "startup_attempts": [
+    "startup_attempts/opus55_task0_max_20261011_124340",
+    "startup_attempts/opus55_task0_max_20261011_124852"
+  ],
+  "note": "Three native Astra max and three Opus max task-0 trials are recorded. Astra used no effort fallback. Two Astra trials stopped on the conservative cost guard; see the comparison limitation. Earlier medium trials remain separate.",
+  "three_trial_report": "opus55_task0_three_trials.json",
+  "astra_three_trial_report": "astra_max_task0_three_trials.json",
+  "comparison_report": "max_task0_model_comparison.json"
+}

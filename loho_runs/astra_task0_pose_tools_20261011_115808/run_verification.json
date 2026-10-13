@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "checks": {
+    "configuration_matches_luna": true,
+    "calls_accounted": true,
+    "steps_accounted": true,
+    "budgets_respected": true,
+    "all_usage_priced": true,
+    "all_api_responses_valid": true,
+    "one_request_per_decision": true,
+    "conversation_tool_results_paired": true,
+    "observation_inputs_only_public_robot_state": true,
+    "private_score_agrees_with_success": true,
+    "each_decision_has_both_camera_hashes": true,
+    "video_agentview": true,
+    "video_robot0_eye_in_hand": true
+  },
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 820,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 820,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "summary_sha256": "9aac2593e71c1fc56b698a60d666daa4a4f3f4cf605296528abb52de4fbe2d09",
+  "notes": "Real Astra API and simulator run. Initial proprioception and both initial JPEG hashes match the reference Luna run. Opaque reasoning is replayed in memory and omitted from the readable transcript."
+}

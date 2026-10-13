@@ -1,0 +1,173 @@
+LUNA TASK 0 — STOPPED AT USER REQUEST
+
+Current episode: RGB + proprioception, stored initial state 0, simulator seed 0.
+Executed actions: 74 (decision indices 0–73).
+Simulator action steps: 370; settling steps: 5.
+API attempts: 75; one request was interrupted before usage was received.
+Elapsed episode time: 1152.07 seconds (19.20 minutes).
+Task success recorded: false. Termination reason: interrupted.
+Close-gripper commands: 0. No pickup was commanded.
+Known estimated cost for this episode: $0.0535229 USD.
+Earlier output-limit episode: 13 actions, 65 action steps, 14 API attempts; cost $0.0088469 USD.
+Known estimated cost across both episodes: $0.0623698 USD.
+Full cost is unresolved because the in-flight request may still have been processed by the provider.
+
+FILES
+steps_taken.json: every executed action, robot measurements, model memory, latency and usage.
+summary.json and api_attempts.jsonl: full episode telemetry, including the interrupted request ID.
+episode.mp4: verified recording of 371 frames at 20.0 FPS.
+stopped_final_frame.png: last decoded video frame.
+stop_record.json: combined accounting for both independent episodes.
+
+EXECUTED ACTIONS
+Vector order: [dx,dy,dz,dRx,dRy,dRz,gripper].
+Model memory below is model-generated narration, not independently verified progress.
+
+Step 01 / decision 00 / simulator steps 6–10: [-0.8, 0.8, -0.4, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front butter (lower of the two orange packages at left); gripper remains open.
+Step 02 / decision 01 / simulator steps 11–15: [-0.5, -0.6, -0.2, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front butter package (lower orange item at left), staying above the tabletop; gripper open.
+Step 03 / decision 02 / simulator steps 16–20: [-1.0, 1.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front butter package (lower orange item at left), staying above the tabletop; gripper open.
+Step 04 / decision 03 / simulator steps 21–25: [-0.5, -0.5, -0.1, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward front butter at left, keeping gripper open and safely above tabletop; continue aligning over it before descending to grasp.
+Step 05 / decision 04 / simulator steps 26–30: [-0.45, -0.5, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the front butter while keeping the gripper open and high; inspect alignment before descending.
+Step 06 / decision 05 / simulator steps 31–35: [-0.6, 0.75, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving above the front (lower) orange butter pack; keep gripper open, then inspect alignment before descending.
+Step 07 / decision 06 / simulator steps 36–40: [-1.0, -1.0, -0.4, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the lower/front orange butter pack (image left and toward table front); gripper remains open. Recheck alignment before descending to grasp.
+Step 08 / decision 07 / simulator steps 41–45: [-0.65, 0.75, -0.2, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the table front toward the lower orange butter pack; keep gripper open. Recheck alignment and height before descending to grasp.
+Step 09 / decision 08 / simulator steps 46–50: [0.35, -0.25, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front-left butter at hover height with gripper open. Recheck alignment in the next image before descending to grasp.
+Step 10 / decision 09 / simulator steps 51–55: [-0.6, -0.7, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front-left butter at hover height with gripper open. Recheck alignment in the next image before descending to grasp.
+Step 11 / decision 10 / simulator steps 56–60: [0.6, -0.45, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue moving toward the front-left butter with the gripper open, keeping hover height; recheck alignment before descending to grasp.
+Step 12 / decision 11 / simulator steps 61–65: [0.35, -0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.
+Step 13 / decision 12 / simulator steps 66–70: [-0.25, 0.25, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.
+Step 14 / decision 13 / simulator steps 71–75: [-0.45, -0.5, -0.3, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.
+Step 15 / decision 14 / simulator steps 76–80: [-0.45, -0.65, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.
+Step 16 / decision 15 / simulator steps 81–85: [-0.5, -0.5, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Butter is the two orange packages at front-left; pudding is the dark cup near center. Keep gripper open and move horizontally toward butter at hover height, then recheck alignment.
+Step 17 / decision 16 / simulator steps 86–90: [-0.4, 0.5, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Butter packages are at the front-left; pudding is near center and the drawer is open at right. Move toward butter at hover height with gripper open; recheck alignment before descending.
+Step 18 / decision 17 / simulator steps 91–95: [-0.5, -0.7, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Butter packages are at front-left; pudding is near center and the drawer is open on the right. Move toward the front butter with gripper open, staying above the table; recheck alignment before descending.
+Step 19 / decision 18 / simulator steps 96–100: [-0.35, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Butter packages are left-front, pudding near center, open drawer on right. Moving laterally and forward above the front butter with gripper open; recheck position before descending.
+Step 20 / decision 19 / simulator steps 101–105: [-0.6, -0.7, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move toward front-left butter with gripper open; reassess alignment and height before descending.
+Step 21 / decision 20 / simulator steps 106–110: [-0.3, 0.35, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving laterally and forward above the front-left butter with gripper open; reassess position before descending.
+Step 22 / decision 21 / simulator steps 111–115: [-0.3, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving toward the front butter pack with gripper open; use the next image to refine alignment before lowering.
+Step 23 / decision 22 / simulator steps 116–120: [-0.6, -0.8, -0.2, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving laterally toward the front butter with gripper open; stay above the counter and refine alignment from the next image.
+Step 24 / decision 23 / simulator steps 121–125: [-0.8, -0.8, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving toward the nearer butter packet at the left/front of the counter with the gripper open; refine position and lower toward the surface from the next image.
+Step 25 / decision 24 / simulator steps 126–130: [-0.35, -0.35, -0.55, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving left/front and down toward the front butter packet; keep gripper open and refine from the next image.
+Step 26 / decision 25 / simulator steps 131–135: [-0.4, -0.4, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue left/front and lower toward the front butter packet; keep gripper open while aligning above it.
+Step 27 / decision 26 / simulator steps 136–140: [-0.35, -0.4, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left/front and descend toward the front orange butter packet; gripper remains open. Reassess alignment and height from the next image.
+Step 28 / decision 27 / simulator steps 141–145: [-0.7, -0.8, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the front while descending slightly toward the orange butter packet; keep the gripper open and reassess alignment.
+Step 29 / decision 28 / simulator steps 146–150: [-0.5, -0.45, -0.25, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue left and forward toward the orange butter packet with the gripper open; descend slightly, then reassess alignment before grasping.
+Step 30 / decision 29 / simulator steps 151–155: [-0.35, -0.35, -0.2, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving left and forward toward the front orange butter packet with gripper open; descend slightly, then reassess alignment before grasping.
+Step 31 / decision 30 / simulator steps 156–160: [-0.3, -0.3, -0.12, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving diagonally left and toward the front butter packet with gripper open; continue approaching above it, then lower carefully to grasp.
+Step 32 / decision 31 / simulator steps 161–165: [-0.45, -0.55, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left/front over the lower orange butter packet with gripper open; stay above it, then descend carefully to grasp.
+Step 33 / decision 32 / simulator steps 166–170: [-0.8, -0.8, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left/front over the lower orange butter packet with gripper open; stay above it, then descend carefully to grasp.
+Step 34 / decision 33 / simulator steps 171–175: [-0.6, -0.6, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Gripper is open; move left and toward the front over the lower orange butter packet, staying above the surface. Reassess alignment before descending to grasp.
+Step 35 / decision 34 / simulator steps 176–180: [-0.7, -0.7, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Gripper remains open and high. Move left and toward the front over the lower orange butter packet; reassess alignment before descending to grasp.
+Step 36 / decision 35 / simulator steps 181–185: [-0.35, -0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the front above the lower orange butter packet; remain high and open. Reassess alignment before descending to grasp.
+Step 37 / decision 36 / simulator steps 186–190: [-0.7, -0.7, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue left and toward the front while high and open, aiming over the front butter packet; use the next image to verify alignment before descending.
+Step 38 / decision 37 / simulator steps 191–195: [-0.5, 0.5, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; next check alignment above the front butter packet before descending.
+Step 39 / decision 38 / simulator steps 196–200: [-0.55, -0.55, 0.05, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment above the front butter packet before descending.
+Step 40 / decision 39 / simulator steps 201–205: [-0.4, -0.4, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment above the front butter packet before descending.
+Step 41 / decision 40 / simulator steps 206–210: [0.6, -0.6, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment above the front butter packet before descending.
+Step 42 / decision 41 / simulator steps 211–215: [-0.45, -0.55, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.
+Step 43 / decision 42 / simulator steps 216–220: [-1.0, -1.0, 0.2, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.
+Step 44 / decision 43 / simulator steps 221–225: [-0.35, 0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.
+Step 45 / decision 44 / simulator steps 226–230: [-0.6, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.
+Step 46 / decision 45 / simulator steps 231–235: [-0.45, -0.45, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.
+Step 47 / decision 46 / simulator steps 236–240: [-0.55, -0.45, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.
+Step 48 / decision 47 / simulator steps 241–245: [-0.35, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.
+Step 49 / decision 48 / simulator steps 246–250: [-0.3, -0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 50 / decision 49 / simulator steps 251–255: [-0.8, -0.7, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 51 / decision 50 / simulator steps 256–260: [-0.35, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 52 / decision 51 / simulator steps 261–265: [-0.55, -0.7, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 53 / decision 52 / simulator steps 266–270: [-0.45, -0.45, 0.15, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 54 / decision 53 / simulator steps 271–275: [0.3, -0.25, 0.1, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 55 / decision 54 / simulator steps 276–280: [-0.55, -0.65, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 56 / decision 55 / simulator steps 281–285: [1.0, -1.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 57 / decision 56 / simulator steps 286–290: [-0.8, -0.8, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 58 / decision 57 / simulator steps 291–295: [-0.2, -0.2, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.
+Step 59 / decision 58 / simulator steps 296–300: [0.8, 0.6, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; continue aligning over the front butter packet before descending.
+Step 60 / decision 59 / simulator steps 301–305: [-0.7, 0.5, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue moving left and toward the counter front while high and open; align above the front butter packet before descending.
+Step 61 / decision 60 / simulator steps 306–310: [-0.3, -0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while high and open; align over the front butter packet before descending.
+Step 62 / decision 61 / simulator steps 311–315: [0.8, -0.8, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while high and open; continue aligning over the front butter packet before descending.
+Step 63 / decision 62 / simulator steps 316–320: [0.4, 0.4, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Moving left and toward the counter front while high and open; continue aligning over the front butter packet before descending.
+Step 64 / decision 63 / simulator steps 321–325: [-0.7, -0.6, 0.1, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while staying high and open; align above the front butter packet before descending.
+Step 65 / decision 64 / simulator steps 326–330: [0.45, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue moving left and toward the counter front while high and open; next check alignment over the front butter packet before descending.
+Step 66 / decision 65 / simulator steps 331–335: [-0.7, -0.6, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.
+Step 67 / decision 66 / simulator steps 336–340: [-0.3, 0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.
+Step 68 / decision 67 / simulator steps 341–345: [-0.45, -0.45, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.
+Step 69 / decision 68 / simulator steps 346–350: [-0.7, -0.7, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.
+Step 70 / decision 69 / simulator steps 351–355: [-0.25, 0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward counter front while high and open; next check alignment over the front butter packet before descending.
+Step 71 / decision 70 / simulator steps 356–360: [-0.55, -0.55, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Continue left and toward the table front while high and open; check alignment over the front butter packet before descending.
+Step 72 / decision 71 / simulator steps 361–365: [-0.18, -0.18, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the table front while high and open; check alignment above the front butter packet before descending.
+Step 73 / decision 72 / simulator steps 366–370: [-0.6, -0.6, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the table front while remaining high and open; recheck alignment above the front butter packet before descending.
+Step 74 / decision 73 / simulator steps 371–375: [-0.35, -0.3, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Move left and toward the table front while staying high and open; check alignment over the front butter packet before descending.

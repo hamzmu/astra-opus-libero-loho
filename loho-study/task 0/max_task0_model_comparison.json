@@ -1,0 +1,66 @@
+{
+  "task_id": 0,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "nominal_shared_setup_verified": true,
+  "limits_per_trial": {
+    "max_calls": 80,
+    "max_action_steps": 2000,
+    "max_output_tokens_per_call": 128000,
+    "estimated_api_cost_cap_usd": 23.6317058
+  },
+  "models": [
+    {
+      "model_id": "claude-opus-5-5",
+      "trials": 3,
+      "successes": 3,
+      "success_rate_percent": 100.0,
+      "mean_goal_completion_percent": 100.0,
+      "api_calls": 130,
+      "action_steps": 2189,
+      "estimated_trial_cost_usd": 24.5640082,
+      "cost_complete": true,
+      "weighted_mean_api_latency_seconds": 54.49122823819858,
+      "total_elapsed_seconds": 7351.838744022127
+    },
+    {
+      "model_id": "gpt-6-astra",
+      "trials": 3,
+      "successes": 1,
+      "success_rate_percent": 33.33333333333333,
+      "mean_goal_completion_percent": 66.66666666666667,
+      "api_calls": 139,
+      "action_steps": 2686,
+      "estimated_trial_cost_usd": 8.7080465,
+      "cost_complete": true,
+      "weighted_mean_api_latency_seconds": 10.787750762956813,
+      "total_elapsed_seconds": 1819.472459221026
+    }
+  ],
+  "reports": {
+    "opus": "opus55_task0_three_trials.json",
+    "astra": "astra_max_task0_three_trials.json"
+  },
+  "all_six_trial_estimated_api_cost_usd": 33.2720547,
+  "all_six_trial_costs_complete": true,
+  "associated_startup_accounting": {
+    "directories": [
+      "startup_attempts/opus55_task0_max_20261011_124340",
+      "startup_attempts/opus55_task0_max_20261011_124852"
+    ],
+    "requests_total": 2,
+    "known_estimated_api_cost_usd": 0.6559692,
+    "estimated_api_cost_usd": null,
+    "cost_complete": false,
+    "unresolved_requests": 1,
+    "unresolved_request_reservation_usd": 0.712325
+  },
+  "including_startup": {
+    "known_estimated_api_cost_usd": 33.9280239,
+    "estimated_api_cost_usd": null,
+    "cost_complete": false,
+    "unresolved_requests": 1
+  },
+  "limitation": "Trials 1 and 2 ended on the conservative cost guard at actual spend $3.3491135 and $3.2773665. Next-response reservations were $20.2922 and $20.6735. The existing guard bounds serialized conversation bytes as tokens and reserves the full 128000-token output allowance, using worst applicable input/cache-write rates. Encrypted Responses history expands that bound. These reservations are not charges. The recorded comparison includes these early budget stops; both nominal 80-call and 2000-step limits were still available.",
+  "note": "This is a recorded result set on a single stored initial state, with provider-specific max effort settings."
+}

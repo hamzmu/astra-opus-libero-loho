@@ -1,0 +1,133 @@
+{
+  "task_id": 0,
+  "prompt_profile": "calibrated-v2",
+  "initial_state_id": 0,
+  "seed": 0,
+  "initial_rgb_and_robot_state_matched": true,
+  "system_prompt_matched": true,
+  "trials": [
+    {
+      "model_id": "gpt-6-luna",
+      "trial_status": "budget_exhausted",
+      "success": false,
+      "decisions_used": 74,
+      "simulator_action_steps": 370,
+      "elapsed_seconds": 729.7340074040112,
+      "mean_api_latency_seconds": 9.368965141203827,
+      "estimated_api_cost_usd": 0.04242873,
+      "cost_complete": true,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      }
+    },
+    {
+      "model_id": "gpt-6-astra",
+      "trial_status": "budget_exhausted",
+      "success": false,
+      "decisions_used": 74,
+      "simulator_action_steps": 370,
+      "elapsed_seconds": 557.7801714109955,
+      "mean_api_latency_seconds": 7.052793787649166,
+      "estimated_api_cost_usd": 1.7672355,
+      "cost_complete": true,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      }
+    }
+  ],
+  "note": "One trial per model. This is a descriptive comparison, not a benchmark ranking."
+}

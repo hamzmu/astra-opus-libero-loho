@@ -1,0 +1,357 @@
+{
+  "runtime": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.2.5",
+    "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+    "repo": "/root/projects/LIBERO-LOHO",
+    "revision": "600709f7c5f19a370c477216f51c8d6b163c6164",
+    "versions": {
+      "numpy": "1.22.4",
+      "mujoco": "2.3.7",
+      "robosuite": "1.4.0",
+      "torch": "1.11.0+cpu",
+      "gym": "0.25.2",
+      "opencv-python": "4.6.0.66"
+    },
+    "render_backend": "osmesa"
+  },
+  "benchmark": "libero_loho_new",
+  "tasks": [
+    {
+      "task_id": 0,
+      "goal": "put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it",
+      "available_initial_states": 50,
+      "tested_initial_states": [
+        {
+          "initial_state_id": 0,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "c6ce47436e915c488ec2381b8dd89595320c8a1868c89f371bc9ec27e1c952e1",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 7.9507390359649435
+        },
+        {
+          "initial_state_id": 1,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "31b3faecab9cc23fbdfd76f53434be610f01b289c5476f2b10a08b188a4c4e92",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 3.034539174987003
+        },
+        {
+          "initial_state_id": 2,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "474334489c07476cd10ce510da850aabdaab037e579d7c3ae3c133444d139b8a",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.8300529989646748
+        },
+        {
+          "initial_state_id": 3,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "35408a0595f8c63bc79c993b9e298d12eae99dfd2a1e3accfd6df3dd0065c712",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.8531368160038255
+        },
+        {
+          "initial_state_id": 4,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "7f8398ac8338a929a18e76e9f4432c8ed4aba14d4aaed053d9537e964750c765",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.8703323630033992
+        }
+      ]
+    },
+    {
+      "task_id": 1,
+      "goal": "pick up the alphabet soup, then the butter, then the tomato sauce, and place each one into the basket",
+      "available_initial_states": 50,
+      "tested_initial_states": [
+        {
+          "initial_state_id": 0,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "d78b854f35000641c43b689d5880bd7a1894622f90a76527ca5eadb40eb41af9",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 4.5828005409566686
+        },
+        {
+          "initial_state_id": 1,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "31f32e4b5ec834883a12aec39ef6f5e416d6466445dde2565a38d2b8f85d29de",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 5.333951777021866
+        },
+        {
+          "initial_state_id": 2,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "5fe66155c77ee64c04395a4ab10ee53bd13e32ab1ad926bf5dd0304b83dcc94c",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 8.713427074020728
+        },
+        {
+          "initial_state_id": 3,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "7e35973d4ff8ccee371292ef5ea749cd8f9e461d97e7697b9d2f4977ef97452f",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 4.03471786697628
+        },
+        {
+          "initial_state_id": 4,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "386d65e35c3b8393e8ac9ec9cfa56d730b08dcd5dbdf30c89b0b7facd04cd70d",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 4.038865465961862
+        }
+      ]
+    },
+    {
+      "task_id": 2,
+      "goal": "pick up the alphabet soup, then the cream cheese, then the butter, and put each one into the wooden tray",
+      "available_initial_states": 50,
+      "tested_initial_states": [
+        {
+          "initial_state_id": 0,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "fa826412e470aa8c2e24f9bb7963deda6d276b02c3c1bcf996847f7df2521482",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.9815694559947588
+        },
+        {
+          "initial_state_id": 1,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "5ef56f72f65e6772c0926f15b9e50f017b16f0a0f79c0e0607fc59a7d7a0d812",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.7607696499908343
+        },
+        {
+          "initial_state_id": 2,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "b710e56f64fad3dde21531df32c2fb2b336855fe5b3fd1ddbcc49d2fa357917a",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 9.64975379704265
+        },
+        {
+          "initial_state_id": 3,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "bd34ad1b86ea502e2306b2054d7ccdf74ba30d3f1c562186344d6a934374ebcc",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 7.54869572998723
+        },
+        {
+          "initial_state_id": 4,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "23e6829c73e87bd535c9d7a56d8ac710265b40be756711edc95501dc56450309",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 26.948488605034072
+        }
+      ]
+    },
+    {
+      "task_id": 3,
+      "goal": "pick up the black bowl on the left, then the salad dressing, then the chocolate pudding, and put each one into the wooden tray",
+      "available_initial_states": 50,
+      "tested_initial_states": [
+        {
+          "initial_state_id": 0,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "6064b3e71c2a44515ee72d3ca9200a80be806a7f394d5f64327bb498c60cb309",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 4.259254086995497
+        },
+        {
+          "initial_state_id": 1,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "0475cf5c9543d3e8dedc809db21fe4985be8e2d76852e28e31cbc0656bf298d4",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 3.8674480919726193
+        },
+        {
+          "initial_state_id": 2,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "cc40a986eec065ce73b8ecd6279efac074013aa87a2ea2043be5844f1575e8d4",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 3.236265801009722
+        },
+        {
+          "initial_state_id": 3,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "decf3fc7312c5a6a7ce55a7b3ba532ddd2d541f0f81d1719cae5870fcd57dabe",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 3.654121426981874
+        },
+        {
+          "initial_state_id": 4,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "4f6a674080f65ace40e4a2f8ba8714aa612ce6daffecc25778cee790a39454af",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 3.4208614000235684
+        }
+      ]
+    },
+    {
+      "task_id": 4,
+      "goal": "put the butter at the back and the chocolate pudding into the cabinet top drawer, and then close the cabinet top drawer. Place the black bowl on top of the cabinet",
+      "available_initial_states": 50,
+      "tested_initial_states": [
+        {
+          "initial_state_id": 0,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "cd4c5bc5c7db6e366e6ae184dabef729c03aae95723df5a46e91f3dd36f3ef7d",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 3.001383748021908
+        },
+        {
+          "initial_state_id": 1,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "a948dde23b90dc726d42eeef819d82983dc2f235178db12535a7b85aaa3b3773",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 3.04488682403462
+        },
+        {
+          "initial_state_id": 2,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "b5788409a4ac62a348d261fa1a7434ea4f7f0574bfc3c1606064e348736be766",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.8170697320019826
+        },
+        {
+          "initial_state_id": 3,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "1dac65e0279f72cead7a3dece59f1760bb5385ea502cc212047aa698cc172779",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.853913015977014
+        },
+        {
+          "initial_state_id": 4,
+          "image_shape": [
+            256,
+            256,
+            3
+          ],
+          "initial_frame_sha256": "46a905a7ffdb45d2a1c11160a6d635852ef0d2a71fdbbea79df8dd8575a3e889",
+          "success": false,
+          "simulator_steps": 10,
+          "elapsed_seconds": 2.8078201040043496
+        }
+      ]
+    }
+  ],
+  "model_calls": 0,
+  "orientation": "rotate180"
+}

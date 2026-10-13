@@ -1,0 +1,6879 @@
+{
+  "created_at": "2026-10-12T19:58:14.471647+00:00",
+  "examples": 6,
+  "views": "static only",
+  "selection": "Successful run closest to the median wall-clock duration of each current five-run cohort; no fastest-Astra/slowest-Opus selection.",
+  "timing": "Reconstructed, not a captured wall-clock recording. Each recorded API request latency is inserted as an exact-duration freeze. Motion frames advance at the recorded 10-Hz simulation rate. Remaining elapsed time is distributed equally as processing before each call. Total endpoints match recorded episode elapsed_seconds.",
+  "sources": [
+    {
+      "task_id": 0,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 5,
+      "row": 0,
+      "column": 0,
+      "source_file": "loho-study/task 0/astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/episode.mp4",
+      "source_sha256": "b2e5878527eee4c3b99657cb22b878183e2a66affa1173e493af1645a01cab34",
+      "source_summary_sha256": "19c41ede6922f145965f2d3879970205bd36ca80cad48a63a33dc4253021a762",
+      "cohort_median_elapsed_seconds": 832.6291306510102,
+      "elapsed_seconds": 832.6291306510102,
+      "api_latency_seconds": 714.2094271240057,
+      "simulation_motion_seconds": 101.3,
+      "other_processing_seconds": 17.11970352700446,
+      "api_calls": 51,
+      "action_steps": 1013,
+      "completion_percent": 100,
+      "phases": [
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 0.0,
+          "end_seconds": 0.33568046131381296,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 0.33568046131381296,
+          "end_seconds": 17.523144856327917,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 17.523144856327917,
+          "end_seconds": 19.323144856327918,
+          "start_frame": 0,
+          "action_steps": 18,
+          "call": 1
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 19.323144856327918,
+          "end_seconds": 19.658825317641732,
+          "start_frame": 18,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 19.658825317641732,
+          "end_seconds": 44.92193491065363,
+          "start_frame": 18,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 44.92193491065363,
+          "end_seconds": 46.32193491065363,
+          "start_frame": 18,
+          "action_steps": 14,
+          "call": 2
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 46.32193491065363,
+          "end_seconds": 46.657615371967445,
+          "start_frame": 32,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 46.657615371967445,
+          "end_seconds": 67.00048000492319,
+          "start_frame": 32,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 67.00048000492319,
+          "end_seconds": 67.9004800049232,
+          "start_frame": 32,
+          "action_steps": 9,
+          "call": 3
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 67.9004800049232,
+          "end_seconds": 68.23616046623701,
+          "start_frame": 41,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 68.23616046623701,
+          "end_seconds": 77.33684541124293,
+          "start_frame": 41,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 77.33684541124293,
+          "end_seconds": 78.73684541124294,
+          "start_frame": 41,
+          "action_steps": 14,
+          "call": 4
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 78.73684541124294,
+          "end_seconds": 79.07252587255675,
+          "start_frame": 55,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 79.07252587255675,
+          "end_seconds": 93.11419213953081,
+          "start_frame": 55,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 93.11419213953081,
+          "end_seconds": 94.51419213953082,
+          "start_frame": 55,
+          "action_steps": 14,
+          "call": 5
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 94.51419213953082,
+          "end_seconds": 94.84987260084463,
+          "start_frame": 69,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 94.84987260084463,
+          "end_seconds": 112.51972253880095,
+          "start_frame": 69,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 112.51972253880095,
+          "end_seconds": 115.31972253880095,
+          "start_frame": 69,
+          "action_steps": 28,
+          "call": 6
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 115.31972253880095,
+          "end_seconds": 115.65540300011476,
+          "start_frame": 97,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 115.65540300011476,
+          "end_seconds": 126.05041544312685,
+          "start_frame": 97,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 126.05041544312685,
+          "end_seconds": 128.15041544312686,
+          "start_frame": 97,
+          "action_steps": 21,
+          "call": 7
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 128.15041544312686,
+          "end_seconds": 128.48609590444067,
+          "start_frame": 118,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 128.48609590444067,
+          "end_seconds": 146.99290301546972,
+          "start_frame": 118,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 146.99290301546972,
+          "end_seconds": 149.79290301546973,
+          "start_frame": 118,
+          "action_steps": 28,
+          "call": 8
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 149.79290301546973,
+          "end_seconds": 150.12858347678355,
+          "start_frame": 146,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 150.12858347678355,
+          "end_seconds": 155.04284112978291,
+          "start_frame": 146,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 155.04284112978291,
+          "end_seconds": 156.34284112978293,
+          "start_frame": 146,
+          "action_steps": 13,
+          "call": 9
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 156.34284112978293,
+          "end_seconds": 156.67852159109674,
+          "start_frame": 159,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 156.67852159109674,
+          "end_seconds": 166.10246208709208,
+          "start_frame": 159,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 166.10246208709208,
+          "end_seconds": 167.70246208709207,
+          "start_frame": 159,
+          "action_steps": 16,
+          "call": 10
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 167.70246208709207,
+          "end_seconds": 168.0381425484059,
+          "start_frame": 175,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 168.0381425484059,
+          "end_seconds": 190.03362250840044,
+          "start_frame": 175,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 190.03362250840044,
+          "end_seconds": 191.33362250840045,
+          "start_frame": 175,
+          "action_steps": 13,
+          "call": 11
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 191.33362250840045,
+          "end_seconds": 191.66930296971427,
+          "start_frame": 188,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 191.66930296971427,
+          "end_seconds": 201.28392197972593,
+          "start_frame": 188,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 201.28392197972593,
+          "end_seconds": 201.88392197972593,
+          "start_frame": 188,
+          "action_steps": 6,
+          "call": 12
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 201.88392197972593,
+          "end_seconds": 202.21960244103974,
+          "start_frame": 194,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 202.21960244103974,
+          "end_seconds": 205.6752698290249,
+          "start_frame": 194,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 205.6752698290249,
+          "end_seconds": 209.7752698290249,
+          "start_frame": 194,
+          "action_steps": 41,
+          "call": 13
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 209.7752698290249,
+          "end_seconds": 210.1109502903387,
+          "start_frame": 235,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 210.1109502903387,
+          "end_seconds": 220.01246056233916,
+          "start_frame": 235,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 220.01246056233916,
+          "end_seconds": 220.71246056233915,
+          "start_frame": 235,
+          "action_steps": 7,
+          "call": 14
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 220.71246056233915,
+          "end_seconds": 221.04814102365296,
+          "start_frame": 242,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 221.04814102365296,
+          "end_seconds": 246.2185135086033,
+          "start_frame": 242,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 246.2185135086033,
+          "end_seconds": 250.3185135086033,
+          "start_frame": 242,
+          "action_steps": 41,
+          "call": 15
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 250.3185135086033,
+          "end_seconds": 250.65419396991712,
+          "start_frame": 283,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 250.65419396991712,
+          "end_seconds": 255.3868655669583,
+          "start_frame": 283,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 255.3868655669583,
+          "end_seconds": 256.0868655669583,
+          "start_frame": 283,
+          "action_steps": 7,
+          "call": 16
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 256.0868655669583,
+          "end_seconds": 256.4225460282721,
+          "start_frame": 290,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 256.4225460282721,
+          "end_seconds": 260.09158556325906,
+          "start_frame": 290,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 260.09158556325906,
+          "end_seconds": 264.1915855632591,
+          "start_frame": 290,
+          "action_steps": 41,
+          "call": 17
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 264.1915855632591,
+          "end_seconds": 264.5272660245729,
+          "start_frame": 331,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 264.5272660245729,
+          "end_seconds": 267.7572131045355,
+          "start_frame": 331,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 267.7572131045355,
+          "end_seconds": 268.45721310453547,
+          "start_frame": 331,
+          "action_steps": 7,
+          "call": 18
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 268.45721310453547,
+          "end_seconds": 268.7928935658493,
+          "start_frame": 338,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 268.7928935658493,
+          "end_seconds": 293.5272240408886,
+          "start_frame": 338,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 293.5272240408886,
+          "end_seconds": 295.6272240408886,
+          "start_frame": 338,
+          "action_steps": 21,
+          "call": 19
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 295.6272240408886,
+          "end_seconds": 295.96290450220243,
+          "start_frame": 359,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 295.96290450220243,
+          "end_seconds": 306.4456500261744,
+          "start_frame": 359,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 306.4456500261744,
+          "end_seconds": 308.2456500261744,
+          "start_frame": 359,
+          "action_steps": 18,
+          "call": 20
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 308.2456500261744,
+          "end_seconds": 308.58133048748823,
+          "start_frame": 377,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 308.58133048748823,
+          "end_seconds": 325.9236848284909,
+          "start_frame": 377,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 325.9236848284909,
+          "end_seconds": 327.2236848284909,
+          "start_frame": 377,
+          "action_steps": 13,
+          "call": 21
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 327.2236848284909,
+          "end_seconds": 327.5593652898047,
+          "start_frame": 390,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 327.5593652898047,
+          "end_seconds": 344.77487228280603,
+          "start_frame": 390,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 344.77487228280603,
+          "end_seconds": 345.87487228280605,
+          "start_frame": 390,
+          "action_steps": 11,
+          "call": 22
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 345.87487228280605,
+          "end_seconds": 346.21055274411987,
+          "start_frame": 401,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 346.21055274411987,
+          "end_seconds": 359.315168306075,
+          "start_frame": 401,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 359.315168306075,
+          "end_seconds": 363.41516830607503,
+          "start_frame": 401,
+          "action_steps": 41,
+          "call": 23
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 363.41516830607503,
+          "end_seconds": 363.75084876738885,
+          "start_frame": 442,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 363.75084876738885,
+          "end_seconds": 373.37185388440895,
+          "start_frame": 442,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 373.37185388440895,
+          "end_seconds": 374.57185388440894,
+          "start_frame": 442,
+          "action_steps": 12,
+          "call": 24
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 374.57185388440894,
+          "end_seconds": 374.90753434572275,
+          "start_frame": 454,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 374.90753434572275,
+          "end_seconds": 393.1932932157363,
+          "start_frame": 454,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 393.1932932157363,
+          "end_seconds": 395.4932932157363,
+          "start_frame": 454,
+          "action_steps": 23,
+          "call": 25
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 395.4932932157363,
+          "end_seconds": 395.8289736770501,
+          "start_frame": 477,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 395.8289736770501,
+          "end_seconds": 407.6826863200229,
+          "start_frame": 477,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 407.6826863200229,
+          "end_seconds": 409.28268632002295,
+          "start_frame": 477,
+          "action_steps": 16,
+          "call": 26
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 409.28268632002295,
+          "end_seconds": 409.61836678133676,
+          "start_frame": 493,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 409.61836678133676,
+          "end_seconds": 427.19204046333306,
+          "start_frame": 493,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 427.19204046333306,
+          "end_seconds": 431.39204046333305,
+          "start_frame": 493,
+          "action_steps": 42,
+          "call": 27
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 431.39204046333305,
+          "end_seconds": 431.72772092464686,
+          "start_frame": 535,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 431.72772092464686,
+          "end_seconds": 457.72316156367845,
+          "start_frame": 535,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 457.72316156367845,
+          "end_seconds": 461.52316156367846,
+          "start_frame": 535,
+          "action_steps": 38,
+          "call": 28
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 461.52316156367846,
+          "end_seconds": 461.85884202499227,
+          "start_frame": 573,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 461.85884202499227,
+          "end_seconds": 467.3925973899947,
+          "start_frame": 573,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 467.3925973899947,
+          "end_seconds": 468.4925973899947,
+          "start_frame": 573,
+          "action_steps": 11,
+          "call": 29
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 468.4925973899947,
+          "end_seconds": 468.82827785130854,
+          "start_frame": 584,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 468.82827785130854,
+          "end_seconds": 495.22588452932456,
+          "start_frame": 584,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 495.22588452932456,
+          "end_seconds": 497.92588452932455,
+          "start_frame": 584,
+          "action_steps": 27,
+          "call": 30
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 497.92588452932455,
+          "end_seconds": 498.26156499063836,
+          "start_frame": 611,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 498.26156499063836,
+          "end_seconds": 521.0935964376713,
+          "start_frame": 611,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 521.0935964376713,
+          "end_seconds": 522.8935964376712,
+          "start_frame": 611,
+          "action_steps": 18,
+          "call": 31
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 522.8935964376712,
+          "end_seconds": 523.2292768989851,
+          "start_frame": 629,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 523.2292768989851,
+          "end_seconds": 533.9665490500324,
+          "start_frame": 629,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 533.9665490500324,
+          "end_seconds": 536.0665490500324,
+          "start_frame": 629,
+          "action_steps": 21,
+          "call": 32
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 536.0665490500324,
+          "end_seconds": 536.4022295113463,
+          "start_frame": 650,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 536.4022295113463,
+          "end_seconds": 554.5162322133473,
+          "start_frame": 650,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 554.5162322133473,
+          "end_seconds": 555.5162322133473,
+          "start_frame": 650,
+          "action_steps": 10,
+          "call": 33
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 555.5162322133473,
+          "end_seconds": 555.8519126746611,
+          "start_frame": 660,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 555.8519126746611,
+          "end_seconds": 565.5396333056775,
+          "start_frame": 660,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 565.5396333056775,
+          "end_seconds": 569.6396333056775,
+          "start_frame": 660,
+          "action_steps": 41,
+          "call": 34
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 569.6396333056775,
+          "end_seconds": 569.9753137669913,
+          "start_frame": 701,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 569.9753137669913,
+          "end_seconds": 574.8896289309641,
+          "start_frame": 701,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 574.8896289309641,
+          "end_seconds": 575.5896289309642,
+          "start_frame": 701,
+          "action_steps": 7,
+          "call": 35
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 575.5896289309642,
+          "end_seconds": 575.925309392278,
+          "start_frame": 708,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 575.925309392278,
+          "end_seconds": 613.3490824083019,
+          "start_frame": 708,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 613.3490824083019,
+          "end_seconds": 614.3490824083019,
+          "start_frame": 708,
+          "action_steps": 10,
+          "call": 36
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 614.3490824083019,
+          "end_seconds": 614.6847628696157,
+          "start_frame": 718,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 614.6847628696157,
+          "end_seconds": 623.3089176806423,
+          "start_frame": 718,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 623.3089176806423,
+          "end_seconds": 624.2089176806422,
+          "start_frame": 718,
+          "action_steps": 9,
+          "call": 37
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 624.2089176806422,
+          "end_seconds": 624.544598141956,
+          "start_frame": 727,
+          "action_steps": 0,
+          "call": 38
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 624.544598141956,
+          "end_seconds": 637.9738673649643,
+          "start_frame": 727,
+          "action_steps": 0,
+          "call": 38
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 637.9738673649643,
+          "end_seconds": 642.1738673649644,
+          "start_frame": 727,
+          "action_steps": 42,
+          "call": 38
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 642.1738673649644,
+          "end_seconds": 642.5095478262782,
+          "start_frame": 769,
+          "action_steps": 0,
+          "call": 39
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 642.5095478262782,
+          "end_seconds": 661.3076532362874,
+          "start_frame": 769,
+          "action_steps": 0,
+          "call": 39
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 661.3076532362874,
+          "end_seconds": 662.4076532362874,
+          "start_frame": 769,
+          "action_steps": 11,
+          "call": 39
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 662.4076532362874,
+          "end_seconds": 662.7433336976012,
+          "start_frame": 780,
+          "action_steps": 0,
+          "call": 40
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 662.7433336976012,
+          "end_seconds": 671.7558783356128,
+          "start_frame": 780,
+          "action_steps": 0,
+          "call": 40
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 671.7558783356128,
+          "end_seconds": 675.8558783356128,
+          "start_frame": 780,
+          "action_steps": 41,
+          "call": 40
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 675.8558783356128,
+          "end_seconds": 676.1915587969266,
+          "start_frame": 821,
+          "action_steps": 0,
+          "call": 41
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 676.1915587969266,
+          "end_seconds": 680.0062735869575,
+          "start_frame": 821,
+          "action_steps": 0,
+          "call": 41
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 680.0062735869575,
+          "end_seconds": 680.8062735869574,
+          "start_frame": 821,
+          "action_steps": 8,
+          "call": 41
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 680.8062735869574,
+          "end_seconds": 681.1419540482713,
+          "start_frame": 829,
+          "action_steps": 0,
+          "call": 42
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 681.1419540482713,
+          "end_seconds": 696.5806182522466,
+          "start_frame": 829,
+          "action_steps": 0,
+          "call": 42
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 696.5806182522466,
+          "end_seconds": 699.1806182522466,
+          "start_frame": 829,
+          "action_steps": 26,
+          "call": 42
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 699.1806182522466,
+          "end_seconds": 699.5162987135604,
+          "start_frame": 855,
+          "action_steps": 0,
+          "call": 43
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 699.5162987135604,
+          "end_seconds": 706.1920833035742,
+          "start_frame": 855,
+          "action_steps": 0,
+          "call": 43
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 706.1920833035742,
+          "end_seconds": 707.0920833035742,
+          "start_frame": 855,
+          "action_steps": 9,
+          "call": 43
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 707.0920833035742,
+          "end_seconds": 707.427763764888,
+          "start_frame": 864,
+          "action_steps": 0,
+          "call": 44
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 707.427763764888,
+          "end_seconds": 717.6959464388452,
+          "start_frame": 864,
+          "action_steps": 0,
+          "call": 44
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 717.6959464388452,
+          "end_seconds": 719.0959464388452,
+          "start_frame": 864,
+          "action_steps": 14,
+          "call": 44
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 719.0959464388452,
+          "end_seconds": 719.431626900159,
+          "start_frame": 878,
+          "action_steps": 0,
+          "call": 45
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 719.431626900159,
+          "end_seconds": 726.3002334031642,
+          "start_frame": 878,
+          "action_steps": 0,
+          "call": 45
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 726.3002334031642,
+          "end_seconds": 730.4002334031642,
+          "start_frame": 878,
+          "action_steps": 41,
+          "call": 45
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 730.4002334031642,
+          "end_seconds": 730.735913864478,
+          "start_frame": 919,
+          "action_steps": 0,
+          "call": 46
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 730.735913864478,
+          "end_seconds": 735.755296663464,
+          "start_frame": 919,
+          "action_steps": 0,
+          "call": 46
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 735.755296663464,
+          "end_seconds": 737.155296663464,
+          "start_frame": 919,
+          "action_steps": 14,
+          "call": 46
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 737.155296663464,
+          "end_seconds": 737.4909771247778,
+          "start_frame": 933,
+          "action_steps": 0,
+          "call": 47
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 737.4909771247778,
+          "end_seconds": 782.3557624667312,
+          "start_frame": 933,
+          "action_steps": 0,
+          "call": 47
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 782.3557624667312,
+          "end_seconds": 786.6557624667312,
+          "start_frame": 933,
+          "action_steps": 43,
+          "call": 47
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 786.6557624667312,
+          "end_seconds": 786.991442928045,
+          "start_frame": 976,
+          "action_steps": 0,
+          "call": 48
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 786.991442928045,
+          "end_seconds": 792.947639397067,
+          "start_frame": 976,
+          "action_steps": 0,
+          "call": 48
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 792.947639397067,
+          "end_seconds": 794.647639397067,
+          "start_frame": 976,
+          "action_steps": 17,
+          "call": 48
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 794.647639397067,
+          "end_seconds": 794.9833198583808,
+          "start_frame": 993,
+          "action_steps": 0,
+          "call": 49
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 794.9833198583808,
+          "end_seconds": 807.0040196923662,
+          "start_frame": 993,
+          "action_steps": 0,
+          "call": 49
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 807.0040196923662,
+          "end_seconds": 807.7040196923663,
+          "start_frame": 993,
+          "action_steps": 7,
+          "call": 49
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 807.7040196923663,
+          "end_seconds": 808.0397001536801,
+          "start_frame": 1000,
+          "action_steps": 0,
+          "call": 50
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 808.0397001536801,
+          "end_seconds": 816.2388293546862,
+          "start_frame": 1000,
+          "action_steps": 0,
+          "call": 50
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 816.2388293546862,
+          "end_seconds": 817.0388293546862,
+          "start_frame": 1000,
+          "action_steps": 8,
+          "call": 50
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 817.0388293546862,
+          "end_seconds": 817.374509816,
+          "start_frame": 1008,
+          "action_steps": 0,
+          "call": 51
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 817.374509816,
+          "end_seconds": 832.1291306510104,
+          "start_frame": 1008,
+          "action_steps": 0,
+          "call": 51
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 832.1291306510104,
+          "end_seconds": 832.6291306510104,
+          "start_frame": 1008,
+          "action_steps": 5,
+          "call": 51
+        }
+      ]
+    },
+    {
+      "task_id": 0,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 1,
+      "row": 0,
+      "column": 1,
+      "source_file": "loho-study/task 0/opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025/episode.mp4",
+      "source_sha256": "d324cca04051a380701938e668ae65208de6870d5f0a0b91e4d58b2ce9805eb8",
+      "source_summary_sha256": "5ae2c771d6257403cb487d260e69a9ce026bedaddc78d690d2dd7c00c5d5a600",
+      "cohort_median_elapsed_seconds": 1760.7254215289722,
+      "elapsed_seconds": 1760.7254215289722,
+      "api_latency_seconds": 1701.3874957298394,
+      "simulation_motion_seconds": 47.9,
+      "other_processing_seconds": 11.437925799132792,
+      "api_calls": 31,
+      "action_steps": 479,
+      "completion_percent": 100,
+      "phases": [
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 0.0,
+          "end_seconds": 0.3689653483591223,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 0.3689653483591223,
+          "end_seconds": 221.07654676838072,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 221.07654676838072,
+          "end_seconds": 222.7765467683807,
+          "start_frame": 0,
+          "action_steps": 17,
+          "call": 1
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 222.7765467683807,
+          "end_seconds": 223.14551211673984,
+          "start_frame": 17,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 223.14551211673984,
+          "end_seconds": 382.06970986975807,
+          "start_frame": 17,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 382.06970986975807,
+          "end_seconds": 382.76970986975806,
+          "start_frame": 17,
+          "action_steps": 7,
+          "call": 2
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 382.76970986975806,
+          "end_seconds": 383.13867521811716,
+          "start_frame": 24,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 383.13867521811716,
+          "end_seconds": 442.0172599171239,
+          "start_frame": 24,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 442.0172599171239,
+          "end_seconds": 445.0172599171239,
+          "start_frame": 24,
+          "action_steps": 30,
+          "call": 3
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 445.0172599171239,
+          "end_seconds": 445.386225265483,
+          "start_frame": 54,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 445.386225265483,
+          "end_seconds": 456.8974278684795,
+          "start_frame": 54,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 456.8974278684795,
+          "end_seconds": 457.7974278684795,
+          "start_frame": 54,
+          "action_steps": 9,
+          "call": 4
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 457.7974278684795,
+          "end_seconds": 458.16639321683857,
+          "start_frame": 63,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 458.16639321683857,
+          "end_seconds": 758.4963168598124,
+          "start_frame": 63,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 758.4963168598124,
+          "end_seconds": 759.3963168598124,
+          "start_frame": 63,
+          "action_steps": 9,
+          "call": 5
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 759.3963168598124,
+          "end_seconds": 759.7652822081715,
+          "start_frame": 72,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 759.7652822081715,
+          "end_seconds": 777.5244899331725,
+          "start_frame": 72,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 777.5244899331725,
+          "end_seconds": 779.4244899331725,
+          "start_frame": 72,
+          "action_steps": 19,
+          "call": 6
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 779.4244899331725,
+          "end_seconds": 779.7934552815316,
+          "start_frame": 91,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 779.7934552815316,
+          "end_seconds": 799.3489425575283,
+          "start_frame": 91,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 799.3489425575283,
+          "end_seconds": 803.2489425575283,
+          "start_frame": 91,
+          "action_steps": 39,
+          "call": 7
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 803.2489425575283,
+          "end_seconds": 803.6179079058874,
+          "start_frame": 130,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 803.6179079058874,
+          "end_seconds": 812.3149416068862,
+          "start_frame": 130,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 812.3149416068862,
+          "end_seconds": 813.0149416068863,
+          "start_frame": 130,
+          "action_steps": 7,
+          "call": 8
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 813.0149416068863,
+          "end_seconds": 813.3839069552454,
+          "start_frame": 137,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 813.3839069552454,
+          "end_seconds": 894.9800075722709,
+          "start_frame": 137,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 894.9800075722709,
+          "end_seconds": 897.5800075722709,
+          "start_frame": 137,
+          "action_steps": 26,
+          "call": 9
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 897.5800075722709,
+          "end_seconds": 897.94897292063,
+          "start_frame": 163,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 897.94897292063,
+          "end_seconds": 912.7683732906346,
+          "start_frame": 163,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 912.7683732906346,
+          "end_seconds": 914.4683732906346,
+          "start_frame": 163,
+          "action_steps": 17,
+          "call": 10
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 914.4683732906346,
+          "end_seconds": 914.8373386389937,
+          "start_frame": 180,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 914.8373386389937,
+          "end_seconds": 967.5997747819417,
+          "start_frame": 180,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 967.5997747819417,
+          "end_seconds": 968.7997747819418,
+          "start_frame": 180,
+          "action_steps": 12,
+          "call": 11
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 968.7997747819418,
+          "end_seconds": 969.1687401303009,
+          "start_frame": 192,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 969.1687401303009,
+          "end_seconds": 1007.4640538822662,
+          "start_frame": 192,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1007.4640538822662,
+          "end_seconds": 1007.9640538822662,
+          "start_frame": 192,
+          "action_steps": 5,
+          "call": 12
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1007.9640538822662,
+          "end_seconds": 1008.3330192306253,
+          "start_frame": 197,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1008.3330192306253,
+          "end_seconds": 1013.8996994895801,
+          "start_frame": 197,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1013.8996994895801,
+          "end_seconds": 1017.9996994895802,
+          "start_frame": 197,
+          "action_steps": 41,
+          "call": 13
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1017.9996994895802,
+          "end_seconds": 1018.3686648379393,
+          "start_frame": 238,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1018.3686648379393,
+          "end_seconds": 1222.0029863229452,
+          "start_frame": 238,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1222.0029863229452,
+          "end_seconds": 1222.9029863229453,
+          "start_frame": 238,
+          "action_steps": 9,
+          "call": 14
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1222.9029863229453,
+          "end_seconds": 1223.2719516713044,
+          "start_frame": 247,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1223.2719516713044,
+          "end_seconds": 1253.6492114452633,
+          "start_frame": 247,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1253.6492114452633,
+          "end_seconds": 1254.5492114452634,
+          "start_frame": 247,
+          "action_steps": 9,
+          "call": 15
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1254.5492114452634,
+          "end_seconds": 1254.9181767936225,
+          "start_frame": 256,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1254.9181767936225,
+          "end_seconds": 1265.730355453632,
+          "start_frame": 256,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1265.730355453632,
+          "end_seconds": 1266.530355453632,
+          "start_frame": 256,
+          "action_steps": 8,
+          "call": 16
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1266.530355453632,
+          "end_seconds": 1266.899320801991,
+          "start_frame": 264,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1266.899320801991,
+          "end_seconds": 1300.806715038003,
+          "start_frame": 264,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1300.806715038003,
+          "end_seconds": 1301.506715038003,
+          "start_frame": 264,
+          "action_steps": 7,
+          "call": 17
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1301.506715038003,
+          "end_seconds": 1301.875680386362,
+          "start_frame": 271,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1301.875680386362,
+          "end_seconds": 1315.6541249803672,
+          "start_frame": 271,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1315.6541249803672,
+          "end_seconds": 1317.2541249803671,
+          "start_frame": 271,
+          "action_steps": 16,
+          "call": 18
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1317.2541249803671,
+          "end_seconds": 1317.6230903287262,
+          "start_frame": 287,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1317.6230903287262,
+          "end_seconds": 1336.39395968973,
+          "start_frame": 287,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1336.39395968973,
+          "end_seconds": 1337.2939596897302,
+          "start_frame": 287,
+          "action_steps": 9,
+          "call": 19
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1337.2939596897302,
+          "end_seconds": 1337.6629250380893,
+          "start_frame": 296,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1337.6629250380893,
+          "end_seconds": 1345.1273287871254,
+          "start_frame": 296,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1345.1273287871254,
+          "end_seconds": 1349.2273287871253,
+          "start_frame": 296,
+          "action_steps": 41,
+          "call": 20
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1349.2273287871253,
+          "end_seconds": 1349.5962941354844,
+          "start_frame": 337,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1349.5962941354844,
+          "end_seconds": 1354.211903981504,
+          "start_frame": 337,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1354.211903981504,
+          "end_seconds": 1354.911903981504,
+          "start_frame": 337,
+          "action_steps": 7,
+          "call": 21
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1354.911903981504,
+          "end_seconds": 1355.2808693298632,
+          "start_frame": 344,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1355.2808693298632,
+          "end_seconds": 1376.731541844891,
+          "start_frame": 344,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1376.731541844891,
+          "end_seconds": 1379.3315418448908,
+          "start_frame": 344,
+          "action_steps": 26,
+          "call": 22
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1379.3315418448908,
+          "end_seconds": 1379.70050719325,
+          "start_frame": 370,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1379.70050719325,
+          "end_seconds": 1472.9370485782556,
+          "start_frame": 370,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1472.9370485782556,
+          "end_seconds": 1473.8370485782557,
+          "start_frame": 370,
+          "action_steps": 9,
+          "call": 23
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1473.8370485782557,
+          "end_seconds": 1474.2060139266148,
+          "start_frame": 379,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1474.2060139266148,
+          "end_seconds": 1496.487290257607,
+          "start_frame": 379,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1496.487290257607,
+          "end_seconds": 1497.387290257607,
+          "start_frame": 379,
+          "action_steps": 9,
+          "call": 24
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1497.387290257607,
+          "end_seconds": 1497.756255605966,
+          "start_frame": 388,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1497.756255605966,
+          "end_seconds": 1556.0783816059215,
+          "start_frame": 388,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1556.0783816059215,
+          "end_seconds": 1556.7783816059216,
+          "start_frame": 388,
+          "action_steps": 7,
+          "call": 25
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1556.7783816059216,
+          "end_seconds": 1557.1473469542807,
+          "start_frame": 395,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1557.1473469542807,
+          "end_seconds": 1618.6572344092538,
+          "start_frame": 395,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1618.6572344092538,
+          "end_seconds": 1619.0572344092539,
+          "start_frame": 395,
+          "action_steps": 4,
+          "call": 26
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1619.0572344092539,
+          "end_seconds": 1619.426199757613,
+          "start_frame": 399,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1619.426199757613,
+          "end_seconds": 1625.3025642616,
+          "start_frame": 399,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1625.3025642616,
+          "end_seconds": 1626.1025642616,
+          "start_frame": 399,
+          "action_steps": 8,
+          "call": 27
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1626.1025642616,
+          "end_seconds": 1626.4715296099591,
+          "start_frame": 407,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1626.4715296099591,
+          "end_seconds": 1686.3970347239217,
+          "start_frame": 407,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1686.3970347239217,
+          "end_seconds": 1690.4970347239216,
+          "start_frame": 407,
+          "action_steps": 41,
+          "call": 28
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1690.4970347239216,
+          "end_seconds": 1690.8660000722807,
+          "start_frame": 448,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1690.8660000722807,
+          "end_seconds": 1735.0351592243019,
+          "start_frame": 448,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1735.0351592243019,
+          "end_seconds": 1736.5351592243019,
+          "start_frame": 448,
+          "action_steps": 15,
+          "call": 29
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1736.5351592243019,
+          "end_seconds": 1736.904124572661,
+          "start_frame": 463,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1736.904124572661,
+          "end_seconds": 1743.5904215926628,
+          "start_frame": 463,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1743.5904215926628,
+          "end_seconds": 1744.5904215926628,
+          "start_frame": 463,
+          "action_steps": 10,
+          "call": 30
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1744.5904215926628,
+          "end_seconds": 1744.9593869410219,
+          "start_frame": 473,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1744.9593869410219,
+          "end_seconds": 1760.1254215289719,
+          "start_frame": 473,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1760.1254215289719,
+          "end_seconds": 1760.7254215289718,
+          "start_frame": 473,
+          "action_steps": 6,
+          "call": 31
+        }
+      ]
+    },
+    {
+      "task_id": 1,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 1,
+      "row": 1,
+      "column": 0,
+      "source_file": "loho-study/task 1/astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048/episode.mp4",
+      "source_sha256": "dfa06a32d01e9fb3cd6fa927ed60472de7c896d9d8a5d556ee605ffc478c6832",
+      "source_summary_sha256": "f8a27fa9c87bfa4343174a87e8fc513e44784932c283463ffe95c0b14ed01cf4",
+      "cohort_median_elapsed_seconds": 655.2977720219642,
+      "elapsed_seconds": 655.2977720219642,
+      "api_latency_seconds": 587.933019110933,
+      "simulation_motion_seconds": 57.4,
+      "other_processing_seconds": 9.964752911031248,
+      "api_calls": 35,
+      "action_steps": 574,
+      "completion_percent": 100,
+      "phases": [
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 0.0,
+          "end_seconds": 0.28470722602946424,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 0.28470722602946424,
+          "end_seconds": 21.59096023503957,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 21.59096023503957,
+          "end_seconds": 22.49096023503957,
+          "start_frame": 0,
+          "action_steps": 9,
+          "call": 1
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 22.49096023503957,
+          "end_seconds": 22.775667461069034,
+          "start_frame": 9,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 22.775667461069034,
+          "end_seconds": 46.50848564205525,
+          "start_frame": 9,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 46.50848564205525,
+          "end_seconds": 47.60848564205525,
+          "start_frame": 9,
+          "action_steps": 11,
+          "call": 2
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 47.60848564205525,
+          "end_seconds": 47.89319286808471,
+          "start_frame": 20,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 47.89319286808471,
+          "end_seconds": 91.99644127213263,
+          "start_frame": 20,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 91.99644127213263,
+          "end_seconds": 92.69644127213263,
+          "start_frame": 20,
+          "action_steps": 7,
+          "call": 3
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 92.69644127213263,
+          "end_seconds": 92.9811484981621,
+          "start_frame": 27,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 92.9811484981621,
+          "end_seconds": 113.52331136519223,
+          "start_frame": 27,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 113.52331136519223,
+          "end_seconds": 114.62331136519222,
+          "start_frame": 27,
+          "action_steps": 11,
+          "call": 4
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 114.62331136519222,
+          "end_seconds": 114.90801859122169,
+          "start_frame": 38,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 114.90801859122169,
+          "end_seconds": 120.977738379258,
+          "start_frame": 38,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 120.977738379258,
+          "end_seconds": 125.077738379258,
+          "start_frame": 38,
+          "action_steps": 41,
+          "call": 5
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 125.077738379258,
+          "end_seconds": 125.36244560528746,
+          "start_frame": 79,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 125.36244560528746,
+          "end_seconds": 127.8504330642844,
+          "start_frame": 79,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 127.8504330642844,
+          "end_seconds": 128.5504330642844,
+          "start_frame": 79,
+          "action_steps": 7,
+          "call": 6
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 128.5504330642844,
+          "end_seconds": 128.83514029031386,
+          "start_frame": 86,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 128.83514029031386,
+          "end_seconds": 150.37186996835982,
+          "start_frame": 86,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 150.37186996835982,
+          "end_seconds": 151.87186996835982,
+          "start_frame": 86,
+          "action_steps": 15,
+          "call": 7
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 151.87186996835982,
+          "end_seconds": 152.15657719438929,
+          "start_frame": 101,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 152.15657719438929,
+          "end_seconds": 157.3547108924136,
+          "start_frame": 101,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 157.3547108924136,
+          "end_seconds": 159.0547108924136,
+          "start_frame": 101,
+          "action_steps": 17,
+          "call": 8
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 159.0547108924136,
+          "end_seconds": 159.33941811844306,
+          "start_frame": 118,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 159.33941811844306,
+          "end_seconds": 186.67383576944303,
+          "start_frame": 118,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 186.67383576944303,
+          "end_seconds": 187.67383576944303,
+          "start_frame": 118,
+          "action_steps": 10,
+          "call": 9
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 187.67383576944303,
+          "end_seconds": 187.9585429954725,
+          "start_frame": 128,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 187.9585429954725,
+          "end_seconds": 203.41583305850259,
+          "start_frame": 128,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 203.41583305850259,
+          "end_seconds": 204.61583305850257,
+          "start_frame": 128,
+          "action_steps": 12,
+          "call": 10
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 204.61583305850257,
+          "end_seconds": 204.90054028453204,
+          "start_frame": 140,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 204.90054028453204,
+          "end_seconds": 214.5059137895111,
+          "start_frame": 140,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 214.5059137895111,
+          "end_seconds": 218.6059137895111,
+          "start_frame": 140,
+          "action_steps": 41,
+          "call": 11
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 218.6059137895111,
+          "end_seconds": 218.89062101554057,
+          "start_frame": 181,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 218.89062101554057,
+          "end_seconds": 223.19409757255974,
+          "start_frame": 181,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 223.19409757255974,
+          "end_seconds": 224.59409757255975,
+          "start_frame": 181,
+          "action_steps": 14,
+          "call": 12
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 224.59409757255975,
+          "end_seconds": 224.87880479858921,
+          "start_frame": 195,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 224.87880479858921,
+          "end_seconds": 251.64695406053414,
+          "start_frame": 195,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 251.64695406053414,
+          "end_seconds": 252.94695406053415,
+          "start_frame": 195,
+          "action_steps": 13,
+          "call": 13
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 252.94695406053415,
+          "end_seconds": 253.23166128656362,
+          "start_frame": 208,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 253.23166128656362,
+          "end_seconds": 267.3685616615787,
+          "start_frame": 208,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 267.3685616615787,
+          "end_seconds": 268.2685616615787,
+          "start_frame": 208,
+          "action_steps": 9,
+          "call": 14
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 268.2685616615787,
+          "end_seconds": 268.55326888760817,
+          "start_frame": 217,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 268.55326888760817,
+          "end_seconds": 277.80472420858484,
+          "start_frame": 217,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 277.80472420858484,
+          "end_seconds": 278.80472420858484,
+          "start_frame": 217,
+          "action_steps": 10,
+          "call": 15
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 278.80472420858484,
+          "end_seconds": 279.0894314346143,
+          "start_frame": 227,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 279.0894314346143,
+          "end_seconds": 287.1886647835846,
+          "start_frame": 227,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 287.1886647835846,
+          "end_seconds": 291.28866478358464,
+          "start_frame": 227,
+          "action_steps": 41,
+          "call": 16
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 291.28866478358464,
+          "end_seconds": 291.5733720096141,
+          "start_frame": 268,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 291.5733720096141,
+          "end_seconds": 295.493743392577,
+          "start_frame": 268,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 295.493743392577,
+          "end_seconds": 296.193743392577,
+          "start_frame": 268,
+          "action_steps": 7,
+          "call": 17
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 296.193743392577,
+          "end_seconds": 296.4784506186065,
+          "start_frame": 275,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 296.4784506186065,
+          "end_seconds": 301.32783898261044,
+          "start_frame": 275,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 301.32783898261044,
+          "end_seconds": 302.82783898261044,
+          "start_frame": 275,
+          "action_steps": 15,
+          "call": 18
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 302.82783898261044,
+          "end_seconds": 303.1125462086399,
+          "start_frame": 290,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 303.1125462086399,
+          "end_seconds": 318.5067283106379,
+          "start_frame": 290,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 318.5067283106379,
+          "end_seconds": 319.5067283106379,
+          "start_frame": 290,
+          "action_steps": 10,
+          "call": 19
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 319.5067283106379,
+          "end_seconds": 319.7914355366674,
+          "start_frame": 300,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 319.7914355366674,
+          "end_seconds": 344.0930147746994,
+          "start_frame": 300,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 344.0930147746994,
+          "end_seconds": 345.49301477469936,
+          "start_frame": 300,
+          "action_steps": 14,
+          "call": 20
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 345.49301477469936,
+          "end_seconds": 345.77772200072883,
+          "start_frame": 314,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 345.77772200072883,
+          "end_seconds": 379.6302419197187,
+          "start_frame": 314,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 379.6302419197187,
+          "end_seconds": 380.7302419197187,
+          "start_frame": 314,
+          "action_steps": 11,
+          "call": 21
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 380.7302419197187,
+          "end_seconds": 381.0149491457482,
+          "start_frame": 325,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 381.0149491457482,
+          "end_seconds": 387.4528925077388,
+          "start_frame": 325,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 387.4528925077388,
+          "end_seconds": 388.9528925077388,
+          "start_frame": 325,
+          "action_steps": 15,
+          "call": 22
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 388.9528925077388,
+          "end_seconds": 389.23759973376826,
+          "start_frame": 340,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 389.23759973376826,
+          "end_seconds": 411.09523005174077,
+          "start_frame": 340,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 411.09523005174077,
+          "end_seconds": 412.6952300517408,
+          "start_frame": 340,
+          "action_steps": 16,
+          "call": 23
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 412.6952300517408,
+          "end_seconds": 412.97993727777026,
+          "start_frame": 356,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 412.97993727777026,
+          "end_seconds": 423.5649006597592,
+          "start_frame": 356,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 423.5649006597592,
+          "end_seconds": 427.6649006597592,
+          "start_frame": 356,
+          "action_steps": 41,
+          "call": 24
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 427.6649006597592,
+          "end_seconds": 427.9496078857887,
+          "start_frame": 397,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 427.9496078857887,
+          "end_seconds": 434.30388507776337,
+          "start_frame": 397,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 434.30388507776337,
+          "end_seconds": 435.4038850777634,
+          "start_frame": 397,
+          "action_steps": 11,
+          "call": 25
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 435.4038850777634,
+          "end_seconds": 435.68859230379286,
+          "start_frame": 408,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 435.68859230379286,
+          "end_seconds": 447.1112408138154,
+          "start_frame": 408,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 447.1112408138154,
+          "end_seconds": 448.6112408138154,
+          "start_frame": 408,
+          "action_steps": 15,
+          "call": 26
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 448.6112408138154,
+          "end_seconds": 448.8959480398449,
+          "start_frame": 423,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 448.8959480398449,
+          "end_seconds": 472.20852890588554,
+          "start_frame": 423,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 472.20852890588554,
+          "end_seconds": 473.00852890588556,
+          "start_frame": 423,
+          "action_steps": 8,
+          "call": 27
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 473.00852890588556,
+          "end_seconds": 473.293236131915,
+          "start_frame": 431,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 473.293236131915,
+          "end_seconds": 481.1442938618899,
+          "start_frame": 431,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 481.1442938618899,
+          "end_seconds": 482.04429386188986,
+          "start_frame": 431,
+          "action_steps": 9,
+          "call": 28
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 482.04429386188986,
+          "end_seconds": 482.3290010879193,
+          "start_frame": 440,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 482.3290010879193,
+          "end_seconds": 487.4878965248847,
+          "start_frame": 440,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 487.4878965248847,
+          "end_seconds": 491.58789652488474,
+          "start_frame": 440,
+          "action_steps": 41,
+          "call": 29
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 491.58789652488474,
+          "end_seconds": 491.8726037509142,
+          "start_frame": 481,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 491.8726037509142,
+          "end_seconds": 495.4966935009098,
+          "start_frame": 481,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 495.4966935009098,
+          "end_seconds": 496.1966935009098,
+          "start_frame": 481,
+          "action_steps": 7,
+          "call": 30
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 496.1966935009098,
+          "end_seconds": 496.4814007269393,
+          "start_frame": 488,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 496.4814007269393,
+          "end_seconds": 526.4624725638946,
+          "start_frame": 488,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 526.4624725638946,
+          "end_seconds": 527.9624725638946,
+          "start_frame": 488,
+          "action_steps": 15,
+          "call": 31
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 527.9624725638946,
+          "end_seconds": 528.2471797899241,
+          "start_frame": 503,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 528.2471797899241,
+          "end_seconds": 533.614552221891,
+          "start_frame": 503,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 533.614552221891,
+          "end_seconds": 534.714552221891,
+          "start_frame": 503,
+          "action_steps": 11,
+          "call": 32
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 534.714552221891,
+          "end_seconds": 534.9992594479205,
+          "start_frame": 514,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 534.9992594479205,
+          "end_seconds": 583.1802238939068,
+          "start_frame": 514,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 583.1802238939068,
+          "end_seconds": 584.4802238939068,
+          "start_frame": 514,
+          "action_steps": 13,
+          "call": 33
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 584.4802238939068,
+          "end_seconds": 584.7649311199363,
+          "start_frame": 527,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 584.7649311199363,
+          "end_seconds": 639.7142720539283,
+          "start_frame": 527,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 639.7142720539283,
+          "end_seconds": 643.8142720539283,
+          "start_frame": 527,
+          "action_steps": 41,
+          "call": 34
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 643.8142720539283,
+          "end_seconds": 644.0989792799578,
+          "start_frame": 568,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 644.0989792799578,
+          "end_seconds": 654.6977720219643,
+          "start_frame": 568,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 654.6977720219643,
+          "end_seconds": 655.2977720219643,
+          "start_frame": 568,
+          "action_steps": 6,
+          "call": 35
+        }
+      ]
+    },
+    {
+      "task_id": 1,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 3,
+      "row": 1,
+      "column": 1,
+      "source_file": "loho-study/task 1/opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048/episode.mp4",
+      "source_sha256": "f467bb608c019ccb646c642eb10e55844072879bc10ed13492d22124512ce0f6",
+      "source_summary_sha256": "377c9715872f2c526cd6264642cbd04de8be770565f57bbf9026cf819b83bb48",
+      "cohort_median_elapsed_seconds": 2759.205634453043,
+      "elapsed_seconds": 2759.205634453043,
+      "api_latency_seconds": 2645.346480601118,
+      "simulation_motion_seconds": 102.5,
+      "other_processing_seconds": 11.35915385192493,
+      "api_calls": 60,
+      "action_steps": 1025,
+      "completion_percent": 100,
+      "phases": [
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 0.0,
+          "end_seconds": 0.1893192308654155,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 0.1893192308654155,
+          "end_seconds": 167.51690271591553,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 167.51690271591553,
+          "end_seconds": 168.61690271591553,
+          "start_frame": 0,
+          "action_steps": 11,
+          "call": 1
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 168.61690271591553,
+          "end_seconds": 168.80622194678094,
+          "start_frame": 11,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 168.80622194678094,
+          "end_seconds": 242.5507800888134,
+          "start_frame": 11,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 242.5507800888134,
+          "end_seconds": 243.0507800888134,
+          "start_frame": 11,
+          "action_steps": 5,
+          "call": 2
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 243.0507800888134,
+          "end_seconds": 243.24009931967882,
+          "start_frame": 16,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 243.24009931967882,
+          "end_seconds": 253.11127402966665,
+          "start_frame": 16,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 253.11127402966665,
+          "end_seconds": 254.51127402966665,
+          "start_frame": 16,
+          "action_steps": 14,
+          "call": 3
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 254.51127402966665,
+          "end_seconds": 254.70059326053206,
+          "start_frame": 30,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 254.70059326053206,
+          "end_seconds": 360.15810891049523,
+          "start_frame": 30,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 360.15810891049523,
+          "end_seconds": 360.65810891049523,
+          "start_frame": 30,
+          "action_steps": 5,
+          "call": 4
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 360.65810891049523,
+          "end_seconds": 360.84742814136064,
+          "start_frame": 35,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 360.84742814136064,
+          "end_seconds": 607.9215723274052,
+          "start_frame": 35,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 607.9215723274052,
+          "end_seconds": 608.3215723274052,
+          "start_frame": 35,
+          "action_steps": 4,
+          "call": 5
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 608.3215723274052,
+          "end_seconds": 608.5108915582706,
+          "start_frame": 39,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 608.5108915582706,
+          "end_seconds": 709.4085146513127,
+          "start_frame": 39,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 709.4085146513127,
+          "end_seconds": 713.5085146513127,
+          "start_frame": 39,
+          "action_steps": 41,
+          "call": 6
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 713.5085146513127,
+          "end_seconds": 713.6978338821781,
+          "start_frame": 80,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 713.6978338821781,
+          "end_seconds": 724.3631524521614,
+          "start_frame": 80,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 724.3631524521614,
+          "end_seconds": 725.0631524521615,
+          "start_frame": 80,
+          "action_steps": 7,
+          "call": 7
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 725.0631524521615,
+          "end_seconds": 725.2524716830269,
+          "start_frame": 87,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 725.2524716830269,
+          "end_seconds": 748.8453157280494,
+          "start_frame": 87,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 748.8453157280494,
+          "end_seconds": 750.0453157280494,
+          "start_frame": 87,
+          "action_steps": 12,
+          "call": 8
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 750.0453157280494,
+          "end_seconds": 750.2346349589149,
+          "start_frame": 99,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 750.2346349589149,
+          "end_seconds": 764.6719958599512,
+          "start_frame": 99,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 764.6719958599512,
+          "end_seconds": 765.4719958599511,
+          "start_frame": 99,
+          "action_steps": 8,
+          "call": 9
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 765.4719958599511,
+          "end_seconds": 765.6613150908165,
+          "start_frame": 107,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 765.6613150908165,
+          "end_seconds": 802.8873589428626,
+          "start_frame": 107,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 802.8873589428626,
+          "end_seconds": 803.9873589428627,
+          "start_frame": 107,
+          "action_steps": 11,
+          "call": 10
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 803.9873589428627,
+          "end_seconds": 804.1766781737281,
+          "start_frame": 118,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 804.1766781737281,
+          "end_seconds": 815.4312511037172,
+          "start_frame": 118,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 815.4312511037172,
+          "end_seconds": 820.0312511037172,
+          "start_frame": 118,
+          "action_steps": 46,
+          "call": 11
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 820.0312511037172,
+          "end_seconds": 820.2205703345826,
+          "start_frame": 164,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 820.2205703345826,
+          "end_seconds": 828.8679684595554,
+          "start_frame": 164,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 828.8679684595554,
+          "end_seconds": 830.2679684595554,
+          "start_frame": 164,
+          "action_steps": 14,
+          "call": 12
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 830.2679684595554,
+          "end_seconds": 830.4572876904208,
+          "start_frame": 178,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 830.4572876904208,
+          "end_seconds": 868.5555919464027,
+          "start_frame": 178,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 868.5555919464027,
+          "end_seconds": 870.1555919464028,
+          "start_frame": 178,
+          "action_steps": 16,
+          "call": 13
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 870.1555919464028,
+          "end_seconds": 870.3449111772682,
+          "start_frame": 194,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 870.3449111772682,
+          "end_seconds": 885.5858845822843,
+          "start_frame": 194,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 885.5858845822843,
+          "end_seconds": 886.9858845822843,
+          "start_frame": 194,
+          "action_steps": 14,
+          "call": 14
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 886.9858845822843,
+          "end_seconds": 887.1752038131497,
+          "start_frame": 208,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 887.1752038131497,
+          "end_seconds": 932.9741327681375,
+          "start_frame": 208,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 932.9741327681375,
+          "end_seconds": 937.0741327681375,
+          "start_frame": 208,
+          "action_steps": 41,
+          "call": 15
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 937.0741327681375,
+          "end_seconds": 937.2634519990029,
+          "start_frame": 249,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 937.2634519990029,
+          "end_seconds": 941.5314969249962,
+          "start_frame": 249,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 941.5314969249962,
+          "end_seconds": 942.2314969249962,
+          "start_frame": 249,
+          "action_steps": 7,
+          "call": 16
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 942.2314969249962,
+          "end_seconds": 942.4208161558616,
+          "start_frame": 256,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 942.4208161558616,
+          "end_seconds": 981.7908842418818,
+          "start_frame": 256,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 981.7908842418818,
+          "end_seconds": 983.2908842418818,
+          "start_frame": 256,
+          "action_steps": 15,
+          "call": 17
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 983.2908842418818,
+          "end_seconds": 983.4802034727472,
+          "start_frame": 271,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 983.4802034727472,
+          "end_seconds": 1014.1613718057342,
+          "start_frame": 271,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1014.1613718057342,
+          "end_seconds": 1014.8613718057343,
+          "start_frame": 271,
+          "action_steps": 7,
+          "call": 18
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1014.8613718057343,
+          "end_seconds": 1015.0506910365997,
+          "start_frame": 278,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1015.0506910365997,
+          "end_seconds": 1038.2766437325968,
+          "start_frame": 278,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1038.2766437325968,
+          "end_seconds": 1042.8766437325967,
+          "start_frame": 278,
+          "action_steps": 46,
+          "call": 19
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1042.8766437325967,
+          "end_seconds": 1043.0659629634622,
+          "start_frame": 324,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1043.0659629634622,
+          "end_seconds": 1051.5239840984734,
+          "start_frame": 324,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1051.5239840984734,
+          "end_seconds": 1053.0239840984734,
+          "start_frame": 324,
+          "action_steps": 15,
+          "call": 20
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1053.0239840984734,
+          "end_seconds": 1053.213303329339,
+          "start_frame": 339,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1053.213303329339,
+          "end_seconds": 1096.7643610843547,
+          "start_frame": 339,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1096.7643610843547,
+          "end_seconds": 1098.0643610843547,
+          "start_frame": 339,
+          "action_steps": 13,
+          "call": 21
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1098.0643610843547,
+          "end_seconds": 1098.2536803152202,
+          "start_frame": 352,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1098.2536803152202,
+          "end_seconds": 1150.2330892031919,
+          "start_frame": 352,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1150.2330892031919,
+          "end_seconds": 1150.8330892031918,
+          "start_frame": 352,
+          "action_steps": 6,
+          "call": 22
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1150.8330892031918,
+          "end_seconds": 1151.0224084340573,
+          "start_frame": 358,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1151.0224084340573,
+          "end_seconds": 1183.1759493590637,
+          "start_frame": 358,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1183.1759493590637,
+          "end_seconds": 1184.3759493590637,
+          "start_frame": 358,
+          "action_steps": 12,
+          "call": 23
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1184.3759493590637,
+          "end_seconds": 1184.5652685899292,
+          "start_frame": 370,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1184.5652685899292,
+          "end_seconds": 1226.7599331759154,
+          "start_frame": 370,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1226.7599331759154,
+          "end_seconds": 1227.9599331759155,
+          "start_frame": 370,
+          "action_steps": 12,
+          "call": 24
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1227.9599331759155,
+          "end_seconds": 1228.149252406781,
+          "start_frame": 382,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1228.149252406781,
+          "end_seconds": 1242.811902628798,
+          "start_frame": 382,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1242.811902628798,
+          "end_seconds": 1243.611902628798,
+          "start_frame": 382,
+          "action_steps": 8,
+          "call": 25
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1243.611902628798,
+          "end_seconds": 1243.8012218596634,
+          "start_frame": 390,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1243.8012218596634,
+          "end_seconds": 1256.278105516649,
+          "start_frame": 390,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1256.278105516649,
+          "end_seconds": 1256.678105516649,
+          "start_frame": 390,
+          "action_steps": 4,
+          "call": 26
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1256.678105516649,
+          "end_seconds": 1256.8674247475146,
+          "start_frame": 394,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1256.8674247475146,
+          "end_seconds": 1261.2543772045328,
+          "start_frame": 394,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1261.2543772045328,
+          "end_seconds": 1265.3543772045327,
+          "start_frame": 394,
+          "action_steps": 41,
+          "call": 27
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1265.3543772045327,
+          "end_seconds": 1265.5436964353983,
+          "start_frame": 435,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1265.5436964353983,
+          "end_seconds": 1272.8258899383916,
+          "start_frame": 435,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1272.8258899383916,
+          "end_seconds": 1273.5258899383916,
+          "start_frame": 435,
+          "action_steps": 7,
+          "call": 28
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1273.5258899383916,
+          "end_seconds": 1273.7152091692572,
+          "start_frame": 442,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1273.7152091692572,
+          "end_seconds": 1312.1730901202557,
+          "start_frame": 442,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1312.1730901202557,
+          "end_seconds": 1313.8730901202557,
+          "start_frame": 442,
+          "action_steps": 17,
+          "call": 29
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1313.8730901202557,
+          "end_seconds": 1314.0624093511212,
+          "start_frame": 459,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1314.0624093511212,
+          "end_seconds": 1394.5739634821146,
+          "start_frame": 459,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1394.5739634821146,
+          "end_seconds": 1395.3739634821145,
+          "start_frame": 459,
+          "action_steps": 8,
+          "call": 30
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1395.3739634821145,
+          "end_seconds": 1395.56328271298,
+          "start_frame": 467,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1395.56328271298,
+          "end_seconds": 1460.206167116971,
+          "start_frame": 467,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1460.206167116971,
+          "end_seconds": 1461.206167116971,
+          "start_frame": 467,
+          "action_steps": 10,
+          "call": 31
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1461.206167116971,
+          "end_seconds": 1461.3954863478366,
+          "start_frame": 477,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1461.3954863478366,
+          "end_seconds": 1573.7416562028748,
+          "start_frame": 477,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1573.7416562028748,
+          "end_seconds": 1574.5416562028747,
+          "start_frame": 477,
+          "action_steps": 8,
+          "call": 32
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1574.5416562028747,
+          "end_seconds": 1574.7309754337402,
+          "start_frame": 485,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1574.7309754337402,
+          "end_seconds": 1655.6059404207263,
+          "start_frame": 485,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1655.6059404207263,
+          "end_seconds": 1656.3059404207263,
+          "start_frame": 485,
+          "action_steps": 7,
+          "call": 33
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1656.3059404207263,
+          "end_seconds": 1656.4952596515918,
+          "start_frame": 492,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1656.4952596515918,
+          "end_seconds": 1714.7584729765927,
+          "start_frame": 492,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1714.7584729765927,
+          "end_seconds": 1716.8584729765926,
+          "start_frame": 492,
+          "action_steps": 21,
+          "call": 34
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1716.8584729765926,
+          "end_seconds": 1717.047792207458,
+          "start_frame": 513,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1717.047792207458,
+          "end_seconds": 1752.8881676204703,
+          "start_frame": 513,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1752.8881676204703,
+          "end_seconds": 1754.2881676204704,
+          "start_frame": 513,
+          "action_steps": 14,
+          "call": 35
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1754.2881676204704,
+          "end_seconds": 1754.477486851336,
+          "start_frame": 527,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1754.477486851336,
+          "end_seconds": 1824.8026090703224,
+          "start_frame": 527,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1824.8026090703224,
+          "end_seconds": 1829.0026090703225,
+          "start_frame": 527,
+          "action_steps": 42,
+          "call": 36
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1829.0026090703225,
+          "end_seconds": 1829.191928301188,
+          "start_frame": 569,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1829.191928301188,
+          "end_seconds": 1834.6821403402205,
+          "start_frame": 569,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1834.6821403402205,
+          "end_seconds": 1836.0821403402206,
+          "start_frame": 569,
+          "action_steps": 14,
+          "call": 37
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1836.0821403402206,
+          "end_seconds": 1836.271459571086,
+          "start_frame": 583,
+          "action_steps": 0,
+          "call": 38
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1836.271459571086,
+          "end_seconds": 1916.8402756270955,
+          "start_frame": 583,
+          "action_steps": 0,
+          "call": 38
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1916.8402756270955,
+          "end_seconds": 1917.6402756270954,
+          "start_frame": 583,
+          "action_steps": 8,
+          "call": 38
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1917.6402756270954,
+          "end_seconds": 1917.829594857961,
+          "start_frame": 591,
+          "action_steps": 0,
+          "call": 39
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1917.829594857961,
+          "end_seconds": 1990.7584664129238,
+          "start_frame": 591,
+          "action_steps": 0,
+          "call": 39
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1990.7584664129238,
+          "end_seconds": 1991.6584664129239,
+          "start_frame": 591,
+          "action_steps": 9,
+          "call": 39
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1991.6584664129239,
+          "end_seconds": 1991.8477856437894,
+          "start_frame": 600,
+          "action_steps": 0,
+          "call": 40
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1991.8477856437894,
+          "end_seconds": 2092.8632015257826,
+          "start_frame": 600,
+          "action_steps": 0,
+          "call": 40
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2092.8632015257826,
+          "end_seconds": 2093.7632015257827,
+          "start_frame": 600,
+          "action_steps": 9,
+          "call": 40
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2093.7632015257827,
+          "end_seconds": 2093.952520756648,
+          "start_frame": 609,
+          "action_steps": 0,
+          "call": 41
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2093.952520756648,
+          "end_seconds": 2117.099152143652,
+          "start_frame": 609,
+          "action_steps": 0,
+          "call": 41
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2117.099152143652,
+          "end_seconds": 2118.599152143652,
+          "start_frame": 609,
+          "action_steps": 15,
+          "call": 41
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2118.599152143652,
+          "end_seconds": 2118.7884713745175,
+          "start_frame": 624,
+          "action_steps": 0,
+          "call": 42
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2118.7884713745175,
+          "end_seconds": 2136.1439333365147,
+          "start_frame": 624,
+          "action_steps": 0,
+          "call": 42
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2136.1439333365147,
+          "end_seconds": 2140.2439333365146,
+          "start_frame": 624,
+          "action_steps": 41,
+          "call": 42
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2140.2439333365146,
+          "end_seconds": 2140.43325256738,
+          "start_frame": 665,
+          "action_steps": 0,
+          "call": 43
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2140.43325256738,
+          "end_seconds": 2195.203701894394,
+          "start_frame": 665,
+          "action_steps": 0,
+          "call": 43
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2195.203701894394,
+          "end_seconds": 2196.3037018943937,
+          "start_frame": 665,
+          "action_steps": 11,
+          "call": 43
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2196.3037018943937,
+          "end_seconds": 2196.493021125259,
+          "start_frame": 676,
+          "action_steps": 0,
+          "call": 44
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2196.493021125259,
+          "end_seconds": 2204.8765227852214,
+          "start_frame": 676,
+          "action_steps": 0,
+          "call": 44
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2204.8765227852214,
+          "end_seconds": 2206.076522785221,
+          "start_frame": 676,
+          "action_steps": 12,
+          "call": 44
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2206.076522785221,
+          "end_seconds": 2206.2658420160865,
+          "start_frame": 688,
+          "action_steps": 0,
+          "call": 45
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2206.2658420160865,
+          "end_seconds": 2213.890180015062,
+          "start_frame": 688,
+          "action_steps": 0,
+          "call": 45
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2213.890180015062,
+          "end_seconds": 2218.090180015062,
+          "start_frame": 688,
+          "action_steps": 42,
+          "call": 45
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2218.090180015062,
+          "end_seconds": 2218.279499245927,
+          "start_frame": 730,
+          "action_steps": 0,
+          "call": 46
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2218.279499245927,
+          "end_seconds": 2277.045055635917,
+          "start_frame": 730,
+          "action_steps": 0,
+          "call": 46
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2277.045055635917,
+          "end_seconds": 2281.345055635917,
+          "start_frame": 730,
+          "action_steps": 43,
+          "call": 46
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2281.345055635917,
+          "end_seconds": 2281.5343748667824,
+          "start_frame": 773,
+          "action_steps": 0,
+          "call": 47
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2281.5343748667824,
+          "end_seconds": 2292.356033951774,
+          "start_frame": 773,
+          "action_steps": 0,
+          "call": 47
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2292.356033951774,
+          "end_seconds": 2294.5560339517738,
+          "start_frame": 773,
+          "action_steps": 22,
+          "call": 47
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2294.5560339517738,
+          "end_seconds": 2294.745353182639,
+          "start_frame": 795,
+          "action_steps": 0,
+          "call": 48
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2294.745353182639,
+          "end_seconds": 2311.390951126617,
+          "start_frame": 795,
+          "action_steps": 0,
+          "call": 48
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2311.390951126617,
+          "end_seconds": 2311.790951126617,
+          "start_frame": 795,
+          "action_steps": 4,
+          "call": 48
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2311.790951126617,
+          "end_seconds": 2311.9802703574824,
+          "start_frame": 799,
+          "action_steps": 0,
+          "call": 49
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2311.9802703574824,
+          "end_seconds": 2324.153439895512,
+          "start_frame": 799,
+          "action_steps": 0,
+          "call": 49
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2324.153439895512,
+          "end_seconds": 2325.553439895512,
+          "start_frame": 799,
+          "action_steps": 14,
+          "call": 49
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2325.553439895512,
+          "end_seconds": 2325.742759126377,
+          "start_frame": 813,
+          "action_steps": 0,
+          "call": 50
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2325.742759126377,
+          "end_seconds": 2348.591047733404,
+          "start_frame": 813,
+          "action_steps": 0,
+          "call": 50
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2348.591047733404,
+          "end_seconds": 2348.9910477334042,
+          "start_frame": 813,
+          "action_steps": 4,
+          "call": 50
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2348.9910477334042,
+          "end_seconds": 2349.1803669642695,
+          "start_frame": 817,
+          "action_steps": 0,
+          "call": 51
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2349.1803669642695,
+          "end_seconds": 2355.6784884513045,
+          "start_frame": 817,
+          "action_steps": 0,
+          "call": 51
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2355.6784884513045,
+          "end_seconds": 2357.1784884513045,
+          "start_frame": 817,
+          "action_steps": 15,
+          "call": 51
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2357.1784884513045,
+          "end_seconds": 2357.3678076821698,
+          "start_frame": 832,
+          "action_steps": 0,
+          "call": 52
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2357.3678076821698,
+          "end_seconds": 2456.3829413701633,
+          "start_frame": 832,
+          "action_steps": 0,
+          "call": 52
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2456.3829413701633,
+          "end_seconds": 2456.7829413701634,
+          "start_frame": 832,
+          "action_steps": 4,
+          "call": 52
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2456.7829413701634,
+          "end_seconds": 2456.9722606010287,
+          "start_frame": 836,
+          "action_steps": 0,
+          "call": 53
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2456.9722606010287,
+          "end_seconds": 2463.32316096601,
+          "start_frame": 836,
+          "action_steps": 0,
+          "call": 53
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2463.32316096601,
+          "end_seconds": 2464.82316096601,
+          "start_frame": 836,
+          "action_steps": 15,
+          "call": 53
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2464.82316096601,
+          "end_seconds": 2465.0124801968755,
+          "start_frame": 851,
+          "action_steps": 0,
+          "call": 54
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2465.0124801968755,
+          "end_seconds": 2512.6821014348366,
+          "start_frame": 851,
+          "action_steps": 0,
+          "call": 54
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2512.6821014348366,
+          "end_seconds": 2516.8821014348364,
+          "start_frame": 851,
+          "action_steps": 42,
+          "call": 54
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2516.8821014348364,
+          "end_seconds": 2517.0714206657017,
+          "start_frame": 893,
+          "action_steps": 0,
+          "call": 55
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2517.0714206657017,
+          "end_seconds": 2523.9973969187,
+          "start_frame": 893,
+          "action_steps": 0,
+          "call": 55
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2523.9973969187,
+          "end_seconds": 2525.0973969187,
+          "start_frame": 893,
+          "action_steps": 11,
+          "call": 55
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2525.0973969187,
+          "end_seconds": 2525.286716149565,
+          "start_frame": 904,
+          "action_steps": 0,
+          "call": 56
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2525.286716149565,
+          "end_seconds": 2541.9840533885563,
+          "start_frame": 904,
+          "action_steps": 0,
+          "call": 56
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2541.9840533885563,
+          "end_seconds": 2543.084053388556,
+          "start_frame": 904,
+          "action_steps": 11,
+          "call": 56
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2543.084053388556,
+          "end_seconds": 2543.2733726194215,
+          "start_frame": 915,
+          "action_steps": 0,
+          "call": 57
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2543.2733726194215,
+          "end_seconds": 2547.8180675093986,
+          "start_frame": 915,
+          "action_steps": 0,
+          "call": 57
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2547.8180675093986,
+          "end_seconds": 2551.9180675093985,
+          "start_frame": 915,
+          "action_steps": 41,
+          "call": 57
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2551.9180675093985,
+          "end_seconds": 2552.107386740264,
+          "start_frame": 956,
+          "action_steps": 0,
+          "call": 58
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2552.107386740264,
+          "end_seconds": 2574.7611277302976,
+          "start_frame": 956,
+          "action_steps": 0,
+          "call": 58
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2574.7611277302976,
+          "end_seconds": 2576.9611277302974,
+          "start_frame": 956,
+          "action_steps": 22,
+          "call": 58
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2576.9611277302974,
+          "end_seconds": 2577.1504469611627,
+          "start_frame": 978,
+          "action_steps": 0,
+          "call": 59
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2577.1504469611627,
+          "end_seconds": 2584.683906956163,
+          "start_frame": 978,
+          "action_steps": 0,
+          "call": 59
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2584.683906956163,
+          "end_seconds": 2585.8839069561627,
+          "start_frame": 978,
+          "action_steps": 12,
+          "call": 59
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 2585.8839069561627,
+          "end_seconds": 2586.073226187028,
+          "start_frame": 990,
+          "action_steps": 0,
+          "call": 60
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 2586.073226187028,
+          "end_seconds": 2755.705634453042,
+          "start_frame": 990,
+          "action_steps": 0,
+          "call": 60
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 2755.705634453042,
+          "end_seconds": 2759.205634453042,
+          "start_frame": 990,
+          "action_steps": 35,
+          "call": 60
+        }
+      ]
+    },
+    {
+      "task_id": 4,
+      "model": "astra",
+      "model_id": "gpt-6-astra",
+      "display_trial": 3,
+      "row": 2,
+      "column": 0,
+      "source_file": "loho-study/task 4/astra_task4_max_nocost_trial3_task4_uncapped_20261012_110427/episode.mp4",
+      "source_sha256": "34caa7df72d1e0cee09613efae59114bbe4100b1a25fc0010f21f147f3b4ee56",
+      "source_summary_sha256": "4c956c06a4f6f3a25f981c2002787283d24cca8412b036f1ca13beaaa5608dbd",
+      "cohort_median_elapsed_seconds": 1088.4487739260076,
+      "elapsed_seconds": 1088.4487739260076,
+      "api_latency_seconds": 937.0919584423536,
+      "simulation_motion_seconds": 127.3,
+      "other_processing_seconds": 24.05681548365392,
+      "api_calls": 67,
+      "action_steps": 1273,
+      "completion_percent": 100,
+      "phases": [
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 0.0,
+          "end_seconds": 0.3590569475172227,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 0.3590569475172227,
+          "end_seconds": 17.768027284529076,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 17.768027284529076,
+          "end_seconds": 19.168027284529074,
+          "start_frame": 0,
+          "action_steps": 14,
+          "call": 1
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 19.168027284529074,
+          "end_seconds": 19.5270842320463,
+          "start_frame": 14,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 19.5270842320463,
+          "end_seconds": 35.77774209706721,
+          "start_frame": 14,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 35.77774209706721,
+          "end_seconds": 36.87774209706721,
+          "start_frame": 14,
+          "action_steps": 11,
+          "call": 2
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 36.87774209706721,
+          "end_seconds": 37.23679904458444,
+          "start_frame": 25,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 37.23679904458444,
+          "end_seconds": 66.82914028257696,
+          "start_frame": 25,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 66.82914028257696,
+          "end_seconds": 67.62914028257696,
+          "start_frame": 25,
+          "action_steps": 8,
+          "call": 3
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 67.62914028257696,
+          "end_seconds": 67.98819723009417,
+          "start_frame": 33,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 67.98819723009417,
+          "end_seconds": 85.02574927610165,
+          "start_frame": 33,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 85.02574927610165,
+          "end_seconds": 85.72574927610165,
+          "start_frame": 33,
+          "action_steps": 7,
+          "call": 4
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 85.72574927610165,
+          "end_seconds": 86.08480622361887,
+          "start_frame": 40,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 86.08480622361887,
+          "end_seconds": 89.38226837360773,
+          "start_frame": 40,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 89.38226837360773,
+          "end_seconds": 93.48226837360772,
+          "start_frame": 40,
+          "action_steps": 41,
+          "call": 5
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 93.48226837360772,
+          "end_seconds": 93.84132532112494,
+          "start_frame": 81,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 93.84132532112494,
+          "end_seconds": 101.81903542415898,
+          "start_frame": 81,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 101.81903542415898,
+          "end_seconds": 102.51903542415899,
+          "start_frame": 81,
+          "action_steps": 7,
+          "call": 6
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 102.51903542415899,
+          "end_seconds": 102.8780923716762,
+          "start_frame": 88,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 102.8780923716762,
+          "end_seconds": 138.89046075066233,
+          "start_frame": 88,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 138.89046075066233,
+          "end_seconds": 142.99046075066232,
+          "start_frame": 88,
+          "action_steps": 41,
+          "call": 7
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 142.99046075066232,
+          "end_seconds": 143.34951769817954,
+          "start_frame": 129,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 143.34951769817954,
+          "end_seconds": 147.68208413118364,
+          "start_frame": 129,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 147.68208413118364,
+          "end_seconds": 148.18208413118364,
+          "start_frame": 129,
+          "action_steps": 5,
+          "call": 8
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 148.18208413118364,
+          "end_seconds": 148.54114107870086,
+          "start_frame": 134,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 148.54114107870086,
+          "end_seconds": 151.72121791967479,
+          "start_frame": 134,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 151.72121791967479,
+          "end_seconds": 155.82121791967478,
+          "start_frame": 134,
+          "action_steps": 41,
+          "call": 9
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 155.82121791967478,
+          "end_seconds": 156.180274867192,
+          "start_frame": 175,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 156.180274867192,
+          "end_seconds": 161.82411215218724,
+          "start_frame": 175,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 161.82411215218724,
+          "end_seconds": 162.52411215218723,
+          "start_frame": 175,
+          "action_steps": 7,
+          "call": 10
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 162.52411215218723,
+          "end_seconds": 162.88316909970445,
+          "start_frame": 182,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 162.88316909970445,
+          "end_seconds": 182.3332837567009,
+          "start_frame": 182,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 182.3332837567009,
+          "end_seconds": 184.2332837567009,
+          "start_frame": 182,
+          "action_steps": 19,
+          "call": 11
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 184.2332837567009,
+          "end_seconds": 184.59234070421812,
+          "start_frame": 201,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 184.59234070421812,
+          "end_seconds": 197.26703476421685,
+          "start_frame": 201,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 197.26703476421685,
+          "end_seconds": 199.46703476421683,
+          "start_frame": 201,
+          "action_steps": 22,
+          "call": 12
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 199.46703476421683,
+          "end_seconds": 199.82609171173405,
+          "start_frame": 223,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 199.82609171173405,
+          "end_seconds": 202.9117214907064,
+          "start_frame": 223,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 202.9117214907064,
+          "end_seconds": 207.0117214907064,
+          "start_frame": 223,
+          "action_steps": 41,
+          "call": 13
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 207.0117214907064,
+          "end_seconds": 207.37077843822362,
+          "start_frame": 264,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 207.37077843822362,
+          "end_seconds": 212.71230574522224,
+          "start_frame": 264,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 212.71230574522224,
+          "end_seconds": 213.91230574522223,
+          "start_frame": 264,
+          "action_steps": 12,
+          "call": 14
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 213.91230574522223,
+          "end_seconds": 214.27136269273944,
+          "start_frame": 276,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 214.27136269273944,
+          "end_seconds": 229.1570783697349,
+          "start_frame": 276,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 229.1570783697349,
+          "end_seconds": 230.3570783697349,
+          "start_frame": 276,
+          "action_steps": 12,
+          "call": 15
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 230.3570783697349,
+          "end_seconds": 230.7161353172521,
+          "start_frame": 288,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 230.7161353172521,
+          "end_seconds": 241.86899707125463,
+          "start_frame": 288,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 241.86899707125463,
+          "end_seconds": 242.36899707125463,
+          "start_frame": 288,
+          "action_steps": 5,
+          "call": 16
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 242.36899707125463,
+          "end_seconds": 242.72805401877184,
+          "start_frame": 293,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 242.72805401877184,
+          "end_seconds": 245.62064859575975,
+          "start_frame": 293,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 245.62064859575975,
+          "end_seconds": 249.72064859575974,
+          "start_frame": 293,
+          "action_steps": 41,
+          "call": 17
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 249.72064859575974,
+          "end_seconds": 250.07970554327696,
+          "start_frame": 334,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 250.07970554327696,
+          "end_seconds": 254.44056617729004,
+          "start_frame": 334,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 254.44056617729004,
+          "end_seconds": 255.14056617729003,
+          "start_frame": 334,
+          "action_steps": 7,
+          "call": 18
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 255.14056617729003,
+          "end_seconds": 255.49962312480724,
+          "start_frame": 341,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 255.49962312480724,
+          "end_seconds": 290.2536254998116,
+          "start_frame": 341,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 290.2536254998116,
+          "end_seconds": 292.55362549981163,
+          "start_frame": 341,
+          "action_steps": 23,
+          "call": 19
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 292.55362549981163,
+          "end_seconds": 292.91268244732885,
+          "start_frame": 364,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 292.91268244732885,
+          "end_seconds": 297.1751325013257,
+          "start_frame": 364,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 297.1751325013257,
+          "end_seconds": 298.97513250132573,
+          "start_frame": 364,
+          "action_steps": 18,
+          "call": 20
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 298.97513250132573,
+          "end_seconds": 299.33418944884295,
+          "start_frame": 382,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 299.33418944884295,
+          "end_seconds": 344.3378261538918,
+          "start_frame": 382,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 344.3378261538918,
+          "end_seconds": 345.1378261538918,
+          "start_frame": 382,
+          "action_steps": 8,
+          "call": 21
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 345.1378261538918,
+          "end_seconds": 345.496883101409,
+          "start_frame": 390,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 345.496883101409,
+          "end_seconds": 359.8432523814232,
+          "start_frame": 390,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 359.8432523814232,
+          "end_seconds": 361.5432523814232,
+          "start_frame": 390,
+          "action_steps": 17,
+          "call": 22
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 361.5432523814232,
+          "end_seconds": 361.9023093289404,
+          "start_frame": 407,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 361.9023093289404,
+          "end_seconds": 367.48702426695377,
+          "start_frame": 407,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 367.48702426695377,
+          "end_seconds": 371.5870242669538,
+          "start_frame": 407,
+          "action_steps": 41,
+          "call": 23
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 371.5870242669538,
+          "end_seconds": 371.946081214471,
+          "start_frame": 448,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 371.946081214471,
+          "end_seconds": 376.67546335346134,
+          "start_frame": 448,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 376.67546335346134,
+          "end_seconds": 378.0754633534613,
+          "start_frame": 448,
+          "action_steps": 14,
+          "call": 24
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 378.0754633534613,
+          "end_seconds": 378.43452030097853,
+          "start_frame": 462,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 378.43452030097853,
+          "end_seconds": 394.37249400801977,
+          "start_frame": 462,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 394.37249400801977,
+          "end_seconds": 395.87249400801977,
+          "start_frame": 462,
+          "action_steps": 15,
+          "call": 25
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 395.87249400801977,
+          "end_seconds": 396.231550955537,
+          "start_frame": 477,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 396.231550955537,
+          "end_seconds": 410.2109803235831,
+          "start_frame": 477,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 410.2109803235831,
+          "end_seconds": 411.1109803235831,
+          "start_frame": 477,
+          "action_steps": 9,
+          "call": 26
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 411.1109803235831,
+          "end_seconds": 411.4700372711003,
+          "start_frame": 486,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 411.4700372711003,
+          "end_seconds": 425.2068502691171,
+          "start_frame": 486,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 425.2068502691171,
+          "end_seconds": 427.7068502691171,
+          "start_frame": 486,
+          "action_steps": 25,
+          "call": 27
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 427.7068502691171,
+          "end_seconds": 428.06590721663434,
+          "start_frame": 511,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 428.06590721663434,
+          "end_seconds": 452.5749317646294,
+          "start_frame": 511,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 452.5749317646294,
+          "end_seconds": 454.2749317646294,
+          "start_frame": 511,
+          "action_steps": 17,
+          "call": 28
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 454.2749317646294,
+          "end_seconds": 454.6339887121466,
+          "start_frame": 528,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 454.6339887121466,
+          "end_seconds": 468.40038621913476,
+          "start_frame": 528,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 468.40038621913476,
+          "end_seconds": 470.70038621913477,
+          "start_frame": 528,
+          "action_steps": 23,
+          "call": 29
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 470.70038621913477,
+          "end_seconds": 471.059443166652,
+          "start_frame": 551,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 471.059443166652,
+          "end_seconds": 490.96581888966983,
+          "start_frame": 551,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 490.96581888966983,
+          "end_seconds": 491.8658188896698,
+          "start_frame": 551,
+          "action_steps": 9,
+          "call": 30
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 491.8658188896698,
+          "end_seconds": 492.224875837187,
+          "start_frame": 560,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 492.224875837187,
+          "end_seconds": 498.7072633522048,
+          "start_frame": 560,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 498.7072633522048,
+          "end_seconds": 503.3072633522048,
+          "start_frame": 560,
+          "action_steps": 46,
+          "call": 31
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 503.3072633522048,
+          "end_seconds": 503.66632029972203,
+          "start_frame": 606,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 503.66632029972203,
+          "end_seconds": 509.383288027711,
+          "start_frame": 606,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 509.383288027711,
+          "end_seconds": 510.083288027711,
+          "start_frame": 606,
+          "action_steps": 7,
+          "call": 32
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 510.083288027711,
+          "end_seconds": 510.4423449752282,
+          "start_frame": 613,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 510.4423449752282,
+          "end_seconds": 544.7781742051955,
+          "start_frame": 613,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 544.7781742051955,
+          "end_seconds": 548.8781742051955,
+          "start_frame": 613,
+          "action_steps": 41,
+          "call": 33
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 548.8781742051955,
+          "end_seconds": 549.2372311527128,
+          "start_frame": 654,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 549.2372311527128,
+          "end_seconds": 553.7842494196942,
+          "start_frame": 654,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 553.7842494196942,
+          "end_seconds": 554.5842494196942,
+          "start_frame": 654,
+          "action_steps": 8,
+          "call": 34
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 554.5842494196942,
+          "end_seconds": 554.9433063672114,
+          "start_frame": 662,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 554.9433063672114,
+          "end_seconds": 574.3132025672313,
+          "start_frame": 662,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 574.3132025672313,
+          "end_seconds": 575.8132025672313,
+          "start_frame": 662,
+          "action_steps": 15,
+          "call": 35
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 575.8132025672313,
+          "end_seconds": 576.1722595147486,
+          "start_frame": 677,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 576.1722595147486,
+          "end_seconds": 594.9084293717798,
+          "start_frame": 677,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 594.9084293717798,
+          "end_seconds": 599.0084293717798,
+          "start_frame": 677,
+          "action_steps": 41,
+          "call": 36
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 599.0084293717798,
+          "end_seconds": 599.3674863192971,
+          "start_frame": 718,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 599.3674863192971,
+          "end_seconds": 611.5485328402972,
+          "start_frame": 718,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 611.5485328402972,
+          "end_seconds": 615.7485328402972,
+          "start_frame": 718,
+          "action_steps": 42,
+          "call": 37
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 615.7485328402972,
+          "end_seconds": 616.1075897878145,
+          "start_frame": 760,
+          "action_steps": 0,
+          "call": 38
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 616.1075897878145,
+          "end_seconds": 627.6337312487994,
+          "start_frame": 760,
+          "action_steps": 0,
+          "call": 38
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 627.6337312487994,
+          "end_seconds": 628.7337312487995,
+          "start_frame": 760,
+          "action_steps": 11,
+          "call": 38
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 628.7337312487995,
+          "end_seconds": 629.0927881963167,
+          "start_frame": 771,
+          "action_steps": 0,
+          "call": 39
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 629.0927881963167,
+          "end_seconds": 632.8961871523376,
+          "start_frame": 771,
+          "action_steps": 0,
+          "call": 39
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 632.8961871523376,
+          "end_seconds": 636.9961871523376,
+          "start_frame": 771,
+          "action_steps": 41,
+          "call": 39
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 636.9961871523376,
+          "end_seconds": 637.3552440998549,
+          "start_frame": 812,
+          "action_steps": 0,
+          "call": 40
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 637.3552440998549,
+          "end_seconds": 643.2950577258537,
+          "start_frame": 812,
+          "action_steps": 0,
+          "call": 40
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 643.2950577258537,
+          "end_seconds": 643.9950577258537,
+          "start_frame": 812,
+          "action_steps": 7,
+          "call": 40
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 643.9950577258537,
+          "end_seconds": 644.354114673371,
+          "start_frame": 819,
+          "action_steps": 0,
+          "call": 41
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 644.354114673371,
+          "end_seconds": 657.1498025263222,
+          "start_frame": 819,
+          "action_steps": 0,
+          "call": 41
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 657.1498025263222,
+          "end_seconds": 659.6498025263222,
+          "start_frame": 819,
+          "action_steps": 25,
+          "call": 41
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 659.6498025263222,
+          "end_seconds": 660.0088594738395,
+          "start_frame": 844,
+          "action_steps": 0,
+          "call": 42
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 660.0088594738395,
+          "end_seconds": 664.1265276168474,
+          "start_frame": 844,
+          "action_steps": 0,
+          "call": 42
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 664.1265276168474,
+          "end_seconds": 665.2265276168474,
+          "start_frame": 844,
+          "action_steps": 11,
+          "call": 42
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 665.2265276168474,
+          "end_seconds": 665.5855845643647,
+          "start_frame": 855,
+          "action_steps": 0,
+          "call": 43
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 665.5855845643647,
+          "end_seconds": 673.0743675993846,
+          "start_frame": 855,
+          "action_steps": 0,
+          "call": 43
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 673.0743675993846,
+          "end_seconds": 674.8743675993845,
+          "start_frame": 855,
+          "action_steps": 18,
+          "call": 43
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 674.8743675993845,
+          "end_seconds": 675.2334245469018,
+          "start_frame": 873,
+          "action_steps": 0,
+          "call": 44
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 675.2334245469018,
+          "end_seconds": 685.2699114368942,
+          "start_frame": 873,
+          "action_steps": 0,
+          "call": 44
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 685.2699114368942,
+          "end_seconds": 686.0699114368941,
+          "start_frame": 873,
+          "action_steps": 8,
+          "call": 44
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 686.0699114368941,
+          "end_seconds": 686.4289683844114,
+          "start_frame": 881,
+          "action_steps": 0,
+          "call": 45
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 686.4289683844114,
+          "end_seconds": 709.610599496417,
+          "start_frame": 881,
+          "action_steps": 0,
+          "call": 45
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 709.610599496417,
+          "end_seconds": 710.810599496417,
+          "start_frame": 881,
+          "action_steps": 12,
+          "call": 45
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 710.810599496417,
+          "end_seconds": 711.1696564439343,
+          "start_frame": 893,
+          "action_steps": 0,
+          "call": 46
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 711.1696564439343,
+          "end_seconds": 723.1056094399545,
+          "start_frame": 893,
+          "action_steps": 0,
+          "call": 46
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 723.1056094399545,
+          "end_seconds": 724.7056094399545,
+          "start_frame": 893,
+          "action_steps": 16,
+          "call": 46
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 724.7056094399545,
+          "end_seconds": 725.0646663874718,
+          "start_frame": 909,
+          "action_steps": 0,
+          "call": 47
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 725.0646663874718,
+          "end_seconds": 741.3753284595073,
+          "start_frame": 909,
+          "action_steps": 0,
+          "call": 47
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 741.3753284595073,
+          "end_seconds": 742.8753284595073,
+          "start_frame": 909,
+          "action_steps": 15,
+          "call": 47
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 742.8753284595073,
+          "end_seconds": 743.2343854070245,
+          "start_frame": 924,
+          "action_steps": 0,
+          "call": 48
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 743.2343854070245,
+          "end_seconds": 751.2841476400104,
+          "start_frame": 924,
+          "action_steps": 0,
+          "call": 48
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 751.2841476400104,
+          "end_seconds": 755.3841476400104,
+          "start_frame": 924,
+          "action_steps": 41,
+          "call": 48
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 755.3841476400104,
+          "end_seconds": 755.7432045875277,
+          "start_frame": 965,
+          "action_steps": 0,
+          "call": 49
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 755.7432045875277,
+          "end_seconds": 781.5657473114944,
+          "start_frame": 965,
+          "action_steps": 0,
+          "call": 49
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 781.5657473114944,
+          "end_seconds": 782.7657473114945,
+          "start_frame": 965,
+          "action_steps": 12,
+          "call": 49
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 782.7657473114945,
+          "end_seconds": 783.1248042590117,
+          "start_frame": 977,
+          "action_steps": 0,
+          "call": 50
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 783.1248042590117,
+          "end_seconds": 793.3126607220287,
+          "start_frame": 977,
+          "action_steps": 0,
+          "call": 50
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 793.3126607220287,
+          "end_seconds": 797.6126607220286,
+          "start_frame": 977,
+          "action_steps": 43,
+          "call": 50
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 797.6126607220286,
+          "end_seconds": 797.9717176695459,
+          "start_frame": 1020,
+          "action_steps": 0,
+          "call": 51
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 797.9717176695459,
+          "end_seconds": 809.9326973465842,
+          "start_frame": 1020,
+          "action_steps": 0,
+          "call": 51
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 809.9326973465842,
+          "end_seconds": 811.3326973465842,
+          "start_frame": 1020,
+          "action_steps": 14,
+          "call": 51
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 811.3326973465842,
+          "end_seconds": 811.6917542941014,
+          "start_frame": 1034,
+          "action_steps": 0,
+          "call": 52
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 811.6917542941014,
+          "end_seconds": 827.0265519311147,
+          "start_frame": 1034,
+          "action_steps": 0,
+          "call": 52
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 827.0265519311147,
+          "end_seconds": 827.6265519311147,
+          "start_frame": 1034,
+          "action_steps": 6,
+          "call": 52
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 827.6265519311147,
+          "end_seconds": 827.985608878632,
+          "start_frame": 1040,
+          "action_steps": 0,
+          "call": 53
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 827.985608878632,
+          "end_seconds": 838.6911824916307,
+          "start_frame": 1040,
+          "action_steps": 0,
+          "call": 53
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 838.6911824916307,
+          "end_seconds": 839.6911824916307,
+          "start_frame": 1040,
+          "action_steps": 10,
+          "call": 53
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 839.6911824916307,
+          "end_seconds": 840.050239439148,
+          "start_frame": 1050,
+          "action_steps": 0,
+          "call": 54
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 840.050239439148,
+          "end_seconds": 853.203926799146,
+          "start_frame": 1050,
+          "action_steps": 0,
+          "call": 54
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 853.203926799146,
+          "end_seconds": 854.0039267991459,
+          "start_frame": 1050,
+          "action_steps": 8,
+          "call": 54
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 854.0039267991459,
+          "end_seconds": 854.3629837466632,
+          "start_frame": 1058,
+          "action_steps": 0,
+          "call": 55
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 854.3629837466632,
+          "end_seconds": 875.3356284226519,
+          "start_frame": 1058,
+          "action_steps": 0,
+          "call": 55
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 875.3356284226519,
+          "end_seconds": 876.9356284226519,
+          "start_frame": 1058,
+          "action_steps": 16,
+          "call": 55
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 876.9356284226519,
+          "end_seconds": 877.2946853701692,
+          "start_frame": 1074,
+          "action_steps": 0,
+          "call": 56
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 877.2946853701692,
+          "end_seconds": 887.0280569831925,
+          "start_frame": 1074,
+          "action_steps": 0,
+          "call": 56
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 887.0280569831925,
+          "end_seconds": 887.7280569831926,
+          "start_frame": 1074,
+          "action_steps": 7,
+          "call": 56
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 887.7280569831926,
+          "end_seconds": 888.0871139307098,
+          "start_frame": 1081,
+          "action_steps": 0,
+          "call": 57
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 888.0871139307098,
+          "end_seconds": 906.430246607674,
+          "start_frame": 1081,
+          "action_steps": 0,
+          "call": 57
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 906.430246607674,
+          "end_seconds": 907.230246607674,
+          "start_frame": 1081,
+          "action_steps": 8,
+          "call": 57
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 907.230246607674,
+          "end_seconds": 907.5893035551912,
+          "start_frame": 1089,
+          "action_steps": 0,
+          "call": 58
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 907.5893035551912,
+          "end_seconds": 927.8985511832202,
+          "start_frame": 1089,
+          "action_steps": 0,
+          "call": 58
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 927.8985511832202,
+          "end_seconds": 932.1985511832202,
+          "start_frame": 1089,
+          "action_steps": 43,
+          "call": 58
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 932.1985511832202,
+          "end_seconds": 932.5576081307374,
+          "start_frame": 1132,
+          "action_steps": 0,
+          "call": 59
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 932.5576081307374,
+          "end_seconds": 948.7700114987094,
+          "start_frame": 1132,
+          "action_steps": 0,
+          "call": 59
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 948.7700114987094,
+          "end_seconds": 950.6700114987094,
+          "start_frame": 1132,
+          "action_steps": 19,
+          "call": 59
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 950.6700114987094,
+          "end_seconds": 951.0290684462267,
+          "start_frame": 1151,
+          "action_steps": 0,
+          "call": 60
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 951.0290684462267,
+          "end_seconds": 964.897445693237,
+          "start_frame": 1151,
+          "action_steps": 0,
+          "call": 60
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 964.897445693237,
+          "end_seconds": 965.697445693237,
+          "start_frame": 1151,
+          "action_steps": 8,
+          "call": 60
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 965.697445693237,
+          "end_seconds": 966.0565026407543,
+          "start_frame": 1159,
+          "action_steps": 0,
+          "call": 61
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 966.0565026407543,
+          "end_seconds": 971.6842390177602,
+          "start_frame": 1159,
+          "action_steps": 0,
+          "call": 61
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 971.6842390177602,
+          "end_seconds": 975.7842390177602,
+          "start_frame": 1159,
+          "action_steps": 41,
+          "call": 61
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 975.7842390177602,
+          "end_seconds": 976.1432959652775,
+          "start_frame": 1200,
+          "action_steps": 0,
+          "call": 62
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 976.1432959652775,
+          "end_seconds": 982.7578094073142,
+          "start_frame": 1200,
+          "action_steps": 0,
+          "call": 62
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 982.7578094073142,
+          "end_seconds": 983.4578094073142,
+          "start_frame": 1200,
+          "action_steps": 7,
+          "call": 62
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 983.4578094073142,
+          "end_seconds": 983.8168663548315,
+          "start_frame": 1207,
+          "action_steps": 0,
+          "call": 63
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 983.8168663548315,
+          "end_seconds": 1006.4084628318562,
+          "start_frame": 1207,
+          "action_steps": 0,
+          "call": 63
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1006.4084628318562,
+          "end_seconds": 1009.2084628318562,
+          "start_frame": 1207,
+          "action_steps": 28,
+          "call": 63
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1009.2084628318562,
+          "end_seconds": 1009.5675197793735,
+          "start_frame": 1235,
+          "action_steps": 0,
+          "call": 64
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1009.5675197793735,
+          "end_seconds": 1014.7258689193968,
+          "start_frame": 1235,
+          "action_steps": 0,
+          "call": 64
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1014.7258689193968,
+          "end_seconds": 1016.2258689193968,
+          "start_frame": 1235,
+          "action_steps": 15,
+          "call": 64
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1016.2258689193968,
+          "end_seconds": 1016.5849258669141,
+          "start_frame": 1250,
+          "action_steps": 0,
+          "call": 65
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1016.5849258669141,
+          "end_seconds": 1047.217980589946,
+          "start_frame": 1250,
+          "action_steps": 0,
+          "call": 65
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1047.217980589946,
+          "end_seconds": 1048.217980589946,
+          "start_frame": 1250,
+          "action_steps": 10,
+          "call": 65
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1048.217980589946,
+          "end_seconds": 1048.5770375374632,
+          "start_frame": 1260,
+          "action_steps": 0,
+          "call": 66
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1048.5770375374632,
+          "end_seconds": 1059.4415760904594,
+          "start_frame": 1260,
+          "action_steps": 0,
+          "call": 66
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1059.4415760904594,
+          "end_seconds": 1060.2415760904594,
+          "start_frame": 1260,
+          "action_steps": 8,
+          "call": 66
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1060.2415760904594,
+          "end_seconds": 1060.6006330379766,
+          "start_frame": 1268,
+          "action_steps": 0,
+          "call": 67
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1060.6006330379766,
+          "end_seconds": 1087.9487739260092,
+          "start_frame": 1268,
+          "action_steps": 0,
+          "call": 67
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1087.9487739260092,
+          "end_seconds": 1088.4487739260092,
+          "start_frame": 1268,
+          "action_steps": 5,
+          "call": 67
+        }
+      ]
+    },
+    {
+      "task_id": 4,
+      "model": "opus",
+      "model_id": "claude-opus-5-5",
+      "display_trial": 2,
+      "row": 2,
+      "column": 1,
+      "source_file": "loho-study/task 4/opus55_task4_max_nocost_trial2_task4_uncapped_20261012_110427/episode.mp4",
+      "source_sha256": "fa2b09c838f8fdbdceabc01fe8be9add1207f84f7576a2196574ecb4f715bea3",
+      "source_summary_sha256": "ef5eee7aa4d9ad525365e9fe99cf2873539e490be3cc757f7f6336211f8b6ee0",
+      "cohort_median_elapsed_seconds": 1751.7313625530223,
+      "elapsed_seconds": 1751.7313625530223,
+      "api_latency_seconds": 1671.9849520542193,
+      "simulation_motion_seconds": 63.1,
+      "other_processing_seconds": 16.646410498803014,
+      "api_calls": 37,
+      "action_steps": 631,
+      "completion_percent": 100,
+      "phases": [
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 0.0,
+          "end_seconds": 0.4499029864541355,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 0.4499029864541355,
+          "end_seconds": 306.08840831449334,
+          "start_frame": 0,
+          "action_steps": 0,
+          "call": 1
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 306.08840831449334,
+          "end_seconds": 307.7884083144933,
+          "start_frame": 0,
+          "action_steps": 17,
+          "call": 1
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 307.7884083144933,
+          "end_seconds": 308.2383113009475,
+          "start_frame": 17,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 308.2383113009475,
+          "end_seconds": 326.70279862297156,
+          "start_frame": 17,
+          "action_steps": 0,
+          "call": 2
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 326.70279862297156,
+          "end_seconds": 327.70279862297156,
+          "start_frame": 17,
+          "action_steps": 10,
+          "call": 2
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 327.70279862297156,
+          "end_seconds": 328.1527016094257,
+          "start_frame": 27,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 328.1527016094257,
+          "end_seconds": 336.7046867054375,
+          "start_frame": 27,
+          "action_steps": 0,
+          "call": 3
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 336.7046867054375,
+          "end_seconds": 340.8046867054375,
+          "start_frame": 27,
+          "action_steps": 41,
+          "call": 3
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 340.8046867054375,
+          "end_seconds": 341.2545896918917,
+          "start_frame": 68,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 341.2545896918917,
+          "end_seconds": 346.27688848391955,
+          "start_frame": 68,
+          "action_steps": 0,
+          "call": 4
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 346.27688848391955,
+          "end_seconds": 347.1768884839195,
+          "start_frame": 68,
+          "action_steps": 9,
+          "call": 4
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 347.1768884839195,
+          "end_seconds": 347.6267914703737,
+          "start_frame": 77,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 347.6267914703737,
+          "end_seconds": 379.44453556536854,
+          "start_frame": 77,
+          "action_steps": 0,
+          "call": 5
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 379.44453556536854,
+          "end_seconds": 381.74453556536855,
+          "start_frame": 77,
+          "action_steps": 23,
+          "call": 5
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 381.74453556536855,
+          "end_seconds": 382.1944385518227,
+          "start_frame": 100,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 382.1944385518227,
+          "end_seconds": 488.8444111877843,
+          "start_frame": 100,
+          "action_steps": 0,
+          "call": 6
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 488.8444111877843,
+          "end_seconds": 489.7444111877843,
+          "start_frame": 100,
+          "action_steps": 9,
+          "call": 6
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 489.7444111877843,
+          "end_seconds": 490.19431417423846,
+          "start_frame": 109,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 490.19431417423846,
+          "end_seconds": 595.0989798032105,
+          "start_frame": 109,
+          "action_steps": 0,
+          "call": 7
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 595.0989798032105,
+          "end_seconds": 596.4989798032104,
+          "start_frame": 109,
+          "action_steps": 14,
+          "call": 7
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 596.4989798032104,
+          "end_seconds": 596.9488827896646,
+          "start_frame": 123,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 596.9488827896646,
+          "end_seconds": 681.3226267226498,
+          "start_frame": 123,
+          "action_steps": 0,
+          "call": 8
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 681.3226267226498,
+          "end_seconds": 682.2226267226498,
+          "start_frame": 123,
+          "action_steps": 9,
+          "call": 8
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 682.2226267226498,
+          "end_seconds": 682.672529709104,
+          "start_frame": 132,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 682.672529709104,
+          "end_seconds": 704.5180807020957,
+          "start_frame": 132,
+          "action_steps": 0,
+          "call": 9
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 704.5180807020957,
+          "end_seconds": 708.6180807020958,
+          "start_frame": 132,
+          "action_steps": 41,
+          "call": 9
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 708.6180807020958,
+          "end_seconds": 709.0679836885499,
+          "start_frame": 173,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 709.0679836885499,
+          "end_seconds": 724.158788670549,
+          "start_frame": 173,
+          "action_steps": 0,
+          "call": 10
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 724.158788670549,
+          "end_seconds": 725.258788670549,
+          "start_frame": 173,
+          "action_steps": 11,
+          "call": 10
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 725.258788670549,
+          "end_seconds": 725.7086916570032,
+          "start_frame": 184,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 725.7086916570032,
+          "end_seconds": 821.920483907982,
+          "start_frame": 184,
+          "action_steps": 0,
+          "call": 11
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 821.920483907982,
+          "end_seconds": 823.120483907982,
+          "start_frame": 184,
+          "action_steps": 12,
+          "call": 11
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 823.120483907982,
+          "end_seconds": 823.5703868944362,
+          "start_frame": 196,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 823.5703868944362,
+          "end_seconds": 859.6758253254044,
+          "start_frame": 196,
+          "action_steps": 0,
+          "call": 12
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 859.6758253254044,
+          "end_seconds": 861.7758253254044,
+          "start_frame": 196,
+          "action_steps": 21,
+          "call": 12
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 861.7758253254044,
+          "end_seconds": 862.2257283118586,
+          "start_frame": 217,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 862.2257283118586,
+          "end_seconds": 971.3785628139074,
+          "start_frame": 217,
+          "action_steps": 0,
+          "call": 13
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 971.3785628139074,
+          "end_seconds": 973.1785628139073,
+          "start_frame": 217,
+          "action_steps": 18,
+          "call": 13
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 973.1785628139073,
+          "end_seconds": 973.6284658003615,
+          "start_frame": 235,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 973.6284658003615,
+          "end_seconds": 1012.2884611513482,
+          "start_frame": 235,
+          "action_steps": 0,
+          "call": 14
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1012.2884611513482,
+          "end_seconds": 1014.0884611513482,
+          "start_frame": 235,
+          "action_steps": 18,
+          "call": 14
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1014.0884611513482,
+          "end_seconds": 1014.5383641378023,
+          "start_frame": 253,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1014.5383641378023,
+          "end_seconds": 1266.5895926718251,
+          "start_frame": 253,
+          "action_steps": 0,
+          "call": 15
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1266.5895926718251,
+          "end_seconds": 1267.2895926718252,
+          "start_frame": 253,
+          "action_steps": 7,
+          "call": 15
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1267.2895926718252,
+          "end_seconds": 1267.7394956582793,
+          "start_frame": 260,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1267.7394956582793,
+          "end_seconds": 1295.0146786242476,
+          "start_frame": 260,
+          "action_steps": 0,
+          "call": 16
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1295.0146786242476,
+          "end_seconds": 1296.8146786242476,
+          "start_frame": 260,
+          "action_steps": 18,
+          "call": 16
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1296.8146786242476,
+          "end_seconds": 1297.2645816107017,
+          "start_frame": 278,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1297.2645816107017,
+          "end_seconds": 1306.230237697737,
+          "start_frame": 278,
+          "action_steps": 0,
+          "call": 17
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1306.230237697737,
+          "end_seconds": 1306.830237697737,
+          "start_frame": 278,
+          "action_steps": 6,
+          "call": 17
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1306.830237697737,
+          "end_seconds": 1307.280140684191,
+          "start_frame": 284,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1307.280140684191,
+          "end_seconds": 1313.3111109782196,
+          "start_frame": 284,
+          "action_steps": 0,
+          "call": 18
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1313.3111109782196,
+          "end_seconds": 1314.0111109782197,
+          "start_frame": 284,
+          "action_steps": 7,
+          "call": 18
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1314.0111109782197,
+          "end_seconds": 1314.4610139646738,
+          "start_frame": 291,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1314.4610139646738,
+          "end_seconds": 1325.8096991186667,
+          "start_frame": 291,
+          "action_steps": 0,
+          "call": 19
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1325.8096991186667,
+          "end_seconds": 1329.9096991186666,
+          "start_frame": 291,
+          "action_steps": 41,
+          "call": 19
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1329.9096991186666,
+          "end_seconds": 1330.3596021051208,
+          "start_frame": 332,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1330.3596021051208,
+          "end_seconds": 1342.149192947095,
+          "start_frame": 332,
+          "action_steps": 0,
+          "call": 20
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1342.149192947095,
+          "end_seconds": 1342.649192947095,
+          "start_frame": 332,
+          "action_steps": 5,
+          "call": 20
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1342.649192947095,
+          "end_seconds": 1343.099095933549,
+          "start_frame": 337,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1343.099095933549,
+          "end_seconds": 1347.8152418215782,
+          "start_frame": 337,
+          "action_steps": 0,
+          "call": 21
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1347.8152418215782,
+          "end_seconds": 1350.6152418215781,
+          "start_frame": 337,
+          "action_steps": 28,
+          "call": 21
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1350.6152418215781,
+          "end_seconds": 1351.0651448080323,
+          "start_frame": 365,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1351.0651448080323,
+          "end_seconds": 1392.2269340850187,
+          "start_frame": 365,
+          "action_steps": 0,
+          "call": 22
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1392.2269340850187,
+          "end_seconds": 1393.8269340850186,
+          "start_frame": 365,
+          "action_steps": 16,
+          "call": 22
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1393.8269340850186,
+          "end_seconds": 1394.2768370714728,
+          "start_frame": 381,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1394.2768370714728,
+          "end_seconds": 1423.678383198461,
+          "start_frame": 381,
+          "action_steps": 0,
+          "call": 23
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1423.678383198461,
+          "end_seconds": 1425.178383198461,
+          "start_frame": 381,
+          "action_steps": 15,
+          "call": 23
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1425.178383198461,
+          "end_seconds": 1425.6282861849152,
+          "start_frame": 396,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1425.6282861849152,
+          "end_seconds": 1439.859745932915,
+          "start_frame": 396,
+          "action_steps": 0,
+          "call": 24
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1439.859745932915,
+          "end_seconds": 1442.959745932915,
+          "start_frame": 396,
+          "action_steps": 31,
+          "call": 24
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1442.959745932915,
+          "end_seconds": 1443.4096489193691,
+          "start_frame": 427,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1443.4096489193691,
+          "end_seconds": 1450.1401557753636,
+          "start_frame": 427,
+          "action_steps": 0,
+          "call": 25
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1450.1401557753636,
+          "end_seconds": 1451.5401557753637,
+          "start_frame": 427,
+          "action_steps": 14,
+          "call": 25
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1451.5401557753637,
+          "end_seconds": 1451.9900587618179,
+          "start_frame": 441,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1451.9900587618179,
+          "end_seconds": 1515.338689598808,
+          "start_frame": 441,
+          "action_steps": 0,
+          "call": 26
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1515.338689598808,
+          "end_seconds": 1517.838689598808,
+          "start_frame": 441,
+          "action_steps": 25,
+          "call": 26
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1517.838689598808,
+          "end_seconds": 1518.2885925852622,
+          "start_frame": 466,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1518.2885925852622,
+          "end_seconds": 1529.1877336423074,
+          "start_frame": 466,
+          "action_steps": 0,
+          "call": 27
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1529.1877336423074,
+          "end_seconds": 1529.8877336423075,
+          "start_frame": 466,
+          "action_steps": 7,
+          "call": 27
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1529.8877336423075,
+          "end_seconds": 1530.3376366287616,
+          "start_frame": 473,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1530.3376366287616,
+          "end_seconds": 1538.5069544407802,
+          "start_frame": 473,
+          "action_steps": 0,
+          "call": 28
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1538.5069544407802,
+          "end_seconds": 1539.60695444078,
+          "start_frame": 473,
+          "action_steps": 11,
+          "call": 28
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1539.60695444078,
+          "end_seconds": 1540.0568574272343,
+          "start_frame": 484,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1540.0568574272343,
+          "end_seconds": 1570.1672551922397,
+          "start_frame": 484,
+          "action_steps": 0,
+          "call": 29
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1570.1672551922397,
+          "end_seconds": 1570.7672551922396,
+          "start_frame": 484,
+          "action_steps": 6,
+          "call": 29
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1570.7672551922396,
+          "end_seconds": 1571.2171581786938,
+          "start_frame": 490,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1571.2171581786938,
+          "end_seconds": 1611.0680157587162,
+          "start_frame": 490,
+          "action_steps": 0,
+          "call": 30
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1611.0680157587162,
+          "end_seconds": 1614.5680157587162,
+          "start_frame": 490,
+          "action_steps": 35,
+          "call": 30
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1614.5680157587162,
+          "end_seconds": 1615.0179187451704,
+          "start_frame": 525,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1615.0179187451704,
+          "end_seconds": 1648.092141920175,
+          "start_frame": 525,
+          "action_steps": 0,
+          "call": 31
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1648.092141920175,
+          "end_seconds": 1649.292141920175,
+          "start_frame": 525,
+          "action_steps": 12,
+          "call": 31
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1649.292141920175,
+          "end_seconds": 1649.7420449066292,
+          "start_frame": 537,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1649.7420449066292,
+          "end_seconds": 1670.6988882986213,
+          "start_frame": 537,
+          "action_steps": 0,
+          "call": 32
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1670.6988882986213,
+          "end_seconds": 1674.7988882986213,
+          "start_frame": 537,
+          "action_steps": 41,
+          "call": 32
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1674.7988882986213,
+          "end_seconds": 1675.2487912850754,
+          "start_frame": 578,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1675.2487912850754,
+          "end_seconds": 1681.807055518131,
+          "start_frame": 578,
+          "action_steps": 0,
+          "call": 33
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1681.807055518131,
+          "end_seconds": 1682.507055518131,
+          "start_frame": 578,
+          "action_steps": 7,
+          "call": 33
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1682.507055518131,
+          "end_seconds": 1682.9569585045851,
+          "start_frame": 585,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1682.9569585045851,
+          "end_seconds": 1709.0817696736362,
+          "start_frame": 585,
+          "action_steps": 0,
+          "call": 34
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1709.0817696736362,
+          "end_seconds": 1711.4817696736363,
+          "start_frame": 585,
+          "action_steps": 24,
+          "call": 34
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1711.4817696736363,
+          "end_seconds": 1711.9316726600905,
+          "start_frame": 609,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1711.9316726600905,
+          "end_seconds": 1729.5608747161264,
+          "start_frame": 609,
+          "action_steps": 0,
+          "call": 35
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1729.5608747161264,
+          "end_seconds": 1730.6608747161263,
+          "start_frame": 609,
+          "action_steps": 11,
+          "call": 35
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1730.6608747161263,
+          "end_seconds": 1731.1107777025804,
+          "start_frame": 620,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1731.1107777025804,
+          "end_seconds": 1742.8122135095668,
+          "start_frame": 620,
+          "action_steps": 0,
+          "call": 36
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1742.8122135095668,
+          "end_seconds": 1743.8122135095668,
+          "start_frame": 620,
+          "action_steps": 10,
+          "call": 36
+        },
+        {
+          "phase": "PROCESSING",
+          "start_seconds": 1743.8122135095668,
+          "end_seconds": 1744.262116496021,
+          "start_frame": 630,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "API WAIT",
+          "start_seconds": 1744.262116496021,
+          "end_seconds": 1751.6313625530229,
+          "start_frame": 630,
+          "action_steps": 0,
+          "call": 37
+        },
+        {
+          "phase": "MOVING",
+          "start_seconds": 1751.6313625530229,
+          "end_seconds": 1751.7313625530228,
+          "start_frame": 630,
+          "action_steps": 1,
+          "call": 37
+        }
+      ]
+    }
+  ]
+}

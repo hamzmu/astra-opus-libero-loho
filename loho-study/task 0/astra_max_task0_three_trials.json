@@ -1,0 +1,377 @@
+{
+  "model_id": "gpt-6-astra",
+  "provider": "openai",
+  "effort": "max",
+  "effective_efforts": [
+    "max"
+  ],
+  "effort_fallback_configured": "xhigh",
+  "effort_fallbacks_used": 0,
+  "task_id": 0,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "independent_fresh_conversations": true,
+  "prior_run_hindsight_injected": false,
+  "shared_configuration_matches_opus": true,
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "policy": "pose-tools",
+  "image_history_observations": 0,
+  "control_hz": 10,
+  "resolution": [
+    224,
+    224
+  ],
+  "limits_per_trial": {
+    "max_calls": 80,
+    "max_action_steps": 2000,
+    "max_output_tokens_per_call": 128000,
+    "estimated_api_cost_cap_usd": 23.6317058
+  },
+  "trials_total": 3,
+  "successful_trials": 1,
+  "success_rate_percent": 33.33333333333333,
+  "mean_goal_completion_percent": 66.66666666666667,
+  "termination_counts": {
+    "cost_budget": 2,
+    "success": 1
+  },
+  "total_api_calls": 139,
+  "total_action_steps": 2686,
+  "total_trial_estimated_api_cost_usd": 8.7080465,
+  "trial_costs_complete": true,
+  "total_trial_api_latency_seconds": 1499.497356050997,
+  "weighted_mean_api_latency_seconds": 10.787750762956813,
+  "total_trial_elapsed_seconds": 1819.472459221026,
+  "api_errors_total": 0,
+  "tool_errors_total": 1,
+  "max_effort_requests_total": 139,
+  "xhigh_effort_requests_total": 0,
+  "trials": [
+    {
+      "trial_number": 1,
+      "directory": "astra_task0_max_128k_trial1_20261011_155328",
+      "run_id": "7c49a633-9a89-4ca0-a25e-587d4a2a34e3",
+      "task_complete": false,
+      "completion_percent": 66.66666666666667,
+      "termination_reason": "cost_budget",
+      "calls": 51,
+      "action_steps": 1031,
+      "elapsed_seconds": 658.7577068870305,
+      "total_api_latency_seconds": 535.3542167500127,
+      "mean_api_latency_seconds": 10.49714150490221,
+      "estimated_api_cost_usd": 3.3491135,
+      "known_estimated_api_cost_usd": 3.3491135,
+      "cost_complete": true,
+      "input_tokens": 1588850,
+      "output_tokens": 20701,
+      "cached_input_tokens": 1524391,
+      "cache_write_tokens": 58033,
+      "thinking_tokens_reported": 16731,
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "automatic_http_retries": 0,
+      "max_effort_requests": 51,
+      "xhigh_effort_requests": 0,
+      "fallback_events": [],
+      "pose_targets_reached": 30,
+      "pose_targets_not_reached": 21,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 2,
+        "completion_fraction": 0.6666666666666666,
+        "completion_percent": 66.66666666666667,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 66.66666666666667,
+        "last_scored_simulator_step": 1036,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 281
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 908
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "videos": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1032,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1032,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "result_file": "astra_task0_max_128k_trial1_20261011_155328/run_result.json",
+      "steps_file": "astra_task0_max_128k_trial1_20261011_155328/STEPS_TAKEN.txt",
+      "blocked_next_request_reservation_usd": 20.2922
+    },
+    {
+      "trial_number": 2,
+      "directory": "astra_task0_max_128k_trial2_20261011_160114",
+      "run_id": "34bec8ab-6faf-41c1-9533-0b7c4eb81d22",
+      "task_complete": false,
+      "completion_percent": 33.333333333333336,
+      "termination_reason": "cost_budget",
+      "calls": 50,
+      "action_steps": 957,
+      "elapsed_seconds": 687.2505057560047,
+      "total_api_latency_seconds": 573.4781717090518,
+      "mean_api_latency_seconds": 11.469563434181037,
+      "estimated_api_cost_usd": 3.2773665,
+      "known_estimated_api_cost_usd": 3.2773665,
+      "cost_complete": true,
+      "input_tokens": 1521118,
+      "output_tokens": 21286,
+      "cached_input_tokens": 1459579,
+      "cache_write_tokens": 55239,
+      "thinking_tokens_reported": 17554,
+      "api_errors": 0,
+      "tool_error_count": 1,
+      "automatic_http_retries": 0,
+      "max_effort_requests": 50,
+      "xhigh_effort_requests": 0,
+      "fallback_events": [],
+      "pose_targets_reached": 31,
+      "pose_targets_not_reached": 18,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 1,
+        "completion_fraction": 0.3333333333333333,
+        "completion_percent": 33.333333333333336,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 33.333333333333336,
+        "last_scored_simulator_step": 962,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 458
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "videos": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 958,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 958,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "result_file": "astra_task0_max_128k_trial2_20261011_160114/run_result.json",
+      "steps_file": "astra_task0_max_128k_trial2_20261011_160114/STEPS_TAKEN.txt",
+      "blocked_next_request_reservation_usd": 20.6735
+    },
+    {
+      "trial_number": 3,
+      "directory": "astra_task0_max_128k_trial3_20261011_160114",
+      "run_id": "020ff6d1-0ec1-4518-a69c-29a79cac7cb1",
+      "task_complete": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 38,
+      "action_steps": 698,
+      "elapsed_seconds": 473.4642465779907,
+      "total_api_latency_seconds": 390.6649675919325,
+      "mean_api_latency_seconds": 10.28065704189296,
+      "estimated_api_cost_usd": 2.0815665,
+      "known_estimated_api_cost_usd": 2.0815665,
+      "cost_complete": true,
+      "input_tokens": 849745,
+      "output_tokens": 14429,
+      "cached_input_tokens": 804324,
+      "cache_write_tokens": 40633,
+      "thinking_tokens_reported": 11802,
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "automatic_http_retries": 0,
+      "max_effort_requests": 38,
+      "xhigh_effort_requests": 0,
+      "fallback_events": [],
+      "pose_targets_reached": 26,
+      "pose_targets_not_reached": 12,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 703,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 243
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 578
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 703
+          }
+        ]
+      },
+      "videos": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 699,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 699,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "result_file": "astra_task0_max_128k_trial3_20261011_160114/run_result.json",
+      "steps_file": "astra_task0_max_128k_trial3_20261011_160114/STEPS_TAKEN.txt",
+      "blocked_next_request_reservation_usd": null
+    }
+  ],
+  "cost_guard_limitation": "Trials 1 and 2 ended on the conservative cost guard at actual spend $3.3491135 and $3.2773665. Next-response reservations were $20.2922 and $20.6735. The existing guard bounds serialized conversation bytes as tokens and reserves the full 128000-token output allowance, using worst applicable input/cache-write rates. Encrypted Responses history expands that bound. These reservations are not charges. The recorded comparison includes these early budget stops; both nominal 80-call and 2000-step limits were still available.",
+  "pricing_snapshot": "../pricing-astra.json",
+  "pricing_source": "https://developers.openai.com/api/docs/pricing",
+  "pricing_verified_on": "2026-10-11",
+  "note": "All received usage is retained, including the rejected tool command in trial 2. No prior-run hindsight or model fallback was used."
+}

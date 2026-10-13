@@ -1,0 +1,348 @@
+{
+  "runtime": {
+    "test": "offline horizon regression",
+    "real_model_calls": 0
+  },
+  "benchmark": "libero_loho_new",
+  "task_id": 0,
+  "goal": "put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it",
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "model_id": "gpt-6-luna",
+  "effort": "high",
+  "policy": "direct",
+  "action_interface": "normalized_osc_delta",
+  "control_hz": 20,
+  "camera": "agentview",
+  "cameras": [
+    "agentview"
+  ],
+  "camera_configuration": "agentview",
+  "camera_orientations": {
+    "agentview": "rotate180"
+  },
+  "video_files": {
+    "agentview": "episode.mp4"
+  },
+  "rgb_resolution": [
+    256,
+    256
+  ],
+  "observation_mode": "rgb-proprio",
+  "proprioception_fields": [
+    "joint_positions_rad",
+    "joint_velocities_rad_s",
+    "end_effector_position_m",
+    "end_effector_quaternion_xyzw",
+    "gripper_joint_positions_m",
+    "gripper_joint_velocities_m_s"
+  ],
+  "orientation": "rotate180",
+  "action_repeat": 5,
+  "max_decisions": 5,
+  "settle_steps": 5,
+  "simulator_horizon": 7,
+  "max_action_steps": 2,
+  "max_output_tokens_per_call": 2048,
+  "max_estimated_api_cost_usd": null,
+  "prompt_profile": "calibrated-v2",
+  "rig_calibration": {
+    "tabletop_world_z_m": 0.9,
+    "control_hz": 20.0,
+    "translation_target_scale_m": [
+      0.05,
+      0.05,
+      0.05
+    ],
+    "rotation_target_scale_rad": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "camera_orientation": "rotate180",
+    "camera_axes": "Near the tabletop, +Y generally projects image-left and +X image-down. The view is oblique; perspective and height change the apparent displacement."
+  },
+  "system_prompt": "You control a simulated Panda robot arm using RGB and proprioceptive feedback.\nComplete the user's manipulation task. Each decision receives ONE current RGB\nimage from the same fixed camera and measured robot proprioception from that\nsame observation. The robot state has these labeled fields:\n- joint_positions_rad: seven Panda arm joints, joints 1 through 7, in radians.\n- joint_velocities_rad_s: the same seven joints in radians per second.\n- end_effector_position_m: [x,y,z] of the gripper site in world coordinates, in meters.\n- end_effector_quaternion_xyzw: [x,y,z,w] world orientation of the end-effector body\n  as reported by robosuite; this is a quaternion, not Euler angles.\n- gripper_joint_positions_m: two signed finger-slide positions in meters.\n- gripper_joint_velocities_m_s: their signed velocities in meters per second.\nThe finger positions have opposite signs; larger absolute positions mean a more\nopen gripper. These measured values are not normalized controller commands.\nYou have no depth, object coordinates, rewards, success checks or other hidden\nsimulation state. Use RGB to locate objects and robot state to track your arm.\nReturn ONE normalized 7D OSC_POSE action in this order:\n[dx, dy, dz, dRx, dRy, dRz, gripper].\nThe first six numbers are relative controller commands in [-1,1], not meters or\ndegrees. Translation is in the world frame; +Z moves upward. The gripper\nuses -1 to open and +1 to close. The action repeats for 5 simulation steps.\nUse small corrections and the next image. No higher-level grasp/place or motion\nplanning tools. Return only JSON with action and memory. Keep memory under 300\ncharacters. All seven action values must be finite.\n\nPanda control and manipulation guidance:\n- At 20 Hz each simulator step is 0.05 seconds. Inference pauses the simulator.\n  A normalized translation of 1 requests a 0.05 m servo target offset per axis;\n  a normalized rotation of 1 requests 0.5 rad. These are target offsets, not\n  guaranteed achieved motion. Repeating an action recomputes relative targets\n  from the current pose each step; it does not command one fixed destination.\n- Use the fixed rig calibration below. World coordinates are not image pixels.\n  The camera is oblique. Do not guess table height from general Panda examples.\n  The reported grip site is not the lowest fingertip: fingers can touch the table\n  while the reported site is still above its surface. Never descend through it.\n- First align above an object with open fingers and safe clearance. Correct XY\n  before lowering; avoid the cabinet, rims, handles and other obstacles. Near an\n  object use small translations (typically 0.05-0.2 normalized) and reassess.\n- Open with -1 and close with +1. A tabletop contact is not a grasp. Align the\n  fingers around the object's narrow dimension; use a small yaw correction if\n  needed. Close when the object is between the fingers, then lift a little and\n  check visually that the object moved with the gripper before transporting it.\n- Carry with clearance. Lower gently for placement, open, lift clear, and verify\n  the object stayed at its destination after the hand moves out of the way.\n- Break the task into subgoals and retain your current subgoal, axis mapping,\n  alignment, grasp evidence and recovery plan in memory. Verify each transition.\n  Attempt all requested objects and final operations before claiming completion.\n- A commanded motion is not evidence that motion occurred. Compare consecutive\n  observations. If lowering stops working, do not keep pushing down or assume\n  you are still descending. Re-check alignment, lift clear and correct sideways,\n  or close only when the visual grasp alignment supports doing so. After two\n  stalled translations, change the move; do not repeat the same blocked strategy.\n- Spend the remaining decisions on verified task progress. Do not repeatedly\n  calibrate or describe a future grasp without attempting and checking it.\n- Treat measured arm motion as the readback. The user message includes the last\n  three actions and their measured results; a stall warning is based on robot\n  motion only and does not reveal the contact object. Finger qpos magnitudes are\n  about 0.04 m when fully open and near zero on an empty close. A nonzero settled\n  close can indicate an obstruction or object; verify by lifting and observing.\n\nFixed rig calibration (no object locations or task-state oracle):\n{\"tabletop_world_z_m\":0.9,\"control_hz\":20.0,\"translation_target_scale_m\":[0.05,0.05,0.05],\"rotation_target_scale_rad\":[0.5,0.5,0.5],\"camera_orientation\":\"rotate180\",\"camera_axes\":\"Near the tabletop, +Y generally projects image-left and +X image-down. The view is oblique; perspective and height change the apparent displacement.\"}",
+  "decisions": [
+    {
+      "decision_index": 0,
+      "input_frame": "decision_000.png",
+      "input_frames": {
+        "agentview": "decision_000.png"
+      },
+      "observation_simulator_step": 5,
+      "raw_action": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "action": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "action_clipped": false,
+      "memory": "offline test",
+      "api_latency_seconds": 0,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "returned_model": "offline_stub_no_api_request",
+      "proprioception": {
+        "joint_positions_rad": [
+          0.0,
+          -0.161037,
+          0.0,
+          -2.444597,
+          0.0,
+          2.226752,
+          0.785398
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "end_effector_position_m": [
+          -0.208465,
+          0.0,
+          1.173279
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999597,
+          0.000246,
+          -0.0284,
+          -7e-06
+        ],
+        "gripper_joint_positions_m": [
+          0.033941,
+          -0.033941
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.058843,
+          -0.058843
+        ]
+      },
+      "executed_steps": 2,
+      "motion_feedback": {
+        "executed_steps": 2,
+        "eef_before_m": [
+          -0.208465,
+          0.0,
+          1.173279
+        ],
+        "eef_after_m": [
+          -0.208465,
+          0.0,
+          1.173279
+        ],
+        "observed_eef_delta_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "observed_translation_m": 0.0,
+        "gripper_after_m": [
+          0.037413,
+          -0.037413
+        ],
+        "translation_stalled": false,
+        "interpretation": "Measured motion only; this does not verify a grasp or task progress."
+      },
+      "private_trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 7,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      }
+    }
+  ],
+  "consecutive_translation_stalls": 0,
+  "translation_stall_count": 0,
+  "success": false,
+  "simulator_action_steps": 2,
+  "decisions_used": 1,
+  "invalid_action_count": 0,
+  "estimated_api_cost_usd": 0.0,
+  "termination_reason": "horizon",
+  "telemetry_schema_version": 2,
+  "run_id": "fc2521e8-c11c-4a49-82de-0e8315be27c4",
+  "pricing": {
+    "currency": "USD",
+    "verified_on": "2026-10-10",
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "cache_formula_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+    "model": "gpt-6-luna",
+    "long_context_threshold": 272000,
+    "rates_per_million_tokens": {
+      "default": {
+        "short": {
+          "input": 0.1,
+          "cached_input": 0.01,
+          "cache_write": 0.125,
+          "output": 0.5
+        },
+        "long": {
+          "input": 0.2,
+          "cached_input": 0.02,
+          "cache_write": 0.25,
+          "output": 0.75
+        }
+      },
+      "priority": {
+        "short": {
+          "input": 0.2,
+          "cached_input": 0.02,
+          "cache_write": 0.25,
+          "output": 1.0
+        },
+        "long": {
+          "input": 0.4,
+          "cached_input": 0.04,
+          "cache_write": 0.5,
+          "output": 1.5
+        }
+      },
+      "flex": {
+        "short": {
+          "input": 0.05,
+          "cached_input": 0.005,
+          "cache_write": 0.0625,
+          "output": 0.25
+        },
+        "long": {
+          "input": 0.1,
+          "cached_input": 0.01,
+          "cache_write": 0.125,
+          "output": 0.375
+        }
+      }
+    }
+  },
+  "api_attempts_file": "api_attempts.jsonl",
+  "api_attempts": [],
+  "api_attempts_total": 0,
+  "known_api_attempts_total": 0,
+  "attempt_coverage_complete": true,
+  "api_attempts_unknown_usage": 0,
+  "api_attempts_unresolved_cost": 0,
+  "token_totals_complete": true,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "total_cached_input_tokens": 0,
+  "total_cache_write_tokens": 0,
+  "known_estimated_api_cost_usd": 0.0,
+  "cost_complete": true,
+  "total_api_latency_seconds": 0,
+  "mean_api_latency_seconds": null,
+  "api_latency_totals_complete": true,
+  "elapsed_seconds": 3.0365120969945565,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 0,
+    "completion_fraction": 0.0,
+    "completion_percent": 0.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 0.0,
+    "last_scored_simulator_step": 7,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      }
+    ]
+  },
+  "trial_status": "budget_exhausted"
+}

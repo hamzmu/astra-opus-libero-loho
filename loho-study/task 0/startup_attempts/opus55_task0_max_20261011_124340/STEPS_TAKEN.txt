@@ -1,0 +1,4 @@
+OPUS MAX INITIAL ADAPTER FAILURE
+One API request, no robot action steps. Request returned HTTP 200 after 184.421s. Adapter expected SSE and missed JSON receipt because stream field was omitted.
+Request ID: req_011CfvnWzcqBErx8Eu9aa7XQ
+Full token usage and cost remain unresolved. Reserved $0.712325 against the overall $25 cap for the repaired trial. No automatic HTTP retry.

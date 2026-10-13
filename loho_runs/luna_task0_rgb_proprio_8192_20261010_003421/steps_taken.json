@@ -1,0 +1,5465 @@
+{
+  "directory": "C:\\Users\\muhha\\OneDrive\\Desktop\\loho\\loho_runs\\luna_task0_rgb_proprio_8192_20261010_003421",
+  "run_id": "4c0f37cb-e40b-40d2-9cba-32a57e54737e",
+  "model_id": "gpt-6-luna",
+  "task_id": 0,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "observation_mode": "rgb-proprio",
+  "max_decisions": 160,
+  "max_output_tokens_per_call": 8192,
+  "termination_reason": "interrupted",
+  "success": false,
+  "executed_actions": 74,
+  "action_control_steps": 370,
+  "settling_control_steps": 5,
+  "api_attempts_total": 75,
+  "api_attempts_unknown_usage": 1,
+  "known_estimated_api_cost_usd": 0.0535229,
+  "estimated_api_cost_usd": null,
+  "cost_complete": false,
+  "total_input_tokens": 55254,
+  "total_output_tokens": 95995,
+  "total_api_latency_seconds": 1121.2538192610955,
+  "elapsed_seconds": 1152.0693499490153,
+  "closed_gripper_actions": 0,
+  "video": {
+    "file": "episode.mp4",
+    "verified_frames": 371,
+    "fps": 20.0,
+    "duration_seconds": 18.55
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "decision_index": 0,
+      "simulator_control_step_start": 6,
+      "simulator_control_step_end": 10,
+      "executed_steps": 5,
+      "action": [
+        -0.8,
+        0.8,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front butter (lower of the two orange packages at left); gripper remains open.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.0,
+          -0.161037,
+          0.0,
+          -2.444597,
+          0.0,
+          2.226752,
+          0.785398
+        ],
+        "joint_velocities_rad_s": [
+          0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "end_effector_position_m": [
+          -0.208465,
+          0.0,
+          1.173279
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999597,
+          0.000246,
+          -0.0284,
+          -7e-06
+        ],
+        "gripper_joint_positions_m": [
+          0.033941,
+          -0.033941
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.058843,
+          -0.058843
+        ]
+      },
+      "observation_image": "decision_000.png",
+      "request_started_at_utc": "2026-10-10T04:34:27.975+00:00",
+      "api_latency_seconds": 19.666620931995567,
+      "usage": {
+        "input_tokens": 709,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1577,
+        "output_tokens_details": {
+          "reasoning_tokens": 1520
+        },
+        "total_tokens": 2286
+      },
+      "estimated_api_cost_usd": 0.0008594,
+      "attempt_id": "713bfd9f-a477-4332-b726-662b6fb75a79"
+    },
+    {
+      "step_number": 2,
+      "decision_index": 1,
+      "simulator_control_step_start": 11,
+      "simulator_control_step_end": 15,
+      "executed_steps": 5,
+      "action": [
+        -0.5,
+        -0.6,
+        -0.2,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front butter package (lower orange item at left), staying above the tabletop; gripper open.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.022749,
+          -0.218277,
+          0.077095,
+          -2.541128,
+          0.033406,
+          2.23653,
+          0.856094
+        ],
+        "joint_velocities_rad_s": [
+          0.118113,
+          -0.339018,
+          0.399206,
+          -0.5801,
+          0.163391,
+          0.285017,
+          0.40857
+        ],
+        "end_effector_position_m": [
+          -0.242856,
+          0.042689,
+          1.158848
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999045,
+          0.00268,
+          -0.043612,
+          -0.000715
+        ],
+        "gripper_joint_positions_m": [
+          0.038881,
+          -0.038538
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.002907,
+          -0.003781
+        ]
+      },
+      "observation_image": "decision_001.png",
+      "request_started_at_utc": "2026-10-10T04:34:47.898+00:00",
+      "api_latency_seconds": 17.67246965598315,
+      "usage": {
+        "input_tokens": 739,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1432,
+        "output_tokens_details": {
+          "reasoning_tokens": 1373
+        },
+        "total_tokens": 2171
+      },
+      "estimated_api_cost_usd": 0.0007899,
+      "attempt_id": "1c910c3b-f0a9-4dd0-b8d8-2e5bba5f24db"
+    },
+    {
+      "step_number": 3,
+      "decision_index": 2,
+      "simulator_control_step_start": 16,
+      "simulator_control_step_end": 20,
+      "executed_steps": 5,
+      "action": [
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front butter package (lower orange item at left), staying above the tabletop; gripper open.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.012164,
+          -0.314558,
+          0.039178,
+          -2.684197,
+          0.014722,
+          2.30724,
+          0.830244
+        ],
+        "joint_velocities_rad_s": [
+          -0.07883,
+          -0.377134,
+          -0.2928,
+          -0.550046,
+          -0.087829,
+          0.249707,
+          -0.329027
+        ],
+        "end_effector_position_m": [
+          -0.277425,
+          0.019339,
+          1.144845
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999504,
+          -0.002798,
+          -0.031282,
+          0.002261
+        ],
+        "gripper_joint_positions_m": [
+          0.039079,
+          -0.039189
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000746,
+          -0.000772
+        ]
+      },
+      "observation_image": "decision_002.png",
+      "request_started_at_utc": "2026-10-10T04:35:05.923+00:00",
+      "api_latency_seconds": 22.634642602002714,
+      "usage": {
+        "input_tokens": 742,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1717,
+        "output_tokens_details": {
+          "reasoning_tokens": 1664
+        },
+        "total_tokens": 2459
+      },
+      "estimated_api_cost_usd": 0.0009327,
+      "attempt_id": "9178ace2-a7e7-453f-8ea2-1ce6749ea303"
+    },
+    {
+      "step_number": 4,
+      "decision_index": 3,
+      "simulator_control_step_start": 21,
+      "simulator_control_step_end": 25,
+      "executed_steps": 5,
+      "action": [
+        -0.5,
+        -0.5,
+        -0.1,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward front butter at left, keeping gripper open and safely above tabletop; continue aligning over it before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.057066,
+          -0.494431,
+          0.151937,
+          -2.833777,
+          0.112638,
+          2.27439,
+          0.891537
+        ],
+        "joint_velocities_rad_s": [
+          0.275372,
+          -0.811473,
+          0.665128,
+          -0.595402,
+          0.55585,
+          -0.142791,
+          0.470598
+        ],
+        "end_effector_position_m": [
+          -0.335602,
+          0.066048,
+          1.144235
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999416,
+          0.00358,
+          -0.03398,
+          -0.000769
+        ],
+        "gripper_joint_positions_m": [
+          0.039469,
+          -0.039285
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000631,
+          -0.000461
+        ]
+      },
+      "observation_image": "decision_003.png",
+      "request_started_at_utc": "2026-10-10T04:35:28.832+00:00",
+      "api_latency_seconds": 16.67035329696955,
+      "usage": {
+        "input_tokens": 741,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1441,
+        "output_tokens_details": {
+          "reasoning_tokens": 1379
+        },
+        "total_tokens": 2182
+      },
+      "estimated_api_cost_usd": 0.0007946,
+      "attempt_id": "7fe387f5-6845-4a65-954b-5dc724773baa"
+    },
+    {
+      "step_number": 5,
+      "decision_index": 4,
+      "simulator_control_step_start": 26,
+      "simulator_control_step_end": 30,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the front butter while keeping the gripper open and high; inspect alignment before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.058392,
+          -0.665354,
+          0.128814,
+          -2.987551,
+          0.110414,
+          2.278537,
+          0.874506
+        ],
+        "joint_velocities_rad_s": [
+          -0.054493,
+          -0.633224,
+          -0.297432,
+          -0.537263,
+          -0.136808,
+          -0.079733,
+          -0.265275
+        ],
+        "end_effector_position_m": [
+          -0.377923,
+          0.047693,
+          1.134383
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999747,
+          -0.00216,
+          -0.022353,
+          0.001402
+        ],
+        "gripper_joint_positions_m": [
+          0.039538,
+          -0.039525
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000367,
+          -0.000454
+        ]
+      },
+      "observation_image": "decision_004.png",
+      "request_started_at_utc": "2026-10-10T04:35:45.739+00:00",
+      "api_latency_seconds": 13.313128379988484,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1180,
+        "output_tokens_details": {
+          "reasoning_tokens": 1124
+        },
+        "total_tokens": 1925
+      },
+      "estimated_api_cost_usd": 0.0006645,
+      "attempt_id": "9747df58-93db-4e0f-9762-b3c5f9ac30dd"
+    },
+    {
+      "step_number": 6,
+      "decision_index": 5,
+      "simulator_control_step_start": 31,
+      "simulator_control_step_end": 35,
+      "executed_steps": 5,
+      "action": [
+        -0.6,
+        0.75,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving above the front (lower) orange butter pack; keep gripper open, then inspect alignment before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.030379,
+          -0.823288,
+          0.041551,
+          -3.072959,
+          0.041726,
+          2.202944,
+          0.818204
+        ],
+        "joint_velocities_rad_s": [
+          -0.166483,
+          -0.43927,
+          -0.368852,
+          0.033889,
+          -0.364139,
+          -0.572044,
+          -0.191841
+        ],
+        "end_effector_position_m": [
+          -0.407004,
+          0.01644,
+          1.135733
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999728,
+          7.4e-05,
+          -0.023313,
+          -0.00025
+        ],
+        "gripper_joint_positions_m": [
+          0.039618,
+          -0.03963
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000291,
+          -0.000369
+        ]
+      },
+      "observation_image": "decision_005.png",
+      "request_started_at_utc": "2026-10-10T04:35:59.417+00:00",
+      "api_latency_seconds": 13.400140805053525,
+      "usage": {
+        "input_tokens": 743,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1068,
+        "output_tokens_details": {
+          "reasoning_tokens": 1011
+        },
+        "total_tokens": 1811
+      },
+      "estimated_api_cost_usd": 0.0006083,
+      "attempt_id": "bcdf9d86-d54b-4af3-be43-af28ce9ba4e0"
+    },
+    {
+      "step_number": 7,
+      "decision_index": 6,
+      "simulator_control_step_start": 36,
+      "simulator_control_step_end": 40,
+      "executed_steps": 5,
+      "action": [
+        -1.0,
+        -1.0,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the lower/front orange butter pack (image left and toward table front); gripper remains open. Recheck alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.095761,
+          -0.931013,
+          0.140681,
+          -3.07193,
+          0.158008,
+          2.060181,
+          0.878604
+        ],
+        "joint_velocities_rad_s": [
+          0.369152,
+          -0.443933,
+          0.655997,
+          -0.000513,
+          0.566919,
+          -0.469674,
+          0.469347
+        ],
+        "end_effector_position_m": [
+          -0.430277,
+          0.052781,
+          1.15046
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999119,
+          0.001275,
+          -0.041476,
+          -0.006299
+        ],
+        "gripper_joint_positions_m": [
+          0.039747,
+          -0.039655
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000352,
+          -0.000172
+        ]
+      },
+      "observation_image": "decision_006.png",
+      "request_started_at_utc": "2026-10-10T04:36:13.062+00:00",
+      "api_latency_seconds": 13.508597987005487,
+      "usage": {
+        "input_tokens": 741,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1116,
+        "output_tokens_details": {
+          "reasoning_tokens": 1054
+        },
+        "total_tokens": 1857
+      },
+      "estimated_api_cost_usd": 0.0006321,
+      "attempt_id": "73456688-6bfa-4394-a78e-702ad6a3d0ab"
+    },
+    {
+      "step_number": 8,
+      "decision_index": 7,
+      "simulator_control_step_start": 41,
+      "simulator_control_step_end": 45,
+      "executed_steps": 5,
+      "action": [
+        -0.65,
+        0.75,
+        -0.2,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the table front toward the lower orange butter pack; keep gripper open. Recheck alignment and height before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.062733,
+          -1.079313,
+          0.062559,
+          -3.072212,
+          0.029496,
+          1.86238,
+          0.86518
+        ],
+        "joint_velocities_rad_s": [
+          -0.298731,
+          -0.620839,
+          -0.736144,
+          -0.000454,
+          -0.659988,
+          -0.741825,
+          -0.391797
+        ],
+        "end_effector_position_m": [
+          -0.455604,
+          0.02026,
+          1.171142
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.997769,
+          -0.000479,
+          -0.063896,
+          0.01933
+        ],
+        "gripper_joint_positions_m": [
+          0.039742,
+          -0.039796
+        ],
+        "gripper_joint_velocities_m_s": [
+          4.5e-05,
+          -0.000361
+        ]
+      },
+      "observation_image": "decision_007.png",
+      "request_started_at_utc": "2026-10-10T04:36:26.940+00:00",
+      "api_latency_seconds": 15.158914379018825,
+      "usage": {
+        "input_tokens": 751,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1208,
+        "output_tokens_details": {
+          "reasoning_tokens": 1142
+        },
+        "total_tokens": 1959
+      },
+      "estimated_api_cost_usd": 0.0006791,
+      "attempt_id": "2c000ca3-95b2-4283-9355-5ee617e1a012"
+    },
+    {
+      "step_number": 9,
+      "decision_index": 8,
+      "simulator_control_step_start": 46,
+      "simulator_control_step_end": 50,
+      "executed_steps": 5,
+      "action": [
+        0.35,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front-left butter at hover height with gripper open. Recheck alignment in the next image before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.101365,
+          -1.210727,
+          0.114837,
+          -3.072065,
+          0.152897,
+          1.749395,
+          0.882912
+        ],
+        "joint_velocities_rad_s": [
+          0.322188,
+          -0.479864,
+          0.722965,
+          2.6e-05,
+          0.661279,
+          -0.39265,
+          0.4033
+        ],
+        "end_effector_position_m": [
+          -0.474791,
+          0.048595,
+          1.189367
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998219,
+          0.001581,
+          -0.057971,
+          -0.013981
+        ],
+        "gripper_joint_positions_m": [
+          0.039848,
+          -0.039789
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000275,
+          -4.3e-05
+        ]
+      },
+      "observation_image": "decision_008.png",
+      "request_started_at_utc": "2026-10-10T04:36:42.337+00:00",
+      "api_latency_seconds": 21.470712770998944,
+      "usage": {
+        "input_tokens": 752,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1872,
+        "output_tokens_details": {
+          "reasoning_tokens": 1812
+        },
+        "total_tokens": 2624
+      },
+      "estimated_api_cost_usd": 0.0010112,
+      "attempt_id": "7f61d867-829f-4a93-b641-5724cfcbb4ce"
+    },
+    {
+      "step_number": 10,
+      "decision_index": 9,
+      "simulator_control_step_start": 51,
+      "simulator_control_step_end": 55,
+      "executed_steps": 5,
+      "action": [
+        -0.6,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front-left butter at hover height with gripper open. Recheck alignment in the next image before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.112424,
+          -1.253052,
+          0.155148,
+          -3.07196,
+          0.135973,
+          1.782392,
+          0.914212
+        ],
+        "joint_velocities_rad_s": [
+          -0.07056,
+          0.131579,
+          -0.210073,
+          0.001272,
+          -0.194632,
+          0.254652,
+          -0.086619
+        ],
+        "end_effector_position_m": [
+          -0.466705,
+          0.049688,
+          1.198962
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999793,
+          -0.000569,
+          -0.017657,
+          0.010138
+        ],
+        "gripper_joint_positions_m": [
+          0.03986,
+          -0.039849
+        ],
+        "gripper_joint_velocities_m_s": [
+          8.2e-05,
+          -0.000173
+        ]
+      },
+      "observation_image": "decision_009.png",
+      "request_started_at_utc": "2026-10-10T04:37:04.173+00:00",
+      "api_latency_seconds": 16.252578966959845,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1490,
+        "output_tokens_details": {
+          "reasoning_tokens": 1429
+        },
+        "total_tokens": 2238
+      },
+      "estimated_api_cost_usd": 0.0008198,
+      "attempt_id": "8bedbc63-f43c-4201-9f01-74ce397c6737"
+    },
+    {
+      "step_number": 11,
+      "decision_index": 10,
+      "simulator_control_step_start": 56,
+      "simulator_control_step_end": 60,
+      "executed_steps": 5,
+      "action": [
+        0.6,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue moving toward the front-left butter with the gripper open, keeping hover height; recheck alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.067815,
+          -1.306539,
+          0.022937,
+          -3.056328,
+          0.006982,
+          1.652113,
+          0.859361
+        ],
+        "joint_velocities_rad_s": [
+          -0.239946,
+          -0.482053,
+          -0.641794,
+          0.006697,
+          -0.556685,
+          -0.601379,
+          -0.316314
+        ],
+        "end_effector_position_m": [
+          -0.483527,
+          0.013935,
+          1.208747
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998782,
+          -0.000829,
+          -0.048029,
+          0.01126
+        ],
+        "gripper_joint_positions_m": [
+          0.039856,
+          -0.03991
+        ],
+        "gripper_joint_velocities_m_s": [
+          2.6e-05,
+          -0.000179
+        ]
+      },
+      "observation_image": "decision_010.png",
+      "request_started_at_utc": "2026-10-10T04:37:20.667+00:00",
+      "api_latency_seconds": 23.772996157989837,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2209,
+        "output_tokens_details": {
+          "reasoning_tokens": 2150
+        },
+        "total_tokens": 2957
+      },
+      "estimated_api_cost_usd": 0.0011793,
+      "attempt_id": "4edbe688-5b04-449d-8e99-1f2c968f80f8"
+    },
+    {
+      "step_number": 12,
+      "decision_index": 11,
+      "simulator_control_step_start": 61,
+      "simulator_control_step_end": 65,
+      "executed_steps": 5,
+      "action": [
+        0.35,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.005147,
+          -1.343099,
+          -0.108782,
+          -3.072073,
+          -0.106229,
+          1.710039,
+          0.782956
+        ],
+        "joint_velocities_rad_s": [
+          -0.258074,
+          0.295578,
+          -0.425157,
+          0.004923,
+          -0.379803,
+          0.513015,
+          -0.293526
+        ],
+        "end_effector_position_m": [
+          -0.473298,
+          -0.020013,
+          1.211457
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999951,
+          0.000142,
+          -0.009888,
+          -0.000521
+        ],
+        "gripper_joint_positions_m": [
+          0.039872,
+          -0.039941
+        ],
+        "gripper_joint_velocities_m_s": [
+          8.7e-05,
+          -7.8e-05
+        ]
+      },
+      "observation_image": "decision_011.png",
+      "request_started_at_utc": "2026-10-10T04:37:44.682+00:00",
+      "api_latency_seconds": 21.69586217397591,
+      "usage": {
+        "input_tokens": 749,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1892,
+        "output_tokens_details": {
+          "reasoning_tokens": 1834
+        },
+        "total_tokens": 2641
+      },
+      "estimated_api_cost_usd": 0.0010209,
+      "attempt_id": "ea71160d-4d6a-429b-a4c3-dd5d64950569"
+    },
+    {
+      "step_number": 13,
+      "decision_index": 12,
+      "simulator_control_step_start": 66,
+      "simulator_control_step_end": 70,
+      "executed_steps": 5,
+      "action": [
+        -0.25,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.048412,
+          -1.236917,
+          -0.168785,
+          -3.05846,
+          -0.159272,
+          1.800008,
+          0.721851
+        ],
+        "joint_velocities_rad_s": [
+          -0.180852,
+          0.524032,
+          -0.119757,
+          0.119031,
+          -0.133525,
+          0.343462,
+          -0.205626
+        ],
+        "end_effector_position_m": [
+          -0.458575,
+          -0.04292,
+          1.203111
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999933,
+          -2.3e-05,
+          -0.011091,
+          -0.003332
+        ],
+        "gripper_joint_positions_m": [
+          0.039895,
+          -0.039954
+        ],
+        "gripper_joint_velocities_m_s": [
+          9.4e-05,
+          -3.8e-05
+        ]
+      },
+      "observation_image": "decision_012.png",
+      "request_started_at_utc": "2026-10-10T04:38:06.596+00:00",
+      "api_latency_seconds": 14.779054360988084,
+      "usage": {
+        "input_tokens": 751,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1239,
+        "output_tokens_details": {
+          "reasoning_tokens": 1180
+        },
+        "total_tokens": 1990
+      },
+      "estimated_api_cost_usd": 0.0006946,
+      "attempt_id": "9a16261c-4b7e-4044-b83f-fd58a1513a53"
+    },
+    {
+      "step_number": 14,
+      "decision_index": 13,
+      "simulator_control_step_start": 71,
+      "simulator_control_step_end": 75,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.5,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.060147,
+          -1.180057,
+          -0.115679,
+          -3.012567,
+          -0.100244,
+          1.748771,
+          0.706234
+        ],
+        "joint_velocities_rad_s": [
+          -0.000221,
+          0.008196,
+          0.325576,
+          0.111211,
+          0.241249,
+          -0.225797,
+          0.040984
+        ],
+        "end_effector_position_m": [
+          -0.460278,
+          -0.035992,
+          1.210375
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999097,
+          0.000911,
+          -0.041619,
+          -0.008445
+        ],
+        "gripper_joint_positions_m": [
+          0.039931,
+          -0.039948
+        ],
+        "gripper_joint_velocities_m_s": [
+          8.6e-05,
+          -2e-05
+        ]
+      },
+      "observation_image": "decision_013.png",
+      "request_started_at_utc": "2026-10-10T04:38:21.728+00:00",
+      "api_latency_seconds": 15.04331302299397,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1250,
+        "output_tokens_details": {
+          "reasoning_tokens": 1189
+        },
+        "total_tokens": 1997
+      },
+      "estimated_api_cost_usd": 0.0006997,
+      "attempt_id": "ea1c651c-59c6-4a4d-b20a-28a9ef15a9a9"
+    },
+    {
+      "step_number": 15,
+      "decision_index": 14,
+      "simulator_control_step_start": 76,
+      "simulator_control_step_end": 80,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.65,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward the front-left butter with the gripper open, maintaining hover height; recheck alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.107483,
+          -1.217167,
+          -0.161998,
+          -3.035618,
+          -0.181665,
+          1.719172,
+          0.666781
+        ],
+        "joint_velocities_rad_s": [
+          -0.268012,
+          -0.306535,
+          -0.451995,
+          -0.187332,
+          -0.429968,
+          -0.066043,
+          -0.297288
+        ],
+        "end_effector_position_m": [
+          -0.474397,
+          -0.05895,
+          1.203998
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998658,
+          -0.000533,
+          -0.051443,
+          0.006032
+        ],
+        "gripper_joint_positions_m": [
+          0.039922,
+          -0.039981
+        ],
+        "gripper_joint_velocities_m_s": [
+          1.9e-05,
+          -6.6e-05
+        ]
+      },
+      "observation_image": "decision_014.png",
+      "request_started_at_utc": "2026-10-10T04:38:37.041+00:00",
+      "api_latency_seconds": 13.392735689005349,
+      "usage": {
+        "input_tokens": 749,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1156,
+        "output_tokens_details": {
+          "reasoning_tokens": 1097
+        },
+        "total_tokens": 1905
+      },
+      "estimated_api_cost_usd": 0.0006529,
+      "attempt_id": "e9f75d31-1cda-4b38-b58c-eaac45fe24b5"
+    },
+    {
+      "step_number": 16,
+      "decision_index": 15,
+      "simulator_control_step_start": 81,
+      "simulator_control_step_end": 85,
+      "executed_steps": 5,
+      "action": [
+        -0.5,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Butter is the two orange packages at front-left; pudding is the dark cup near center. Keep gripper open and move horizontally toward butter at hover height, then recheck alignment.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.195581,
+          -1.316158,
+          -0.302132,
+          -3.050454,
+          -0.320551,
+          1.662882,
+          0.566911
+        ],
+        "joint_velocities_rad_s": [
+          -0.409099,
+          -0.42065,
+          -0.604447,
+          -0.046902,
+          -0.577873,
+          -0.231784,
+          -0.464894
+        ],
+        "end_effector_position_m": [
+          -0.498733,
+          -0.09895,
+          1.205083
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999211,
+          -0.000476,
+          -0.039555,
+          0.003464
+        ],
+        "gripper_joint_positions_m": [
+          0.039912,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          7e-06,
+          3e-06
+        ]
+      },
+      "observation_image": "decision_015.png",
+      "request_started_at_utc": "2026-10-10T04:38:50.823+00:00",
+      "api_latency_seconds": 11.6972951060161,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 965,
+        "output_tokens_details": {
+          "reasoning_tokens": 894
+        },
+        "total_tokens": 1710
+      },
+      "estimated_api_cost_usd": 0.000557,
+      "attempt_id": "162a166d-db98-4b3e-b1a8-aa0e936d0070"
+    },
+    {
+      "step_number": 17,
+      "decision_index": 16,
+      "simulator_control_step_start": 86,
+      "simulator_control_step_end": 90,
+      "executed_steps": 5,
+      "action": [
+        -0.4,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Butter packages are at the front-left; pudding is near center and the drawer is open at right. Move toward butter at hover height with gripper open; recheck alignment before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.303913,
+          -1.422769,
+          -0.430752,
+          -3.058644,
+          -0.447029,
+          1.587628,
+          0.448235
+        ],
+        "joint_velocities_rad_s": [
+          -0.458812,
+          -0.39744,
+          -0.459433,
+          -0.029046,
+          -0.483536,
+          -0.269871,
+          -0.487384
+        ],
+        "end_effector_position_m": [
+          -0.531843,
+          -0.132902,
+          1.204767
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999559,
+          -2.8e-05,
+          -0.029698,
+          0.000213
+        ],
+        "gripper_joint_positions_m": [
+          0.039918,
+          -0.040002
+        ],
+        "gripper_joint_velocities_m_s": [
+          4.6e-05,
+          1.4e-05
+        ]
+      },
+      "observation_image": "decision_016.png",
+      "request_started_at_utc": "2026-10-10T04:39:02.909+00:00",
+      "api_latency_seconds": 12.478551068052184,
+      "usage": {
+        "input_tokens": 763,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1082,
+        "output_tokens_details": {
+          "reasoning_tokens": 1010
+        },
+        "total_tokens": 1845
+      },
+      "estimated_api_cost_usd": 0.0006173,
+      "attempt_id": "46c7c812-e7ef-44c6-840f-4ab2095277a7"
+    },
+    {
+      "step_number": 18,
+      "decision_index": 17,
+      "simulator_control_step_start": 91,
+      "simulator_control_step_end": 95,
+      "executed_steps": 5,
+      "action": [
+        -0.5,
+        -0.7,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Butter packages are at front-left; pudding is near center and the drawer is open on the right. Move toward the front butter with gripper open, staying above the table; recheck alignment before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.378937,
+          -1.568562,
+          -0.395858,
+          -3.072086,
+          -0.389637,
+          1.444843,
+          0.376676
+        ],
+        "joint_velocities_rad_s": [
+          -0.197476,
+          -0.617456,
+          0.401843,
+          0.002294,
+          0.328906,
+          -0.647589,
+          -0.165121
+        ],
+        "end_effector_position_m": [
+          -0.560434,
+          -0.119737,
+          1.21268
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999479,
+          0.002059,
+          -0.027985,
+          -0.015937
+        ],
+        "gripper_joint_positions_m": [
+          0.039958,
+          -0.039977
+        ],
+        "gripper_joint_velocities_m_s": [
+          8.7e-05,
+          3.1e-05
+        ]
+      },
+      "observation_image": "decision_017.png",
+      "request_started_at_utc": "2026-10-10T04:39:15.653+00:00",
+      "api_latency_seconds": 12.222731764020864,
+      "usage": {
+        "input_tokens": 762,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1084,
+        "output_tokens_details": {
+          "reasoning_tokens": 1006
+        },
+        "total_tokens": 1846
+      },
+      "estimated_api_cost_usd": 0.0006182,
+      "attempt_id": "aa760331-b501-4d21-81ee-a86e49eaed0d"
+    },
+    {
+      "step_number": 19,
+      "decision_index": 18,
+      "simulator_control_step_start": 96,
+      "simulator_control_step_end": 100,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Butter packages are left-front, pudding near center, open drawer on right. Moving laterally and forward above the front butter with gripper open; recheck position before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.460748,
+          -1.633259,
+          -0.512557,
+          -3.071903,
+          -0.568839,
+          1.399509,
+          0.289079
+        ],
+        "joint_velocities_rad_s": [
+          -0.399078,
+          -0.072706,
+          -0.950127,
+          0.00165,
+          -0.912627,
+          -0.000425,
+          -0.474999
+        ],
+        "end_effector_position_m": [
+          -0.592761,
+          -0.153545,
+          1.208394
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999359,
+          -0.003092,
+          -0.033701,
+          0.011693
+        ],
+        "gripper_joint_positions_m": [
+          0.039929,
+          -0.040005
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.5e-05,
+          1.2e-05
+        ]
+      },
+      "observation_image": "decision_018.png",
+      "request_started_at_utc": "2026-10-10T04:39:28.245+00:00",
+      "api_latency_seconds": 13.813729289977346,
+      "usage": {
+        "input_tokens": 767,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1197,
+        "output_tokens_details": {
+          "reasoning_tokens": 1127
+        },
+        "total_tokens": 1964
+      },
+      "estimated_api_cost_usd": 0.0006752,
+      "attempt_id": "a145db3f-5c5c-4c82-9930-b50290909e2d"
+    },
+    {
+      "step_number": 20,
+      "decision_index": 19,
+      "simulator_control_step_start": 101,
+      "simulator_control_step_end": 105,
+      "executed_steps": 5,
+      "action": [
+        -0.6,
+        -0.7,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move toward front-left butter with gripper open; reassess alignment and height before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.554493,
+          -1.650463,
+          -0.655466,
+          -3.046869,
+          -0.68756,
+          1.38501,
+          0.167921
+        ],
+        "joint_velocities_rad_s": [
+          -0.374968,
+          -0.011913,
+          -0.33626,
+          0.076128,
+          -0.355672,
+          -0.002326,
+          -0.462093
+        ],
+        "end_effector_position_m": [
+          -0.621889,
+          -0.17939,
+          1.202405
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.9998,
+          0.000397,
+          -0.019959,
+          0.001142
+        ],
+        "gripper_joint_positions_m": [
+          0.03994,
+          -0.040001
+        ],
+        "gripper_joint_velocities_m_s": [
+          5.1e-05,
+          1.1e-05
+        ]
+      },
+      "observation_image": "decision_019.png",
+      "request_started_at_utc": "2026-10-10T04:39:42.327+00:00",
+      "api_latency_seconds": 12.164816743985284,
+      "usage": {
+        "input_tokens": 760,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1051,
+        "output_tokens_details": {
+          "reasoning_tokens": 996
+        },
+        "total_tokens": 1811
+      },
+      "estimated_api_cost_usd": 0.0006015,
+      "attempt_id": "a0d85fb1-0931-4df3-94e2-e92166365d0e"
+    },
+    {
+      "step_number": 21,
+      "decision_index": 20,
+      "simulator_control_step_start": 106,
+      "simulator_control_step_end": 110,
+      "executed_steps": 5,
+      "action": [
+        -0.3,
+        0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving laterally and forward above the front-left butter with gripper open; reassess position before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.671494,
+          -1.605729,
+          -0.839125,
+          -3.03708,
+          -0.895206,
+          1.440697,
+          0.0333
+        ],
+        "joint_velocities_rad_s": [
+          -0.514902,
+          0.309874,
+          -0.852884,
+          0.104398,
+          -0.815618,
+          0.396205,
+          -0.633029
+        ],
+        "end_effector_position_m": [
+          -0.660075,
+          -0.215825,
+          1.178439
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.9996,
+          -0.001482,
+          -0.026546,
+          0.009657
+        ],
+        "gripper_joint_positions_m": [
+          0.039927,
+          -0.040004
+        ],
+        "gripper_joint_velocities_m_s": [
+          -3e-06,
+          1.6e-05
+        ]
+      },
+      "observation_image": "decision_020.png",
+      "request_started_at_utc": "2026-10-10T04:39:54.893+00:00",
+      "api_latency_seconds": 14.947195247979835,
+      "usage": {
+        "input_tokens": 742,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1335,
+        "output_tokens_details": {
+          "reasoning_tokens": 1279
+        },
+        "total_tokens": 2077
+      },
+      "estimated_api_cost_usd": 0.0007417,
+      "attempt_id": "fcdb2cf2-ff23-40df-9013-8e10b3a4e795"
+    },
+    {
+      "step_number": 22,
+      "decision_index": 21,
+      "simulator_control_step_start": 111,
+      "simulator_control_step_end": 115,
+      "executed_steps": 5,
+      "action": [
+        -0.3,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving toward the front butter pack with gripper open; use the next image to refine alignment before lowering.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.803498,
+          -1.593068,
+          -0.825254,
+          -3.03601,
+          -0.857916,
+          1.429078,
+          -0.102966
+        ],
+        "joint_velocities_rad_s": [
+          -0.528007,
+          -0.076072,
+          0.294106,
+          -0.105672,
+          0.215997,
+          -0.089994,
+          -0.435166
+        ],
+        "end_effector_position_m": [
+          -0.685688,
+          -0.207717,
+          1.177875
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999615,
+          0.002105,
+          -0.025905,
+          -0.009688
+        ],
+        "gripper_joint_positions_m": [
+          0.039961,
+          -0.039984
+        ],
+        "gripper_joint_velocities_m_s": [
+          6.2e-05,
+          1.3e-05
+        ]
+      },
+      "observation_image": "decision_021.png",
+      "request_started_at_utc": "2026-10-10T04:40:10.117+00:00",
+      "api_latency_seconds": 9.629055582045112,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 855,
+        "output_tokens_details": {
+          "reasoning_tokens": 799
+        },
+        "total_tokens": 1601
+      },
+      "estimated_api_cost_usd": 0.0005021,
+      "attempt_id": "b4744839-ed10-4ad2-9624-21276718053c"
+    },
+    {
+      "step_number": 23,
+      "decision_index": 22,
+      "simulator_control_step_start": 116,
+      "simulator_control_step_end": 120,
+      "executed_steps": 5,
+      "action": [
+        -0.6,
+        -0.8,
+        -0.2,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving laterally toward the front butter with gripper open; stay above the counter and refine alignment from the next image.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.911837,
+          -1.580448,
+          -0.857407,
+          -3.047813,
+          -0.915704,
+          1.493938,
+          -0.200236
+        ],
+        "joint_velocities_rad_s": [
+          -0.348378,
+          0.148535,
+          -0.272031,
+          0.027783,
+          -0.260551,
+          0.281821,
+          -0.367126
+        ],
+        "end_effector_position_m": [
+          -0.706195,
+          -0.216742,
+          1.173197
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999613,
+          -0.000419,
+          -0.024721,
+          0.012738
+        ],
+        "gripper_joint_positions_m": [
+          0.039957,
+          -0.039998
+        ],
+        "gripper_joint_velocities_m_s": [
+          1.5e-05,
+          -2.4e-05
+        ]
+      },
+      "observation_image": "decision_022.png",
+      "request_started_at_utc": "2026-10-10T04:40:20.126+00:00",
+      "api_latency_seconds": 13.339854637975805,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1215,
+        "output_tokens_details": {
+          "reasoning_tokens": 1154
+        },
+        "total_tokens": 1961
+      },
+      "estimated_api_cost_usd": 0.0006821,
+      "attempt_id": "0b7a5908-ed0d-4ebd-a98b-76aa29e4a7ff"
+    },
+    {
+      "step_number": 24,
+      "decision_index": 23,
+      "simulator_control_step_start": 121,
+      "simulator_control_step_end": 125,
+      "executed_steps": 5,
+      "action": [
+        -0.8,
+        -0.8,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving toward the nearer butter packet at the left/front of the counter with the gripper open; refine position and lower toward the surface from the next image.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.981281,
+          -1.459685,
+          -1.036643,
+          -3.008337,
+          -1.092935,
+          1.64788,
+          -0.303791
+        ],
+        "joint_velocities_rad_s": [
+          -0.188598,
+          0.708922,
+          -0.728208,
+          0.277121,
+          -0.591077,
+          0.7676,
+          -0.452338
+        ],
+        "end_effector_position_m": [
+          -0.745217,
+          -0.247468,
+          1.148271
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999324,
+          -0.00122,
+          -0.021013,
+          0.030137
+        ],
+        "gripper_joint_positions_m": [
+          0.039939,
+          -0.040005
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.9e-05,
+          1.1e-05
+        ]
+      },
+      "observation_image": "decision_023.png",
+      "request_started_at_utc": "2026-10-10T04:40:33.849+00:00",
+      "api_latency_seconds": 16.03154793701833,
+      "usage": {
+        "input_tokens": 750,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1427,
+        "output_tokens_details": {
+          "reasoning_tokens": 1359
+        },
+        "total_tokens": 2177
+      },
+      "estimated_api_cost_usd": 0.0007885,
+      "attempt_id": "7a5cd0dc-2915-42d8-9da7-6d71a832e8a7"
+    },
+    {
+      "step_number": 25,
+      "decision_index": 24,
+      "simulator_control_step_start": 126,
+      "simulator_control_step_end": 130,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.35,
+        -0.55,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving left/front and down toward the front butter packet; keep gripper open and refine from the next image.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.989283,
+          -1.185597,
+          -1.229671,
+          -2.908152,
+          -1.217708,
+          1.909612,
+          -0.413854
+        ],
+        "joint_velocities_rad_s": [
+          0.143133,
+          1.255921,
+          -0.823435,
+          0.460104,
+          -0.414882,
+          1.246196,
+          -0.395901
+        ],
+        "end_effector_position_m": [
+          -0.797562,
+          -0.280292,
+          1.109471
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999312,
+          0.000422,
+          -0.021884,
+          0.029935
+        ],
+        "gripper_joint_positions_m": [
+          0.039927,
+          -0.040004
+        ],
+        "gripper_joint_velocities_m_s": [
+          -9e-06,
+          1.6e-05
+        ]
+      },
+      "observation_image": "decision_024.png",
+      "request_started_at_utc": "2026-10-10T04:40:50.169+00:00",
+      "api_latency_seconds": 16.14778695703717,
+      "usage": {
+        "input_tokens": 754,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1444,
+        "output_tokens_details": {
+          "reasoning_tokens": 1385
+        },
+        "total_tokens": 2198
+      },
+      "estimated_api_cost_usd": 0.0007974,
+      "attempt_id": "6d18f5d0-3925-443c-ab07-91f2779fb60d"
+    },
+    {
+      "step_number": 26,
+      "decision_index": 25,
+      "simulator_control_step_start": 131,
+      "simulator_control_step_end": 135,
+      "executed_steps": 5,
+      "action": [
+        -0.4,
+        -0.4,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue left/front and lower toward the front butter packet; keep gripper open while aligning above it.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.932656,
+          -0.88188,
+          -1.386083,
+          -2.838351,
+          -1.239788,
+          2.193103,
+          -0.472582
+        ],
+        "joint_velocities_rad_s": [
+          0.365155,
+          1.208821,
+          -0.648034,
+          0.233368,
+          0.0069,
+          1.188271,
+          -0.144215
+        ],
+        "end_effector_position_m": [
+          -0.829503,
+          -0.294936,
+          1.066813
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999477,
+          0.002334,
+          -0.025617,
+          0.019606
+        ],
+        "gripper_joint_positions_m": [
+          0.039936,
+          -0.040002
+        ],
+        "gripper_joint_velocities_m_s": [
+          2.7e-05,
+          6e-06
+        ]
+      },
+      "observation_image": "decision_025.png",
+      "request_started_at_utc": "2026-10-10T04:41:06.569+00:00",
+      "api_latency_seconds": 12.197213920997456,
+      "usage": {
+        "input_tokens": 744,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1064,
+        "output_tokens_details": {
+          "reasoning_tokens": 1007
+        },
+        "total_tokens": 1808
+      },
+      "estimated_api_cost_usd": 0.0006064,
+      "attempt_id": "7435797f-e9b0-4cf4-a33f-e2448fa3760d"
+    },
+    {
+      "step_number": 27,
+      "decision_index": 26,
+      "simulator_control_step_start": 136,
+      "simulator_control_step_end": 140,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.4,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left/front and descend toward the front orange butter packet; gripper remains open. Reassess alignment and height from the next image.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.771621,
+          -0.586969,
+          -1.615103,
+          -2.777559,
+          -1.227604,
+          2.512256,
+          -0.511123
+        ],
+        "joint_velocities_rad_s": [
+          1.001862,
+          1.080479,
+          -1.259616,
+          0.223242,
+          0.092682,
+          1.279121,
+          -0.161405
+        ],
+        "end_effector_position_m": [
+          -0.856662,
+          -0.304628,
+          1.026825
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.99923,
+          0.001863,
+          -0.029924,
+          0.025296
+        ],
+        "gripper_joint_positions_m": [
+          0.039941,
+          -0.040001
+        ],
+        "gripper_joint_velocities_m_s": [
+          2.4e-05,
+          1e-06
+        ]
+      },
+      "observation_image": "decision_026.png",
+      "request_started_at_utc": "2026-10-10T04:41:19.126+00:00",
+      "api_latency_seconds": 13.898822140006814,
+      "usage": {
+        "input_tokens": 742,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1227,
+        "output_tokens_details": {
+          "reasoning_tokens": 1162
+        },
+        "total_tokens": 1969
+      },
+      "estimated_api_cost_usd": 0.0006877,
+      "attempt_id": "a024e973-38f5-4a92-a7f5-83b00ce2f01d"
+    },
+    {
+      "step_number": 28,
+      "decision_index": 27,
+      "simulator_control_step_start": 141,
+      "simulator_control_step_end": 145,
+      "executed_steps": 5,
+      "action": [
+        -0.7,
+        -0.8,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the front while descending slightly toward the orange butter packet; keep the gripper open and reassess alignment.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.424369,
+          -0.460237,
+          -2.007592,
+          -2.700805,
+          -1.241156,
+          2.70913,
+          -0.519446
+        ],
+        "joint_velocities_rad_s": [
+          1.414863,
+          -0.15388,
+          -1.451549,
+          0.457328,
+          -0.296076,
+          0.11155,
+          0.189869
+        ],
+        "end_effector_position_m": [
+          -0.880262,
+          -0.309532,
+          0.988696
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999215,
+          0.00296,
+          -0.029417,
+          0.026352
+        ],
+        "gripper_joint_positions_m": [
+          0.039938,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.4e-05,
+          -4e-06
+        ]
+      },
+      "observation_image": "decision_027.png",
+      "request_started_at_utc": "2026-10-10T04:41:33.384+00:00",
+      "api_latency_seconds": 14.766333452018443,
+      "usage": {
+        "input_tokens": 751,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1272,
+        "output_tokens_details": {
+          "reasoning_tokens": 1210
+        },
+        "total_tokens": 2023
+      },
+      "estimated_api_cost_usd": 0.0007111,
+      "attempt_id": "3be172e1-729d-4ea8-99cc-8d4e0a7a2b2a"
+    },
+    {
+      "step_number": 29,
+      "decision_index": 28,
+      "simulator_control_step_start": 146,
+      "simulator_control_step_end": 150,
+      "executed_steps": 5,
+      "action": [
+        -0.5,
+        -0.45,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue left and forward toward the orange butter packet with the gripper open; descend slightly, then reassess alignment before grasping.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.139068,
+          -0.647202,
+          -2.266834,
+          -2.488486,
+          -1.358275,
+          2.628054,
+          -0.446037
+        ],
+        "joint_velocities_rad_s": [
+          0.71319,
+          -0.854201,
+          -0.482884,
+          0.871355,
+          -0.396586,
+          -0.483459,
+          0.273618
+        ],
+        "end_effector_position_m": [
+          -0.915217,
+          -0.345431,
+          0.943788
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999275,
+          0.001103,
+          -0.035839,
+          0.012786
+        ],
+        "gripper_joint_positions_m": [
+          0.039917,
+          -0.040006
+        ],
+        "gripper_joint_velocities_m_s": [
+          -3.4e-05,
+          1.6e-05
+        ]
+      },
+      "observation_image": "decision_028.png",
+      "request_started_at_utc": "2026-10-10T04:41:48.390+00:00",
+      "api_latency_seconds": 14.788587888993789,
+      "usage": {
+        "input_tokens": 750,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1225,
+        "output_tokens_details": {
+          "reasoning_tokens": 1162
+        },
+        "total_tokens": 1975
+      },
+      "estimated_api_cost_usd": 0.0006875,
+      "attempt_id": "deda9dcd-a993-452f-ab11-0e5703186c45"
+    },
+    {
+      "step_number": 30,
+      "decision_index": 29,
+      "simulator_control_step_start": 151,
+      "simulator_control_step_end": 155,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.35,
+        -0.2,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving left and forward toward the front orange butter packet with gripper open; descend slightly, then reassess alignment before grasping.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.057599,
+          -0.790825,
+          -2.299931,
+          -2.343495,
+          -1.390699,
+          2.528837,
+          -0.432207
+        ],
+        "joint_velocities_rad_s": [
+          0.142076,
+          -0.54101,
+          -0.018518,
+          0.547701,
+          -0.000593,
+          -0.321068,
+          -0.171964
+        ],
+        "end_effector_position_m": [
+          -0.934082,
+          -0.376324,
+          0.91874
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999205,
+          -0.003153,
+          -0.039726,
+          0.000995
+        ],
+        "gripper_joint_positions_m": [
+          0.039924,
+          -0.040002
+        ],
+        "gripper_joint_velocities_m_s": [
+          4e-05,
+          1.3e-05
+        ]
+      },
+      "observation_image": "decision_029.png",
+      "request_started_at_utc": "2026-10-10T04:42:03.538+00:00",
+      "api_latency_seconds": 14.956068051978946,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1347,
+        "output_tokens_details": {
+          "reasoning_tokens": 1284
+        },
+        "total_tokens": 2095
+      },
+      "estimated_api_cost_usd": 0.0007483,
+      "attempt_id": "afa3c1f4-0223-4074-a1eb-f455251d3340"
+    },
+    {
+      "step_number": 31,
+      "decision_index": 30,
+      "simulator_control_step_start": 156,
+      "simulator_control_step_end": 160,
+      "executed_steps": 5,
+      "action": [
+        -0.3,
+        -0.3,
+        -0.12,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving diagonally left and toward the front butter packet with gripper open; continue approaching above it, then lower carefully to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.037498,
+          -0.905637,
+          -2.293741,
+          -2.223484,
+          -1.381452,
+          2.461477,
+          -0.490951
+        ],
+        "joint_velocities_rad_s": [
+          0.068831,
+          -0.415427,
+          0.023635,
+          0.468387,
+          0.032042,
+          -0.228004,
+          -0.250502
+        ],
+        "end_effector_position_m": [
+          -0.954986,
+          -0.400654,
+          0.903984
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999498,
+          -0.001418,
+          -0.031654,
+          -0.00082
+        ],
+        "gripper_joint_positions_m": [
+          0.039933,
+          -0.040001
+        ],
+        "gripper_joint_velocities_m_s": [
+          4.9e-05,
+          9e-06
+        ]
+      },
+      "observation_image": "decision_030.png",
+      "request_started_at_utc": "2026-10-10T04:42:18.761+00:00",
+      "api_latency_seconds": 11.023410646012053,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 965,
+        "output_tokens_details": {
+          "reasoning_tokens": 902
+        },
+        "total_tokens": 1713
+      },
+      "estimated_api_cost_usd": 0.0005573,
+      "attempt_id": "39bd218c-39b0-4108-a515-7b2c03dd3a63"
+    },
+    {
+      "step_number": 32,
+      "decision_index": 31,
+      "simulator_control_step_start": 161,
+      "simulator_control_step_end": 165,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.55,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left/front over the lower orange butter packet with gripper open; stay above it, then descend carefully to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          -0.021454,
+          -0.988383,
+          -2.28382,
+          -2.120257,
+          -1.371161,
+          2.411112,
+          -0.545887
+        ],
+        "joint_velocities_rad_s": [
+          0.078351,
+          -0.292747,
+          0.027686,
+          0.392675,
+          0.031598,
+          -0.173162,
+          -0.193078
+        ],
+        "end_effector_position_m": [
+          -0.976054,
+          -0.420972,
+          0.895351
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999598,
+          -4.9e-05,
+          -0.028358,
+          -0.000401
+        ],
+        "gripper_joint_positions_m": [
+          0.039943,
+          -0.040001
+        ],
+        "gripper_joint_velocities_m_s": [
+          4.6e-05,
+          7e-06
+        ]
+      },
+      "observation_image": "decision_031.png",
+      "request_started_at_utc": "2026-10-10T04:42:30.178+00:00",
+      "api_latency_seconds": 12.023253316991031,
+      "usage": {
+        "input_tokens": 750,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 999,
+        "output_tokens_details": {
+          "reasoning_tokens": 940
+        },
+        "total_tokens": 1749
+      },
+      "estimated_api_cost_usd": 0.0005745,
+      "attempt_id": "0df75f81-9919-4a9a-a06c-b1907fd723db"
+    },
+    {
+      "step_number": 33,
+      "decision_index": 32,
+      "simulator_control_step_start": 166,
+      "simulator_control_step_end": 170,
+      "executed_steps": 5,
+      "action": [
+        -0.8,
+        -0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left/front over the lower orange butter packet with gripper open; stay above it, then descend carefully to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.012673,
+          -1.070586,
+          -2.270559,
+          -1.988372,
+          -1.353897,
+          2.363672,
+          -0.605921
+        ],
+        "joint_velocities_rad_s": [
+          0.172213,
+          -0.335044,
+          0.073627,
+          0.579387,
+          0.122908,
+          -0.260636,
+          -0.285246
+        ],
+        "end_effector_position_m": [
+          -1.002671,
+          -0.45017,
+          0.891035
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999552,
+          -0.000445,
+          -0.029463,
+          0.005338
+        ],
+        "gripper_joint_positions_m": [
+          0.039938,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          7e-06,
+          9e-06
+        ]
+      },
+      "observation_image": "decision_032.png",
+      "request_started_at_utc": "2026-10-10T04:42:42.457+00:00",
+      "api_latency_seconds": 17.257351614010986,
+      "usage": {
+        "input_tokens": 743,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1437,
+        "output_tokens_details": {
+          "reasoning_tokens": 1378
+        },
+        "total_tokens": 2180
+      },
+      "estimated_api_cost_usd": 0.0007928,
+      "attempt_id": "6b656f99-91d9-43a6-b287-0c6adcbbeb96"
+    },
+    {
+      "step_number": 34,
+      "decision_index": 33,
+      "simulator_control_step_start": 171,
+      "simulator_control_step_end": 175,
+      "executed_steps": 5,
+      "action": [
+        -0.6,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Gripper is open; move left and toward the front over the lower orange butter packet, staying above the surface. Reassess alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.080296,
+          -1.190989,
+          -2.255014,
+          -1.763959,
+          -1.319142,
+          2.292832,
+          -0.714086
+        ],
+        "joint_velocities_rad_s": [
+          0.322889,
+          -0.531936,
+          0.10804,
+          1.039017,
+          0.192516,
+          -0.393786,
+          -0.541577
+        ],
+        "end_effector_position_m": [
+          -1.047131,
+          -0.491682,
+          0.884317
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999451,
+          -0.001679,
+          -0.031416,
+          0.010343
+        ],
+        "gripper_joint_positions_m": [
+          0.039922,
+          -0.040005
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.9e-05,
+          1.4e-05
+        ]
+      },
+      "observation_image": "decision_033.png",
+      "request_started_at_utc": "2026-10-10T04:43:00.078+00:00",
+      "api_latency_seconds": 16.773366237001028,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1414,
+        "output_tokens_details": {
+          "reasoning_tokens": 1347
+        },
+        "total_tokens": 2162
+      },
+      "estimated_api_cost_usd": 0.0007818,
+      "attempt_id": "97bc5044-ab77-48b2-8947-a51026a3aa3a"
+    },
+    {
+      "step_number": 35,
+      "decision_index": 34,
+      "simulator_control_step_start": 176,
+      "simulator_control_step_end": 180,
+      "executed_steps": 5,
+      "action": [
+        -0.7,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Gripper remains open and high. Move left and toward the front over the lower orange butter packet; reassess alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.159747,
+          -1.312885,
+          -2.215035,
+          -1.513385,
+          -1.280406,
+          2.183061,
+          -0.8421
+        ],
+        "joint_velocities_rad_s": [
+          0.334878,
+          -0.490989,
+          0.184393,
+          1.026095,
+          0.06968,
+          -0.40812,
+          -0.477103
+        ],
+        "end_effector_position_m": [
+          -1.088372,
+          -0.528994,
+          0.8822
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999613,
+          -0.000371,
+          -0.027559,
+          0.003764
+        ],
+        "gripper_joint_positions_m": [
+          0.03992,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          2.3e-05,
+          1.7e-05
+        ]
+      },
+      "observation_image": "decision_034.png",
+      "request_started_at_utc": "2026-10-10T04:43:17.105+00:00",
+      "api_latency_seconds": 13.41588955197949,
+      "usage": {
+        "input_tokens": 755,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1066,
+        "output_tokens_details": {
+          "reasoning_tokens": 1003
+        },
+        "total_tokens": 1821
+      },
+      "estimated_api_cost_usd": 0.0006085,
+      "attempt_id": "f9654f2a-a969-444b-b771-44b6ca8df867"
+    },
+    {
+      "step_number": 36,
+      "decision_index": 35,
+      "simulator_control_step_start": 181,
+      "simulator_control_step_end": 185,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the front above the lower orange butter packet; remain high and open. Reassess alignment before descending to grasp.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.263395,
+          -1.457981,
+          -2.161518,
+          -1.211375,
+          -1.285792,
+          2.102725,
+          -0.970704
+        ],
+        "joint_velocities_rad_s": [
+          0.487871,
+          -0.632923,
+          0.277758,
+          1.342338,
+          -0.073983,
+          -0.330242,
+          -0.567375
+        ],
+        "end_effector_position_m": [
+          -1.13103,
+          -0.56499,
+          0.875768
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.99948,
+          -0.001423,
+          -0.030449,
+          0.010536
+        ],
+        "gripper_joint_positions_m": [
+          0.039918,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          2.7e-05,
+          1.5e-05
+        ]
+      },
+      "observation_image": "decision_035.png",
+      "request_started_at_utc": "2026-10-10T04:43:30.881+00:00",
+      "api_latency_seconds": 8.770516649994534,
+      "usage": {
+        "input_tokens": 751,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 783,
+        "output_tokens_details": {
+          "reasoning_tokens": 721
+        },
+        "total_tokens": 1534
+      },
+      "estimated_api_cost_usd": 0.0004666,
+      "attempt_id": "8777cce3-6b84-4db4-a843-c78a9d9a2c66"
+    },
+    {
+      "step_number": 37,
+      "decision_index": 36,
+      "simulator_control_step_start": 186,
+      "simulator_control_step_end": 190,
+      "executed_steps": 5,
+      "action": [
+        -0.7,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue left and toward the front while high and open, aiming over the front butter packet; use the next image to verify alignment before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.376027,
+          -1.584416,
+          -2.068624,
+          -0.916702,
+          -1.314245,
+          1.98563,
+          -1.100607
+        ],
+        "joint_velocities_rad_s": [
+          0.459033,
+          -0.479778,
+          0.419324,
+          1.141643,
+          -0.222766,
+          -0.330665,
+          -0.47942
+        ],
+        "end_effector_position_m": [
+          -1.158749,
+          -0.584224,
+          0.873942
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999681,
+          -0.000526,
+          -0.025238,
+          0.000551
+        ],
+        "gripper_joint_positions_m": [
+          0.039933,
+          -0.04
+        ],
+        "gripper_joint_velocities_m_s": [
+          6.6e-05,
+          1e-05
+        ]
+      },
+      "observation_image": "decision_036.png",
+      "request_started_at_utc": "2026-10-10T04:43:39.906+00:00",
+      "api_latency_seconds": 13.252122803009115,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1097,
+        "output_tokens_details": {
+          "reasoning_tokens": 1034
+        },
+        "total_tokens": 1844
+      },
+      "estimated_api_cost_usd": 0.0006232,
+      "attempt_id": "6f7fc3ab-0d79-4585-aa19-e6263545f43a"
+    },
+    {
+      "step_number": 38,
+      "decision_index": 37,
+      "simulator_control_step_start": 191,
+      "simulator_control_step_end": 195,
+      "executed_steps": 5,
+      "action": [
+        -0.5,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; next check alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.535443,
+          -1.752771,
+          -1.94878,
+          -0.551481,
+          -1.403943,
+          2.032931,
+          -1.246293
+        ],
+        "joint_velocities_rad_s": [
+          0.777229,
+          -0.753818,
+          0.570452,
+          1.626469,
+          -0.361567,
+          0.434524,
+          -0.685633
+        ],
+        "end_effector_position_m": [
+          -1.18667,
+          -0.600485,
+          0.851377
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998071,
+          -0.00176,
+          -0.050945,
+          0.03545
+        ],
+        "gripper_joint_positions_m": [
+          0.03994,
+          -0.040001
+        ],
+        "gripper_joint_velocities_m_s": [
+          3.9e-05,
+          1e-06
+        ]
+      },
+      "observation_image": "decision_037.png",
+      "request_started_at_utc": "2026-10-10T04:43:53.545+00:00",
+      "api_latency_seconds": 12.272242492006626,
+      "usage": {
+        "input_tokens": 749,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1063,
+        "output_tokens_details": {
+          "reasoning_tokens": 1004
+        },
+        "total_tokens": 1812
+      },
+      "estimated_api_cost_usd": 0.0006064,
+      "attempt_id": "fc267ae3-8bd5-4a3d-8d24-29413686e323"
+    },
+    {
+      "step_number": 39,
+      "decision_index": 38,
+      "simulator_control_step_start": 196,
+      "simulator_control_step_end": 200,
+      "executed_steps": 5,
+      "action": [
+        -0.55,
+        -0.55,
+        0.05,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.642177,
+          -1.763121,
+          -1.870343,
+          -0.304593,
+          -1.413482,
+          1.937792,
+          -1.393756
+        ],
+        "joint_velocities_rad_s": [
+          0.139877,
+          3.2e-05,
+          0.466094,
+          0.586136,
+          -0.248574,
+          -0.353932,
+          -0.475365
+        ],
+        "end_effector_position_m": [
+          -1.214028,
+          -0.58282,
+          0.881283
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998293,
+          0.002492,
+          -0.05526,
+          0.018737
+        ],
+        "gripper_joint_positions_m": [
+          0.039954,
+          -0.039997
+        ],
+        "gripper_joint_velocities_m_s": [
+          3.5e-05,
+          -8e-06
+        ]
+      },
+      "observation_image": "decision_038.png",
+      "request_started_at_utc": "2026-10-10T04:44:06.082+00:00",
+      "api_latency_seconds": 17.32094639504794,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1430,
+        "output_tokens_details": {
+          "reasoning_tokens": 1370
+        },
+        "total_tokens": 2177
+      },
+      "estimated_api_cost_usd": 0.0007897,
+      "attempt_id": "7e1c255e-d9e1-4994-9bfe-f81fb8e8c05c"
+    },
+    {
+      "step_number": 40,
+      "decision_index": 39,
+      "simulator_control_step_start": 201,
+      "simulator_control_step_end": 205,
+      "executed_steps": 5,
+      "action": [
+        -0.4,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.614654,
+          -1.763191,
+          -1.762273,
+          -0.325548,
+          -1.532382,
+          1.990956,
+          -1.405624
+        ],
+        "joint_velocities_rad_s": [
+          -0.368603,
+          0.000142,
+          0.281499,
+          -0.582109,
+          -0.510695,
+          0.275491,
+          0.275392
+        ],
+        "end_effector_position_m": [
+          -1.232178,
+          -0.591084,
+          0.901782
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.995336,
+          0.010239,
+          -0.082475,
+          0.048979
+        ],
+        "gripper_joint_positions_m": [
+          0.039936,
+          -0.040004
+        ],
+        "gripper_joint_velocities_m_s": [
+          -1.6e-05,
+          8e-06
+        ]
+      },
+      "observation_image": "decision_039.png",
+      "request_started_at_utc": "2026-10-10T04:44:23.775+00:00",
+      "api_latency_seconds": 12.131587331008632,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 937,
+        "output_tokens_details": {
+          "reasoning_tokens": 879
+        },
+        "total_tokens": 1683
+      },
+      "estimated_api_cost_usd": 0.0005431,
+      "attempt_id": "8e513163-19f9-495f-b556-65c22bd1d281"
+    },
+    {
+      "step_number": 41,
+      "decision_index": 40,
+      "simulator_control_step_start": 206,
+      "simulator_control_step_end": 210,
+      "executed_steps": 5,
+      "action": [
+        0.6,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.490635,
+          -1.763119,
+          -1.741406,
+          -0.523089,
+          -1.622121,
+          2.025911,
+          -1.312959
+        ],
+        "joint_velocities_rad_s": [
+          -0.546113,
+          0.000271,
+          -0.146293,
+          -0.861759,
+          -0.178975,
+          0.21955,
+          0.398901
+        ],
+        "end_effector_position_m": [
+          -1.236092,
+          -0.59362,
+          0.898653
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.993668,
+          0.008228,
+          -0.092915,
+          0.062635
+        ],
+        "gripper_joint_positions_m": [
+          0.039931,
+          -0.040004
+        ],
+        "gripper_joint_velocities_m_s": [
+          -3.2e-05,
+          -3e-06
+        ]
+      },
+      "observation_image": "decision_040.png",
+      "request_started_at_utc": "2026-10-10T04:44:36.165+00:00",
+      "api_latency_seconds": 18.081514118006453,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1545,
+        "output_tokens_details": {
+          "reasoning_tokens": 1488
+        },
+        "total_tokens": 2291
+      },
+      "estimated_api_cost_usd": 0.0008471,
+      "attempt_id": "7e84fe69-bd5f-421a-bf5b-773dac1968e1"
+    },
+    {
+      "step_number": 42,
+      "decision_index": 41,
+      "simulator_control_step_start": 211,
+      "simulator_control_step_end": 215,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.55,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.396481,
+          -1.762836,
+          -1.772453,
+          -0.754258,
+          -1.644175,
+          1.993651,
+          -1.169613
+        ],
+        "joint_velocities_rad_s": [
+          -0.210244,
+          0.000356,
+          -0.177151,
+          -0.743901,
+          -0.086212,
+          -0.038258,
+          0.623538
+        ],
+        "end_effector_position_m": [
+          -1.190679,
+          -0.603181,
+          0.87653
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.996499,
+          0.006067,
+          -0.065485,
+          0.051618
+        ],
+        "gripper_joint_positions_m": [
+          0.039914,
+          -0.040005
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.7e-05,
+          1.1e-05
+        ]
+      },
+      "observation_image": "decision_041.png",
+      "request_started_at_utc": "2026-10-10T04:44:54.633+00:00",
+      "api_latency_seconds": 6.647445840004366,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 498,
+        "output_tokens_details": {
+          "reasoning_tokens": 439
+        },
+        "total_tokens": 1246
+      },
+      "estimated_api_cost_usd": 0.0003238,
+      "attempt_id": "fe07e73c-5e46-4cdd-bbbd-ea74f8be681e"
+    },
+    {
+      "step_number": 43,
+      "decision_index": 42,
+      "simulator_control_step_start": 216,
+      "simulator_control_step_end": 220,
+      "executed_steps": 5,
+      "action": [
+        -1.0,
+        -1.0,
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.409581,
+          -1.763075,
+          -1.868004,
+          -0.759273,
+          -1.608743,
+          2.098987,
+          -1.123136
+        ],
+        "joint_velocities_rad_s": [
+          0.295164,
+          -0.000179,
+          -0.440447,
+          0.43251,
+          0.468756,
+          0.399395,
+          -0.165154
+        ],
+        "end_effector_position_m": [
+          -1.183862,
+          -0.609003,
+          0.855238
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.994273,
+          0.000868,
+          -0.083373,
+          0.066859
+        ],
+        "gripper_joint_positions_m": [
+          0.039909,
+          -0.040005
+        ],
+        "gripper_joint_velocities_m_s": [
+          -5.1e-05,
+          -1e-05
+        ]
+      },
+      "observation_image": "decision_042.png",
+      "request_started_at_utc": "2026-10-10T04:45:01.649+00:00",
+      "api_latency_seconds": 14.127830468991306,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1247,
+        "output_tokens_details": {
+          "reasoning_tokens": 1190
+        },
+        "total_tokens": 1993
+      },
+      "estimated_api_cost_usd": 0.0006981,
+      "attempt_id": "ea0cdbec-c9bc-4f1f-ab19-66b2bd9bbd41"
+    },
+    {
+      "step_number": 44,
+      "decision_index": 43,
+      "simulator_control_step_start": 221,
+      "simulator_control_step_end": 225,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.562556,
+          -1.763467,
+          -2.029269,
+          -0.530898,
+          -1.438384,
+          2.308664,
+          -1.211291
+        ],
+        "joint_velocities_rad_s": [
+          0.662379,
+          0.000169,
+          -0.917827,
+          0.863474,
+          0.926019,
+          1.013729,
+          -0.320517
+        ],
+        "end_effector_position_m": [
+          -1.204513,
+          -0.633328,
+          0.86269
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.982835,
+          0.013078,
+          -0.140195,
+          0.119205
+        ],
+        "gripper_joint_positions_m": [
+          0.039869,
+          -0.040012
+        ],
+        "gripper_joint_velocities_m_s": [
+          -0.000173,
+          -1e-05
+        ]
+      },
+      "observation_image": "decision_043.png",
+      "request_started_at_utc": "2026-10-10T04:45:16.039+00:00",
+      "api_latency_seconds": 13.890385074017104,
+      "usage": {
+        "input_tokens": 744,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1242,
+        "output_tokens_details": {
+          "reasoning_tokens": 1183
+        },
+        "total_tokens": 1986
+      },
+      "estimated_api_cost_usd": 0.0006954,
+      "attempt_id": "2bdeffd2-d365-4ecc-89cb-b49822add784"
+    },
+    {
+      "step_number": 45,
+      "decision_index": 44,
+      "simulator_control_step_start": 226,
+      "simulator_control_step_end": 230,
+      "executed_steps": 5,
+      "action": [
+        -0.6,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.606833,
+          -1.76302,
+          -2.138276,
+          -0.457595,
+          -1.233323,
+          2.245744,
+          -1.290651
+        ],
+        "joint_velocities_rad_s": [
+          -0.024657,
+          -7.5e-05,
+          0.045756,
+          0.162411,
+          0.248062,
+          -0.674142,
+          -0.297045
+        ],
+        "end_effector_position_m": [
+          -1.201393,
+          -0.615358,
+          0.844214
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.990614,
+          0.007285,
+          -0.102559,
+          0.090065
+        ],
+        "gripper_joint_positions_m": [
+          0.039882,
+          -0.040004
+        ],
+        "gripper_joint_velocities_m_s": [
+          -3.5e-05,
+          -2.4e-05
+        ]
+      },
+      "observation_image": "decision_044.png",
+      "request_started_at_utc": "2026-10-10T04:45:30.328+00:00",
+      "api_latency_seconds": 9.589553861005697,
+      "usage": {
+        "input_tokens": 751,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 802,
+        "output_tokens_details": {
+          "reasoning_tokens": 743
+        },
+        "total_tokens": 1553
+      },
+      "estimated_api_cost_usd": 0.0004761,
+      "attempt_id": "43de50c8-553e-4ab7-bc72-d4014b633ee2"
+    },
+    {
+      "step_number": 46,
+      "decision_index": 45,
+      "simulator_control_step_start": 231,
+      "simulator_control_step_end": 235,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.565261,
+          -1.763195,
+          -2.153743,
+          -0.511291,
+          -1.258052,
+          2.27807,
+          -1.278379
+        ],
+        "joint_velocities_rad_s": [
+          -0.356292,
+          0.000292,
+          -0.089136,
+          -0.588352,
+          -0.323653,
+          0.44161,
+          0.342883
+        ],
+        "end_effector_position_m": [
+          -1.206955,
+          -0.604884,
+          0.832587
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.990195,
+          0.011548,
+          -0.107382,
+          0.088594
+        ],
+        "gripper_joint_positions_m": [
+          0.039865,
+          -0.040006
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2e-05,
+          5e-06
+        ]
+      },
+      "observation_image": "decision_045.png",
+      "request_started_at_utc": "2026-10-10T04:45:40.184+00:00",
+      "api_latency_seconds": 14.140777226013597,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1143,
+        "output_tokens_details": {
+          "reasoning_tokens": 1084
+        },
+        "total_tokens": 1888
+      },
+      "estimated_api_cost_usd": 0.000646,
+      "attempt_id": "f6240466-0405-4817-97c0-00aa932e33b8"
+    },
+    {
+      "step_number": 47,
+      "decision_index": 46,
+      "simulator_control_step_start": 236,
+      "simulator_control_step_end": 240,
+      "executed_steps": 5,
+      "action": [
+        -0.55,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.476392,
+          -1.763288,
+          -2.188204,
+          -0.677235,
+          -1.357169,
+          2.400468,
+          -1.15961
+        ],
+        "joint_velocities_rad_s": [
+          -0.220121,
+          -0.000233,
+          -0.261188,
+          -0.504924,
+          -0.293335,
+          0.472845,
+          0.483559
+        ],
+        "end_effector_position_m": [
+          -1.194964,
+          -0.598855,
+          0.803074
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.986609,
+          0.010891,
+          -0.120639,
+          0.109222
+        ],
+        "gripper_joint_positions_m": [
+          0.039852,
+          -0.040008
+        ],
+        "gripper_joint_velocities_m_s": [
+          -7.7e-05,
+          -1.3e-05
+        ]
+      },
+      "observation_image": "decision_046.png",
+      "request_started_at_utc": "2026-10-10T04:45:54.703+00:00",
+      "api_latency_seconds": 13.909433157998137,
+      "usage": {
+        "input_tokens": 749,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1168,
+        "output_tokens_details": {
+          "reasoning_tokens": 1109
+        },
+        "total_tokens": 1917
+      },
+      "estimated_api_cost_usd": 0.0006589,
+      "attempt_id": "57769ad7-4789-409d-b24a-b4d1dd073780"
+    },
+    {
+      "step_number": 48,
+      "decision_index": 47,
+      "simulator_control_step_start": 241,
+      "simulator_control_step_end": 245,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.500591,
+          -1.763414,
+          -2.280009,
+          -0.696972,
+          -1.338177,
+          2.478936,
+          -1.094353
+        ],
+        "joint_velocities_rad_s": [
+          0.352866,
+          -0.000116,
+          -0.370479,
+          0.264174,
+          0.424316,
+          0.064077,
+          0.00561
+        ],
+        "end_effector_position_m": [
+          -1.180222,
+          -0.601647,
+          0.783494
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.984104,
+          0.010794,
+          -0.134238,
+          0.115766
+        ],
+        "gripper_joint_positions_m": [
+          0.039826,
+          -0.040011
+        ],
+        "gripper_joint_velocities_m_s": [
+          -9.6e-05,
+          2e-06
+        ]
+      },
+      "observation_image": "decision_047.png",
+      "request_started_at_utc": "2026-10-10T04:46:08.946+00:00",
+      "api_latency_seconds": 12.612418203963898,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1065,
+        "output_tokens_details": {
+          "reasoning_tokens": 1006
+        },
+        "total_tokens": 1811
+      },
+      "estimated_api_cost_usd": 0.0006071,
+      "attempt_id": "010f74d1-faac-4bf2-8a1b-3a5f179c9ceb"
+    },
+    {
+      "step_number": 49,
+      "decision_index": 48,
+      "simulator_control_step_start": 246,
+      "simulator_control_step_end": 250,
+      "executed_steps": 5,
+      "action": [
+        -0.3,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.572227,
+          -1.763335,
+          -2.320696,
+          -0.641248,
+          -1.231819,
+          2.426925,
+          -1.124685
+        ],
+        "joint_velocities_rad_s": [
+          0.159033,
+          0.000179,
+          -0.054623,
+          0.125327,
+          0.271989,
+          -0.139539,
+          -0.121245
+        ],
+        "end_effector_position_m": [
+          -1.162653,
+          -0.612274,
+          0.779878
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.988318,
+          0.011194,
+          -0.117721,
+          0.096143
+        ],
+        "gripper_joint_positions_m": [
+          0.039816,
+          -0.040008
+        ],
+        "gripper_joint_velocities_m_s": [
+          2e-06,
+          1.6e-05
+        ]
+      },
+      "observation_image": "decision_048.png",
+      "request_started_at_utc": "2026-10-10T04:46:21.942+00:00",
+      "api_latency_seconds": 14.148192351975013,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1243,
+        "output_tokens_details": {
+          "reasoning_tokens": 1185
+        },
+        "total_tokens": 1988
+      },
+      "estimated_api_cost_usd": 0.000696,
+      "attempt_id": "fec09630-70d3-4cb5-a503-27fbff1c0be0"
+    },
+    {
+      "step_number": 50,
+      "decision_index": 49,
+      "simulator_control_step_start": 251,
+      "simulator_control_step_end": 255,
+      "executed_steps": 5,
+      "action": [
+        -0.8,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.575752,
+          -1.763256,
+          -2.30921,
+          -0.653186,
+          -1.221109,
+          2.396508,
+          -1.125737
+        ],
+        "joint_velocities_rad_s": [
+          -0.086361,
+          0.000126,
+          0.099493,
+          -0.169375,
+          -0.145766,
+          -0.04821,
+          0.101882
+        ],
+        "end_effector_position_m": [
+          -1.150941,
+          -0.613803,
+          0.775249
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.990897,
+          0.01106,
+          -0.101934,
+          0.08724
+        ],
+        "gripper_joint_positions_m": [
+          0.039818,
+          -0.040007
+        ],
+        "gripper_joint_velocities_m_s": [
+          3e-06,
+          -0.0
+        ]
+      },
+      "observation_image": "decision_049.png",
+      "request_started_at_utc": "2026-10-10T04:46:36.375+00:00",
+      "api_latency_seconds": 11.948266739957035,
+      "usage": {
+        "input_tokens": 742,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 838,
+        "output_tokens_details": {
+          "reasoning_tokens": 780
+        },
+        "total_tokens": 1580
+      },
+      "estimated_api_cost_usd": 0.0004932,
+      "attempt_id": "4411e162-98ee-4d72-b101-55fded752363"
+    },
+    {
+      "step_number": 51,
+      "decision_index": 50,
+      "simulator_control_step_start": 256,
+      "simulator_control_step_end": 260,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.58963,
+          -1.763458,
+          -2.384674,
+          -0.664168,
+          -1.23867,
+          2.564161,
+          -1.069037
+        ],
+        "joint_velocities_rad_s": [
+          0.22157,
+          -3.6e-05,
+          -0.680009,
+          0.017033,
+          0.215879,
+          0.951588,
+          0.345902
+        ],
+        "end_effector_position_m": [
+          -1.15239,
+          -0.627618,
+          0.777232
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.980138,
+          0.019649,
+          -0.142299,
+          0.136727
+        ],
+        "gripper_joint_positions_m": [
+          0.039802,
+          -0.04001
+        ],
+        "gripper_joint_velocities_m_s": [
+          -0.000102,
+          -2.5e-05
+        ]
+      },
+      "observation_image": "decision_050.png",
+      "request_started_at_utc": "2026-10-10T04:46:48.704+00:00",
+      "api_latency_seconds": 11.485552438010927,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 968,
+        "output_tokens_details": {
+          "reasoning_tokens": 910
+        },
+        "total_tokens": 1715
+      },
+      "estimated_api_cost_usd": 0.0005587,
+      "attempt_id": "568baa2f-82a8-408f-b61d-a2121887aa18"
+    },
+    {
+      "step_number": 52,
+      "decision_index": 51,
+      "simulator_control_step_start": 261,
+      "simulator_control_step_end": 265,
+      "executed_steps": 5,
+      "action": [
+        -0.55,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.64249,
+          -1.763418,
+          -2.45145,
+          -0.666401,
+          -1.162518,
+          2.556664,
+          -1.031617
+        ],
+        "joint_velocities_rad_s": [
+          0.201786,
+          0.000111,
+          0.022253,
+          0.121133,
+          0.244246,
+          -0.340958,
+          -0.068565
+        ],
+        "end_effector_position_m": [
+          -1.125161,
+          -0.633219,
+          0.759246
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.983926,
+          0.012097,
+          -0.128511,
+          0.123406
+        ],
+        "gripper_joint_positions_m": [
+          0.039786,
+          -0.040012
+        ],
+        "gripper_joint_velocities_m_s": [
+          -4.7e-05,
+          1.8e-05
+        ]
+      },
+      "observation_image": "decision_051.png",
+      "request_started_at_utc": "2026-10-10T04:47:00.582+00:00",
+      "api_latency_seconds": 11.724656993988901,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1055,
+        "output_tokens_details": {
+          "reasoning_tokens": 997
+        },
+        "total_tokens": 1802
+      },
+      "estimated_api_cost_usd": 0.0006022,
+      "attempt_id": "ce7d3fb6-dc00-4054-83a6-e7bbd0be6941"
+    },
+    {
+      "step_number": 53,
+      "decision_index": 52,
+      "simulator_control_step_start": 266,
+      "simulator_control_step_end": 270,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.45,
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.705783,
+          -1.763456,
+          -2.515791,
+          -0.632808,
+          -1.104131,
+          2.645615,
+          -1.017766
+        ],
+        "joint_velocities_rad_s": [
+          0.288666,
+          -4.9e-05,
+          -0.515476,
+          0.053374,
+          0.317694,
+          0.654361,
+          0.242495
+        ],
+        "end_effector_position_m": [
+          -1.111166,
+          -0.658696,
+          0.76986
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.976332,
+          0.021719,
+          -0.145377,
+          0.15865
+        ],
+        "gripper_joint_positions_m": [
+          0.039758,
+          -0.040013
+        ],
+        "gripper_joint_velocities_m_s": [
+          -0.000109,
+          -1.3e-05
+        ]
+      },
+      "observation_image": "decision_052.png",
+      "request_started_at_utc": "2026-10-10T04:47:12.603+00:00",
+      "api_latency_seconds": 22.71623942098813,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1958,
+        "output_tokens_details": {
+          "reasoning_tokens": 1898
+        },
+        "total_tokens": 2705
+      },
+      "estimated_api_cost_usd": 0.0010537,
+      "attempt_id": "3806ca46-262b-4de0-9341-6cad2fe6068e"
+    },
+    {
+      "step_number": 54,
+      "decision_index": 53,
+      "simulator_control_step_start": 271,
+      "simulator_control_step_end": 275,
+      "executed_steps": 5,
+      "action": [
+        0.3,
+        -0.25,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.757664,
+          -1.763453,
+          -2.550627,
+          -0.623,
+          -1.036522,
+          2.625724,
+          -0.997073
+        ],
+        "joint_velocities_rad_s": [
+          0.102215,
+          1.4e-05,
+          0.082656,
+          0.038899,
+          0.129168,
+          -0.190665,
+          -0.055233
+        ],
+        "end_effector_position_m": [
+          -1.086427,
+          -0.669686,
+          0.763324
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.97948,
+          0.014405,
+          -0.131996,
+          0.151619
+        ],
+        "gripper_joint_positions_m": [
+          0.039744,
+          -0.040013
+        ],
+        "gripper_joint_velocities_m_s": [
+          -3.2e-05,
+          1.7e-05
+        ]
+      },
+      "observation_image": "decision_053.png",
+      "request_started_at_utc": "2026-10-10T04:47:35.599+00:00",
+      "api_latency_seconds": 15.706497304025106,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1360,
+        "output_tokens_details": {
+          "reasoning_tokens": 1301
+        },
+        "total_tokens": 2108
+      },
+      "estimated_api_cost_usd": 0.0007548,
+      "attempt_id": "7bb3a354-0672-499f-bfe1-fabb835eb9b6"
+    },
+    {
+      "step_number": 55,
+      "decision_index": 54,
+      "simulator_control_step_start": 276,
+      "simulator_control_step_end": 280,
+      "executed_steps": 5,
+      "action": [
+        -0.55,
+        -0.65,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.737511,
+          -1.763124,
+          -2.396842,
+          -0.665555,
+          -1.124005,
+          2.418066,
+          -0.986597
+        ],
+        "joint_velocities_rad_s": [
+          -0.147249,
+          -0.000329,
+          0.811763,
+          -0.161402,
+          -0.722616,
+          -0.831377,
+          0.167928
+        ],
+        "end_effector_position_m": [
+          -1.049543,
+          -0.665933,
+          0.752975
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.993009,
+          0.008522,
+          -0.077995,
+          0.088186
+        ],
+        "gripper_joint_positions_m": [
+          0.039746,
+          -0.04001
+        ],
+        "gripper_joint_velocities_m_s": [
+          2.8e-05,
+          1.9e-05
+        ]
+      },
+      "observation_image": "decision_054.png",
+      "request_started_at_utc": "2026-10-10T04:47:51.687+00:00",
+      "api_latency_seconds": 11.860638774000108,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1017,
+        "output_tokens_details": {
+          "reasoning_tokens": 959
+        },
+        "total_tokens": 1764
+      },
+      "estimated_api_cost_usd": 0.0005832,
+      "attempt_id": "3eb4a397-aa4b-4f15-b859-60f40ce6a220"
+    },
+    {
+      "step_number": 56,
+      "decision_index": 55,
+      "simulator_control_step_start": 281,
+      "simulator_control_step_end": 285,
+      "executed_steps": 5,
+      "action": [
+        1.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.714702,
+          -1.763408,
+          -2.323475,
+          -0.689143,
+          -1.271102,
+          2.439351,
+          -0.927776
+        ],
+        "joint_velocities_rad_s": [
+          -0.102039,
+          -0.000151,
+          -0.121831,
+          -0.240728,
+          -0.26771,
+          0.562969,
+          0.29991
+        ],
+        "end_effector_position_m": [
+          -1.048253,
+          -0.67992,
+          0.767928
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.988918,
+          0.014569,
+          -0.099124,
+          0.10956
+        ],
+        "gripper_joint_positions_m": [
+          0.039754,
+          -0.040007
+        ],
+        "gripper_joint_velocities_m_s": [
+          6e-05,
+          2e-06
+        ]
+      },
+      "observation_image": "decision_055.png",
+      "request_started_at_utc": "2026-10-10T04:48:03.851+00:00",
+      "api_latency_seconds": 16.01662817399483,
+      "usage": {
+        "input_tokens": 743,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1392,
+        "output_tokens_details": {
+          "reasoning_tokens": 1339
+        },
+        "total_tokens": 2135
+      },
+      "estimated_api_cost_usd": 0.0007703,
+      "attempt_id": "e847e3f4-b2bc-46cf-98a7-f05954a22c14"
+    },
+    {
+      "step_number": 57,
+      "decision_index": 56,
+      "simulator_control_step_start": 286,
+      "simulator_control_step_end": 290,
+      "executed_steps": 5,
+      "action": [
+        -0.8,
+        -0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.762173,
+          -1.763334,
+          -2.294418,
+          -0.76419,
+          -1.343363,
+          2.436912,
+          -0.788502
+        ],
+        "joint_velocities_rad_s": [
+          0.439083,
+          -0.00019,
+          0.144634,
+          -0.054138,
+          -0.292358,
+          -0.243417,
+          0.655703
+        ],
+        "end_effector_position_m": [
+          -0.974592,
+          -0.7036,
+          0.756993
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.99014,
+          0.014509,
+          -0.080709,
+          0.113574
+        ],
+        "gripper_joint_positions_m": [
+          0.039737,
+          -0.040013
+        ],
+        "gripper_joint_velocities_m_s": [
+          -5.7e-05,
+          6e-06
+        ]
+      },
+      "observation_image": "decision_056.png",
+      "request_started_at_utc": "2026-10-10T04:48:20.252+00:00",
+      "api_latency_seconds": 17.388867469038814,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1575,
+        "output_tokens_details": {
+          "reasoning_tokens": 1517
+        },
+        "total_tokens": 2320
+      },
+      "estimated_api_cost_usd": 0.000862,
+      "attempt_id": "59b3da12-a7f4-4558-b719-4c8b814690cd"
+    },
+    {
+      "step_number": 58,
+      "decision_index": 57,
+      "simulator_control_step_start": 291,
+      "simulator_control_step_end": 295,
+      "executed_steps": 5,
+      "action": [
+        -0.2,
+        -0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue left and toward the counter front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.869744,
+          -1.763453,
+          -2.369585,
+          -0.664109,
+          -1.288475,
+          2.507293,
+          -0.757028
+        ],
+        "joint_velocities_rad_s": [
+          0.349634,
+          8.7e-05,
+          -0.526973,
+          0.371376,
+          0.653924,
+          0.564369,
+          -0.210678
+        ],
+        "end_effector_position_m": [
+          -0.960474,
+          -0.733487,
+          0.773013
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.982855,
+          0.015942,
+          -0.109328,
+          0.147615
+        ],
+        "gripper_joint_positions_m": [
+          0.039725,
+          -0.040013
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.6e-05,
+          9e-06
+        ]
+      },
+      "observation_image": "decision_057.png",
+      "request_started_at_utc": "2026-10-10T04:48:37.941+00:00",
+      "api_latency_seconds": 15.077949882019311,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1345,
+        "output_tokens_details": {
+          "reasoning_tokens": 1287
+        },
+        "total_tokens": 2092
+      },
+      "estimated_api_cost_usd": 0.0007472,
+      "attempt_id": "0ca8ed9a-d3c7-47b6-895d-926f53db03fe"
+    },
+    {
+      "step_number": 59,
+      "decision_index": 58,
+      "simulator_control_step_start": 296,
+      "simulator_control_step_end": 300,
+      "executed_steps": 5,
+      "action": [
+        0.8,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; continue aligning over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.875886,
+          -1.76326,
+          -2.364094,
+          -0.672552,
+          -1.197283,
+          2.433849,
+          -0.809917
+        ],
+        "joint_velocities_rad_s": [
+          -0.112281,
+          2.4e-05,
+          0.339306,
+          -0.061115,
+          -0.087112,
+          -0.474484,
+          -0.134828
+        ],
+        "end_effector_position_m": [
+          -0.947276,
+          -0.723653,
+          0.761178
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.990614,
+          0.012009,
+          -0.075979,
+          0.112987
+        ],
+        "gripper_joint_positions_m": [
+          0.039737,
+          -0.04001
+        ],
+        "gripper_joint_velocities_m_s": [
+          -0.0,
+          2e-06
+        ]
+      },
+      "observation_image": "decision_058.png",
+      "request_started_at_utc": "2026-10-10T04:48:53.409+00:00",
+      "api_latency_seconds": 16.70102407701779,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1424,
+        "output_tokens_details": {
+          "reasoning_tokens": 1367
+        },
+        "total_tokens": 2169
+      },
+      "estimated_api_cost_usd": 0.0007865,
+      "attempt_id": "3f2e5acc-5616-4ba1-a480-b127569df804"
+    },
+    {
+      "step_number": 60,
+      "decision_index": 59,
+      "simulator_control_step_start": 301,
+      "simulator_control_step_end": 305,
+      "executed_steps": 5,
+      "action": [
+        -0.7,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue moving left and toward the counter front while high and open; align above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.775998,
+          -1.701797,
+          -2.20507,
+          -0.872089,
+          -1.314527,
+          2.172091,
+          -0.73578
+        ],
+        "joint_velocities_rad_s": [
+          -0.484064,
+          0.145814,
+          0.714974,
+          -0.928137,
+          -0.851997,
+          -0.855371,
+          0.623078
+        ],
+        "end_effector_position_m": [
+          -0.910142,
+          -0.699488,
+          0.773326
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999231,
+          0.008417,
+          -0.032218,
+          0.020717
+        ],
+        "gripper_joint_positions_m": [
+          0.03977,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000161,
+          2.1e-05
+        ]
+      },
+      "observation_image": "decision_059.png",
+      "request_started_at_utc": "2026-10-10T04:49:10.395+00:00",
+      "api_latency_seconds": 16.184066225017887,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1414,
+        "output_tokens_details": {
+          "reasoning_tokens": 1357
+        },
+        "total_tokens": 2159
+      },
+      "estimated_api_cost_usd": 0.0007815,
+      "attempt_id": "4aff099d-7dff-4b0d-9c90-c820a765d475"
+    },
+    {
+      "step_number": 61,
+      "decision_index": 60,
+      "simulator_control_step_start": 306,
+      "simulator_control_step_end": 310,
+      "executed_steps": 5,
+      "action": [
+        -0.3,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while high and open; align over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.630664,
+          -1.71284,
+          -2.094874,
+          -1.003774,
+          -1.487941,
+          2.085271,
+          -0.680198
+        ],
+        "joint_velocities_rad_s": [
+          -0.605035,
+          -0.066655,
+          0.275735,
+          -0.424642,
+          -0.39719,
+          -0.137897,
+          -0.085892
+        ],
+        "end_effector_position_m": [
+          -0.933859,
+          -0.672132,
+          0.778587
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999284,
+          -0.002519,
+          -0.037692,
+          0.002031
+        ],
+        "gripper_joint_positions_m": [
+          0.039824,
+          -0.039992
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000188,
+          2.7e-05
+        ]
+      },
+      "observation_image": "decision_060.png",
+      "request_started_at_utc": "2026-10-10T04:49:26.976+00:00",
+      "api_latency_seconds": 17.702929146005772,
+      "usage": {
+        "input_tokens": 744,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1550,
+        "output_tokens_details": {
+          "reasoning_tokens": 1494
+        },
+        "total_tokens": 2294
+      },
+      "estimated_api_cost_usd": 0.0008494,
+      "attempt_id": "6d2150e0-9fab-4cfa-b531-19e11a11b457"
+    },
+    {
+      "step_number": 62,
+      "decision_index": 61,
+      "simulator_control_step_start": 311,
+      "simulator_control_step_end": 315,
+      "executed_steps": 5,
+      "action": [
+        0.8,
+        -0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while high and open; continue aligning over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.564549,
+          -1.763945,
+          -2.047641,
+          -1.011715,
+          -1.567689,
+          2.13135,
+          -0.713164
+        ],
+        "joint_velocities_rad_s": [
+          -0.01121,
+          0.031129,
+          -0.033862,
+          0.110482,
+          -0.008649,
+          0.116833,
+          -0.150579
+        ],
+        "end_effector_position_m": [
+          -0.955971,
+          -0.665502,
+          0.769789
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998964,
+          0.000457,
+          -0.034629,
+          0.029523
+        ],
+        "gripper_joint_positions_m": [
+          0.039842,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          8.6e-05,
+          1.3e-05
+        ]
+      },
+      "observation_image": "decision_061.png",
+      "request_started_at_utc": "2026-10-10T04:49:44.967+00:00",
+      "api_latency_seconds": 17.004431982990354,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1444,
+        "output_tokens_details": {
+          "reasoning_tokens": 1388
+        },
+        "total_tokens": 2189
+      },
+      "estimated_api_cost_usd": 0.0007965,
+      "attempt_id": "235623c9-2b8f-4594-bbae-dc60714058ec"
+    },
+    {
+      "step_number": 63,
+      "decision_index": 62,
+      "simulator_control_step_start": 316,
+      "simulator_control_step_end": 320,
+      "executed_steps": 5,
+      "action": [
+        0.4,
+        0.4,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Moving left and toward the counter front while high and open; continue aligning over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.653162,
+          -1.763067,
+          -2.068244,
+          -0.973262,
+          -1.547119,
+          2.171884,
+          -0.674257
+        ],
+        "joint_velocities_rad_s": [
+          0.575136,
+          -0.000104,
+          -0.073403,
+          0.326936,
+          0.110886,
+          -0.001517,
+          0.283177
+        ],
+        "end_effector_position_m": [
+          -0.917867,
+          -0.690472,
+          0.769743
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998245,
+          0.006914,
+          -0.037481,
+          0.045332
+        ],
+        "gripper_joint_positions_m": [
+          0.039839,
+          -0.040006
+        ],
+        "gripper_joint_velocities_m_s": [
+          4e-06,
+          5e-06
+        ]
+      },
+      "observation_image": "decision_062.png",
+      "request_started_at_utc": "2026-10-10T04:50:02.373+00:00",
+      "api_latency_seconds": 14.233700953016523,
+      "usage": {
+        "input_tokens": 741,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1187,
+        "output_tokens_details": {
+          "reasoning_tokens": 1131
+        },
+        "total_tokens": 1928
+      },
+      "estimated_api_cost_usd": 0.0006676,
+      "attempt_id": "8f015e19-5465-4b56-8429-22d8aa539a34"
+    },
+    {
+      "step_number": 64,
+      "decision_index": 63,
+      "simulator_control_step_start": 321,
+      "simulator_control_step_end": 325,
+      "executed_steps": 5,
+      "action": [
+        -0.7,
+        -0.6,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while staying high and open; align above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.694215,
+          -1.737444,
+          -2.047877,
+          -0.99516,
+          -1.517272,
+          2.034306,
+          -0.626595
+        ],
+        "joint_velocities_rad_s": [
+          -0.03917,
+          0.064234,
+          0.199094,
+          -0.253938,
+          -0.076399,
+          -0.448189,
+          0.173569
+        ],
+        "end_effector_position_m": [
+          -0.884124,
+          -0.686438,
+          0.778015
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999454,
+          0.000897,
+          -0.031984,
+          -0.008212
+        ],
+        "gripper_joint_positions_m": [
+          0.039874,
+          -0.04
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.000119,
+          9e-06
+        ]
+      },
+      "observation_image": "decision_063.png",
+      "request_started_at_utc": "2026-10-10T04:50:16.914+00:00",
+      "api_latency_seconds": 21.305042752006557,
+      "usage": {
+        "input_tokens": 741,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1948,
+        "output_tokens_details": {
+          "reasoning_tokens": 1889
+        },
+        "total_tokens": 2689
+      },
+      "estimated_api_cost_usd": 0.0010481,
+      "attempt_id": "bc374f50-6064-4442-bd2f-a86998589199"
+    },
+    {
+      "step_number": 65,
+      "decision_index": 64,
+      "simulator_control_step_start": 326,
+      "simulator_control_step_end": 330,
+      "executed_steps": 5,
+      "action": [
+        0.45,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue moving left and toward the counter front while high and open; next check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.724503,
+          -1.763136,
+          -2.012744,
+          -0.88256,
+          -1.545582,
+          2.07497,
+          -0.685267
+        ],
+        "joint_velocities_rad_s": [
+          0.224733,
+          0.001664,
+          -0.090166,
+          0.611448,
+          0.279182,
+          0.318314,
+          -0.472638
+        ],
+        "end_effector_position_m": [
+          -0.912323,
+          -0.706417,
+          0.789634
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998642,
+          -0.000646,
+          -0.0461,
+          0.024279
+        ],
+        "gripper_joint_positions_m": [
+          0.039882,
+          -0.040002
+        ],
+        "gripper_joint_velocities_m_s": [
+          6.9e-05,
+          1.1e-05
+        ]
+      },
+      "observation_image": "decision_064.png",
+      "request_started_at_utc": "2026-10-10T04:50:38.521+00:00",
+      "api_latency_seconds": 22.948960606008768,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2208,
+        "output_tokens_details": {
+          "reasoning_tokens": 2140
+        },
+        "total_tokens": 2953
+      },
+      "estimated_api_cost_usd": 0.0011785,
+      "attempt_id": "3ac45344-b798-413f-905c-f36781ee313c"
+    },
+    {
+      "step_number": 66,
+      "decision_index": 65,
+      "simulator_control_step_start": 331,
+      "simulator_control_step_end": 335,
+      "executed_steps": 5,
+      "action": [
+        -0.7,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.796766,
+          -1.763015,
+          -2.005429,
+          -0.803287,
+          -1.487566,
+          2.059793,
+          -0.725177
+        ],
+        "joint_velocities_rad_s": [
+          0.31475,
+          -0.000149,
+          0.075825,
+          0.245426,
+          0.047696,
+          -0.127139,
+          0.060358
+        ],
+        "end_effector_position_m": [
+          -0.896339,
+          -0.721842,
+          0.798671
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.999047,
+          0.005927,
+          -0.036021,
+          0.023926
+        ],
+        "gripper_joint_positions_m": [
+          0.039893,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          3.9e-05,
+          6e-06
+        ]
+      },
+      "observation_image": "decision_065.png",
+      "request_started_at_utc": "2026-10-10T04:51:01.867+00:00",
+      "api_latency_seconds": 10.23208565596724,
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 800,
+        "output_tokens_details": {
+          "reasoning_tokens": 743
+        },
+        "total_tokens": 1545
+      },
+      "estimated_api_cost_usd": 0.0004745,
+      "attempt_id": "2f06b301-3013-4b54-a1f5-6df17d161c3e"
+    },
+    {
+      "step_number": 67,
+      "decision_index": 66,
+      "simulator_control_step_start": 336,
+      "simulator_control_step_end": 340,
+      "executed_steps": 5,
+      "action": [
+        -0.3,
+        0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.864871,
+          -1.763257,
+          -2.035917,
+          -0.67055,
+          -1.451114,
+          2.129307,
+          -0.776553
+        ],
+        "joint_velocities_rad_s": [
+          0.212655,
+          -0.000292,
+          -0.209642,
+          0.513074,
+          0.331997,
+          0.348074,
+          -0.365172
+        ],
+        "end_effector_position_m": [
+          -0.918269,
+          -0.742468,
+          0.813818
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.996488,
+          0.004506,
+          -0.059194,
+          0.059059
+        ],
+        "gripper_joint_positions_m": [
+          0.039892,
+          -0.040004
+        ],
+        "gripper_joint_velocities_m_s": [
+          0.0,
+          -0.0
+        ]
+      },
+      "observation_image": "decision_066.png",
+      "request_started_at_utc": "2026-10-10T04:51:12.405+00:00",
+      "api_latency_seconds": 22.037245840998366,
+      "usage": {
+        "input_tokens": 739,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1963,
+        "output_tokens_details": {
+          "reasoning_tokens": 1906
+        },
+        "total_tokens": 2702
+      },
+      "estimated_api_cost_usd": 0.0010554,
+      "attempt_id": "0d420e43-cdc8-4117-a329-2414cb2c80b0"
+    },
+    {
+      "step_number": 68,
+      "decision_index": 67,
+      "simulator_control_step_start": 341,
+      "simulator_control_step_end": 345,
+      "executed_steps": 5,
+      "action": [
+        -0.45,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.866044,
+          -1.762954,
+          -2.001487,
+          -0.614011,
+          -1.405217,
+          2.02407,
+          -0.856362
+        ],
+        "joint_velocities_rad_s": [
+          -0.088026,
+          -0.000317,
+          0.349188,
+          0.123611,
+          -0.14206,
+          -0.493241,
+          -0.23741
+        ],
+        "end_effector_position_m": [
+          -0.936252,
+          -0.728037,
+          0.820285
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.998984,
+          0.002998,
+          -0.039146,
+          0.022123
+        ],
+        "gripper_joint_positions_m": [
+          0.039908,
+          -0.040002
+        ],
+        "gripper_joint_velocities_m_s": [
+          2.1e-05,
+          -3e-06
+        ]
+      },
+      "observation_image": "decision_067.png",
+      "request_started_at_utc": "2026-10-10T04:51:34.737+00:00",
+      "api_latency_seconds": 12.542297653038986,
+      "usage": {
+        "input_tokens": 744,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1189,
+        "output_tokens_details": {
+          "reasoning_tokens": 1132
+        },
+        "total_tokens": 1933
+      },
+      "estimated_api_cost_usd": 0.0006689,
+      "attempt_id": "bf785700-8f80-4d2f-b0b9-42e233d92876"
+    },
+    {
+      "step_number": 69,
+      "decision_index": 68,
+      "simulator_control_step_start": 346,
+      "simulator_control_step_end": 350,
+      "executed_steps": 5,
+      "action": [
+        -0.7,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the counter front while high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.847279,
+          -1.763157,
+          -1.95939,
+          -0.600352,
+          -1.460583,
+          2.056139,
+          -0.880128
+        ],
+        "joint_velocities_rad_s": [
+          -0.118661,
+          6.9e-05,
+          0.001009,
+          -0.071705,
+          -0.112165,
+          0.284039,
+          -0.000163
+        ],
+        "end_effector_position_m": [
+          -0.958162,
+          -0.7361,
+          0.836973
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.99738,
+          0.006419,
+          -0.053421,
+          0.048346
+        ],
+        "gripper_joint_positions_m": [
+          0.039905,
+          -0.040003
+        ],
+        "gripper_joint_velocities_m_s": [
+          2e-05,
+          1e-06
+        ]
+      },
+      "observation_image": "decision_068.png",
+      "request_started_at_utc": "2026-10-10T04:51:47.691+00:00",
+      "api_latency_seconds": 18.84583146998193,
+      "usage": {
+        "input_tokens": 744,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1682,
+        "output_tokens_details": {
+          "reasoning_tokens": 1625
+        },
+        "total_tokens": 2426
+      },
+      "estimated_api_cost_usd": 0.0009154,
+      "attempt_id": "b4fdb7f6-82e1-464f-b163-7fc3251e3934"
+    },
+    {
+      "step_number": 70,
+      "decision_index": 69,
+      "simulator_control_step_start": 351,
+      "simulator_control_step_end": 355,
+      "executed_steps": 5,
+      "action": [
+        -0.25,
+        0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward counter front while high and open; next check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.81307,
+          -1.763294,
+          -2.015636,
+          -0.619668,
+          -1.460797,
+          2.205652,
+          -0.88003
+        ],
+        "joint_velocities_rad_s": [
+          -0.133778,
+          -8e-05,
+          -0.383662,
+          -0.105776,
+          0.14161,
+          0.653468,
+          0.006056
+        ],
+        "end_effector_position_m": [
+          -0.981983,
+          -0.743263,
+          0.836981
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.991834,
+          0.010217,
+          -0.076342,
+          0.101655
+        ],
+        "gripper_joint_positions_m": [
+          0.039895,
+          -0.040006
+        ],
+        "gripper_joint_velocities_m_s": [
+          -6.8e-05,
+          -1.4e-05
+        ]
+      },
+      "observation_image": "decision_069.png",
+      "request_started_at_utc": "2026-10-10T04:52:06.854+00:00",
+      "api_latency_seconds": 14.71619477396598,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1271,
+        "output_tokens_details": {
+          "reasoning_tokens": 1214
+        },
+        "total_tokens": 2018
+      },
+      "estimated_api_cost_usd": 0.0007102,
+      "attempt_id": "1192bd7b-6c55-4c9b-b5e5-73ffb4dc8011"
+    },
+    {
+      "step_number": 71,
+      "decision_index": 70,
+      "simulator_control_step_start": 356,
+      "simulator_control_step_end": 360,
+      "executed_steps": 5,
+      "action": [
+        -0.55,
+        -0.55,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Continue left and toward the table front while high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.739731,
+          -1.763066,
+          -2.011228,
+          -0.693559,
+          -1.438379,
+          2.12249,
+          -0.891328
+        ],
+        "joint_velocities_rad_s": [
+          -0.287965,
+          0.004553,
+          0.288274,
+          -0.226012,
+          -0.200821,
+          -0.557343,
+          -0.075166
+        ],
+        "end_effector_position_m": [
+          -0.991275,
+          -0.711841,
+          0.816856
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.997269,
+          0.00288,
+          -0.046706,
+          0.057138
+        ],
+        "gripper_joint_positions_m": [
+          0.039906,
+          -0.040004
+        ],
+        "gripper_joint_velocities_m_s": [
+          -3.6e-05,
+          -1.9e-05
+        ]
+      },
+      "observation_image": "decision_070.png",
+      "request_started_at_utc": "2026-10-10T04:52:21.964+00:00",
+      "api_latency_seconds": 13.421036682964768,
+      "usage": {
+        "input_tokens": 747,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1095,
+        "output_tokens_details": {
+          "reasoning_tokens": 1028
+        },
+        "total_tokens": 1842
+      },
+      "estimated_api_cost_usd": 0.0006222,
+      "attempt_id": "8fdeaedf-dd8b-4621-9b28-007a4cc88679"
+    },
+    {
+      "step_number": 72,
+      "decision_index": 71,
+      "simulator_control_step_start": 361,
+      "simulator_control_step_end": 365,
+      "executed_steps": 5,
+      "action": [
+        -0.18,
+        -0.18,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the table front while high and open; check alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.725766,
+          -1.763225,
+          -2.009332,
+          -0.683298,
+          -1.476137,
+          2.162114,
+          -0.902561
+        ],
+        "joint_velocities_rad_s": [
+          0.041194,
+          -2.4e-05,
+          -0.225895,
+          0.12327,
+          0.117489,
+          0.371559,
+          -0.0545
+        ],
+        "end_effector_position_m": [
+          -1.011486,
+          -0.713224,
+          0.823811
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.994921,
+          0.006792,
+          -0.067594,
+          0.074281
+        ],
+        "gripper_joint_positions_m": [
+          0.039889,
+          -0.040005
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.3e-05,
+          2e-06
+        ]
+      },
+      "observation_image": "decision_071.png",
+      "request_started_at_utc": "2026-10-10T04:52:35.688+00:00",
+      "api_latency_seconds": 19.652646674017888,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1677,
+        "output_tokens_details": {
+          "reasoning_tokens": 1620
+        },
+        "total_tokens": 2423
+      },
+      "estimated_api_cost_usd": 0.0009131,
+      "attempt_id": "21ee722d-048f-4c4c-a758-097bf4f30c01"
+    },
+    {
+      "step_number": 73,
+      "decision_index": 72,
+      "simulator_control_step_start": 366,
+      "simulator_control_step_end": 370,
+      "executed_steps": 5,
+      "action": [
+        -0.6,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the table front while remaining high and open; recheck alignment above the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.731068,
+          -1.763079,
+          -2.017759,
+          -0.66968,
+          -1.444578,
+          2.131132,
+          -0.920072
+        ],
+        "joint_velocities_rad_s": [
+          0.018802,
+          -6.9e-05,
+          0.062574,
+          0.061901,
+          0.026384,
+          -0.178111,
+          -0.06712
+        ],
+        "end_effector_position_m": [
+          -1.012324,
+          -0.706373,
+          0.819422
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.99653,
+          0.005053,
+          -0.058768,
+          0.058732
+        ],
+        "gripper_joint_positions_m": [
+          0.039886,
+          -0.040006
+        ],
+        "gripper_joint_velocities_m_s": [
+          -2.4e-05,
+          1e-06
+        ]
+      },
+      "observation_image": "decision_072.png",
+      "request_started_at_utc": "2026-10-10T04:52:55.779+00:00",
+      "api_latency_seconds": 19.616713344003074,
+      "usage": {
+        "input_tokens": 746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1698,
+        "output_tokens_details": {
+          "reasoning_tokens": 1639
+        },
+        "total_tokens": 2444
+      },
+      "estimated_api_cost_usd": 0.0009236,
+      "attempt_id": "0453803c-5d0e-4a54-890f-0c45a33d5448"
+    },
+    {
+      "step_number": 74,
+      "decision_index": 73,
+      "simulator_control_step_start": 371,
+      "simulator_control_step_end": 375,
+      "executed_steps": 5,
+      "action": [
+        -0.35,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "model_memory": "Move left and toward the table front while staying high and open; check alignment over the front butter packet before descending.",
+      "proprioception_before_action": {
+        "joint_positions_rad": [
+          0.745895,
+          -1.763286,
+          -2.055481,
+          -0.630131,
+          -1.428503,
+          2.213885,
+          -0.939244
+        ],
+        "joint_velocities_rad_s": [
+          0.04367,
+          -4.8e-05,
+          -0.291543,
+          0.10269,
+          0.193305,
+          0.443161,
+          -0.060632
+        ],
+        "end_effector_position_m": [
+          -1.027643,
+          -0.714099,
+          0.824933
+        ],
+        "end_effector_quaternion_xyzw": [
+          0.99282,
+          0.008945,
+          -0.07958,
+          0.088859
+        ],
+        "gripper_joint_positions_m": [
+          0.039874,
+          -0.040006
+        ],
+        "gripper_joint_velocities_m_s": [
+          -3.2e-05,
+          -2e-06
+        ]
+      },
+      "observation_image": "decision_073.png",
+      "request_started_at_utc": "2026-10-10T04:53:15.716+00:00",
+      "api_latency_seconds": 13.041175113990903,
+      "usage": {
+        "input_tokens": 748,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1156,
+        "output_tokens_details": {
+          "reasoning_tokens": 1088
+        },
+        "total_tokens": 1904
+      },
+      "estimated_api_cost_usd": 0.0006528,
+      "attempt_id": "3f067476-c847-4ba0-bc41-7c708f4c45f5"
+    }
+  ],
+  "nonexecuted_api_attempts": [
+    {
+      "attempt_id": "8f7ef4d4-ea7d-4d81-a754-2b4da4c532fe",
+      "run_id": "4c0f37cb-e40b-40d2-9cba-32a57e54737e",
+      "decision_index": 74,
+      "started_at_utc": "2026-10-10T04:53:29.172+00:00",
+      "requested_model": "gpt-6-luna",
+      "requested_service_tier": "default",
+      "returned_model": null,
+      "returned_service_tier": null,
+      "request_id": null,
+      "response_id": null,
+      "http_status": null,
+      "response_status": null,
+      "usage": null,
+      "api_latency_seconds": 4.243190806009807,
+      "outcome": "transport_error",
+      "task_id": 0,
+      "initial_state_id": 0,
+      "sim_seed": 0,
+      "observation_mode": "rgb-proprio",
+      "input_text": "Task: put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it\nPrevious self-generated memory: Move left and toward the table front while staying high and open; check alignment over the front butter packet before descending.\nCurrent robot proprioception (same observation as the attached RGB image):\n{\"joint_positions_rad\":[0.741856,-1.763185,-2.083462,-0.630447,-1.393108,2.220093,-0.950705],\"joint_velocities_rad_s\":[-0.052052,1.5e-05,-0.020951,-0.04353,0.027456,-0.022031,-0.02089],\"end_effector_position_m\":[-1.030804,-0.7079,0.817757],\"end_effector_quaternion_xyzw\":[0.993553,0.008046,-0.074964,0.084668],\"gripper_joint_positions_m\":[0.039867,-0.040007],\"gripper_joint_velocities_m_s\":[-4.6e-05,-2e-06]}\nChoose the next action using the attached camera image and current robot proprioception.",
+      "image_jpeg_sha256": "570bfa0d74ba99d024e97fca42b31160cda74450ebc97aad0cb4ed0dd719d7eb",
+      "estimated_api_cost_usd": null,
+      "cost_status": "usage_missing",
+      "error_type": "KeyboardInterrupt",
+      "error": ""
+    }
+  ]
+}

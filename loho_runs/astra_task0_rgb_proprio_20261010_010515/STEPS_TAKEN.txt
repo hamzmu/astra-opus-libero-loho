@@ -1,0 +1,176 @@
+ASTRA TASK 0 — RECORDED AFTER STOP REQUEST
+
+The episode had already ended at its 74-decision limit when the user requested stop.
+No robot-control process remains running. No additional API requests were made to generate this record.
+Configuration: RGB + proprioception, high reasoning, stored state 0, seed 0, action repeat 5.
+Output allowance: 8,192 tokens/request; estimated-spend cap: $10 USD.
+Executed: 74 actions, 370 action steps, plus 5 settling steps.
+API requests: 74 valid responses; no retries or request failures.
+Elapsed episode time: 508.28 seconds (8.47 minutes).
+API latency total: 476.24 seconds; mean: 6.44 seconds/request.
+Token usage: 57017 input, 17169 output (reasoning included in output).
+Estimated public-rate cost: $1.42862 USD. All request costs are resolved.
+Task success recorded: false. Original termination reason: decision_budget.
+
+WHAT IT DID
+Decisions 0–31: translated the arm and lowered it toward the left-side objects.
+Decisions 32–73: 42 repeated downward-only commands; no gripper-close command was issued.
+End-effector Z during the downward-only phase ranged from 0.908886 to 1.004988 meters.
+The task was not completed. Model memory below describes its plan, not verified progress.
+
+FILES
+steps_taken.json: all actions with measurements, images, latency, token usage and cost.
+summary.json and api_attempts.jsonl: original run telemetry and request IDs.
+episode.mp4: verified 371-frame recording; recorded_final_frame.png: final decoded frame.
+
+EXECUTED ACTIONS
+Vector order: [dx,dy,dz,dRx,dRy,dRz,gripper].
+
+Step 01 / decision 00 / simulator steps 6–10: [0.7, -0.6, -0.7, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Need open top drawer, put front butter (lower left slim box) and chocolate pudding (dark box center) inside, close. Initial move toward front butter; calibrate image/world.
+Step 02 / decision 01 / simulator steps 11–15: [0.4, -0.4, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets butter front at pixel63,170 and pudding119,168. Cabinet right top drawer seems extended/open to left, interior153:212,108:141. Calibrating axes moving +x,-y,down from ee(-.177,-.033,1.129).
+Step 03 / decision 02 / simulator steps 16–20: [0.6, -0.8, -0.6, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Butter front pixel63,170; pudding119,168. EE high near center; moving +x,-y,down to approach butter. Need confirm image shift; cabinet top drawer open at right.
+Step 04 / decision 03 / simulator steps 21–25: [0.45, -0.7, -0.55, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Butter front pixel63,170; pudding119,168; top drawer open right. EE [-.138,-.112,1.074], gripper pixel~165,92. Test +x,-y,-z toward front butter; use shift to map camera.
+Step 05 / decision 04 / simulator steps 26–30: [0.35, -0.6, -0.3, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets: front butter (62,170), pudding (119,168). Top drawer open at right (180,122). EE [-.147,-.113,1.081], grip ~167,85. Trying +x,-y,-z to go front-left.
+Step 06 / decision 05 / simulator steps 31–35: [0.4, -0.4, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter at (62,169), pudding (119,168). EE [-.111,-.128,1.138], gripper (163,79). Calibrating +x,-y,-z to approach tabletop targets. Drawer open at (186,121).
+Step 07 / decision 06 / simulator steps 36–40: [-0.8, -0.3, -0.6, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets front butter (62,169), pudding (119,168); drawer open right. EE (-.015,-.169,1.181) at ~(195,81). Moving -x,-y,down to calibrate toward butter.
+Step 08 / decision 07 / simulator steps 41–45: [-0.3, -0.5, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter at (62,169), pudding (119,168). EE at (129,70), world (.016,-.209,1.182). Need map motion; moving -x,-y,down toward left-front butter. Drawer open at right.
+Step 09 / decision 08 / simulator steps 46–50: [0.0, -0.65, -0.8, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets: front butter (63,169), pudding (119,168); open top drawer at right. EE (.033,-.254,1.179), image ~128,75. Moving -y and down to calibrate projection and approach butter.
+Step 10 / decision 09 / simulator steps 51–55: [-0.6, -0.4, -0.6, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter at (63,169), pudding (119,168); top drawer open right. EE (.046,-.301,1.143), fingers~(126,74). Approach down with -x/-y; calibrating horizontal projection.
+Step 11 / decision 10 / simulator steps 56–60: [-0.5, -0.5, -1.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Target front butter pixel(63,170), pudding(119,168), open top drawer right. EE(.037,-.327,1.139), gripper around(127,65). Descending and calibrating -x,-y image motion; table likely z~.8.
+Step 12 / decision 11 / simulator steps 61–65: [-0.4, -0.5, -1.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets: front butter(63,170), pudding(119,168), open top drawer at right. EE(.035,-.341,1.137) projects gripper~127,67. Moving down and toward left; need calibrate world XY from next image.
+Step 13 / decision 12 / simulator steps 66–70: [0.5, 0.0, -0.6, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets front butter(63,170), pudding(119,168); top drawer open right(195,128). EE(.035,-.345,1.137), gripper~127,70. Testing +x and -z to calibrate screen direction.
+Step 14 / decision 13 / simulator steps 71–75: [-0.5, 0.8, -0.7, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Robot base is at (128,63); actual gripper far right (246,103), not base. Front butter(63,170), pudding(119,168), open drawer near(193,125). Test -x,+y,-z from EE(.043,-.347,1.138).
+Step 15 / decision 14 / simulator steps 76–80: [0.6, 1.0, -0.7, 0.0, 0.0, 0.0, -1.0]
+  Model memory: EE at (.037,-.325,1.139), image far right ~242,104. +y likely left, +x toward front/down. Move toward front butter(63,170); pudding(119,168), drawer right open.
+Step 16 / decision 15 / simulator steps 81–85: [0.35, 0.55, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Objects: front butter at(63,170), back butter(65,149), pudding(119,168); cabinet right open. EE likely gripper at(128,68), not far-right wrist. Moving +x,+y and down toward front butter.
+Step 17 / decision 16 / simulator steps 86–90: [0.45, 0.4, -0.8, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter(62,170), back butter(65,149), pudding(119,169), bowl(131,140). EE at(.070,-.265,1.137), gripper top-center(128,65). Test +x,+y and down toward front butter; cabinet open at right.
+Step 18 / decision 17 / simulator steps 91–95: [0.7, -0.6, -0.8, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets front butter(63,170), back butter(65,149), pudding(119,169). EE(.077,-.258,1.137), gripper(127,67). Calibrating +x,-y,-z to descend and move toward butter; top drawer open right.
+Step 19 / decision 18 / simulator steps 96–100: [0.2, -0.6, -1.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets front butter(63,170), back butter(65,149), pudding(119,169). EE(.079,-.272,1.137), gripper(127,67). Descend, shift -y toward butter. Top drawer open right.
+Step 20 / decision 19 / simulator steps 101–105: [0.0, -0.5, -0.65, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter at(63,170), pudding(119,169), top drawer open right. EE(.081,-.276,1.137). Descending and -y toward butter; need map planar motion.
+Step 21 / decision 20 / simulator steps 106–110: [0.5, 0.9, -0.4, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter orange at(63,170), pudding brown(119,169); open cabinet top drawer right. EE(.082,-.278,1.137), gripper far right. Hypothesis +y moves image left, +x toward front. Move +y,+x down.
+Step 22 / decision 21 / simulator steps 111–115: [0.4, 1.0, -0.4, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Objects: front butter orange (63,169), rear butter(65,149), pudding brown(119,168). Top drawer at right open. EE(.096,-.247,1.137), moving +y left and +x front, down toward table.
+Step 23 / decision 22 / simulator steps 116–120: [0.6, 0.8, -0.7, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Target front butter orange at(63,170), pudding(119,168). Top drawer right open. EE(.109,-.210,1.136), gripper projects~(125,75); +y left,+x front/down image. Moving left/front/down to butter.
+Step 24 / decision 23 / simulator steps 121–125: [0.45, 0.7, -0.9, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter(63,170), pudding(119,168). Top drawer right open. EE(.119,-.197,1.136); gripper at~(125,75). +y left,+x front/down. Moving toward butter and descending.
+Step 25 / decision 24 / simulator steps 126–130: [0.45, 0.8, -0.9, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Target front butter at(63,170), pudding(119,168), top drawer open right. EE(.119,-.196,1.135), overhead grip. +y left,+x down/front. Move left & descend toward butter.
+Step 26 / decision 25 / simulator steps 131–135: [0.3, 1.0, -0.3, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets: front butter pixel(63,170), pudding(119,168); open top drawer right. EE(.119,-.196,1.135). +y left,+x front/down. Moving left toward butter, open fingers.
+Step 27 / decision 26 / simulator steps 136–140: [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter at (63,169), pudding (119,167). Top drawer on right. EE(.121,-.172,1.136). +y image left, +x image down. Translating toward butter with gripper open.
+Step 28 / decision 27 / simulator steps 141–145: [0.4, 1.0, -0.2, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets: front butter (63,169), pudding (119,167); cabinet right. EE(.121,-.116,1.137), gripper ~180,144. +y projects left, +x down. Move left/forward at safe height.
+Step 29 / decision 28 / simulator steps 146–150: [0.25, 1.0, 0.0, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets front butter(63,169), pudding(119,168), cabinet right. EE(.135,-.050,1.120). +y projects left, +x down. Moving left above butter, gripper open; drawer still must load and close.
+Step 30 / decision 29 / simulator steps 151–155: [0.1, 0.8, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Targets front butter at(63,169), pudding(119,168). EE(.141,.016,1.107). +y projects left,+x down. Moving above front butter open; cabinet drawer right needs load then close.
+Step 31 / decision 30 / simulator steps 156–160: [0.0, 0.55, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter at(63,169), pudding(119,169). EE(.139,.071,1.070), gripper midpoint ~95,165. +y projects left, +x down. Shift left to butter and descend; cabinet top drawer on right.
+Step 32 / decision 31 / simulator steps 161–165: [0.0, 0.7, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter target ~63,169; pudding119,169. EE(.133,.111,1.040), gripper midpoint~86,171. +y left, +x down. Align left over butter and descend cautiously. Cabinet top drawer right.
+Step 33 / decision 32 / simulator steps 166–170: [0.0, 0.0, -0.65, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Gripper centered over front butter (~64,175), pudding at119,168. EE(.126,.153,1.005). Descending open for butter grasp; +y screen-left, +x screen-down. Cabinet top drawer right.
+Step 34 / decision 33 / simulator steps 171–175: [0.0, 0.0, -0.65, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Over front butter left foreground, EE(.119,.162,.959) descending open. Butter occluded by gripper; pudding brown at119,168. Cabinet top drawer right appears open. +y screen-left,+x screen-down.
+Step 35 / decision 34 / simulator steps 176–180: [0.0, 0.0, -0.8, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Descending over front butter occluded beneath gripper at screen65,185. EE(.112,.161,.911); pudding119,168; cabinet top drawer open upper right. +y left,+x down.
+Step 36 / decision 35 / simulator steps 181–185: [0.0, 0.0, -0.25, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Descending to front butter under gripper screen65,185. EE(.111,.162,.909), pudding119,168; open cabinet upper right. +y left,+x down. Need close grasp soon.
+Step 37 / decision 36 / simulator steps 186–190: [0.0, 0.0, -0.3, 0.0, 0.0, 0.0, -1.0]
+  Model memory: At front butter screen65,190 mostly occluded by gripper; EE(.111,.161,.909) lowering slightly to grasp. Pudding119,168. Cabinet open upper-right; +y left,+x down.
+Step 38 / decision 37 / simulator steps 191–195: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper near screen65,192; lowering to grasp. EE(.111,.161,.909). Pudding119,168. Cabinet open upper-right. +y screen left,+x down.
+Step 39 / decision 38 / simulator steps 196–200: [0.0, 0.0, -0.32, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper near65,192; lowering grasp. EE(.112,.162,.909). Pudding119,168. Cabinet open upper-right. +y screen left,+x down.
+Step 40 / decision 39 / simulator steps 201–205: [0.0, 0.0, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper (~65,192); lowering to grasp from EE(.112,.162,.909). Pudding119,168. Open cabinet upper-right. +y screen left,+x down.
+Step 41 / decision 40 / simulator steps 206–210: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Lowering onto front butter hidden under gripper at ~65,192. EE(.112,.162,.909); pudding119,168. Open cabinet top drawer upper-right. +y screen left,+x down.
+Step 42 / decision 41 / simulator steps 211–215: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Lowering to front butter beneath gripper (~65,192). EE(.112,.162,.909). Pudding119,168; top drawer open upper-right. +y screen left,+x down. Need grasp butter.
+Step 43 / decision 42 / simulator steps 216–220: [0.0, 0.0, -0.55, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Lowering to front butter beneath gripper (~65,193). EE(.112,.162,.909); pudding119,168. Top drawer open right. +y screen left,+x down. Grasp butter once fingers at block.
+Step 44 / decision 43 / simulator steps 221–225: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Lowering onto front butter hidden under gripper (~65,193). EE(.112,.162,.909). Pudding119,168; open top drawer right. +y left,+x down. Close after low approach.
+Step 45 / decision 44 / simulator steps 226–230: [0.0, 0.0, -0.14, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Aligned front butter hidden below gripper (~65,193), lowering to grasp. EE(.112,.162,.909). Pudding119,168; open top drawer right. +y left,+x down.
+Step 46 / decision 45 / simulator steps 231–235: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Lowering onto front butter under gripper (~65,198). EE(.112,.162,.909); pudding119,168. Cabinet top drawer open at right (~185,121). +y left,+x down.
+Step 47 / decision 46 / simulator steps 236–240: [0.0, 0.0, -0.55, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Descending on front butter hidden under gripper (~65,198). EE(.112,.162,.909) before descent; pudding119,168. Open top drawer at right (~185,121). +y left,+x down.
+Step 48 / decision 47 / simulator steps 241–245: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Gripper aligned over front butter (~65,198), EE(.112,.162,.909). Descend to grasp. Pudding119,168. Open top drawer right(~185,121); +y left,+x down.
+Step 49 / decision 48 / simulator steps 246–250: [0.0, 0.0, -0.25, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Aligned over front butter (~65,198), EE(.112,.162,.909), lowering open gripper. Pudding119,168. Open top drawer right(~185,121); +y left,+x down.
+Step 50 / decision 49 / simulator steps 251–255: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Aligned over front butter under gripper(~65,198), EE(.112,.162,.909). Lowering for grasp. Pudding119,168. Top drawer open right(~185,121); +y left,+x down.
+Step 51 / decision 50 / simulator steps 256–260: [0.0, 0.0, -0.6, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Over front butter at ~65,198; EE(.112,.162,.909), descending to grasp. Pudding119,168. Open top drawer right185,121. +y left,+x down.
+Step 52 / decision 51 / simulator steps 261–265: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Over front butter ~65,198; EE(.112,.162,.909) descending grasp. Pudding119,168. Open top drawer right185,121. +y left,+x down.
+Step 53 / decision 52 / simulator steps 266–270: [0.0, 0.0, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Over front butter ~65,198; EE(.113,.162,.909), lowering to grasp. Pudding119,168. Open top drawer right185,121. +y left,+x down.
+Step 54 / decision 53 / simulator steps 271–275: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Over front butter ~65,198; EE(.113,.162,.909), descending open to grasp. Pudding119,168. Open top drawer right185,121. +y left,+x down.
+Step 55 / decision 54 / simulator steps 276–280: [0.0, 0.0, -0.25, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Over front butter ~65,198; EE(.113,.162,.909), lower open to grasp. Pudding119,168. Open top drawer right185,121. +y left,+x down.
+Step 56 / decision 55 / simulator steps 281–285: [0.0, 0.0, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Aligned over front butter ~65,198, lowering open. EE(.113,.162,.909). Pudding119,168. Open top drawer right185,121. +y left,+x down.
+Step 57 / decision 56 / simulator steps 286–290: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Aligned front butter ~65,198 under gripper. Lowering to grasp; EE(.113,.162,.909). Pudding119,168. Open top drawer185,121. +y left,+x down.
+Step 58 / decision 57 / simulator steps 291–295: [0.0, 0.0, -0.12, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter ~65,198 beneath gripper; lowering carefully to grasp. EE(.113,.162,.909). Pudding119,168. Open top drawer185,121. +y left,+x down.
+Step 59 / decision 58 / simulator steps 296–300: [0.0, 0.0, -0.4, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter beneath gripper ~65,198. Lowering to grasp from EE(.113,.162,.909). Pudding119,168. Open top drawer185,121. +y left,+x down.
+Step 60 / decision 59 / simulator steps 301–305: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter hidden under gripper ~65,198; EE(.113,.162,.909). Lowering 0.5 to grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 61 / decision 60 / simulator steps 306–310: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter occluded under gripper at ~65,198. EE(.113,.162,.909) lowering to grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 62 / decision 61 / simulator steps 311–315: [0.0, 0.0, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter occluded under gripper ~65,198. EE(.113,.162,.909) lowering a little before closing. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 63 / decision 62 / simulator steps 316–320: [0.0, 0.0, -0.3, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter occluded under gripper ~65,198. EE(.113,.162,.909), lowering slightly to grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 64 / decision 63 / simulator steps 321–325: [0.0, 0.0, -0.25, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter occluded under gripper ~65,198. EE(.113,.162,.909), lowering for grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 65 / decision 64 / simulator steps 326–330: [0.0, 0.0, -0.6, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,198; EE(.113,.162,.909) lowering another step for grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 66 / decision 65 / simulator steps 331–335: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,198; EE(.113,.162,.909) descending .025 for grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 67 / decision 66 / simulator steps 336–340: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,198; EE(.113,.162,.909) lowering .025 to grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 68 / decision 67 / simulator steps 341–345: [0.0, 0.0, -0.4, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,198; lowering before close. EE(.113,.162,.909). Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 69 / decision 68 / simulator steps 346–350: [0.0, 0.0, -0.4, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,198; descending to grasp. EE(.113,.162,.909). Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 70 / decision 69 / simulator steps 351–355: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,198; lowering to grasp. EE(.113,.162,.909). Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 71 / decision 70 / simulator steps 356–360: [0.0, 0.0, -0.3, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,198; lowering then close. EE(.113,.162,.909). Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 72 / decision 71 / simulator steps 361–365: [0.0, 0.0, -0.35, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter occluded under gripper ~65,198. Lowering to grasp. EE(.114,.162,.909); pudding119,168; open top drawer185,121. +y left,+x down.
+Step 73 / decision 72 / simulator steps 366–370: [0.0, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Front butter under gripper ~65,191; descending from EE(.114,.162,.909) to grasp. Pudding119,168; open top drawer185,121. +y left,+x down.
+Step 74 / decision 73 / simulator steps 371–375: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0]
+  Model memory: Descending to grasp front butter occluded beneath gripper near65,191. EE(.114,.162,.909). Pudding119,168; open top drawer185,121. +y left,+x down.

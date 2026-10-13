@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "output_video": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1712,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "40/1",
+    "nb_read_frames": "1233",
+    "duration_seconds": 30.825,
+    "fps": 40.0,
+    "frames": 1233
+  },
+  "output_sha256": "458b36a86d1a1881e6b24176dd1aea75ff900120a982b4a9016b620f0d8a1192",
+  "source_videos_sha256_unchanged": true,
+  "selected_examples": 6,
+  "simultaneous_camera_views": 12,
+  "speed_multiplier": 4,
+  "notes": "Camera pairs are synchronized within each run. End-score tags appear when a run finishes; every clip's final frame is held to the shared ending.",
+  "visual_review": "Start, middle and ending frames inspected; all twelve views are visible, camera/model/task labels fit, and final-score tags and held ending frames are correct.",
+  "local_links_verified": 20
+}

@@ -1,0 +1,22 @@
+{
+  "verified_on": "2026-10-11",
+  "batch_id": "task0_uncapped_20261011_203025",
+  "sources": {
+    "gpt-6-astra": "https://developers.openai.com/api/docs/pricing",
+    "claude-opus-5-5": "https://platform.claude.com/docs/en/models/opus-5-5/overview"
+  },
+  "frozen_snapshots": {
+    "gpt-6-astra": "../../pricing-astra.json",
+    "claude-opus-5-5": "../../pricing-opus.json"
+  },
+  "verified_standard_rates_per_million_tokens": {
+    "gpt-6-astra": {
+      "short": {"input": 10, "cached_input": 1, "cache_write": 12.5, "output": 50},
+      "long": {"input": 20, "cached_input": 2, "cache_write": 25, "output": 75}
+    },
+    "claude-opus-5-5": {
+      "input": 4, "cached_input": 0.2, "cache_write_5m": 5, "output": 20
+    }
+  },
+  "note": "Fetched official pricing before launching this batch. Snapshot hashes are frozen in the batch manifest and checked before every episode. Costs remain public-rate estimates, and missing usage stays unresolved. No spending cap or request reservation is applied."
+}

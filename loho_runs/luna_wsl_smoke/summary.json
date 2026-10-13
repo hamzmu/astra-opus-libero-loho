@@ -1,0 +1,261 @@
+{
+  "runtime": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.2.5",
+    "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+    "repo": "/root/projects/LIBERO-LOHO",
+    "revision": "600709f7c5f19a370c477216f51c8d6b163c6164",
+    "versions": {
+      "numpy": "1.22.4",
+      "mujoco": "2.3.7",
+      "robosuite": "1.4.0",
+      "torch": "1.11.0+cpu",
+      "gym": "0.25.2",
+      "opencv-python": "4.6.0.66"
+    },
+    "render_backend": "osmesa"
+  },
+  "benchmark": "libero_loho_new",
+  "task_id": 0,
+  "goal": "put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it",
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "model_id": "gpt-6-luna",
+  "effort": "high",
+  "camera": "agentview",
+  "rgb_resolution": [
+    256,
+    256
+  ],
+  "orientation": "rotate180",
+  "action_repeat": 5,
+  "max_decisions": 5,
+  "settle_steps": 5,
+  "max_output_tokens_per_call": 2048,
+  "system_prompt": "You control a simulated Panda robot arm using visual feedback only.\nComplete the user's manipulation task. Each decision receives ONE current RGB\nimage from the same fixed camera. You have no depth, object coordinates, joint\npositions, end-effector pose, reward, success checks, or hidden simulation state.\nReturn ONE normalized 7D OSC_POSE action in this order:\n[dx, dy, dz, dRx, dRy, dRz, gripper].\nThe first six numbers are relative controller commands in [-1,1], not meters or\ndegrees. Translation is in the world/base frame; +Z moves upward. The gripper\nuses -1 to open and +1 to close. The action repeats for 5 simulation steps.\nUse small corrections and the next image. No higher-level grasp/place or motion\nplanning tools. Return only JSON with action and memory. Keep memory under 300\ncharacters. All seven action values must be finite.",
+  "decisions": [
+    {
+      "decision_index": 0,
+      "input_frame": "decision_000.png",
+      "raw_action": [
+        -0.5,
+        -0.6,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "action": [
+        -0.5,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "action_clipped": false,
+      "memory": "Move over the front butter; then lower, grasp, and transfer it to the open drawer.",
+      "request_id": "req_c603abdd78924c7aa764103256f144e9",
+      "response_id": "resp_0c95557a0d901790016ac9990c347c87d297820f15fe5435d3",
+      "returned_model": "gpt-6-luna",
+      "usage": {
+        "input_tokens": 352,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 702,
+        "output_tokens_details": {
+          "reasoning_tokens": 648
+        },
+        "total_tokens": 1054
+      },
+      "api_latency_seconds": 8.983471946965437,
+      "input_text": "Task: put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it\nPrevious self-generated memory: \nChoose the next action using only the attached camera image.",
+      "image_jpeg_sha256": "969fa937f471b52d9e1b097a2c4eb47d8ac8827b92e02ff9dc28369066a70c4e",
+      "executed_steps": 5
+    },
+    {
+      "decision_index": 1,
+      "input_frame": "decision_001.png",
+      "raw_action": [
+        -0.45,
+        0.5,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "action": [
+        -0.45,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "action_clipped": false,
+      "memory": "Move above the front butter packet; then lower and close the gripper to grasp it.",
+      "request_id": "req_0a16e172f8964390b8a51ad9ecb292f8",
+      "response_id": "resp_086c82edc58025dc016ac99914d2c487d2badf141e501567f1",
+      "returned_model": "gpt-6-luna",
+      "usage": {
+        "input_tokens": 370,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 920,
+        "output_tokens_details": {
+          "reasoning_tokens": 867
+        },
+        "total_tokens": 1290
+      },
+      "api_latency_seconds": 10.474448619992472,
+      "input_text": "Task: put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it\nPrevious self-generated memory: Move over the front butter; then lower, grasp, and transfer it to the open drawer.\nChoose the next action using only the attached camera image.",
+      "image_jpeg_sha256": "1f43eefd421538b6fcb2c8ecb61804e61e84c4890bca8885ab81ff3241833b83",
+      "executed_steps": 5
+    },
+    {
+      "decision_index": 2,
+      "input_frame": "decision_002.png",
+      "raw_action": [
+        -0.35,
+        0.35,
+        -0.12,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "action": [
+        -0.35,
+        0.35,
+        -0.12,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "action_clipped": false,
+      "memory": "Move toward the front orange butter packet; align above it before lowering to grasp.",
+      "request_id": "req_484dcfec8a38441b904619972f53cd80",
+      "response_id": "resp_0cc6a330e77067f1016ac9991f79bc87d2b70d26579646f724",
+      "returned_model": "gpt-6-luna",
+      "usage": {
+        "input_tokens": 369,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 936,
+        "output_tokens_details": {
+          "reasoning_tokens": 883
+        },
+        "total_tokens": 1305
+      },
+      "api_latency_seconds": 10.699659533973318,
+      "input_text": "Task: put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it\nPrevious self-generated memory: Move above the front butter packet; then lower and close the gripper to grasp it.\nChoose the next action using only the attached camera image.",
+      "image_jpeg_sha256": "8de29e136e3bc1556f597c6c60e1619e83e73fb64d3f2518f8cbc00419b1af4e",
+      "executed_steps": 5
+    },
+    {
+      "decision_index": 3,
+      "input_frame": "decision_003.png",
+      "raw_action": [
+        -0.45,
+        0.45,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "action": [
+        -0.45,
+        0.45,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "action_clipped": false,
+      "memory": "Move toward the front orange butter packet; align above it before lowering to grasp.",
+      "request_id": "req_5f93ea4152d24bfcbe899929e5d1a4f5",
+      "response_id": "resp_01208126352feb4d016ac9992a767c87d2aa5e56a21d60d85e",
+      "returned_model": "gpt-6-luna",
+      "usage": {
+        "input_tokens": 367,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 761,
+        "output_tokens_details": {
+          "reasoning_tokens": 710
+        },
+        "total_tokens": 1128
+      },
+      "api_latency_seconds": 9.185482425964437,
+      "input_text": "Task: put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it\nPrevious self-generated memory: Move toward the front orange butter packet; align above it before lowering to grasp.\nChoose the next action using only the attached camera image.",
+      "image_jpeg_sha256": "46c9852b4839d5837a506f0e799adeb3b61f176aae663616649cbda94c8936de",
+      "executed_steps": 5
+    },
+    {
+      "decision_index": 4,
+      "input_frame": "decision_004.png",
+      "raw_action": [
+        -0.45,
+        0.55,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "action": [
+        -0.45,
+        0.55,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "action_clipped": false,
+      "memory": "Moving toward the front orange butter packet; continue aligning above it before lowering to grasp.",
+      "request_id": "req_46cda36a9077428d8aca41cf1998ef3d",
+      "response_id": "resp_05044c9dddaf241f016ac99933e90087d2a97caf5b737bcc12",
+      "returned_model": "gpt-6-luna",
+      "usage": {
+        "input_tokens": 367,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 614,
+        "output_tokens_details": {
+          "reasoning_tokens": 562
+        },
+        "total_tokens": 981
+      },
+      "api_latency_seconds": 7.735912086965982,
+      "input_text": "Task: put front butter and the chocolate pudding into the wooden cabinet top drawer and then close it\nPrevious self-generated memory: Move toward the front orange butter packet; align above it before lowering to grasp.\nChoose the next action using only the attached camera image.",
+      "image_jpeg_sha256": "247323b6988dc0c7f91b9bc0f7d02eae9cc7e73b20786306e7f72b848857a0e9",
+      "executed_steps": 5
+    }
+  ],
+  "success": false,
+  "simulator_action_steps": 25,
+  "decisions_used": 5,
+  "invalid_action_count": 0,
+  "estimated_api_cost_usd": null,
+  "termination_reason": "decision_budget",
+  "elapsed_seconds": 51.17862731497735,
+  "total_input_tokens": 1825,
+  "total_output_tokens": 3933
+}

@@ -1,0 +1,22 @@
+{
+  "currency": "USD",
+  "verified_on": "2026-10-10",
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "cache_formula_source": "https://developers.openai.com/api/docs/guides/prompt-caching",
+  "model": "gpt-6-astra",
+  "long_context_threshold": 272000,
+  "rates_per_million_tokens": {
+    "default": {
+      "short": {"input": 10.00, "cached_input": 1.00, "cache_write": 12.50, "output": 50.00},
+      "long": {"input": 20.00, "cached_input": 2.00, "cache_write": 25.00, "output": 75.00}
+    },
+    "priority": {
+      "short": {"input": 20.00, "cached_input": 2.00, "cache_write": 25.00, "output": 100.00},
+      "long": {"input": 40.00, "cached_input": 4.00, "cache_write": 50.00, "output": 150.00}
+    },
+    "flex": {
+      "short": {"input": 5.00, "cached_input": 0.50, "cache_write": 6.25, "output": 25.00},
+      "long": {"input": 10.00, "cached_input": 1.00, "cache_write": 12.50, "output": 37.50}
+    }
+  }
+}

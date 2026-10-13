@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    0,
+    1,
+    4
+  ],
+  "videos": [
+    "task0_astra_opus_wrist_static_4x.mp4",
+    "task1_astra_opus_wrist_static_4x.mp4",
+    "task4_astra_opus_wrist_static_4x.mp4"
+  ],
+  "examples": 6,
+  "camera_views": 12,
+  "source_data_unchanged": true
+}

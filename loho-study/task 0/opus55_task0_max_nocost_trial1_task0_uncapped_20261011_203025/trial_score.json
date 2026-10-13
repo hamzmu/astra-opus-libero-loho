@@ -1,0 +1,235 @@
+{
+  "source_run_id": "c52e9b71-0275-4b85-9392-8d4e970c5cdc",
+  "source_summary_sha256": "5ae2c771d6257403cb487d260e69a9ce026bedaddc78d690d2dd7c00c5d5a600",
+  "real_api_calls": 0,
+  "replay_verified": true,
+  "verified_observation_images": 62,
+  "maximum_proprioception_error": 0.0,
+  "trial_status": "task_completed",
+  "initial_trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 0,
+    "completion_fraction": 0.0,
+    "completion_percent": 0.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 0.0,
+    "last_scored_simulator_step": 5,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      }
+    ]
+  },
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": true,
+    "goals_total": 3,
+    "goals_satisfied": 3,
+    "completion_fraction": 1.0,
+    "completion_percent": 100.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 100.0,
+    "last_scored_simulator_step": 484,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 197
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 438
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 484
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "decision_index": 0,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 1,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 2,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 3,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 4,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 5,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 6,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 7,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 8,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 9,
+      "completion_percent": 0.0
+    },
+    {
+      "decision_index": 10,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 11,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 12,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 13,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 14,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 15,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 16,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 17,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 18,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 19,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 20,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 21,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 22,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 23,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 24,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 25,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 26,
+      "completion_percent": 33.333333333333336
+    },
+    {
+      "decision_index": 27,
+      "completion_percent": 66.66666666666667
+    },
+    {
+      "decision_index": 28,
+      "completion_percent": 66.66666666666667
+    },
+    {
+      "decision_index": 29,
+      "completion_percent": 66.66666666666667
+    },
+    {
+      "decision_index": 30,
+      "completion_percent": 100.0
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": {
+    "configuration": true,
+    "calls_accounted": true,
+    "steps_accounted": true,
+    "goal_score_consistent": true,
+    "budgets_respected": true,
+    "all_calls_expected_model": true,
+    "effort_matches_requested_policy": true,
+    "cost_accounting_matches_journal": true,
+    "video_agentview": true,
+    "video_robot0_eye_in_hand": true
+  },
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 1032,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 1032,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "summary_sha256": "295746604b23c7161d0f2c1b6f762d1a827e6cbd24743070a40d365a65486de9",
+  "note": "Verifies recording and accounting integrity; task success is reported separately."
+}

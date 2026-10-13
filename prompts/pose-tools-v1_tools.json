@@ -1,0 +1,100 @@
+[
+  {
+    "type": "function",
+    "name": "move_to",
+    "strict": false,
+    "description": "Move to absolute named end-effector targets. Unnamed pose dimensions hold measured values; an unnamed gripper preserves its last commanded opening to retain grasp pressure. Motion is interpolated at 25% of dimension range per second, with a 5% per-step ceiling. A move may last at most 10 seconds; split larger moves. Bounds: {'x': [-0.5, 0.5], 'y': [-0.6, 0.6], 'z': [0.905, 1.4], 'roll': [-1.5707963267948966, 1.5707963267948966], 'pitch': [-1.5707963267948966, 1.5707963267948966], 'yaw': [-3.141592653589793, 3.141592653589793], 'gripper': [0.0, 1.0]}",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "targets": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number",
+              "description": "World coordinate in meters"
+            },
+            "y": {
+              "type": "number",
+              "description": "World coordinate in meters"
+            },
+            "z": {
+              "type": "number",
+              "description": "World coordinate in meters"
+            },
+            "roll": {
+              "type": "number",
+              "description": "Radians relative to the trial start orientation"
+            },
+            "pitch": {
+              "type": "number",
+              "description": "Radians relative to the trial start orientation"
+            },
+            "yaw": {
+              "type": "number",
+              "description": "Radians relative to the trial start orientation"
+            },
+            "gripper": {
+              "type": "number",
+              "description": "0 fully closed, 1 fully open"
+            }
+          },
+          "additionalProperties": false
+        },
+        "note": {
+          "type": "string",
+          "description": "One or two sentences: what you see and why this move."
+        }
+      },
+      "required": [
+        "targets",
+        "note"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "type": "function",
+    "name": "done",
+    "strict": false,
+    "description": "End the trial when you believe the task is complete. The evaluator determines success.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "hindsight": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "summary",
+        "hindsight"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "type": "function",
+    "name": "give_up",
+    "strict": false,
+    "description": "End an unsuccessful trial and explain the obstacle and what you learned.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "reason": {
+          "type": "string"
+        },
+        "hindsight": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "reason",
+        "hindsight"
+      ],
+      "additionalProperties": false
+    }
+  }
+]

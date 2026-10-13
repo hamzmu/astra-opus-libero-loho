@@ -1,0 +1,166 @@
+ASTRA TASK 0 - CALIBRATED-V2 RESULT
+
+Finished at the 74-decision budget. No controller remains running.
+Configuration: WSL, task 0, stored state 0, seed 0, RGB + proprioception, high reasoning.
+Prompt: calibrated-v2; action repeat: 5; max output: 8192; estimated cost cap: $10.
+The first RGB image, robot state, system prompt and control settings matched the Luna trial.
+Task goal completion: 0% (0/3 final conditions). Full-task success: false.
+Executed 74 actions / 370 action steps plus 5 settling steps.
+Elapsed: 557.78s. API latency: 521.91s total, 7.05s mean.
+Estimated API cost: $1.7672355 USD; all 74 response usages fully priced.
+No retries or API errors. Gripper-close command count: 31.
+The model repeatedly closed and lifted, reopened and adjusted alignment after unverified grasps.
+It switched to a pudding candidate, then attempted drawer closure in its last three decisions.
+Model memory is narration, not independent verification of successful grasps.
+None of the three final goal conditions was ever satisfied at a scored simulator step.
+Video decoded and verified: 371 frames, 20 FPS, 256x256 RGB.
+
+EXECUTED ACTIONS - [dx,dy,dz,dRx,dRy,dRz,gripper]
+Decision 00: [0.65, 0.55, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Subgoal grasp front butter (left pair, nearer image bottom at 63,170); pudding 119,166. Cabinet top drawer appears open right. +X image-down,+Y left. Move XY above butter with clearance.
+Decision 01: [0.6, 0.9, -0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Subgoal front butter at image63,170 (back butter65,149); pudding119,168. +Y left,+X down; cabinet open top drawer right. Approach butter above with open fingers; z floor0.9.
+Decision 02: [0.65, 0.55, -0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter (63,170), back butter65,149; pudding119,168. +Y image-left,+X down. Gripper above table z1.134; move +X,+Y and lower safely toward butter.
+Decision 03: [0.6, 0.5, -0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Aligning open gripper above front butter (63,169); back butter(65,150), pudding(119,168). +Y left,+X down, lowering shifts image down. z1.098; approach butter then grasp, lift verify.
+Decision 04: [0.6, 0.1, -0.25, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approaching front butter(63,169), pudding(119,168). Gripper projects ~72,111 above/behind butter. +X down,+Y left. z1.062; move forward and lower cautiously, align before close.
+Decision 05: [0.5, 0.06, -0.45, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Approach front butter at (62,169); pudding (119,168). +X down,+Y left. Open hand center~65,128 above butter; lower toward z~.96 while advancing X cautiously. Cabinet open drawer right.
+Decision 06: [0.45, 0.02, -0.25, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Target front butter (62,169), pudding (119,168). +X image-down,+Y left. Open gripper tips now near rear butter (64,149); advance X and lower gently to front butter. Table z=.9; avoid site below ~.94.
+Decision 07: [0.4, 0.0, -0.25, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter orange at (63,168), pudding (119,168). +X down,+Y left. Gripper moving forward over butter, open. z=.994 before step; lower toward grasp ~.965, then close/lift verify. Cabinet top drawer right is open.
+Decision 08: [0.07, 0.0, -0.12, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Front butter at (63,170) between fingertips; closing with small lower. eef .056,.179,.976. Verify settled grasp then lift. Pudding (119,168); open top drawer right. +X down,+Y left.
+Decision 09: [0.0, 0.0, 0.55, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Testing front butter grasp: fingers closed .0254 at eef .068,.180,.970; lift and visually verify butter rises. Pudding at (119,168). Open top drawer right. +X down,+Y left.
+Decision 10: [0.12, -0.06, -0.35, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter grasp failed: fingers nearly empty .004 and butter remains below hand. Reopen, small +X/-Y and lower to straddle butter. Pudding pixel119,169; open drawer right. +X down,+Y left.
+Decision 11: [0.04, -0.02, -0.22, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Regrasp front butter below hand at px60,174. Opening fully while lowering to site~0.976 (table .9). +X down,+Y left. Pudding px119,168; drawer open upper right.
+Decision 12: [0.1, 0.0, -0.12, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Regrasp front butter px60,176: open fingers bracket it; small +X/down and lower to site~.97, then close. Pudding px119,168; open drawer upper right. +Y left,+X down.
+Decision 13: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Closing on front butter at eef .094,.178,.968. Verify nonzero finger gap then lift; butter was px60,176. Pudding px119,168. Open top drawer upper right. +Y left,+X down.
+Decision 14: [0.0, 0.0, 0.35, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Testing front-butter grasp with lift from .095,.179,.967; close gap .0253 not settled. Pudding px119,168. Drawer upper-right. +Y left,+X down. Check butter follows before transport.
+Decision 15: [0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Verifying front butter: closing gap shrank to .004 at z.989 (possibly empty); lift farther to expose object/table. At x.098 y.180. Pudding px119,168; top drawer upper-right. +Y left,+X down.
+Decision 16: [0.1, -0.05, -0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter grasp was empty (q~.001); butter still px61,173 under hand. Open and lower for regrasp, slight +X/-Y. Pudding px119,168. Top drawer open right. Table z=.9; current site1.023.
+Decision 17: [0.1, -0.1, -0.35, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Regrasp front butter px60,175; hand px53,158. Lowering open toward site .94, small +X/-Y. Previous .967 close empty, likely too high. Pudding px119,168. Top drawer open right.
+Decision 18: [0.05, -0.03, -0.25, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter under hand near px60,178; pudding px119,168; open top drawer at right. Lower to ~.95 then grasp. Prior close at .967 empty so need lower, monitor contact. +Y left,+X down.
+Decision 19: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: At butter grasp height .949, centered near px60,178 with open fingers. Close then lift to verify. Pudding px119,168; open cabinet top drawer right. +Y left,+X down.
+Decision 20: [0.0, 0.0, 0.65, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter close at (.105,.167,.946), fingers .025 vs .04 open. Lift to verify object follows, then cabinet top drawer right. Pudding brown box px119,168. +Y left,+X down.
+Decision 21: [0.0, 0.0, 0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter first lift failed: fingers closed nearly empty (.004); butter likely still under hand. Lift/open to reveal and realign. Eef (.108,.168,.986). Cabinet top drawer open at image150-211,90-160; pudding119,167. +Y left,+X down.
+Decision 22: [0.4, 0.0, -0.35, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter first grasp failed; retry. Current butter visible ~62,170 below gripper, pudding119,167. Shift +X slightly while opening/lowering from z1.04. +Y image-left,+X down. Need verify grasp then cabinet top drawer.
+Decision 23: [0.12, 0.0, -0.3, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Retry butter grasp: visible orange block under gripper center ~62,176. Open fingers, lowering gently from z1.020; +X down,+Y left. Need close then lift verify. Top drawer open at image180,130; pudding119,168.
+Decision 24: [0.0, 0.0, -0.15, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter retry: centered under gripper ~58,177, eef .123,.165,.991. Lower gently once then close; fingers tips offset from site. Top drawer open at180,130; pudding119,168. +X down,+Y left.
+Decision 25: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter retry grasp at eef .119,.164,.975: close now, lift and verify object follows. Drawer open ~180,130, pudding119,168. +X image-down,+Y image-left.
+Decision 26: [0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter retry closed at .117,.164,.973. Lift now to verify; fingers .025 partial close. Drawer open ~180,130; pudding119,168. +X image-down,+Y image-left.
+Decision 27: [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter grasp likely empty (fingers .004 after lift). Lift/open for unobscured view, then realign. Drawer open at180,130; pudding119,168. +X down,+Y left; table .9.
+Decision 28: [0.0, 0.0, -0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Retry front butter at image62,174: prior close at z.973 likely too high. XY .118,.164 aligned. Lower open toward .95 then assess/close. Cabinet top drawer open at180,130; pudding119,168. +X down,+Y left.
+Decision 29: [0.0, 0.0, -0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Retry front butter x62,y176 under open hand. XY .118,.164; descending from z1.007 toward .97. Prior empty close .973; assess alignment. Top drawer open x181,y128; pudding119,168. +X down,+Y left.
+Decision 30: [0.0, 0.0, -0.18, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Front butter retry at XY .114,.162 z.969 open; object largely occluded near x64,181. Lower cautiously then close and lift verify. Top drawer open x181,128; pudding119,168. +X down,+Y left.
+Decision 31: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Closing on front butter at XY .109,.161 z.950. Check settled fingers and lift to verify. Pudding brown119,168; top drawer open181,128. +X down,+Y left.
+Decision 32: [0.0, 0.0, 0.6, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter fingers at .025 closing; lift to verify front butter follows. Cabinet top open around181,128; pudding119,168. +X down,+Y left. Need carry butter then pudding and close top drawer.
+Decision 33: [0.03, -0.02, -0.28, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter lift unverified: fingers closed to .004 likely empty. Reopen and lower carefully onto butter under gripper (~68,181). Site .978, table .9. Pudding119,168; open top drawer181,128. +X down,+Y left.
+Decision 34: [0.0, 0.0, -0.12, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter under gripper (~68,181), failed prior grasp (empty .004). Opening fully and lowering gently from z.964. Table .9. Pudding119,168; open top drawer181,128. +X down,+Y left.
+Decision 35: [0.04, -0.05, -0.04, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Attempt butter grasp at z.952, slight +X/-Y center correction. Butter mostly occluded near gripper68,178; pudding119,168. Drawer181,128. Need settled close then verify lift; +Y left,+X down.
+Decision 36: [0.0, 0.0, 0.45, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter grasp test: lifting from z.947 while closing. +Y image-left,+X down. Pudding at119,168; open top drawer cavity~181,128. Verify butter moves with hand before transport.
+Decision 37: [0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter grasp doubtful: close q=.004 at z.973. Lift to inspect below hand. Pudding brown box119,168; drawer cavity181,124. +Y left,+X down. Need attempt both then close.
+Decision 38: [0.14, 0.0, -0.28, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter still visible near65,175 below empty closed hand; retry open, move +X slightly and lower. Pudding119,168; drawer181,124. +Y left,+X down. Need both objects then push drawer closed.
+Decision 39: [0.14, 0.0, -0.4, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Retry butter under hand near65,175. Open and lower cautiously from site .993 toward .96; +X image-down,+Y left. Pudding119,168; drawer181,124. Previous close empty.
+Decision 40: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Retry butter at65,175 under fingers; site .961. Close now then lift verify. +X down,+Y left. Pudding119,168, open top drawer181,125; still need both and closing.
+Decision 41: [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter close at site .956, fingers .025; lifting to verify object. +X image-down,+Y left. Pudding119,168; top drawer open181,125. Need both then close.
+Decision 42: [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter lift failed: fingers closed to .004, no verified object. Opening and lifting to see/re-align. Site .107,.152,.999. +X down,+Y left. Pudding119,168; open top drawer181,125. Need both then close.
+Decision 43: [0.06, 0.12, -0.65, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Retry butter under hand (orange ~61,171); shift +Y slightly left and lower open from z1.048 toward .99. Prior close slipped/empty, need settle close before lifting. Pudding119,168; open drawer right.
+Decision 44: [0.08, -0.03, -0.28, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter orange under hand ~62,173; retry grasp lower gently from z1.017. Fingers straddle orange; close next then lift check. Pudding119,168 remains; drawer open right.
+Decision 45: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Closing on front butter under hand (~62,176), eef .113,.158,.992. Next lift verify. Pudding119,168. Open cabinet top drawer right at ~177,130; +Y left,+X down.
+Decision 46: [0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Lift test front butter at eef .113,.158,.988; fingers .025 closing. Need verify follows, carry to open top drawer (~177,130), then pudding (~119,168) and close. +Y left,+X down.
+Decision 47: [0.0, 0.0, -0.65, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter missed (fingers closed empty .004); butter remains ~61,174 below hand. Open and lower from z1.040 toward .96 while aligned .114,.158. Pudding119,168; drawer177,130. +Y left,+X down.
+Decision 48: [0.0, 0.0, -0.6, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Regrasp front butter occluded below hand ~61,174 at XY .115,.159; lower gently to ~.97 open. Prior close at .988 missed. Pudding119,168; open drawer177,130. +Y left,+X down.
+Decision 49: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Attempt butter grasp at XY .114,.159 z.972 (occluded by hand ~61,174). Close then lift and check. Pudding119,168; open top drawer177,130. +Y image-left,+X down. 24 decisions left after close.
+Decision 50: [0.0, 0.0, 0.7, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter close at .114,.159,z.966 fingers .025. Lift verify object under hand. Pudding119,168; open top drawer177,130. +Y left,+X down. 23 left.
+Decision 51: [0.08, 0.0, -0.85, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter lift failed: fingers collapsed .004, small butter still below hand ~65,178. Reopen/lower slightly +X for regrasp. Pudding119,168; open drawer177,130. +Y left,+X down.
+Decision 52: [0.05, 0.0, -0.3, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter regrasp under hand ~65,183; eef .117,.159,.965. Lowering another ~.02 with open fingers then close. Pudding119,168; open drawer177,130. +Y left,+X down.
+Decision 53: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter regrasp: eef .115,.158,.935, fingers visually around hidden butter ~65,187. Closing then lift/check. Pudding119,168; open top drawer177,130. +Y left,+X down.
+Decision 54: [0.0, 0.0, 0.9, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Butter grasp check: close at .113,.157,.931, q=.025. Lift now to see butter move. Pudding pixel119,168; top drawer opening177,123. +Y left,+X down. Need both objects then close drawer.
+Decision 55: [0.0, -0.35, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter lift appears empty q=.004; object remains under hand near73,182. Open and shift image-right (-Y). Pudding119,168. Drawer opening177,123. +Y left,+X down. 18 decisions left.
+Decision 56: [0.0, -0.08, -0.8, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Retry front butter: hand shifted right after empty lift; align near73,182 then descend open. EEF .119,.141,.996. Pudding119,168; drawer opening177,123. +Y left,+X down. Need grasp/lift verify then deposit and drawer close.
+Decision 57: [0.0, 0.0, -0.15, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Front butter retry closing at EEF .118,.132,.950; hand occludes target ~78,181. Next lift and verify. Pudding brown carton113,167; open drawer~180,125. +Y left,+X down. 16 decisions left need both then close.
+Decision 58: [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Front butter closed at EEF .113,.130,.931 q=.025. Lift now to verify capture. Pudding brown113,167; open top drawer180,125. +Y left,+X down. Need both objects placed then close.
+Decision 59: [-0.35, -0.45, 0.15, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Butter lift failed (fingers nearly empty). Recover aiming visible white/red front butter beside brown pudding at111,168; shift -X,-Y open. Drawer open at180,125. Need attempt both then close.
+Decision 60: [0.05, -0.9, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Recover grasp. Aim brown pudding visible at119,172 right of hand; shift -Y open at z1.015. +Y image-left,+X down. Open top drawer right at180,125. Butter still unverified; 13 moves left after this.
+Decision 61: [0.05, -0.6, -0.4, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Recover pudding grasp: brown pack at119,174, hand center~100,155. Shift -Y toward it and lower modestly; z1.022. Drawer open right180,125. Butter unverified. Need grasp lift deposit then close drawer.
+Decision 62: [0.15, 0.0, -0.45, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Pudding grasp attempt centered beneath hand near119,174. Lower gently from z1.00 then close and lift verify. Drawer open at right; butter placement unverified. 11 decisions left; must attempt drawer closure.
+Decision 63: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Pudding aligned beneath hand at tabletop z.963, closing now then lift verify. Cabinet top drawer at image right. Butter placement previously unverified; 10 decisions left, must close drawer.
+Decision 64: [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Lift pudding candidate from tabletop at x.110 y.009 z.955, verify follows. Cabinet top drawer to image right, opening near (183,119). Butter prior unverified; need place then close.
+Decision 65: [-0.35, 1.0, -0.45, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Lift showed empty close (.004); grasp failed. Recover toward visible front brown/yellow package image(62,170), left of hand: +Y left,+X down. Need secure package, place top drawer right, then close. Butter prior unverified.
+Decision 66: [0.05, 0.85, -0.5, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: Recover front package left of hand; +Y image-left,+X down. Align left and lower open then close/lift verify. 7 decisions next: must place in top open drawer at image180,120 then push drawer closed; butter status unverified.
+Decision 67: [-0.1, -0.65, -0.08, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: 7->6 left. Visible red/white pudding at image113,168, right of grip center80,172. Correct -Y (image-right) open at z~.97 then close/lift check. Top drawer open image185,118. Butter unverified.
+Decision 68: [0.02, -0.45, 0.0, 0.0, 0.0, 0.0, -1.0] (5 simulator steps)
+  Model memory: 5 decisions after this. Align gripper image-right toward pudding near113,168 using -Y; z .962 near tabletop. Then close and lift to verify; drawer opening at185,118. Butter placement unverified.
+Decision 69: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: 4 decisions left. Closing at pudding candidate under gripper, site [.0965,.0672,.9624]. Verify object on short lift next, then deposit in open top drawer and attempt closure. Butter placement remains unverified.
+Decision 70: [0.0, 0.0, 0.8, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: 3 decisions after lift: verify pudding follows. Cabinet open top drawer image upper-right of hand; +Y left, +X down. Carry toward -Y,-X with clearance then release and attempt closure. Butter unverified.
+Decision 71: [-0.9, -1.0, 0.45, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Lift left pudding on table; close nearly empty, grasp not verified. Butter also unverified. With 3 decisions left attempt final drawer closure: approach handle/front from image-left, then push -Y. +X down,+Y left.
+Decision 72: [-0.25, -0.85, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Final closure attempt: closed empty gripper moving image-right (-Y) toward top drawer front at current height. +X image-down. Butter and pudding placements not verified; pudding remained on table after lift.
+Decision 73: [-0.1, -0.8, 0.0, 0.0, 0.0, 0.0, 1.0] (5 simulator steps)
+  Model memory: Attempting top drawer closure with gentle -Y push (image-right), closed empty gripper. Neither butter nor pudding placement verified; pudding last seen on table. Drawer closure remains unverified.

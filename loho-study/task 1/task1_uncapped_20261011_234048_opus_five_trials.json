@@ -1,0 +1,336 @@
+{
+  "model_id": "claude-opus-5-5",
+  "trials": 5,
+  "successes": 3,
+  "success_rate_percent": 60.0,
+  "mean_goal_completion_percent": 80.0,
+  "api_calls": 290,
+  "action_steps": 4957,
+  "cost_complete": true,
+  "known_estimated_api_cost_usd": 44.0600766,
+  "estimated_api_cost_usd": 44.0600766,
+  "total_api_latency_seconds": 12693.765070190828,
+  "weighted_mean_api_latency_seconds": 43.7716036903132,
+  "total_elapsed_seconds": 13251.984324153978,
+  "max_effort_requests": 290,
+  "xhigh_effort_requests": 0,
+  "api_errors": 0,
+  "tool_errors": 1,
+  "episodes": [
+    {
+      "model": "opus",
+      "trial": 1,
+      "directory": "opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048",
+      "status": "complete",
+      "started_at": "2026-10-12T03:41:08.728357+00:00",
+      "pid": 4530,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T04:24:03.715214+00:00",
+      "success": false,
+      "completion_percent": 33.333333333333336,
+      "termination_reason": "model_done",
+      "calls": 64,
+      "action_steps": 1070,
+      "estimated_api_cost_usd": 8.3283206,
+      "known_estimated_api_cost_usd": 8.3283206,
+      "cost_complete": true,
+      "elapsed_seconds": 2480.9815354539896,
+      "mean_api_latency_seconds": 36.805299768969235,
+      "total_api_latency_seconds": 2355.539185214031,
+      "max_effort_requests": 64,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "goals_satisfied": 1,
+      "goals_total": 3,
+      "unsatisfied_goals": [
+        "in alphabet_soup_1 basket_1_contain_region",
+        "in tomato_sauce_1 basket_1_contain_region"
+      ],
+      "peak_completion_percent": 66.66666666666667,
+      "total_input_tokens": 10878195,
+      "total_output_tokens": 236334,
+      "total_cached_input_tokens": 10581058,
+      "total_cache_write_tokens": 296881,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 1,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1071,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1071,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "b197516262dc8e4a4c48393ac38ad318e02ad9444a5d82f8a8d47d86b384caf1"
+    },
+    {
+      "model": "opus",
+      "trial": 2,
+      "directory": "opus55_task1_max_nocost_trial2_task1_uncapped_20261011_234048",
+      "status": "complete",
+      "started_at": "2026-10-12T04:24:05.283166+00:00",
+      "pid": 5001,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T05:18:18.994401+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 55,
+      "action_steps": 990,
+      "estimated_api_cost_usd": 10.2675758,
+      "known_estimated_api_cost_usd": 10.2675758,
+      "cost_complete": true,
+      "elapsed_seconds": 3127.4098111619824,
+      "mean_api_latency_seconds": 54.795161429008424,
+      "total_api_latency_seconds": 3013.7338785954635,
+      "max_effort_requests": 55,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "goals_satisfied": 3,
+      "goals_total": 3,
+      "unsatisfied_goals": [],
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 11387155,
+      "total_output_tokens": 312080,
+      "total_cached_input_tokens": 11022829,
+      "total_cache_write_tokens": 364106,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 991,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 991,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "25a5bcb871cb12b97f5be6138cc2610d66f579736aaf95d4447a210bfa7e7dad"
+    },
+    {
+      "model": "opus",
+      "trial": 3,
+      "directory": "opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048",
+      "status": "complete",
+      "started_at": "2026-10-12T05:18:19.474435+00:00",
+      "pid": 5303,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T06:06:08.173968+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 60,
+      "action_steps": 1025,
+      "estimated_api_cost_usd": 8.9478738,
+      "known_estimated_api_cost_usd": 8.9478738,
+      "cost_complete": true,
+      "elapsed_seconds": 2759.205634453043,
+      "mean_api_latency_seconds": 44.089108010018634,
+      "total_api_latency_seconds": 2645.346480601118,
+      "max_effort_requests": 60,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "goals_satisfied": 3,
+      "goals_total": 3,
+      "unsatisfied_goals": [],
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 10717285,
+      "total_output_tokens": 266399,
+      "total_cached_input_tokens": 10409644,
+      "total_cache_write_tokens": 307401,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1026,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1026,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "377c9715872f2c526cd6264642cbd04de8be770565f57bbf9026cf819b83bb48"
+    },
+    {
+      "model": "opus",
+      "trial": 4,
+      "directory": "opus55_task1_max_nocost_trial4_task1_uncapped_20261011_234048",
+      "status": "complete",
+      "started_at": "2026-10-12T06:06:08.778034+00:00",
+      "pid": 5426,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T06:59:17.291461+00:00",
+      "success": false,
+      "completion_percent": 66.66666666666667,
+      "termination_reason": "give_up",
+      "calls": 68,
+      "action_steps": 1181,
+      "estimated_api_cost_usd": 10.5543752,
+      "known_estimated_api_cost_usd": 10.5543752,
+      "cost_complete": true,
+      "elapsed_seconds": 3062.118625163974,
+      "mean_api_latency_seconds": 43.123868240337984,
+      "total_api_latency_seconds": 2932.423040342983,
+      "max_effort_requests": 68,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "goals_satisfied": 2,
+      "goals_total": 3,
+      "unsatisfied_goals": [
+        "in butter_1 basket_1_contain_region"
+      ],
+      "peak_completion_percent": 66.66666666666667,
+      "total_input_tokens": 14627192,
+      "total_output_tokens": 294723,
+      "total_cached_input_tokens": 14265786,
+      "total_cache_write_tokens": 361134,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 1182,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 1182,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "5f735808190fb6b8d6f64902a9af00643a9d016b0a2a1ddedb7b8b5a3a560a27"
+    },
+    {
+      "model": "opus",
+      "trial": 5,
+      "directory": "opus55_task1_max_nocost_trial5_task1_uncapped_20261011_234048",
+      "status": "complete",
+      "started_at": "2026-10-12T06:59:17.921004+00:00",
+      "pid": 5571,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T07:31:00.844925+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 43,
+      "action_steps": 691,
+      "estimated_api_cost_usd": 5.9619312,
+      "known_estimated_api_cost_usd": 5.9619312,
+      "cost_complete": true,
+      "elapsed_seconds": 1822.2687179209897,
+      "mean_api_latency_seconds": 40.62145314970308,
+      "total_api_latency_seconds": 1746.7224854372325,
+      "max_effort_requests": 43,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "goals_satisfied": 3,
+      "goals_total": 3,
+      "unsatisfied_goals": [],
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 6509036,
+      "total_output_tokens": 179826,
+      "total_cached_input_tokens": 6287416,
+      "total_cache_write_tokens": 221448,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 692,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 692,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "86d393aa79ed560ed11317b526788c84b68c50db7e463d74e1f13604827358bd"
+    }
+  ]
+}

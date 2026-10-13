@@ -1,0 +1,133 @@
+{
+  "model_id": "gpt-6-astra",
+  "task_id": 0,
+  "prompt_profile": "calibrated-v2",
+  "initial_state_id": 0,
+  "seed": 0,
+  "initial_robot_state_matched": true,
+  "trials": [
+    {
+      "camera_configuration": "agentview",
+      "trial_status": "budget_exhausted",
+      "success": false,
+      "decisions_used": 74,
+      "simulator_action_steps": 370,
+      "elapsed_seconds": 557.7801714109955,
+      "mean_api_latency_seconds": 7.052793787649166,
+      "estimated_api_cost_usd": 1.7672355,
+      "cost_complete": true,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      }
+    },
+    {
+      "camera_configuration": "wrist",
+      "trial_status": "budget_exhausted",
+      "success": false,
+      "decisions_used": 74,
+      "simulator_action_steps": 370,
+      "elapsed_seconds": 675.0256488180021,
+      "mean_api_latency_seconds": 8.712478968511475,
+      "estimated_api_cost_usd": 1.9366965,
+      "cost_complete": true,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      }
+    }
+  ],
+  "note": "One trial per camera condition. Camera-specific prompt guidance also differs; not a benchmark ranking."
+}

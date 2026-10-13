@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "timing_reconstructed": true,
+  "six_static_views": true,
+  "source_videos_unchanged": true,
+  "api_waits_match_recorded_latencies": true,
+  "elapsed_endpoints_match_run_summaries": true,
+  "outputs": [
+    {
+      "file": "astra_opus_tasks_0_1_4_wait_aware_40x.mp4",
+      "speed": 40,
+      "metadata": {
+        "codec_name": "h264",
+        "width": 1024,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "20/1",
+        "nb_read_frames": "1410",
+        "duration_seconds": 70.5,
+        "fps": 20.0,
+        "frames": 1410
+      },
+      "sha256": "f66c670ce4b44e4ed8073f4ed58effa41373af975e85b2632745dcfd90273468",
+      "render_seconds": 14.775672502000816,
+      "size_bytes": 4581561
+    },
+    {
+      "file": "astra_opus_tasks_0_1_4_wait_aware_4x.mp4",
+      "speed": 4,
+      "metadata": {
+        "codec_name": "h264",
+        "width": 1024,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "20/1",
+        "nb_read_frames": "13827",
+        "duration_seconds": 691.35,
+        "fps": 20.0,
+        "frames": 13827
+      },
+      "sha256": "51f66dde880a6c8599ff33fcd608a236295bdb890ea39a0f5278d12eca2d55b6",
+      "render_seconds": 126.63013617595425,
+      "size_bytes": 23924637
+    }
+  ],
+  "timeline_phase_sums_verified": true,
+  "visual_review": "Overview start and 18:20 elapsed-time frame, and full replay ending inspected. At 18:20 all three Astra examples are done and Opus is still active; all six selected examples finish at native 100%. Reconstructed timing is prominently labelled.",
+  "local_links_verified": 22
+}

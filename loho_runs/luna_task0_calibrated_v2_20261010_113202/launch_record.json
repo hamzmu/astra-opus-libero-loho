@@ -1,0 +1,15 @@
+﻿{
+    "requested_model":  "luna",
+    "model_id":  "gpt-6-luna",
+    "task_id":  0,
+    "initial_state_id":  0,
+    "seed":  0,
+    "prompt_profile":  "calibrated-v2",
+    "observation":  "rgb-proprio",
+    "action_repeat":  5,
+    "max_decisions":  74,
+    "max_output_tokens":  8192,
+    "max_estimated_api_cost_usd":  0.1,
+    "launched_at_local":  "2026-10-10T11:32:02.7862107-04:00",
+    "output_directory":  "C:\\Users\\muhha\\OneDrive\\Desktop\\loho\\loho_runs\\luna_task0_calibrated_v2_20261010_113202"
+}

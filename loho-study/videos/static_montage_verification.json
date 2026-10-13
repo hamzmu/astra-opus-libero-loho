@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "output_video": {
+    "codec_name": "h264",
+    "width": 1024,
+    "height": 1712,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "40/1",
+    "nb_read_frames": "1233",
+    "duration_seconds": 30.825,
+    "fps": 40.0,
+    "frames": 1233
+  },
+  "output_sha256": "2f24d5c0e9f3acd63f001d4c1132096f74a4177c6a46b2b7f26a92f862f3999a",
+  "source_videos_sha256_unchanged": true,
+  "selected_examples": 6,
+  "simultaneous_camera_views": 6,
+  "speed_multiplier": 4,
+  "notes": "End-score tags appear when a run finishes; every clip's final frame is held to the shared ending.",
+  "visual_review": "Middle and ending frames inspected: six static views only, Astra/Opus columns, all three task rows, legible labels and ending scores.",
+  "local_links_verified": 20
+}

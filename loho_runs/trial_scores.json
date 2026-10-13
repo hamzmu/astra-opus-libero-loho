@@ -1,0 +1,4381 @@
+{
+  "trials": [
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_128k_trial1_20261011_155328/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 23.6317058,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "cost_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 2,
+        "completion_fraction": 0.6666666666666666,
+        "completion_percent": 66.66666666666667,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 66.66666666666667,
+        "last_scored_simulator_step": 1036,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 281
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 908
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 51,
+      "elapsed_seconds": 658.7577068870305,
+      "estimated_api_cost_usd": 3.3491135,
+      "known_estimated_api_cost_usd": 3.3491135,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_128k_trial2_20261011_160114/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 23.6317058,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "cost_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 1,
+        "completion_fraction": 0.3333333333333333,
+        "completion_percent": 33.333333333333336,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 33.333333333333336,
+        "last_scored_simulator_step": 962,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 458
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 50,
+      "elapsed_seconds": 687.2505057560047,
+      "estimated_api_cost_usd": 3.2773665,
+      "known_estimated_api_cost_usd": 3.2773665,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_128k_trial3_20261011_160114/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 23.6317058,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 703,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 243
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 578
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 703
+          }
+        ]
+      },
+      "executed_actions": 38,
+      "elapsed_seconds": 473.4642465779907,
+      "estimated_api_cost_usd": 2.0815665,
+      "known_estimated_api_cost_usd": 2.0815665,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_nocost_trial1_task0_uncapped_20261011_203025/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1177,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 337
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 887
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1177
+          }
+        ]
+      },
+      "executed_actions": 66,
+      "elapsed_seconds": 933.6047969859792,
+      "estimated_api_cost_usd": 5.144795,
+      "known_estimated_api_cost_usd": 5.144795,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_nocost_trial2_task0_uncapped_20261011_203025/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1211,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 247
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 642
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1211
+          }
+        ]
+      },
+      "executed_actions": 63,
+      "elapsed_seconds": 1093.2954515669844,
+      "estimated_api_cost_usd": 5.4024435,
+      "known_estimated_api_cost_usd": 5.4024435,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1093,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 703
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 931
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1093
+          }
+        ]
+      },
+      "executed_actions": 56,
+      "elapsed_seconds": 768.9567784909741,
+      "estimated_api_cost_usd": 3.886863,
+      "known_estimated_api_cost_usd": 3.886863,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 884,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 357
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 801
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 884
+          }
+        ]
+      },
+      "executed_actions": 48,
+      "elapsed_seconds": 745.1954050210188,
+      "estimated_api_cost_usd": 3.4103235,
+      "known_estimated_api_cost_usd": 3.4103235,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1018,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 399
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 881
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1018
+          }
+        ]
+      },
+      "executed_actions": 51,
+      "elapsed_seconds": 832.6291306510102,
+      "estimated_api_cost_usd": 3.682302,
+      "known_estimated_api_cost_usd": 3.682302,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_128k_20261011_125617/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 23.6317058,
+      "cost_guard_enabled": true,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 544,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 155
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 402
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 544
+          }
+        ]
+      },
+      "executed_actions": 32,
+      "elapsed_seconds": 2589.441933400056,
+      "estimated_api_cost_usd": 9.4182122,
+      "known_estimated_api_cost_usd": 9.4182122,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_128k_trial2_20261011_140109/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 23.6317058,
+      "cost_guard_enabled": true,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 587,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 252
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 467
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 587
+          }
+        ]
+      },
+      "executed_actions": 32,
+      "elapsed_seconds": 1428.4183359730523,
+      "estimated_api_cost_usd": 4.1813478,
+      "known_estimated_api_cost_usd": 4.1813478,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_128k_trial3_20261011_142433/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 23.6317058,
+      "cost_guard_enabled": true,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1073,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 224
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 993
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1073
+          }
+        ]
+      },
+      "executed_actions": 66,
+      "elapsed_seconds": 3333.9784746490186,
+      "estimated_api_cost_usd": 10.9644482,
+      "known_estimated_api_cost_usd": 10.9644482,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 484,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 197
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 438
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 484
+          }
+        ]
+      },
+      "executed_actions": 31,
+      "elapsed_seconds": 1760.7254215289722,
+      "estimated_api_cost_usd": 5.3490556,
+      "known_estimated_api_cost_usd": 5.3490556,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_nocost_trial2_task0_uncapped_20261011_203025/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 603,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 246
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 471
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 603
+          }
+        ]
+      },
+      "executed_actions": 33,
+      "elapsed_seconds": 1630.8456205110415,
+      "estimated_api_cost_usd": 4.9309286,
+      "known_estimated_api_cost_usd": 4.9309286,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_nocost_trial3_task0_uncapped_20261011_203025/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 639,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 278
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 506
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 639
+          }
+        ]
+      },
+      "executed_actions": 36,
+      "elapsed_seconds": 1426.7955630639917,
+      "estimated_api_cost_usd": 4.237351,
+      "known_estimated_api_cost_usd": 4.237351,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 604,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 149
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 484
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 604
+          }
+        ]
+      },
+      "executed_actions": 32,
+      "elapsed_seconds": 1882.1709515340044,
+      "estimated_api_cost_usd": 6.3529702,
+      "known_estimated_api_cost_usd": 6.3529702,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/opus55_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 755,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 144
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 668
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 755
+          }
+        ]
+      },
+      "executed_actions": 38,
+      "elapsed_seconds": 2026.5488983970135,
+      "estimated_api_cost_usd": 6.7624504,
+      "known_estimated_api_cost_usd": 6.7624504,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/startup_attempts/opus55_task0_max_20261011_124340/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 25.0,
+      "cost_guard_enabled": true,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 32768,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "error",
+      "task_complete": false,
+      "termination_reason": "error",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 5,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 0,
+      "elapsed_seconds": 187.6697134160204,
+      "estimated_api_cost_usd": null,
+      "known_estimated_api_cost_usd": 0.0,
+      "cost_complete": false
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 0/startup_attempts/opus55_task0_max_20261011_124852/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": 24.287675,
+      "cost_guard_enabled": true,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 32768,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "error",
+      "task_complete": false,
+      "termination_reason": "error",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 5,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 0,
+      "elapsed_seconds": 302.63822266302304,
+      "estimated_api_cost_usd": 0.6559692,
+      "known_estimated_api_cost_usd": 0.6559692,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 579,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 136
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 357
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 579
+          }
+        ]
+      },
+      "executed_actions": 35,
+      "elapsed_seconds": 655.2977720219642,
+      "estimated_api_cost_usd": 2.475965,
+      "known_estimated_api_cost_usd": 2.475965,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/astra_task1_max_nocost_trial2_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "model_declared_done",
+      "task_complete": false,
+      "termination_reason": "model_done",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 2,
+        "completion_fraction": 0.6666666666666666,
+        "completion_percent": 66.66666666666667,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 66.66666666666667,
+        "last_scored_simulator_step": 542,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 332
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 117
+          }
+        ]
+      },
+      "executed_actions": 34,
+      "elapsed_seconds": 572.0595652160118,
+      "estimated_api_cost_usd": 2.293924,
+      "known_estimated_api_cost_usd": 2.293924,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/astra_task1_max_nocost_trial3_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "model_declared_done",
+      "task_complete": false,
+      "termination_reason": "model_done",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 2,
+        "completion_fraction": 0.6666666666666666,
+        "completion_percent": 66.66666666666667,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 66.66666666666667,
+        "last_scored_simulator_step": 1049,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 445
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 680
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 59,
+      "elapsed_seconds": 859.4835789810168,
+      "estimated_api_cost_usd": 4.3264605,
+      "known_estimated_api_cost_usd": 4.3264605,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/astra_task1_max_nocost_trial4_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 638,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 174
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 429
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 638
+          }
+        ]
+      },
+      "executed_actions": 43,
+      "elapsed_seconds": 695.2111497489968,
+      "estimated_api_cost_usd": 3.118163,
+      "known_estimated_api_cost_usd": 3.118163,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/astra_task1_max_nocost_trial5_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 556,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 556
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 352
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 113
+          }
+        ]
+      },
+      "executed_actions": 35,
+      "elapsed_seconds": 535.7145900629694,
+      "estimated_api_cost_usd": 2.2420625,
+      "known_estimated_api_cost_usd": 2.2420625,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "model_declared_done",
+      "task_complete": false,
+      "termination_reason": "model_done",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 1,
+        "completion_fraction": 0.3333333333333333,
+        "completion_percent": 33.333333333333336,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 66.66666666666667,
+        "last_scored_simulator_step": 1075,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 397
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": true,
+            "first_satisfied_step": 141
+          }
+        ]
+      },
+      "executed_actions": 64,
+      "elapsed_seconds": 2480.9815354539896,
+      "estimated_api_cost_usd": 8.3283206,
+      "known_estimated_api_cost_usd": 8.3283206,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/opus55_task1_max_nocost_trial2_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 995,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 129
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 320
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 995
+          }
+        ]
+      },
+      "executed_actions": 55,
+      "elapsed_seconds": 3127.4098111619824,
+      "estimated_api_cost_usd": 10.2675758,
+      "known_estimated_api_cost_usd": 10.2675758,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1030,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1030
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 320
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 119
+          }
+        ]
+      },
+      "executed_actions": 60,
+      "elapsed_seconds": 2759.205634453043,
+      "estimated_api_cost_usd": 8.9478738,
+      "known_estimated_api_cost_usd": 8.9478738,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/opus55_task1_max_nocost_trial4_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "give_up",
+      "task_complete": false,
+      "termination_reason": "give_up",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 2,
+        "completion_fraction": 0.6666666666666666,
+        "completion_percent": 66.66666666666667,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 66.66666666666667,
+        "last_scored_simulator_step": 1186,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 182
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 547
+          }
+        ]
+      },
+      "executed_actions": 68,
+      "elapsed_seconds": 3062.118625163974,
+      "estimated_api_cost_usd": 10.5543752,
+      "known_estimated_api_cost_usd": 10.5543752,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/opus55_task1_max_nocost_trial5_task1_uncapped_20261011_234048/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 1,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 3,
+        "goals_satisfied": 3,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 696,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "alphabet_soup_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in alphabet_soup_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 214
+          },
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in butter_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 453
+          },
+          {
+            "predicate": [
+              "in",
+              "tomato_sauce_1",
+              "basket_1_contain_region"
+            ],
+            "label": "in tomato_sauce_1 basket_1_contain_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 696
+          }
+        ]
+      },
+      "executed_actions": 43,
+      "elapsed_seconds": 1822.2687179209897,
+      "estimated_api_cost_usd": 5.9619312,
+      "known_estimated_api_cost_usd": 5.9619312,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/astra_task4_max_nocost_trial1_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 943,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 274
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 538
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 793
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 943
+          }
+        ]
+      },
+      "executed_actions": 51,
+      "elapsed_seconds": 960.9978423590073,
+      "estimated_api_cost_usd": 3.5351825,
+      "known_estimated_api_cost_usd": 3.5351825,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/astra_task4_max_nocost_trial2_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1356,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 492
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1072
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1189
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1356
+          }
+        ]
+      },
+      "executed_actions": 70,
+      "elapsed_seconds": 1432.656495676958,
+      "estimated_api_cost_usd": 6.045154,
+      "known_estimated_api_cost_usd": 6.045154,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/astra_task4_max_nocost_trial3_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1278,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 405
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 955
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1091
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1278
+          }
+        ]
+      },
+      "executed_actions": 67,
+      "elapsed_seconds": 1088.4487739260076,
+      "estimated_api_cost_usd": 4.64343,
+      "known_estimated_api_cost_usd": 4.64343,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/astra_task4_max_nocost_trial4_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1289,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 558
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 990
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1109
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1289
+          }
+        ]
+      },
+      "executed_actions": 64,
+      "elapsed_seconds": 1150.4060806849739,
+      "estimated_api_cost_usd": 4.758192,
+      "known_estimated_api_cost_usd": 4.758192,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/astra_task4_max_nocost_trial5_task4_20261012_132742/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": "xhigh",
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 1181,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 366
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 907
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1005
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 1181
+          }
+        ]
+      },
+      "executed_actions": 57,
+      "elapsed_seconds": 967.9015909630107,
+      "estimated_api_cost_usd": 3.748308,
+      "known_estimated_api_cost_usd": 3.748308,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/opus55_task4_max_nocost_trial1_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 743,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 120
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 462
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 601
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 743
+          }
+        ]
+      },
+      "executed_actions": 45,
+      "elapsed_seconds": 1966.6745383280213,
+      "estimated_api_cost_usd": 6.5199426,
+      "known_estimated_api_cost_usd": 6.5199426,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/opus55_task4_max_nocost_trial2_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 636,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 130
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 394
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 490
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 636
+          }
+        ]
+      },
+      "executed_actions": 37,
+      "elapsed_seconds": 1751.7313625530223,
+      "estimated_api_cost_usd": 5.7710124,
+      "known_estimated_api_cost_usd": 5.7710124,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/opus55_task4_max_nocost_trial3_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 967,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 213
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 699
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 797
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 967
+          }
+        ]
+      },
+      "executed_actions": 56,
+      "elapsed_seconds": 2269.1418768509757,
+      "estimated_api_cost_usd": 8.4428918,
+      "known_estimated_api_cost_usd": 8.4428918,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/opus55_task4_max_nocost_trial4_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 705,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 232
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 446
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 525
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 705
+          }
+        ]
+      },
+      "executed_actions": 36,
+      "elapsed_seconds": 1429.6511120600044,
+      "estimated_api_cost_usd": 4.4506324,
+      "known_estimated_api_cost_usd": 4.4506324,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/opus55_task4_max_nocost_trial5_task4_uncapped_20261012_110427/summary.json",
+      "model_id": "claude-opus-5-5",
+      "task_id": 4,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "max",
+      "control_hz": 10,
+      "max_decisions": 80,
+      "max_action_steps": 2000,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "anthropic",
+      "image_history_observations": 0,
+      "max_output_tokens_per_call": 128000,
+      "effective_effort": "max",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "task_completed",
+      "task_complete": true,
+      "termination_reason": "success",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": true,
+        "goals_total": 4,
+        "goals_satisfied": 4,
+        "completion_fraction": 1.0,
+        "completion_percent": 100.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 100.0,
+        "last_scored_simulator_step": 673,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_2",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_2 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 146
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 375
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 510
+          },
+          {
+            "predicate": [
+              "on",
+              "akita_black_bowl_1",
+              "wooden_cabinet_1_top_side"
+            ],
+            "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 673
+          }
+        ]
+      },
+      "executed_actions": 36,
+      "elapsed_seconds": 1377.8073092209524,
+      "estimated_api_cost_usd": 4.4154088,
+      "known_estimated_api_cost_usd": 4.4154088,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/astra_task0_calibrated_v2_20261010_114617/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "calibrated-v2",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 74,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": 10.0,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview",
+      "cameras": [
+        "agentview"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "decision_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 74,
+      "elapsed_seconds": 557.7801714109955,
+      "estimated_api_cost_usd": 1.7672355,
+      "known_estimated_api_cost_usd": 1.7672355,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/astra_task0_pose_tools_20261011_115808/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "medium",
+      "control_hz": 10,
+      "max_decisions": 40,
+      "max_action_steps": 900,
+      "max_estimated_api_cost_usd": 25.0,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "medium",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "give_up",
+      "task_complete": false,
+      "termination_reason": "give_up",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 824,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 38,
+      "elapsed_seconds": 310.277795195987,
+      "estimated_api_cost_usd": 7.4480685,
+      "known_estimated_api_cost_usd": 7.4480685,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/astra_task0_pose_tools_rerun_20261011_120741/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "medium",
+      "control_hz": 10,
+      "max_decisions": 40,
+      "max_action_steps": 900,
+      "max_estimated_api_cost_usd": 25.0,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "medium",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "step_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 1,
+        "completion_fraction": 0.3333333333333333,
+        "completion_percent": 33.333333333333336,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 33.333333333333336,
+        "last_scored_simulator_step": 905,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 587
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 38,
+      "elapsed_seconds": 308.2193920050049,
+      "estimated_api_cost_usd": 7.5646095,
+      "known_estimated_api_cost_usd": 7.5646095,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/astra_task0_rgb_proprio_20261010_010515/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "legacy-v1",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 74,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": 10.0,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview",
+      "cameras": [
+        "agentview"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "decision_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 74,
+      "elapsed_seconds": 508.28415003197733,
+      "estimated_api_cost_usd": 1.42862,
+      "known_estimated_api_cost_usd": 1.42862,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/astra_task0_wrist_calibrated_v2_20261010_122634/summary.json",
+      "model_id": "gpt-6-astra",
+      "task_id": 0,
+      "prompt_profile": "calibrated-v2",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 74,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": 10.0,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "wrist",
+      "cameras": [
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "decision_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 74,
+      "elapsed_seconds": 675.0256488180021,
+      "estimated_api_cost_usd": 1.9366965,
+      "known_estimated_api_cost_usd": 1.9366965,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/luna_task0_calibrated_v2_20261010_113202/summary.json",
+      "model_id": "gpt-6-luna",
+      "task_id": 0,
+      "prompt_profile": "calibrated-v2",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 74,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": 0.1,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview",
+      "cameras": [
+        "agentview"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "decision_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 74,
+      "elapsed_seconds": 729.7340074040112,
+      "estimated_api_cost_usd": 0.04242873,
+      "known_estimated_api_cost_usd": 0.04242873,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/luna_task0_pose_tools_20261011_114646/summary.json",
+      "model_id": "gpt-6-luna",
+      "task_id": 0,
+      "prompt_profile": "pose-tools-v1",
+      "policy": "pose-tools",
+      "action_interface": "absolute_pose_tools",
+      "effort": "medium",
+      "control_hz": 10,
+      "max_decisions": 40,
+      "max_action_steps": 900,
+      "max_estimated_api_cost_usd": 0.25,
+      "cost_guard_enabled": true,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "medium",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview-wrist",
+      "cameras": [
+        "agentview",
+        "robot0_eye_in_hand"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180",
+        "robot0_eye_in_hand": "flip_vertical"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "decision_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 1,
+        "completion_fraction": 0.3333333333333333,
+        "completion_percent": 33.333333333333336,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 33.333333333333336,
+        "last_scored_simulator_step": 892,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 103
+          }
+        ]
+      },
+      "executed_actions": 40,
+      "elapsed_seconds": 285.0245833930094,
+      "estimated_api_cost_usd": 0.102308585,
+      "known_estimated_api_cost_usd": 0.102308585,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/luna_task0_rgb_proprio_20261010_002931/summary.json",
+      "model_id": "gpt-6-luna",
+      "task_id": 0,
+      "prompt_profile": "legacy-v1",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 160,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 2048,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview",
+      "cameras": [
+        "agentview"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180"
+      },
+      "trial_status": "error",
+      "task_complete": false,
+      "termination_reason": "error",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 70,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 13,
+      "elapsed_seconds": 197.69236900797114,
+      "estimated_api_cost_usd": 0.0088469,
+      "known_estimated_api_cost_usd": 0.0088469,
+      "cost_complete": true
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/luna_task0_rgb_proprio_8192_20261010_003421/summary.json",
+      "model_id": "gpt-6-luna",
+      "task_id": 0,
+      "prompt_profile": "legacy-v1",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 160,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 8192,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview",
+      "cameras": [
+        "agentview"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180"
+      },
+      "trial_status": "interrupted",
+      "task_complete": false,
+      "termination_reason": "interrupted",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 375,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 74,
+      "elapsed_seconds": 1152.0693499490153,
+      "estimated_api_cost_usd": null,
+      "known_estimated_api_cost_usd": 0.0535229,
+      "cost_complete": false
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/luna_wsl_proprio_smoke/summary.json",
+      "model_id": "gpt-6-luna",
+      "task_id": 0,
+      "prompt_profile": "legacy-v1",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 3,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 2048,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb-proprio",
+      "camera_configuration": "agentview",
+      "cameras": [
+        "agentview"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "decision_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 20,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 3,
+      "elapsed_seconds": 39.86588948499411,
+      "estimated_api_cost_usd": null,
+      "known_estimated_api_cost_usd": 0,
+      "cost_complete": false
+    },
+    {
+      "summary_file": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/luna_wsl_smoke/summary.json",
+      "model_id": "gpt-6-luna",
+      "task_id": 0,
+      "prompt_profile": "legacy-v1",
+      "policy": "direct",
+      "action_interface": "normalized_osc_delta",
+      "effort": "high",
+      "control_hz": 20,
+      "max_decisions": 5,
+      "max_action_steps": null,
+      "max_estimated_api_cost_usd": null,
+      "cost_guard_enabled": false,
+      "provider": "openai",
+      "image_history_observations": 2,
+      "max_output_tokens_per_call": 2048,
+      "effective_effort": "high",
+      "effort_fallback": null,
+      "observation_mode": "rgb",
+      "camera_configuration": "agentview",
+      "cameras": [
+        "agentview"
+      ],
+      "camera_orientations": {
+        "agentview": "rotate180"
+      },
+      "trial_status": "budget_exhausted",
+      "task_complete": false,
+      "termination_reason": "decision_budget",
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 30,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "executed_actions": 5,
+      "elapsed_seconds": 51.17862731497735,
+      "estimated_api_cost_usd": null,
+      "known_estimated_api_cost_usd": 0,
+      "cost_complete": false
+    }
+  ]
+}

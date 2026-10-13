@@ -1,0 +1,19 @@
+GPT-6 ASTRA MAX TASK 4 - RECORDED TRIAL
+
+Task: put the butter at the back and the chocolate pudding into the cabinet top drawer, and then close the cabinet top drawer. Place the black bowl on top of the cabinet
+State 0, seed 0; fresh conversation; no prior-run hindsight.
+Configuration verified against reference: True; budget policy change: none.
+Termination: model_done; simulator-verified completion: 0.0%; success: False.
+Calls: 1; action steps: 0; settling steps: 5.
+Elapsed: 3.203s; API latency total: 0.000s; mean: 0.000s.
+Estimated USD: 0.0; known USD: 0.0; complete cost: True.
+Limits: 80 calls, 2000 steps, 128000 output tokens/call, no spending cap.
+No automatic HTTP retries. All received usage, including failed responses, is retained.
+Requested effort: max; effective effort: max; explicit effort fallback events: 0.
+Model notes below are narration; scores come from private simulator goal predicates.
+
+EXECUTED TOOLS AND MEASURED RESULTS
+Call 00: done {"summary": "Simulator-only preflight; no model inference", "hindsight": "Not supplied to paid trials"}
+  Note: 
+  Executed steps: 0
+  Result: {"trial_ended": true, "declaration": "done"}

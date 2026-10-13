@@ -1,0 +1,143 @@
+{
+    "run_id":  "7c49a633-9a89-4ca0-a25e-587d4a2a34e3",
+    "model_id":  "gpt-6-astra",
+    "provider":  "openai",
+    "task_id":  0,
+    "initial_state_id":  0,
+    "sim_seed":  0,
+    "policy":  "pose-tools",
+    "action_interface":  "absolute_pose_tools",
+    "prompt_profile":  "pose-tools-v1",
+    "context_mode":  "conversation_and_tool_results",
+    "image_history_observations":  0,
+    "image_history_mode":  "all",
+    "cameras":  [
+                    "agentview",
+                    "robot0_eye_in_hand"
+                ],
+    "camera_configuration":  "agentview-wrist",
+    "camera_orientations":  {
+                                "agentview":  "rotate180",
+                                "robot0_eye_in_hand":  "flip_vertical"
+                            },
+    "rgb_resolution":  [
+                           224,
+                           224
+                       ],
+    "observation_mode":  "rgb-proprio",
+    "effort":  "max",
+    "effective_effort":  "max",
+    "effort_fallback":  "xhigh",
+    "fallback_events":  [
+
+                        ],
+    "control_hz":  10,
+    "max_speed_fraction":  0.25,
+    "max_decisions":  80,
+    "max_action_steps":  2000,
+    "max_output_tokens_per_call":  128000,
+    "max_estimated_api_cost_usd":  23.6317058,
+    "termination_reason":  "cost_budget",
+    "trial_status":  "budget_exhausted",
+    "success":  false,
+    "trial_score":  {
+                        "available":  true,
+                        "rubric_id":  "libero_loho_goal_predicates_v1",
+                        "method":  "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+                        "task_complete":  false,
+                        "goals_total":  3,
+                        "goals_satisfied":  2,
+                        "completion_fraction":  0.6666666666666666,
+                        "completion_percent":  66.66666666666667,
+                        "initial_completion_percent":  0.0,
+                        "peak_simultaneous_completion_percent":  66.66666666666667,
+                        "last_scored_simulator_step":  1036,
+                        "goals":  [
+                                      {
+                                          "predicate":  [
+                                                            "in",
+                                                            "butter_1",
+                                                            "wooden_cabinet_1_top_region"
+                                                        ],
+                                          "label":  "in butter_1 wooden_cabinet_1_top_region",
+                                          "initially_satisfied":  false,
+                                          "satisfied":  true,
+                                          "ever_satisfied":  true,
+                                          "first_satisfied_step":  281
+                                      },
+                                      {
+                                          "predicate":  [
+                                                            "in",
+                                                            "chocolate_pudding_1",
+                                                            "wooden_cabinet_1_top_region"
+                                                        ],
+                                          "label":  "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+                                          "initially_satisfied":  false,
+                                          "satisfied":  true,
+                                          "ever_satisfied":  true,
+                                          "first_satisfied_step":  908
+                                      },
+                                      {
+                                          "predicate":  [
+                                                            "close",
+                                                            "wooden_cabinet_1_top_region"
+                                                        ],
+                                          "label":  "close wooden_cabinet_1_top_region",
+                                          "initially_satisfied":  false,
+                                          "satisfied":  false,
+                                          "ever_satisfied":  false,
+                                          "first_satisfied_step":  null
+                                      }
+                                  ]
+                    },
+    "decisions_used":  51,
+    "simulator_action_steps":  1031,
+    "elapsed_seconds":  658.7577068870305,
+    "mean_api_latency_seconds":  10.49714150490221,
+    "total_api_latency_seconds":  535.3542167500127,
+    "estimated_api_cost_usd":  3.3491135,
+    "known_estimated_api_cost_usd":  3.3491135,
+    "cost_complete":  true,
+    "api_attempts_total":  51,
+    "total_input_tokens":  1588850,
+    "total_output_tokens":  20701,
+    "total_cached_input_tokens":  1524391,
+    "total_cache_write_tokens":  58033,
+    "tool_error_count":  0,
+    "local_runner_running":  false,
+    "automatic_retries":  0,
+    "verification_passed":  true,
+    "video_verification":  {
+                               "agentview":  {
+                                                 "file":  "episode.mp4",
+                                                 "decoded_frames":  1032,
+                                                 "fps":  10.0,
+                                                 "frame_sizes":  [
+                                                                     [
+                                                                         224,
+                                                                         224
+                                                                     ]
+                                                                 ]
+                                             },
+                               "robot0_eye_in_hand":  {
+                                                          "file":  "wrist_episode.mp4",
+                                                          "decoded_frames":  1032,
+                                                          "fps":  10.0,
+                                                          "frame_sizes":  [
+                                                                              [
+                                                                                  224,
+                                                                                  224
+                                                                              ]
+                                                                          ]
+                                                      }
+                           },
+    "api_errors":  0,
+    "pose_targets_reached":  30,
+    "pose_targets_not_reached":  21,
+    "total_thinking_tokens_reported":  16731,
+    "max_effort_requests":  51,
+    "xhigh_effort_requests":  0,
+    "reference_trial":  "../opus55_task0_max_128k_20261011_125617",
+    "next_request_cost_reservation_usd":  20.2922,
+    "unresolved_request_cost_reservation_usd":  0
+}

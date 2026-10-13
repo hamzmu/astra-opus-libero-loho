@@ -1,0 +1,31 @@
+﻿{
+    "passed":  true,
+    "output_sha256":  "d0d1f6e968c55af3c0109416aad7242533940062625322a0ffbd0bc3a6b0db65",
+    "output_video":  {
+                         "codec_name":  "h264",
+                         "width":  1568,
+                         "height":  1320,
+                         "pix_fmt":  "yuv420p",
+                         "avg_frame_rate":  "40/1",
+                         "nb_read_frames":  "1334",
+                         "duration_seconds":  33.35,
+                         "fps":  40.0,
+                         "frames":  1334
+                     },
+    "source_videos_and_summaries_sha256_unchanged":  true,
+    "static_views":  6,
+    "selected_episodes":  6,
+    "native_successes":  6,
+    "wrist_and_static_used_in_all_selected_evaluations":  true,
+    "same_examples_as_per_task_videos":  true,
+    "visual_review":  {
+                          "passed":  true,
+                          "checks":  [
+                                         "Tasks 0 / 1 / 4 columns",
+                                         "Astra top / Opus bottom",
+                                         "Six static camera views",
+                                         "Wrist-camera evaluation note visible",
+                                         "All six ending labels show 100%"
+                                     ]
+                      }
+}

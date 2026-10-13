@@ -1,0 +1,167 @@
+{
+  "run_id": "d448ac49-d3e5-4767-b154-501a659ce0c2",
+  "model_id": "gpt-6-astra",
+  "provider": "openai",
+  "task_id": 4,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "policy": "pose-tools",
+  "action_interface": "absolute_pose_tools",
+  "prompt_profile": "pose-tools-v1",
+  "context_mode": "conversation_and_tool_results",
+  "image_history_observations": 0,
+  "media_mode": "video_only",
+  "png_frames_saved": false,
+  "final_video_frames": {
+    "agentview": {
+      "file": "episode.mp4",
+      "frame_index": 1273,
+      "timestamp_seconds": 127.3
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "frame_index": 1273,
+      "timestamp_seconds": 127.3
+    }
+  },
+  "image_history_mode": "all",
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "camera_configuration": "agentview-wrist",
+  "camera_orientations": {
+    "agentview": "rotate180",
+    "robot0_eye_in_hand": "flip_vertical"
+  },
+  "rgb_resolution": [
+    224,
+    224
+  ],
+  "observation_mode": "rgb-proprio",
+  "effort": "max",
+  "effective_effort": "max",
+  "effort_fallback": "xhigh",
+  "fallback_events": [],
+  "control_hz": 10,
+  "max_speed_fraction": 0.25,
+  "max_decisions": 80,
+  "max_action_steps": 2000,
+  "max_output_tokens_per_call": 128000,
+  "max_estimated_api_cost_usd": null,
+  "termination_reason": "success",
+  "trial_status": "task_completed",
+  "success": true,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": true,
+    "goals_total": 4,
+    "goals_satisfied": 4,
+    "completion_fraction": 1.0,
+    "completion_percent": 100.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 100.0,
+    "last_scored_simulator_step": 1278,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_2",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_2 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 405
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 955
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 1091
+      },
+      {
+        "predicate": [
+          "on",
+          "akita_black_bowl_1",
+          "wooden_cabinet_1_top_side"
+        ],
+        "label": "on akita_black_bowl_1 wooden_cabinet_1_top_side",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 1278
+      }
+    ]
+  },
+  "decisions_used": 67,
+  "simulator_action_steps": 1273,
+  "elapsed_seconds": 1088.4487739260076,
+  "mean_api_latency_seconds": 13.986447140930652,
+  "total_api_latency_seconds": 937.0919584423536,
+  "estimated_api_cost_usd": 4.64343,
+  "known_estimated_api_cost_usd": 4.64343,
+  "cost_complete": true,
+  "api_attempts_total": 67,
+  "total_input_tokens": 2553709,
+  "total_output_tokens": 23719,
+  "total_cached_input_tokens": 2473285,
+  "total_cache_write_tokens": 71982,
+  "tool_error_count": 0,
+  "cost_guard_enabled": false,
+  "budget_policy_change": null,
+  "local_runner_running": false,
+  "automatic_retries": 0,
+  "verification_passed": true,
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 1274,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 1274,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "api_errors": 0,
+  "pose_targets_reached": 49,
+  "pose_targets_not_reached": 18,
+  "total_thinking_tokens_reported": 19344,
+  "max_effort_requests": 67,
+  "xhigh_effort_requests": 0,
+  "reference_trial": "../../../setup_logs/task4_reference_20261012_110427"
+}

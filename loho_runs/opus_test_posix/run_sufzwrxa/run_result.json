@@ -1,0 +1,145 @@
+{
+  "run_id": "45e095cf-f79e-482a-958c-9f65c9997af4",
+  "model_id": "claude-opus-5-5",
+  "provider": "anthropic",
+  "task_id": 0,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "policy": "pose-tools",
+  "action_interface": "absolute_pose_tools",
+  "prompt_profile": "pose-tools-v1",
+  "context_mode": "conversation_and_tool_results",
+  "image_history_observations": 0,
+  "image_history_mode": "all",
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "camera_configuration": "agentview-wrist",
+  "camera_orientations": {
+    "agentview": "rotate180",
+    "robot0_eye_in_hand": "flip_vertical"
+  },
+  "rgb_resolution": [
+    224,
+    224
+  ],
+  "observation_mode": "rgb-proprio",
+  "effort": "max",
+  "effective_effort": "max",
+  "effort_fallback": null,
+  "fallback_events": [],
+  "control_hz": 10,
+  "max_speed_fraction": 0.25,
+  "max_decisions": 80,
+  "max_action_steps": 2000,
+  "max_output_tokens_per_call": 128000,
+  "max_estimated_api_cost_usd": null,
+  "termination_reason": "give_up",
+  "trial_status": "give_up",
+  "success": false,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 0,
+    "completion_fraction": 0.0,
+    "completion_percent": 0.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 0.0,
+    "last_scored_simulator_step": 9,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      }
+    ]
+  },
+  "decisions_used": 2,
+  "simulator_action_steps": 4,
+  "elapsed_seconds": 3.5852875899872743,
+  "mean_api_latency_seconds": 0.018122492998372763,
+  "total_api_latency_seconds": 0.03624498599674553,
+  "estimated_api_cost_usd": 40.00418,
+  "known_estimated_api_cost_usd": 40.00418,
+  "cost_complete": true,
+  "api_attempts_total": 2,
+  "total_input_tokens": 10000600,
+  "total_output_tokens": 160,
+  "total_cached_input_tokens": 400,
+  "total_cache_write_tokens": 100,
+  "tool_error_count": 0,
+  "cost_guard_enabled": false,
+  "budget_policy_change": {
+    "reason": "Spending guard removed for new trials; historical limits are retained in the reference.",
+    "reference_max_estimated_api_cost_usd": 25,
+    "trial_max_estimated_api_cost_usd": null
+  },
+  "local_runner_running": false,
+  "automatic_retries": 0,
+  "verification_passed": true,
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 5,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 5,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "api_errors": 0,
+  "pose_targets_reached": 1,
+  "pose_targets_not_reached": 0,
+  "total_thinking_tokens_reported": 0,
+  "max_effort_requests": 2,
+  "xhigh_effort_requests": 0,
+  "reference_trial": "../historical_reference"
+}

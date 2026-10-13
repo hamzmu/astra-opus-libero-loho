@@ -1,0 +1,38 @@
+{
+    "requested_at":  "2026-10-11T15:53:28.4085498-04:00",
+    "trial_number":  1,
+    "reference_trial":  "../../results/opus55_task0_max_128k_20261011_125617",
+    "model":  "gpt-6-astra",
+    "provider":  "openai",
+    "platform":  "wsl",
+    "task_id":  0,
+    "initial_state_id":  0,
+    "sim_seed":  0,
+    "policy":  "pose-tools",
+    "prompt_profile":  "pose-tools-v1",
+    "cameras":  [
+                    "agentview",
+                    "robot0_eye_in_hand"
+                ],
+    "effort":  "max",
+    "effort_fallback":  "xhigh",
+    "fallback_trigger":  "Explicit API rejection of max reasoning effort only; same Astra model",
+    "max_calls":  80,
+    "max_action_steps":  2000,
+    "control_hz":  10,
+    "resolution":  224,
+    "max_output_tokens_per_call":  128000,
+    "estimated_trial_cost_cap_usd":  23.6317058,
+    "image_history":  "all, append-only",
+    "automatic_http_retries":  0,
+    "prior_run_hindsight_injected":  false,
+    "source_sha256":  {
+                          "loho_frontier_eval.py":  "b46195b68254c1c0d189a67efa4add79abab26966ba8345a3cbb2a74901512af",
+                          "loho_pose_policy.py":  "b875977bcfabcb6ceb0d39cf8d2ef124e1b634a286799bd90f2311ee91c66bd1",
+                          "loho_pose_tools.py":  "55f6ef3f1781b80cd7d8e4c500c95aefc090a70e4745192859b8ea07a03a799c",
+                          "loho_scoring.py":  "8721cf8f355d3fc9ed4b362dd471aa345ae43243b2c8ce7180bc18880b357c75",
+                          "loho_telemetry.py":  "880f16a945ba898bd673ed5757c730b6b5410ffce95aa5945b966ae2bc091525",
+                          "loho_cameras.py":  "f0c74c96ed25a862ee29b58d266914f65c7584ea54c3c7f2af21e31bd1895742",
+                          "pricing-astra.json":  "9e3219fce9a3c27722290598df40b353af71b776b4a84209cc84663370ca1bf1"
+                      }
+}

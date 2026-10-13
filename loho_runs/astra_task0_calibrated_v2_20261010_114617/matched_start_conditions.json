@@ -1,0 +1,9 @@
+{
+  "reference_luna_run": "loho_runs\\luna_task0_calibrated_v2_20261010_113202",
+  "same_prompt_and_run_settings": true,
+  "same_initial_rgb_and_robot_state": true,
+  "cost_caps_usd": {
+    "luna": 0.1,
+    "astra": 10
+  }
+}

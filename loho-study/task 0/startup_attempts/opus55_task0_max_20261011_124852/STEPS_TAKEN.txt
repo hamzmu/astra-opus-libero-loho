@@ -1,0 +1,4 @@
+OPUS MAX OUTPUT-ALLOWANCE FAILURE
+One valid HTTP/SSE response, no robot action steps. All 32768 output tokens were thinking; no tool call.
+stop_reason=max_tokens. Usage and $0.6559692 estimated cost captured completely.
+The subsequent comparison profile increases the response allowance to the model's supported 128000 tokens, while keeping the overall estimated spend cap.

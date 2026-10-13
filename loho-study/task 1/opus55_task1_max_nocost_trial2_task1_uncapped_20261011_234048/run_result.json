@@ -1,0 +1,156 @@
+{
+  "run_id": "97c53f86-cf88-4a7f-8fba-74fb6fd716fd",
+  "model_id": "claude-opus-5-5",
+  "provider": "anthropic",
+  "task_id": 1,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "policy": "pose-tools",
+  "action_interface": "absolute_pose_tools",
+  "prompt_profile": "pose-tools-v1",
+  "context_mode": "conversation_and_tool_results",
+  "image_history_observations": 0,
+  "media_mode": "video_only",
+  "png_frames_saved": false,
+  "final_video_frames": {
+    "agentview": {
+      "file": "episode.mp4",
+      "frame_index": 990,
+      "timestamp_seconds": 99.0
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "frame_index": 990,
+      "timestamp_seconds": 99.0
+    }
+  },
+  "image_history_mode": "all",
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "camera_configuration": "agentview-wrist",
+  "camera_orientations": {
+    "agentview": "rotate180",
+    "robot0_eye_in_hand": "flip_vertical"
+  },
+  "rgb_resolution": [
+    224,
+    224
+  ],
+  "observation_mode": "rgb-proprio",
+  "effort": "max",
+  "effective_effort": "max",
+  "effort_fallback": null,
+  "fallback_events": [],
+  "control_hz": 10,
+  "max_speed_fraction": 0.25,
+  "max_decisions": 80,
+  "max_action_steps": 2000,
+  "max_output_tokens_per_call": 128000,
+  "max_estimated_api_cost_usd": null,
+  "termination_reason": "success",
+  "trial_status": "task_completed",
+  "success": true,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": true,
+    "goals_total": 3,
+    "goals_satisfied": 3,
+    "completion_fraction": 1.0,
+    "completion_percent": 100.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 100.0,
+    "last_scored_simulator_step": 995,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "alphabet_soup_1",
+          "basket_1_contain_region"
+        ],
+        "label": "in alphabet_soup_1 basket_1_contain_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 129
+      },
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "basket_1_contain_region"
+        ],
+        "label": "in butter_1 basket_1_contain_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 320
+      },
+      {
+        "predicate": [
+          "in",
+          "tomato_sauce_1",
+          "basket_1_contain_region"
+        ],
+        "label": "in tomato_sauce_1 basket_1_contain_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 995
+      }
+    ]
+  },
+  "decisions_used": 55,
+  "simulator_action_steps": 990,
+  "elapsed_seconds": 3127.4098111619824,
+  "mean_api_latency_seconds": 54.795161429008424,
+  "total_api_latency_seconds": 3013.7338785954635,
+  "estimated_api_cost_usd": 10.2675758,
+  "known_estimated_api_cost_usd": 10.2675758,
+  "cost_complete": true,
+  "api_attempts_total": 55,
+  "total_input_tokens": 11387155,
+  "total_output_tokens": 312080,
+  "total_cached_input_tokens": 11022829,
+  "total_cache_write_tokens": 364106,
+  "tool_error_count": 0,
+  "cost_guard_enabled": false,
+  "budget_policy_change": null,
+  "local_runner_running": false,
+  "automatic_retries": 0,
+  "verification_passed": true,
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 991,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 991,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "api_errors": 0,
+  "pose_targets_reached": 35,
+  "pose_targets_not_reached": 20,
+  "total_thinking_tokens_reported": 301797,
+  "max_effort_requests": 55,
+  "xhigh_effort_requests": 0,
+  "reference_trial": "../../../setup_logs/task1_reference_20261011_233620"
+}

@@ -1,0 +1,26 @@
+﻿{
+    "requested_at":  "2026-10-11T12:07:41.2777312-04:00",
+    "model":  "gpt-6-astra",
+    "platform":  "wsl",
+    "task_id":  0,
+    "initial_state_id":  0,
+    "sim_seed":  0,
+    "policy":  "pose-tools",
+    "cameras":  [
+                    "agentview",
+                    "robot0_eye_in_hand"
+                ],
+    "effort":  "medium",
+    "max_calls":  40,
+    "max_action_steps":  900,
+    "control_hz":  10,
+    "resolution":  224,
+    "max_output_tokens_per_call":  8192,
+    "estimated_cost_cap_usd":  25,
+    "pricing_verified_on":  "2026-10-11",
+    "configuration_source":  "CLI defaults",
+    "automatic_retries":  0,
+    "manual_rerun":  true,
+    "reference_astra_run":  "astra_task0_pose_tools_20261011_115808",
+    "prior_run_hindsight_injected":  false
+}

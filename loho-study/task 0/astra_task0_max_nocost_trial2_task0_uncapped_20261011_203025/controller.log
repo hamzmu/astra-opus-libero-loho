@@ -1,0 +1,71 @@
+control on Linux, output=/mnt/c/Users/muhha/OneDrive/Desktop/loho/results/astra_task0_max_nocost_trial2_task0_uncapped_20261011_203025
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /root/projects/LIBERO-LOHO/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+gpt-6-astra call 0: move_to {'x': 0.06, 'y': 0.23, 'z': 1.065, 'gripper': 1}, 16 steps, residual 0.0169m
+gpt-6-astra call 1: move_to {'x': 0.05, 'y': 0.195, 'z': 0.975, 'roll': 0, 'pitch': 0, 'yaw': 0, 'gripper': 1}, 14 steps, residual 0.0364m
+gpt-6-astra call 2: move_to {'x': 0.045, 'y': 0.185, 'z': 0.93, 'roll': 0, 'pitch': 0, 'gripper': 1}, 11 steps, residual 0.0098m
+gpt-6-astra call 3: move_to {'gripper': 0}, 41 steps, residual 0.0004m
+gpt-6-astra call 4: move_to {'z': 0.99}, 7 steps, residual 0.0018m
+gpt-6-astra call 5: move_to {'x': 0.025, 'y': 0.175, 'z': 0.97, 'roll': 0, 'pitch': 0, 'gripper': 1}, 41 steps, residual 0.0017m
+gpt-6-astra call 6: move_to {'x': 0.025, 'y': 0.193, 'z': 0.915, 'roll': 0, 'pitch': 0, 'gripper': 1}, 7 steps, residual 0.0021m
+gpt-6-astra call 7: move_to {'gripper': 0}, 41 steps, residual 0.0003m
+gpt-6-astra call 8: move_to {'z': 0.975}, 7 steps, residual 0.0024m
+gpt-6-astra call 9: move_to {'z': 1.22}, 23 steps, residual 0.0009m
+gpt-6-astra call 10: move_to {'x': -0.035, 'y': -0.285, 'z': 1.22}, 19 steps, residual 0.0011m
+gpt-6-astra call 11: move_to {'x': 0.015, 'y': -0.17, 'z': 1.19}, 8 steps, residual 0.0029m
+gpt-6-astra call 12: move_to {'x': 0.015, 'y': -0.145, 'z': 1.095}, 11 steps, residual 0.0029m
+gpt-6-astra call 13: move_to {'z': 1.055}, 9 steps, residual 0.0409m
+gpt-6-astra call 14: move_to {'gripper': 1}, 41 steps, residual 0.0000m
+gpt-6-astra call 15: move_to {'z': 1.235, 'roll': 0, 'pitch': 0, 'yaw': 0}, 14 steps, residual 0.0025m
+gpt-6-astra call 16: move_to {'x': 0.02, 'y': 0.005, 'z': 1.03, 'gripper': 1}, 22 steps, residual 0.0706m
+gpt-6-astra call 17: move_to {'z': 1.25, 'roll': 0, 'pitch': 0, 'yaw': 0}, 15 steps, residual 0.0024m
+gpt-6-astra call 18: move_to {'x': 0.025, 'y': 0.025, 'z': 1.25}, 5 steps, residual 0.0008m
+gpt-6-astra call 19: move_to {'z': 0.97, 'roll': 0, 'pitch': 0, 'yaw': 0}, 28 steps, residual 0.1341m
+gpt-6-astra call 20: move_to {'x': -0.07, 'y': 0.045, 'z': 1.075, 'roll': 0, 'pitch': 0, 'yaw': 0}, 10 steps, residual 0.0889m
+gpt-6-astra call 21: move_to {'x': -0.2, 'y': 0.06, 'z': 1.25, 'roll': 0, 'pitch': 0, 'yaw': 0}, 17 steps, residual 0.1101m
+gpt-6-astra call 22: move_to {'x': 0.18, 'y': 0.07, 'z': 1.2, 'roll': 0, 'pitch': 0, 'yaw': 0}, 16 steps, residual 0.0443m
+gpt-6-astra call 23: move_to {'x': 0.02, 'y': 0.025, 'z': 1.0, 'roll': 0, 'pitch': 0, 'yaw': 0}, 19 steps, residual 0.0970m
+gpt-6-astra call 24: move_to {'x': 0.015, 'y': 0.12, 'z': 1.12, 'roll': 0, 'pitch': 0, 'yaw': 0, 'gripper': 0.4}, 30 steps, residual 0.0047m
+gpt-6-astra call 25: move_to {'x': 0.015, 'y': 0.12, 'z': 0.98, 'roll': 0, 'pitch': 0, 'yaw': 0, 'gripper': 1}, 26 steps, residual 0.0029m
+gpt-6-astra call 26: move_to {'x': 0.015, 'y': 0.03, 'z': 0.98, 'roll': 0, 'pitch': 0, 'yaw': 0}, 6 steps, residual 0.0008m
+gpt-6-astra call 27: move_to {'z': 0.92, 'roll': 0, 'pitch': 0, 'yaw': 0}, 7 steps, residual 0.0022m
+gpt-6-astra call 28: move_to {'gripper': 0}, 41 steps, residual 0.0004m
+gpt-6-astra call 29: move_to {'z': 0.978}, 7 steps, residual 0.0025m
+gpt-6-astra call 30: move_to {'z': 1.235}, 23 steps, residual 0.0029m
+gpt-6-astra call 31: move_to {'x': -0.09, 'y': -0.19, 'z': 1.235, 'roll': 0, 'pitch': 0, 'yaw': 0}, 13 steps, residual 0.0071m
+gpt-6-astra call 32: move_to {'x': -0.055, 'y': -0.165, 'z': 1.145, 'roll': 0, 'pitch': 0, 'yaw': 0}, 9 steps, residual 0.0027m
+gpt-6-astra call 33: move_to {'x': -0.05, 'y': -0.14, 'z': 1.11}, 8 steps, residual 0.0155m
+gpt-6-astra call 34: move_to {'gripper': 1}, 41 steps, residual 0.0003m
+gpt-6-astra call 35: move_to {'z': 1.255, 'roll': 0, 'pitch': 0, 'yaw': 0}, 13 steps, residual 0.0025m
+gpt-6-astra call 36: move_to {'x': 0.045, 'y': 0.07, 'z': 1.25, 'gripper': 0, 'roll': 0, 'pitch': 0, 'yaw': 0}, 43 steps, residual 0.0011m
+gpt-6-astra call 37: move_to {'x': 0.025, 'y': 0.075, 'z': 1.14, 'roll': 0, 'pitch': 0, 'yaw': 0}, 11 steps, residual 0.0024m
+gpt-6-astra call 38: move_to {'z': 1.085, 'roll': 0, 'pitch': 0, 'yaw': 0}, 7 steps, residual 0.0019m
+gpt-6-astra call 39: move_to {'y': -0.04, 'z': 1.085}, 9 steps, residual 0.0042m
+gpt-6-astra call 40: move_to {'y': -0.115, 'z': 1.085}, 8 steps, residual 0.0537m
+gpt-6-astra call 41: move_to {'x': -0.08, 'y': 0.08, 'z': 1.25, 'roll': 0, 'pitch': 0, 'yaw': 0}, 17 steps, residual 0.0024m
+gpt-6-astra call 42: move_to {'x': 0.015, 'y': 0.06, 'z': 1.19, 'roll': -1.4, 'pitch': 0, 'yaw': 0}, 23 steps, residual 0.0084m
+gpt-6-astra call 43: move_to {'x': 0.015, 'y': -0.095, 'z': 1.1, 'roll': -1.5, 'pitch': 0, 'yaw': 0}, 13 steps, residual 0.0055m
+gpt-6-astra call 44: move_to {'y': -0.165, 'z': 1.1}, 8 steps, residual 0.0496m
+gpt-6-astra call 45: move_to {'x': 0.025, 'y': -0.105, 'z': 1.085, 'roll': -1.5, 'pitch': 0, 'yaw': 0, 'gripper': 1}, 41 steps, residual 0.0011m
+gpt-6-astra call 46: move_to {'x': 0.035, 'y': -0.145, 'z': 1.095, 'roll': -1.5, 'pitch': 0, 'yaw': 0}, 5 steps, residual 0.0015m
+gpt-6-astra call 47: move_to {'gripper': 0}, 46 steps, residual 0.0032m
+gpt-6-astra call 48: move_to {'y': -0.005}, 10 steps, residual 0.0129m
+gpt-6-astra call 49: move_to {'gripper': 1}, 41 steps, residual 0.0002m
+gpt-6-astra call 50: move_to {'x': -0.05, 'y': 0.06, 'z': 1.255, 'roll': 0, 'pitch': 0, 'yaw': 0}, 25 steps, residual 0.0026m
+gpt-6-astra call 51: move_to {'x': -0.065, 'y': -0.09, 'z': 1.225, 'roll': 0, 'pitch': 0, 'yaw': 0}, 8 steps, residual 0.0020m
+gpt-6-astra call 52: move_to {'x': -0.06, 'y': -0.09, 'z': 1.135, 'roll': 0, 'pitch': 0, 'yaw': 0}, 10 steps, residual 0.0022m
+gpt-6-astra call 53: move_to {'y': -0.095, 'gripper': 0.67}, 14 steps, residual 0.0008m
+gpt-6-astra call 54: move_to {'z': 1.083}, 10 steps, residual 0.0493m
+gpt-6-astra call 55: move_to {'z': 1.22, 'yaw': 1.5708, 'roll': 0, 'pitch': 0, 'gripper': 1}, 18 steps, residual 0.0022m
+gpt-6-astra call 56: move_to {'x': -0.07, 'y': -0.105, 'z': 1.09, 'roll': 0, 'pitch': 0, 'yaw': 1.5708}, 16 steps, residual 0.0391m
+gpt-6-astra call 57: move_to {'gripper': 0}, 41 steps, residual 0.0002m
+gpt-6-astra call 58: move_to {'z': 1.23, 'roll': 0.75, 'pitch': 0, 'yaw': 0, 'gripper': 1}, 42 steps, residual 0.0015m
+gpt-6-astra call 59: move_to {'x': 0.035, 'y': 0.07, 'z': 1.24, 'roll': -1.5, 'pitch': 0, 'yaw': 0, 'gripper': 0}, 43 steps, residual 0.0020m
+gpt-6-astra call 60: move_to {'x': 0.035, 'y': 0.03, 'z': 1.095, 'roll': -1.5, 'pitch': 0, 'yaw': 0}, 16 steps, residual 0.0027m
+gpt-6-astra call 61: move_to {'y': -0.095, 'z': 1.095}, 9 steps, residual 0.0020m
+gpt-6-astra call 62: move_to {'y': -0.18, 'z': 1.095}, 6 steps, residual 0.0035m
+Trial task_completed: completion=100.0%, calls=63, action_steps=1206

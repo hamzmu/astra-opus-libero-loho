@@ -1,0 +1,715 @@
+{
+  "batch_id": "task1_uncapped_20261011_234048",
+  "configuration_verified": true,
+  "task_id": 1,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "cost_guard_enabled": false,
+  "task_instruction": "pick up the alphabet soup, then the butter, then the tomato sauce, and place each one into the basket",
+  "limits_per_trial": {
+    "max_calls": 80,
+    "max_action_steps": 2000,
+    "max_output_tokens_per_call": 128000,
+    "estimated_api_cost_cap_usd": null
+  },
+  "models": [
+    {
+      "model_id": "claude-opus-5-5",
+      "trials": 5,
+      "successes": 3,
+      "success_rate_percent": 60.0,
+      "mean_goal_completion_percent": 80.0,
+      "api_calls": 290,
+      "action_steps": 4957,
+      "cost_complete": true,
+      "known_estimated_api_cost_usd": 44.0600766,
+      "estimated_api_cost_usd": 44.0600766,
+      "total_api_latency_seconds": 12693.765070190828,
+      "weighted_mean_api_latency_seconds": 43.7716036903132,
+      "total_elapsed_seconds": 13251.984324153978,
+      "max_effort_requests": 290,
+      "xhigh_effort_requests": 0,
+      "api_errors": 0,
+      "tool_errors": 1,
+      "episodes": [
+        {
+          "model": "opus",
+          "trial": 1,
+          "directory": "opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T03:41:08.728357+00:00",
+          "pid": 4530,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T04:24:03.715214+00:00",
+          "success": false,
+          "completion_percent": 33.333333333333336,
+          "termination_reason": "model_done",
+          "calls": 64,
+          "action_steps": 1070,
+          "estimated_api_cost_usd": 8.3283206,
+          "known_estimated_api_cost_usd": 8.3283206,
+          "cost_complete": true,
+          "elapsed_seconds": 2480.9815354539896,
+          "mean_api_latency_seconds": 36.805299768969235,
+          "total_api_latency_seconds": 2355.539185214031,
+          "max_effort_requests": 64,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "claude-opus-5-5",
+          "goals_satisfied": 1,
+          "goals_total": 3,
+          "unsatisfied_goals": [
+            "in alphabet_soup_1 basket_1_contain_region",
+            "in tomato_sauce_1 basket_1_contain_region"
+          ],
+          "peak_completion_percent": 66.66666666666667,
+          "total_input_tokens": 10878195,
+          "total_output_tokens": 236334,
+          "total_cached_input_tokens": 10581058,
+          "total_cache_write_tokens": 296881,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 1,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 1071,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 1071,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "b197516262dc8e4a4c48393ac38ad318e02ad9444a5d82f8a8d47d86b384caf1"
+        },
+        {
+          "model": "opus",
+          "trial": 2,
+          "directory": "opus55_task1_max_nocost_trial2_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T04:24:05.283166+00:00",
+          "pid": 5001,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T05:18:18.994401+00:00",
+          "success": true,
+          "completion_percent": 100.0,
+          "termination_reason": "success",
+          "calls": 55,
+          "action_steps": 990,
+          "estimated_api_cost_usd": 10.2675758,
+          "known_estimated_api_cost_usd": 10.2675758,
+          "cost_complete": true,
+          "elapsed_seconds": 3127.4098111619824,
+          "mean_api_latency_seconds": 54.795161429008424,
+          "total_api_latency_seconds": 3013.7338785954635,
+          "max_effort_requests": 55,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "claude-opus-5-5",
+          "goals_satisfied": 3,
+          "goals_total": 3,
+          "unsatisfied_goals": [],
+          "peak_completion_percent": 100.0,
+          "total_input_tokens": 11387155,
+          "total_output_tokens": 312080,
+          "total_cached_input_tokens": 11022829,
+          "total_cache_write_tokens": 364106,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 991,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 991,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "25a5bcb871cb12b97f5be6138cc2610d66f579736aaf95d4447a210bfa7e7dad"
+        },
+        {
+          "model": "opus",
+          "trial": 3,
+          "directory": "opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T05:18:19.474435+00:00",
+          "pid": 5303,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T06:06:08.173968+00:00",
+          "success": true,
+          "completion_percent": 100.0,
+          "termination_reason": "success",
+          "calls": 60,
+          "action_steps": 1025,
+          "estimated_api_cost_usd": 8.9478738,
+          "known_estimated_api_cost_usd": 8.9478738,
+          "cost_complete": true,
+          "elapsed_seconds": 2759.205634453043,
+          "mean_api_latency_seconds": 44.089108010018634,
+          "total_api_latency_seconds": 2645.346480601118,
+          "max_effort_requests": 60,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "claude-opus-5-5",
+          "goals_satisfied": 3,
+          "goals_total": 3,
+          "unsatisfied_goals": [],
+          "peak_completion_percent": 100.0,
+          "total_input_tokens": 10717285,
+          "total_output_tokens": 266399,
+          "total_cached_input_tokens": 10409644,
+          "total_cache_write_tokens": 307401,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 1026,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 1026,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "377c9715872f2c526cd6264642cbd04de8be770565f57bbf9026cf819b83bb48"
+        },
+        {
+          "model": "opus",
+          "trial": 4,
+          "directory": "opus55_task1_max_nocost_trial4_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T06:06:08.778034+00:00",
+          "pid": 5426,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T06:59:17.291461+00:00",
+          "success": false,
+          "completion_percent": 66.66666666666667,
+          "termination_reason": "give_up",
+          "calls": 68,
+          "action_steps": 1181,
+          "estimated_api_cost_usd": 10.5543752,
+          "known_estimated_api_cost_usd": 10.5543752,
+          "cost_complete": true,
+          "elapsed_seconds": 3062.118625163974,
+          "mean_api_latency_seconds": 43.123868240337984,
+          "total_api_latency_seconds": 2932.423040342983,
+          "max_effort_requests": 68,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "claude-opus-5-5",
+          "goals_satisfied": 2,
+          "goals_total": 3,
+          "unsatisfied_goals": [
+            "in butter_1 basket_1_contain_region"
+          ],
+          "peak_completion_percent": 66.66666666666667,
+          "total_input_tokens": 14627192,
+          "total_output_tokens": 294723,
+          "total_cached_input_tokens": 14265786,
+          "total_cache_write_tokens": 361134,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 1182,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 1182,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "5f735808190fb6b8d6f64902a9af00643a9d016b0a2a1ddedb7b8b5a3a560a27"
+        },
+        {
+          "model": "opus",
+          "trial": 5,
+          "directory": "opus55_task1_max_nocost_trial5_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T06:59:17.921004+00:00",
+          "pid": 5571,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T07:31:00.844925+00:00",
+          "success": true,
+          "completion_percent": 100.0,
+          "termination_reason": "success",
+          "calls": 43,
+          "action_steps": 691,
+          "estimated_api_cost_usd": 5.9619312,
+          "known_estimated_api_cost_usd": 5.9619312,
+          "cost_complete": true,
+          "elapsed_seconds": 1822.2687179209897,
+          "mean_api_latency_seconds": 40.62145314970308,
+          "total_api_latency_seconds": 1746.7224854372325,
+          "max_effort_requests": 43,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "claude-opus-5-5",
+          "goals_satisfied": 3,
+          "goals_total": 3,
+          "unsatisfied_goals": [],
+          "peak_completion_percent": 100.0,
+          "total_input_tokens": 6509036,
+          "total_output_tokens": 179826,
+          "total_cached_input_tokens": 6287416,
+          "total_cache_write_tokens": 221448,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 692,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 692,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "86d393aa79ed560ed11317b526788c84b68c50db7e463d74e1f13604827358bd"
+        }
+      ]
+    },
+    {
+      "model_id": "gpt-6-astra",
+      "trials": 5,
+      "successes": 3,
+      "success_rate_percent": 60.0,
+      "mean_goal_completion_percent": 86.66666666666667,
+      "api_calls": 206,
+      "action_steps": 3339,
+      "cost_complete": true,
+      "known_estimated_api_cost_usd": 14.456575,
+      "estimated_api_cost_usd": 14.456575,
+      "total_api_latency_seconds": 2932.3472725490574,
+      "weighted_mean_api_latency_seconds": 14.234695497810959,
+      "total_elapsed_seconds": 3317.766656030959,
+      "max_effort_requests": 206,
+      "xhigh_effort_requests": 0,
+      "api_errors": 0,
+      "tool_errors": 0,
+      "episodes": [
+        {
+          "model": "astra",
+          "trial": 1,
+          "directory": "astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T03:41:08.724383+00:00",
+          "pid": 4529,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T03:52:34.136750+00:00",
+          "success": true,
+          "completion_percent": 100.0,
+          "termination_reason": "success",
+          "calls": 35,
+          "action_steps": 574,
+          "estimated_api_cost_usd": 2.475965,
+          "known_estimated_api_cost_usd": 2.475965,
+          "cost_complete": true,
+          "elapsed_seconds": 655.2977720219642,
+          "mean_api_latency_seconds": 16.79808626031237,
+          "total_api_latency_seconds": 587.933019110933,
+          "max_effort_requests": 35,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "gpt-6-astra",
+          "goals_satisfied": 3,
+          "goals_total": 3,
+          "unsatisfied_goals": [],
+          "peak_completion_percent": 100.0,
+          "total_input_tokens": 847046,
+          "total_output_tokens": 20941,
+          "total_cached_input_tokens": 795490,
+          "total_cache_write_tokens": 47146,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 575,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 575,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "f8a27fa9c87bfa4343174a87e8fc513e44784932c283463ffe95c0b14ed01cf4"
+        },
+        {
+          "model": "astra",
+          "trial": 2,
+          "directory": "astra_task1_max_nocost_trial2_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T03:52:34.887878+00:00",
+          "pid": 4689,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T04:02:35.490028+00:00",
+          "success": false,
+          "completion_percent": 66.66666666666667,
+          "termination_reason": "model_done",
+          "calls": 34,
+          "action_steps": 537,
+          "estimated_api_cost_usd": 2.293924,
+          "known_estimated_api_cost_usd": 2.293924,
+          "cost_complete": true,
+          "elapsed_seconds": 572.0595652160118,
+          "mean_api_latency_seconds": 14.973735929913614,
+          "total_api_latency_seconds": 509.10702161706286,
+          "max_effort_requests": 34,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "gpt-6-astra",
+          "goals_satisfied": 2,
+          "goals_total": 3,
+          "unsatisfied_goals": [
+            "in alphabet_soup_1 basket_1_contain_region"
+          ],
+          "peak_completion_percent": 66.66666666666667,
+          "total_input_tokens": 812645,
+          "total_output_tokens": 18987,
+          "total_cached_input_tokens": 765459,
+          "total_cache_write_tokens": 42902,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 538,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 538,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "2df5cbec47ae7235d45459f286994570d355bbc30dd8a3a128f24a2f4e745630"
+        },
+        {
+          "model": "astra",
+          "trial": 3,
+          "directory": "astra_task1_max_nocost_trial3_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T04:02:35.956369+00:00",
+          "pid": 4792,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T04:17:29.601424+00:00",
+          "success": false,
+          "completion_percent": 66.66666666666667,
+          "termination_reason": "model_done",
+          "calls": 59,
+          "action_steps": 1044,
+          "estimated_api_cost_usd": 4.3264605,
+          "known_estimated_api_cost_usd": 4.3264605,
+          "cost_complete": true,
+          "elapsed_seconds": 859.4835789810168,
+          "mean_api_latency_seconds": 12.570910525697647,
+          "total_api_latency_seconds": 741.6837210161611,
+          "max_effort_requests": 59,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "gpt-6-astra",
+          "goals_satisfied": 2,
+          "goals_total": 3,
+          "unsatisfied_goals": [
+            "in tomato_sauce_1 basket_1_contain_region"
+          ],
+          "peak_completion_percent": 66.66666666666667,
+          "total_input_tokens": 2231479,
+          "total_output_tokens": 25097,
+          "total_cached_input_tokens": 2156808,
+          "total_cache_write_tokens": 67237,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 1045,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 1045,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "b73a47c142138d3af8cd7f63af61c5cf32e8cc40f2224956c42df94a09bd168b"
+        },
+        {
+          "model": "astra",
+          "trial": 4,
+          "directory": "astra_task1_max_nocost_trial4_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T04:17:30.041719+00:00",
+          "pid": 4907,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T04:29:35.054810+00:00",
+          "success": true,
+          "completion_percent": 100.0,
+          "termination_reason": "success",
+          "calls": 43,
+          "action_steps": 633,
+          "estimated_api_cost_usd": 3.118163,
+          "known_estimated_api_cost_usd": 3.118163,
+          "cost_complete": true,
+          "elapsed_seconds": 695.2111497489968,
+          "mean_api_latency_seconds": 14.47784513874429,
+          "total_api_latency_seconds": 622.5473409660044,
+          "max_effort_requests": 43,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "gpt-6-astra",
+          "goals_satisfied": 3,
+          "goals_total": 3,
+          "unsatisfied_goals": [],
+          "peak_completion_percent": 100.0,
+          "total_input_tokens": 1265787,
+          "total_output_tokens": 23621,
+          "total_cached_input_tokens": 1206233,
+          "total_cache_write_tokens": 54136,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 634,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 634,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "b26dc7219ee5a047ac58891132bb31e0bc73088584899b78bc9a9b11b314f758"
+        },
+        {
+          "model": "astra",
+          "trial": 5,
+          "directory": "astra_task1_max_nocost_trial5_task1_uncapped_20261011_234048",
+          "status": "complete",
+          "started_at": "2026-10-12T04:29:35.548622+00:00",
+          "pid": 5092,
+          "controller_exit_code": 0,
+          "finished_at": "2026-10-12T04:38:55.116002+00:00",
+          "success": true,
+          "completion_percent": 100.0,
+          "termination_reason": "success",
+          "calls": 35,
+          "action_steps": 551,
+          "estimated_api_cost_usd": 2.2420625,
+          "known_estimated_api_cost_usd": 2.2420625,
+          "cost_complete": true,
+          "elapsed_seconds": 535.7145900629694,
+          "mean_api_latency_seconds": 13.459319138254171,
+          "total_api_latency_seconds": 471.076169838896,
+          "max_effort_requests": 35,
+          "xhigh_effort_requests": 0,
+          "cost_guard_enabled": false,
+          "verification_passed": true,
+          "model_id": "gpt-6-astra",
+          "goals_satisfied": 3,
+          "goals_total": 3,
+          "unsatisfied_goals": [],
+          "peak_completion_percent": 100.0,
+          "total_input_tokens": 818711,
+          "total_output_tokens": 17852,
+          "total_cached_input_tokens": 771600,
+          "total_cache_write_tokens": 42701,
+          "fallback_events": [],
+          "api_errors": 0,
+          "tool_error_count": 0,
+          "video_verification": {
+            "agentview": {
+              "file": "episode.mp4",
+              "decoded_frames": 552,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            },
+            "robot0_eye_in_hand": {
+              "file": "wrist_episode.mp4",
+              "decoded_frames": 552,
+              "fps": 10.0,
+              "frame_sizes": [
+                [
+                  224,
+                  224
+                ]
+              ]
+            }
+          },
+          "summary_sha256": "87ec52e878b5ef7ca96f4fa1893ec2b6118a1e7a45f4d5521b7613285e62eaaa"
+        }
+      ]
+    }
+  ],
+  "all_trial_costs_complete": true,
+  "trials_per_model": 5,
+  "known_estimated_api_cost_usd": 58.5166516,
+  "estimated_api_cost_usd": 58.5166516,
+  "videos_verified": 20,
+  "source_sha256_by_batch": {
+    "task1_uncapped_20261011_234048": {
+      "loho_frontier_eval.py": "c7295aaabfbd874a002d437a990fdb4264d9e07db370de1be6dd84f508ff4940",
+      "loho_pose_policy.py": "5bbd9840aaa562471cd931bad834183146c5ccc634b372c7bf313aee31e98b16",
+      "loho_pose_tools.py": "55f6ef3f1781b80cd7d8e4c500c95aefc090a70e4745192859b8ea07a03a799c",
+      "loho_anthropic.py": "26b8f210f36f3591be8a9449711a1cf57dbd80601141d1197179611829e61e22",
+      "loho_telemetry.py": "880f16a945ba898bd673ed5757c730b6b5410ffce95aa5945b966ae2bc091525",
+      "loho_scoring.py": "8721cf8f355d3fc9ed4b362dd471aa345ae43243b2c8ce7180bc18880b357c75",
+      "loho_control_feedback.py": "1de105264de34c8ec0e6b9b6a3c20d68b31f6c66beca0a126d59945682d9abdb",
+      "loho_cameras.py": "f0c74c96ed25a862ee29b58d266914f65c7584ea54c3c7f2af21e31bd1895742",
+      "pricing-astra.json": "9e3219fce9a3c27722290598df40b353af71b776b4a84209cc84663370ca1bf1",
+      "pricing-opus.json": "f96aa5d0cbd8aa9aa7714d360fb83b38d2120aad41b973b617507977392f2694",
+      "comparison-models.json": "e0c71a46202bbe96a946e4989d3176bd808c2f1ea4dfb030c748bf5e727317f9",
+      "scripts/record_opus_trial.py": "e87a09511ea697c26d6110cb1e26aca4eb699e2648ef350edba64051b7bc457b"
+    }
+  },
+  "source_manifests": [
+    "task1_uncapped_20261011_234048.json"
+  ],
+  "media_mode": "video_only",
+  "standalone_pngs_retained": false,
+  "note": "Fresh independent conversations on one stored task state. Public-rate estimates use actual reported cache usage. Provider caches are not forcibly cleared between trials. Historical capped episodes and their startup attempts are separate. Standalone PNGs were removed from older trials; later trials save only camera MP4s and frame references. Control, prompt, observation and budget settings are unchanged."
+}

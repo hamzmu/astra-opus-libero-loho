@@ -1,0 +1,192 @@
+{
+  "configuration_matched": true,
+  "comparison_limit": "One Luna trial and two Astra trials. Same state, seed, prompt and robot-control settings, with fresh per-trial conversations. Partial scores count final goal predicates. Neither model completed the task; cost caps did not bind.",
+  "trials": [
+    {
+      "directory": "luna_task0_pose_tools_20261011_114646",
+      "model_id": "gpt-6-luna",
+      "termination_reason": "decision_budget",
+      "success": false,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 1,
+        "completion_fraction": 0.3333333333333333,
+        "completion_percent": 33.333333333333336,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 33.333333333333336,
+        "last_scored_simulator_step": 892,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 103
+          }
+        ]
+      },
+      "decisions_used": 40,
+      "simulator_action_steps": 887,
+      "elapsed_seconds": 285.0245833930094,
+      "mean_api_latency_seconds": 4.606125711371715,
+      "estimated_api_cost_usd": 0.102308585,
+      "cost_complete": true
+    },
+    {
+      "directory": "astra_task0_pose_tools_20261011_115808",
+      "model_id": "gpt-6-astra",
+      "termination_reason": "give_up",
+      "success": false,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 0,
+        "completion_fraction": 0.0,
+        "completion_percent": 0.0,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 0.0,
+        "last_scored_simulator_step": 824,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "decisions_used": 38,
+      "simulator_action_steps": 819,
+      "elapsed_seconds": 310.277795195987,
+      "mean_api_latency_seconds": 5.430134658894723,
+      "estimated_api_cost_usd": 7.4480685,
+      "cost_complete": true
+    },
+    {
+      "directory": "astra_task0_pose_tools_rerun_20261011_120741",
+      "model_id": "gpt-6-astra",
+      "termination_reason": "step_budget",
+      "success": false,
+      "trial_score": {
+        "available": true,
+        "rubric_id": "libero_loho_goal_predicates_v1",
+        "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+        "task_complete": false,
+        "goals_total": 3,
+        "goals_satisfied": 1,
+        "completion_fraction": 0.3333333333333333,
+        "completion_percent": 33.333333333333336,
+        "initial_completion_percent": 0.0,
+        "peak_simultaneous_completion_percent": 33.333333333333336,
+        "last_scored_simulator_step": 905,
+        "goals": [
+          {
+            "predicate": [
+              "in",
+              "butter_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in butter_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": true,
+            "ever_satisfied": true,
+            "first_satisfied_step": 587
+          },
+          {
+            "predicate": [
+              "in",
+              "chocolate_pudding_1",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          },
+          {
+            "predicate": [
+              "close",
+              "wooden_cabinet_1_top_region"
+            ],
+            "label": "close wooden_cabinet_1_top_region",
+            "initially_satisfied": false,
+            "satisfied": false,
+            "ever_satisfied": false,
+            "first_satisfied_step": null
+          }
+        ]
+      },
+      "decisions_used": 38,
+      "simulator_action_steps": 900,
+      "elapsed_seconds": 308.2193920050049,
+      "mean_api_latency_seconds": 5.246602905292285,
+      "estimated_api_cost_usd": 7.5646095,
+      "cost_complete": true
+    }
+  ]
+}

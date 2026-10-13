@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "source_runs": 30,
+  "n_per_task_model": 5,
+  "sample_std_ddof": 1,
+  "metric_groups_verified": 54,
+  "charts": 12,
+  "formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "source_summary_hashes_unchanged": true,
+  "local_links_verified": 45,
+  "visual_review": "One-column main figure and combined token/cost panel reviewed. Tokens use bars and the left million-token axis; costs use colored diamond markers and the right USD axis. Both show sample-SD whiskers.",
+  "main_figure_panels": [
+    "Goal completion score",
+    "Total tokens and estimated API cost",
+    "Wall-clock time"
+  ]
+}

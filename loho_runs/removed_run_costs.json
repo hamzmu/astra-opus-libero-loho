@@ -1,0 +1,22 @@
+﻿{
+    "receipts":  [
+                     {
+                         "run_id":  "c0a14e8a-485a-4596-a1b1-1d9c0c501e09",
+                         "model_id":  "gpt-6-astra",
+                         "provider":  "openai",
+                         "task_id":  4,
+                         "removed_at":  "2026-10-12T17:52:46.8919229Z",
+                         "estimated_api_cost_usd":  7.1329135,
+                         "known_estimated_api_cost_usd":  7.1329135,
+                         "cost_complete":  true,
+                         "api_calls":  76,
+                         "total_input_tokens":  3731889,
+                         "total_output_tokens":  43631,
+                         "total_cached_input_tokens":  3623766,
+                         "total_cache_write_tokens":  98547,
+                         "total_api_latency_seconds":  1555.2167921102373,
+                         "source_summary_sha256":  "822b570781525863f35f23087641afc3f7832d0b58f8f86a2f9cab75cbc1e234",
+                         "note":  "Financial receipt only; result artifacts removed at user request. This already incurred cost is excluded from retained result scores and remains in spending accounting."
+                     }
+                 ]
+}

@@ -1,0 +1,111 @@
+{
+  "configuration_verified": true,
+  "reference_trial": "../../../setup_logs/task1_reference_20261011_233620",
+  "checks": {
+    "model_id": true,
+    "provider": true,
+    "task_id": true,
+    "initial_state_id": true,
+    "sim_seed": true,
+    "policy": true,
+    "prompt_profile": true,
+    "context_mode": true,
+    "effort": true,
+    "effort_fallback": true,
+    "control_hz": true,
+    "max_decisions": true,
+    "max_action_steps": true,
+    "max_estimated_api_cost_usd": true,
+    "max_output_tokens_per_call": true,
+    "max_speed_fraction": true,
+    "rgb_resolution": true,
+    "cameras": true,
+    "camera_orientations": true,
+    "image_history_observations": true,
+    "image_history_mode": true,
+    "simulator_horizon": true,
+    "system_prompt": true,
+    "workspace_bounds": true,
+    "start_grasp_site_rotation_xyzw": true,
+    "runtime_revision": true,
+    "runtime_versions": true,
+    "runtime_render_backend": true,
+    "initial_camera_hashes_match": true,
+    "initial_proprioception_matches": true
+  },
+  "expected": {
+    "model_id": "claude-opus-5-5",
+    "provider": "anthropic",
+    "task_id": 1,
+    "initial_state_id": 0,
+    "sim_seed": 0,
+    "policy": "pose-tools",
+    "prompt_profile": "pose-tools-v1",
+    "context_mode": "conversation_and_tool_results",
+    "effort": "max",
+    "effort_fallback": null,
+    "control_hz": 10,
+    "max_decisions": 80,
+    "max_action_steps": 2000,
+    "max_estimated_api_cost_usd": null,
+    "max_output_tokens_per_call": 128000,
+    "max_speed_fraction": 0.25,
+    "rgb_resolution": [
+      224,
+      224
+    ],
+    "cameras": [
+      "agentview",
+      "robot0_eye_in_hand"
+    ],
+    "camera_orientations": {
+      "agentview": "rotate180",
+      "robot0_eye_in_hand": "flip_vertical"
+    },
+    "image_history_observations": 0,
+    "image_history_mode": "all",
+    "simulator_horizon": 2005,
+    "workspace_bounds": {
+      "x": [
+        -0.35,
+        0.35
+      ],
+      "y": [
+        -0.8,
+        0.8
+      ],
+      "z": [
+        0.415,
+        0.9099999999999999
+      ],
+      "roll": [
+        -1.5707963267948966,
+        1.5707963267948966
+      ],
+      "pitch": [
+        -1.5707963267948966,
+        1.5707963267948966
+      ],
+      "yaw": [
+        -3.141592653589793,
+        3.141592653589793
+      ],
+      "gripper": [
+        0.0,
+        1.0
+      ]
+    },
+    "start_grasp_site_rotation_xyzw": [
+      0.7066474389970282,
+      0.706995636525711,
+      -0.0200769713606414,
+      -0.02008686420351004
+    ]
+  },
+  "model_differences": {
+    "model_id": "claude-opus-5-5",
+    "provider": "anthropic",
+    "effort_fallback": null
+  },
+  "budget_policy_change": null
+}

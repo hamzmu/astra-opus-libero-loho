@@ -1,0 +1,44 @@
+control on Linux, output=/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 4/opus55_task4_max_nocost_trial4_task4_uncapped_20261012_110427
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /root/projects/LIBERO-LOHO/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+claude-opus-5-5 call 0: move_to {'x': -0.1, 'y': 0.193, 'z': 1.0, 'gripper': 1.0}, 20 steps, residual 0.0042m
+claude-opus-5-5 call 1: move_to {'x': -0.11, 'y': 0.195, 'z': 0.92, 'gripper': 1.0}, 9 steps, residual 0.0022m
+claude-opus-5-5 call 2: move_to {'gripper': 0.0}, 41 steps, residual 0.0027m
+claude-opus-5-5 call 3: move_to {'gripper': 1.0}, 41 steps, residual 0.0002m
+claude-opus-5-5 call 4: move_to {'z': 0.911}, 3 steps, residual 0.0029m
+claude-opus-5-5 call 5: move_to {'gripper': 0.0}, 41 steps, residual 0.0002m
+claude-opus-5-5 call 6: move_to {'z': 1.0}, 9 steps, residual 0.0030m
+claude-opus-5-5 call 7: move_to {'x': -0.08, 'y': -0.1, 'z': 1.25}, 24 steps, residual 0.0010m
+claude-opus-5-5 call 8: move_to {'x': 0.0, 'y': -0.14, 'z': 1.25}, 7 steps, residual 0.0015m
+claude-opus-5-5 call 9: move_to {'x': -0.03, 'y': -0.135, 'z': 1.17}, 9 steps, residual 0.0027m
+claude-opus-5-5 call 10: move_to {'gripper': 1.0}, 41 steps, residual 0.0001m
+claude-opus-5-5 call 11: move_to {'x': 0.015, 'y': 0.042, 'z': 1.17}, 9 steps, residual 0.0017m
+claude-opus-5-5 call 12: move_to {'x': 0.009, 'y': 0.04, 'z': 0.915}, 26 steps, residual 0.1667m
+claude-opus-5-5 call 13: move_to {'x': 0.0, 'y': 0.12, 'z': 1.18, 'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}, 18 steps, residual 0.0154m
+claude-opus-5-5 call 14: move_to {'x': 0.012, 'y': 0.12, 'z': 0.955}, 21 steps, residual 0.0026m
+claude-opus-5-5 call 15: move_to {'x': 0.01, 'y': 0.047}, 6 steps, residual 0.0008m
+claude-opus-5-5 call 16: move_to {'x': 0.012, 'y': 0.037, 'z': 0.915}, 6 steps, residual 0.0021m
+claude-opus-5-5 call 17: move_to {'gripper': 0.0}, 41 steps, residual 0.0004m
+claude-opus-5-5 call 18: move_to {'y': 0.11, 'z': 0.95}, 6 steps, residual 0.0020m
+claude-opus-5-5 call 19: move_to {'x': 0.06, 'y': 0.05, 'z': 1.22, 'yaw': 1.5708}, 25 steps, residual 0.0019m
+claude-opus-5-5 call 20: move_to {'x': 0.06, 'y': -0.14, 'z': 1.165}, 12 steps, residual 0.0030m
+claude-opus-5-5 call 21: move_to {'gripper': 1.0}, 41 steps, residual 0.0006m
+claude-opus-5-5 call 22: move_to {'x': 0.015, 'y': 0.0, 'z': 1.2, 'gripper': 0.0}, 42 steps, residual 0.0021m
+claude-opus-5-5 call 23: move_to {'z': 1.12}, 9 steps, residual 0.0022m
+claude-opus-5-5 call 24: move_to {'y': -0.2}, 11 steps, residual 0.0007m
+claude-opus-5-5 call 25: move_to {'y': -0.235}, 7 steps, residual 0.0280m
+claude-opus-5-5 call 26: move_to {'z': 1.21}, 10 steps, residual 0.0029m
+claude-opus-5-5 call 27: move_to {'x': -0.056, 'y': -0.007, 'z': 1.06}, 17 steps, residual 0.0027m
+claude-opus-5-5 call 28: move_to {'x': -0.064, 'y': -0.009, 'z': 0.94, 'gripper': 1.0}, 42 steps, residual 0.0016m
+claude-opus-5-5 call 29: move_to {'gripper': 0.0}, 41 steps, residual 0.0003m
+claude-opus-5-5 call 30: move_to {'z': 1.0}, 7 steps, residual 0.0028m
+claude-opus-5-5 call 31: move_to {'x': 0.06, 'y': -0.15, 'z': 1.25}, 24 steps, residual 0.0012m
+claude-opus-5-5 call 32: move_to {'x': 0.06, 'y': -0.38, 'z': 1.23}, 13 steps, residual 0.0138m
+claude-opus-5-5 call 33: move_to {'x': 0.055, 'y': -0.3, 'z': 1.19}, 8 steps, residual 0.0109m
+claude-opus-5-5 call 34: move_to {'x': 0.03, 'y': -0.3, 'z': 1.18}, 7 steps, residual 0.0191m
+claude-opus-5-5 call 35: move_to {'gripper': 1.0}, 6 steps, residual 0.0001m
+Trial task_completed: completion=100.0%, calls=36, action_steps=700

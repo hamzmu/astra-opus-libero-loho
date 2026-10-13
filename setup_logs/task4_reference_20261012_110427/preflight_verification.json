@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "task_id": 4,
+  "real_api_calls": 0,
+  "robot_action_steps": 0,
+  "reference_only": true,
+  "note": "Real reset/cameras/calibration/proprioception with a local fake done reply. No prior-run actions or hindsight are supplied to the benchmark models."
+}

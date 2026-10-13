@@ -1,0 +1,198 @@
+{
+  "model_id": "claude-opus-5-5",
+  "trials": 3,
+  "successes": 3,
+  "success_rate_percent": 100.0,
+  "mean_goal_completion_percent": 100.0,
+  "api_calls": 100,
+  "action_steps": 1711,
+  "cost_complete": true,
+  "known_estimated_api_cost_usd": 14.5173352,
+  "estimated_api_cost_usd": 14.5173352,
+  "total_api_latency_seconds": 4612.678882653941,
+  "weighted_mean_api_latency_seconds": 46.12678882653941,
+  "total_elapsed_seconds": 4818.366605104005,
+  "max_effort_requests": 100,
+  "xhigh_effort_requests": 0,
+  "api_errors": 0,
+  "tool_errors": 0,
+  "episodes": [
+    {
+      "model": "opus",
+      "trial": 1,
+      "directory": "opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025",
+      "status": "complete",
+      "started_at": "2026-10-12T00:30:30.975742+00:00",
+      "pid": 2675,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T01:00:47.365765+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 31,
+      "action_steps": 479,
+      "estimated_api_cost_usd": 5.3490556,
+      "known_estimated_api_cost_usd": 5.3490556,
+      "cost_complete": true,
+      "elapsed_seconds": 1760.7254215289722,
+      "mean_api_latency_seconds": 54.88346760418837,
+      "total_api_latency_seconds": 1701.3874957298394,
+      "max_effort_requests": 31,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 4064426,
+      "total_output_tokens": 176948,
+      "total_cached_input_tokens": 3856648,
+      "total_cache_write_tokens": 207654,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 480,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 480,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "5ae2c771d6257403cb487d260e69a9ce026bedaddc78d690d2dd7c00c5d5a600"
+    },
+    {
+      "model": "opus",
+      "trial": 2,
+      "directory": "opus55_task0_max_nocost_trial2_task0_uncapped_20261011_203025",
+      "status": "complete",
+      "started_at": "2026-10-12T01:00:47.869459+00:00",
+      "pid": 2916,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T01:28:52.890831+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 33,
+      "action_steps": 598,
+      "estimated_api_cost_usd": 4.9309286,
+      "known_estimated_api_cost_usd": 4.9309286,
+      "cost_complete": true,
+      "elapsed_seconds": 1630.8456205110415,
+      "mean_api_latency_seconds": 47.25951397342424,
+      "total_api_latency_seconds": 1559.563961123,
+      "max_effort_requests": 33,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 3615003,
+      "total_output_tokens": 163273,
+      "total_cached_input_tokens": 3418628,
+      "total_cache_write_tokens": 196243,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 599,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 599,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "900e613555b44b4afb6422b04bb81f5940a04954143475e183a5b330c6bdd417"
+    },
+    {
+      "model": "opus",
+      "trial": 3,
+      "directory": "opus55_task0_max_nocost_trial3_task0_uncapped_20261011_203025",
+      "status": "complete",
+      "started_at": "2026-10-12T01:28:53.361099+00:00",
+      "pid": 3159,
+      "controller_exit_code": 0,
+      "finished_at": "2026-10-12T01:53:28.892305+00:00",
+      "success": true,
+      "completion_percent": 100.0,
+      "termination_reason": "success",
+      "calls": 36,
+      "action_steps": 634,
+      "estimated_api_cost_usd": 4.237351,
+      "known_estimated_api_cost_usd": 4.237351,
+      "cost_complete": true,
+      "elapsed_seconds": 1426.7955630639917,
+      "mean_api_latency_seconds": 37.547984050030614,
+      "total_api_latency_seconds": 1351.727425801102,
+      "max_effort_requests": 36,
+      "xhigh_effort_requests": 0,
+      "cost_guard_enabled": false,
+      "verification_passed": true,
+      "model_id": "claude-opus-5-5",
+      "peak_completion_percent": 100.0,
+      "total_input_tokens": 3717463,
+      "total_output_tokens": 133867,
+      "total_cached_input_tokens": 3547325,
+      "total_cache_write_tokens": 169994,
+      "fallback_events": [],
+      "api_errors": 0,
+      "tool_error_count": 0,
+      "video_verification": {
+        "agentview": {
+          "file": "episode.mp4",
+          "decoded_frames": 635,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        },
+        "robot0_eye_in_hand": {
+          "file": "wrist_episode.mp4",
+          "decoded_frames": 635,
+          "fps": 10.0,
+          "frame_sizes": [
+            [
+              224,
+              224
+            ]
+          ]
+        }
+      },
+      "summary_sha256": "d202aabbffe5fd6f4a8180137c6fd140a6dd7d43381279a7a6dfe0c07c7b3c14"
+    }
+  ]
+}

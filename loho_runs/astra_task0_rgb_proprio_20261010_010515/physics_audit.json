@@ -1,0 +1,2631 @@
+{
+  "api_calls": 0,
+  "diagnostics_only_privileged_state": true,
+  "source_run_id": "a951f0ad-e5c1-4bab-ab46-4457e0870fd9",
+  "decisions": [
+    {
+      "decision_index": 0,
+      "action": [
+        0.7,
+        -0.6,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        -0.208465,
+        0.0,
+        1.173279
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        -0.176767,
+        -0.032535,
+        1.128526
+      ],
+      "observed_eef_delta_m": [
+        0.031698000000000004,
+        -0.032535,
+        -0.04475300000000004
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 1,
+      "action": [
+        0.4,
+        -0.4,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        -0.176767,
+        -0.032535,
+        1.128526
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        -0.15029,
+        -0.061494,
+        1.091146
+      ],
+      "observed_eef_delta_m": [
+        0.026477,
+        -0.028959,
+        -0.03737999999999997
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 2,
+      "action": [
+        0.6,
+        -0.8,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        -0.15029,
+        -0.061494,
+        1.091146
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        -0.137946,
+        -0.111934,
+        1.074153
+      ],
+      "observed_eef_delta_m": [
+        0.012343999999999994,
+        -0.050440000000000006,
+        -0.016993000000000036
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g11 / gripper0_hand_collision": -0.00016244164243554344
+      },
+      "success": false
+    },
+    {
+      "decision_index": 3,
+      "action": [
+        0.45,
+        -0.7,
+        -0.55,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        -0.137946,
+        -0.111934,
+        1.074153
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g11 / gripper0_hand_collision": -0.00016244164243554344
+      },
+      "eef_after_m": [
+        -0.147156,
+        -0.113409,
+        1.080908
+      ],
+      "observed_eef_delta_m": [
+        -0.009209999999999996,
+        -0.0014749999999999902,
+        0.0067550000000000665
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g4 / gripper0_hand_collision": -2.618950978547649e-05,
+        "wooden_cabinet_1_g11 / gripper0_hand_collision": -8.915622950951845e-06
+      },
+      "success": false
+    },
+    {
+      "decision_index": 4,
+      "action": [
+        0.35,
+        -0.6,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        -0.147156,
+        -0.113409,
+        1.080908
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g4 / gripper0_hand_collision": -2.618950978547649e-05,
+        "wooden_cabinet_1_g11 / gripper0_hand_collision": -8.915622950951845e-06
+      },
+      "eef_after_m": [
+        -0.111231,
+        -0.127506,
+        1.138368
+      ],
+      "observed_eef_delta_m": [
+        0.03592500000000001,
+        -0.014097000000000012,
+        0.05746000000000007
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 5,
+      "action": [
+        0.4,
+        -0.4,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        -0.111231,
+        -0.127506,
+        1.138368
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        -0.015033,
+        -0.168887,
+        1.180665
+      ],
+      "observed_eef_delta_m": [
+        0.09619799999999999,
+        -0.041381,
+        0.04229700000000003
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 6,
+      "action": [
+        -0.8,
+        -0.3,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        -0.015033,
+        -0.168887,
+        1.180665
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.015627,
+        -0.208735,
+        1.182297
+      ],
+      "observed_eef_delta_m": [
+        0.03066,
+        -0.039847999999999995,
+        0.0016319999999998558
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 7,
+      "action": [
+        -0.3,
+        -0.5,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.015627,
+        -0.208735,
+        1.182297
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.033385,
+        -0.25373,
+        1.178817
+      ],
+      "observed_eef_delta_m": [
+        0.017758,
+        -0.04499500000000001,
+        -0.0034799999999999276
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 8,
+      "action": [
+        0.0,
+        -0.65,
+        -0.8,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.033385,
+        -0.25373,
+        1.178817
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.046226,
+        -0.301064,
+        1.142894
+      ],
+      "observed_eef_delta_m": [
+        0.012841000000000005,
+        -0.04733399999999999,
+        -0.03592299999999993
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 9,
+      "action": [
+        -0.6,
+        -0.4,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.046226,
+        -0.301064,
+        1.142894
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.036717,
+        -0.327089,
+        1.138664
+      ],
+      "observed_eef_delta_m": [
+        -0.009509000000000004,
+        -0.02602500000000002,
+        -0.004230000000000178
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 10,
+      "action": [
+        -0.5,
+        -0.5,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.036717,
+        -0.327089,
+        1.138664
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.034923,
+        -0.34115,
+        1.137489
+      ],
+      "observed_eef_delta_m": [
+        -0.001793999999999997,
+        -0.01406099999999999,
+        -0.001174999999999926
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -0.00010509966457217246
+      },
+      "success": false
+    },
+    {
+      "decision_index": 11,
+      "action": [
+        -0.4,
+        -0.5,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.034923,
+        -0.34115,
+        1.137489
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -0.00010509966457217246
+      },
+      "eef_after_m": [
+        0.03484,
+        -0.345339,
+        1.137466
+      ],
+      "observed_eef_delta_m": [
+        -8.299999999999974e-05,
+        -0.004188999999999998,
+        -2.2999999999884224e-05
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -9.347593713493474e-05,
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -5.156903026826143e-07
+      },
+      "success": false
+    },
+    {
+      "decision_index": 12,
+      "action": [
+        0.5,
+        0.0,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.03484,
+        -0.345339,
+        1.137466
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -9.347593713493474e-05,
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -5.156903026826143e-07
+      },
+      "eef_after_m": [
+        0.043069,
+        -0.347014,
+        1.137583
+      ],
+      "observed_eef_delta_m": [
+        0.008229,
+        -0.001674999999999982,
+        0.00011699999999992272
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 13,
+      "action": [
+        -0.5,
+        0.8,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.043069,
+        -0.347014,
+        1.137583
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.037212,
+        -0.324749,
+        1.139182
+      ],
+      "observed_eef_delta_m": [
+        -0.005857000000000001,
+        0.02226499999999998,
+        0.001598999999999906
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 14,
+      "action": [
+        0.6,
+        1.0,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.037212,
+        -0.324749,
+        1.139182
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.058742,
+        -0.290769,
+        1.137668
+      ],
+      "observed_eef_delta_m": [
+        0.02153,
+        0.03398000000000001,
+        -0.0015140000000000153
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 15,
+      "action": [
+        0.35,
+        0.55,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.058742,
+        -0.290769,
+        1.137668
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.070306,
+        -0.265339,
+        1.137497
+      ],
+      "observed_eef_delta_m": [
+        0.011563999999999991,
+        0.025430000000000008,
+        -0.00017099999999992122
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -8.89080330468417e-06
+      },
+      "success": false
+    },
+    {
+      "decision_index": 16,
+      "action": [
+        0.45,
+        0.4,
+        -0.8,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.070306,
+        -0.265339,
+        1.137497
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -8.89080330468417e-06
+      },
+      "eef_after_m": [
+        0.076691,
+        -0.258403,
+        1.13742
+      ],
+      "observed_eef_delta_m": [
+        0.006385000000000002,
+        0.006935999999999998,
+        -7.699999999988272e-05
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -4.436379657686785e-06
+      },
+      "success": false
+    },
+    {
+      "decision_index": 17,
+      "action": [
+        0.7,
+        -0.6,
+        -0.8,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.076691,
+        -0.258403,
+        1.13742
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -4.436379657686785e-06
+      },
+      "eef_after_m": [
+        0.079497,
+        -0.271939,
+        1.137239
+      ],
+      "observed_eef_delta_m": [
+        0.002806000000000003,
+        -0.013535999999999992,
+        -0.00018099999999998673
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -3.8175352501612636e-05
+      },
+      "success": false
+    },
+    {
+      "decision_index": 18,
+      "action": [
+        0.2,
+        -0.6,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.079497,
+        -0.271939,
+        1.137239
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -3.8175352501612636e-05
+      },
+      "eef_after_m": [
+        0.081407,
+        -0.275994,
+        1.137248
+      ],
+      "observed_eef_delta_m": [
+        0.001909999999999995,
+        -0.004055000000000031,
+        8.999999999925734e-06
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -3.157210163418078e-05,
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -3.73892324396774e-05
+      },
+      "success": false
+    },
+    {
+      "decision_index": 19,
+      "action": [
+        0.0,
+        -0.5,
+        -0.65,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.081407,
+        -0.275994,
+        1.137248
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -3.157210163418078e-05,
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -3.73892324396774e-05
+      },
+      "eef_after_m": [
+        0.081951,
+        -0.277685,
+        1.137344
+      ],
+      "observed_eef_delta_m": [
+        0.0005440000000000028,
+        -0.001690999999999998,
+        9.599999999987396e-05
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -1.8632450908828702e-06,
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -2.392414727436787e-06
+      },
+      "success": false
+    },
+    {
+      "decision_index": 20,
+      "action": [
+        0.5,
+        0.9,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.081951,
+        -0.277685,
+        1.137344
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -1.8632450908828702e-06,
+        "wooden_cabinet_1_g9 / gripper0_finger2_collision": -2.392414727436787e-06
+      },
+      "eef_after_m": [
+        0.096125,
+        -0.246606,
+        1.136969
+      ],
+      "observed_eef_delta_m": [
+        0.014174000000000006,
+        0.031079000000000023,
+        -0.0003750000000000142
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -5.730329800668343e-06
+      },
+      "success": false
+    },
+    {
+      "decision_index": 21,
+      "action": [
+        0.4,
+        1.0,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.096125,
+        -0.246606,
+        1.136969
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -5.730329800668343e-06
+      },
+      "eef_after_m": [
+        0.109107,
+        -0.209988,
+        1.136365
+      ],
+      "observed_eef_delta_m": [
+        0.012981999999999994,
+        0.036617999999999984,
+        -0.0006039999999998269
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 22,
+      "action": [
+        0.6,
+        0.8,
+        -0.7,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.109107,
+        -0.209988,
+        1.136365
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.118569,
+        -0.196562,
+        1.135573
+      ],
+      "observed_eef_delta_m": [
+        0.009461999999999998,
+        0.013426000000000021,
+        -0.0007920000000001259
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 23,
+      "action": [
+        0.45,
+        0.7,
+        -0.9,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.118569,
+        -0.196562,
+        1.135573
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.118848,
+        -0.196172,
+        1.13533
+      ],
+      "observed_eef_delta_m": [
+        0.00027900000000000147,
+        0.0003899999999999737,
+        -0.00024299999999999322
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -0.00017000348490525674
+      },
+      "success": false
+    },
+    {
+      "decision_index": 24,
+      "action": [
+        0.45,
+        0.8,
+        -0.9,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.118848,
+        -0.196172,
+        1.13533
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -0.00017000348490525674
+      },
+      "eef_after_m": [
+        0.118877,
+        -0.196056,
+        1.135357
+      ],
+      "observed_eef_delta_m": [
+        2.9000000000001247e-05,
+        0.00011600000000000499,
+        2.6999999999999247e-05
+      ],
+      "contacts_after": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -0.00016826628894306417
+      },
+      "success": false
+    },
+    {
+      "decision_index": 25,
+      "action": [
+        0.3,
+        1.0,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.118877,
+        -0.196056,
+        1.135357
+      ],
+      "contacts_before": {
+        "wooden_cabinet_1_g9 / gripper0_finger1_collision": -0.00016826628894306417
+      },
+      "eef_after_m": [
+        0.121483,
+        -0.172062,
+        1.136305
+      ],
+      "observed_eef_delta_m": [
+        0.002605999999999997,
+        0.023994000000000015,
+        0.0009479999999999489
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 26,
+      "action": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.121483,
+        -0.172062,
+        1.136305
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.12075,
+        -0.115667,
+        1.137484
+      ],
+      "observed_eef_delta_m": [
+        -0.0007329999999999975,
+        0.05639499999999999,
+        0.0011790000000000411
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 27,
+      "action": [
+        0.4,
+        1.0,
+        -0.2,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.12075,
+        -0.115667,
+        1.137484
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.135126,
+        -0.050151,
+        1.119688
+      ],
+      "observed_eef_delta_m": [
+        0.014376,
+        0.065516,
+        -0.017795999999999923
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 28,
+      "action": [
+        0.25,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.135126,
+        -0.050151,
+        1.119688
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.140645,
+        0.016041,
+        1.10692
+      ],
+      "observed_eef_delta_m": [
+        0.005518999999999996,
+        0.066192,
+        -0.012768000000000113
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 29,
+      "action": [
+        0.1,
+        0.8,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.140645,
+        0.016041,
+        1.10692
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.138737,
+        0.071278,
+        1.069979
+      ],
+      "observed_eef_delta_m": [
+        -0.001907999999999993,
+        0.055236999999999994,
+        -0.03694099999999989
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 30,
+      "action": [
+        0.0,
+        0.55,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.138737,
+        0.071278,
+        1.069979
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.132865,
+        0.110619,
+        1.039804
+      ],
+      "observed_eef_delta_m": [
+        -0.005871999999999988,
+        0.039341,
+        -0.030175000000000063
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 31,
+      "action": [
+        0.0,
+        0.7,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.132865,
+        0.110619,
+        1.039804
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.125658,
+        0.153242,
+        1.004988
+      ],
+      "observed_eef_delta_m": [
+        -0.007207000000000019,
+        0.042622999999999994,
+        -0.03481599999999996
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 32,
+      "action": [
+        0.0,
+        0.0,
+        -0.65,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.125658,
+        0.153242,
+        1.004988
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.118571,
+        0.16231,
+        0.958991
+      ],
+      "observed_eef_delta_m": [
+        -0.007086999999999996,
+        0.00906800000000002,
+        -0.045996999999999955
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 33,
+      "action": [
+        0.0,
+        0.0,
+        -0.65,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.118571,
+        0.16231,
+        0.958991
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.11163,
+        0.161277,
+        0.910931
+      ],
+      "observed_eef_delta_m": [
+        -0.006941000000000003,
+        -0.0010330000000000061,
+        -0.04805999999999999
+      ],
+      "contacts_after": {},
+      "success": false
+    },
+    {
+      "decision_index": 34,
+      "action": [
+        0.0,
+        0.0,
+        -0.8,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.11163,
+        0.161277,
+        0.910931
+      ],
+      "contacts_before": {},
+      "eef_after_m": [
+        0.111348,
+        0.161744,
+        0.908886
+      ],
+      "observed_eef_delta_m": [
+        -0.0002819999999999906,
+        0.0004669999999999952,
+        -0.0020450000000000745
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0005487052731830699,
+        "table_collision / gripper0_finger2_collision": -0.0004956752451729107
+      },
+      "success": false
+    },
+    {
+      "decision_index": 35,
+      "action": [
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111348,
+        0.161744,
+        0.908886
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0005487052731830699,
+        "table_collision / gripper0_finger2_collision": -0.0004956752451729107
+      },
+      "eef_after_m": [
+        0.111408,
+        0.161409,
+        0.909209
+      ],
+      "observed_eef_delta_m": [
+        5.9999999999990616e-05,
+        -0.00033500000000000196,
+        0.00032300000000007323
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00028269027926741686,
+        "table_collision / gripper0_finger2_collision": -0.00014171870403500986
+      },
+      "success": false
+    },
+    {
+      "decision_index": 36,
+      "action": [
+        0.0,
+        0.0,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111408,
+        0.161409,
+        0.909209
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00028269027926741686,
+        "table_collision / gripper0_finger2_collision": -0.00014171870403500986
+      },
+      "eef_after_m": [
+        0.111461,
+        0.161458,
+        0.909172
+      ],
+      "observed_eef_delta_m": [
+        5.300000000001137e-05,
+        4.899999999999349e-05,
+        -3.700000000006476e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00030752047547277783,
+        "table_collision / gripper0_finger2_collision": -0.0001979574664823236
+      },
+      "success": false
+    },
+    {
+      "decision_index": 37,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111461,
+        0.161458,
+        0.909172
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00030752047547277783,
+        "table_collision / gripper0_finger2_collision": -0.0001979574664823236
+      },
+      "eef_after_m": [
+        0.111547,
+        0.16165,
+        0.909038
+      ],
+      "observed_eef_delta_m": [
+        8.599999999998886e-05,
+        0.00019199999999999773,
+        -0.00013399999999996748
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004257588184575223,
+        "table_collision / gripper0_finger2_collision": -0.0003456652966451479
+      },
+      "success": false
+    },
+    {
+      "decision_index": 38,
+      "action": [
+        0.0,
+        0.0,
+        -0.32,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111547,
+        0.16165,
+        0.909038
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004257588184575223,
+        "table_collision / gripper0_finger2_collision": -0.0003456652966451479
+      },
+      "eef_after_m": [
+        0.111609,
+        0.161558,
+        0.909167
+      ],
+      "observed_eef_delta_m": [
+        6.20000000000065e-05,
+        -9.199999999998099e-05,
+        0.00012899999999993472
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0003124517249898373,
+        "table_collision / gripper0_finger2_collision": -0.0002009667118531011
+      },
+      "success": false
+    },
+    {
+      "decision_index": 39,
+      "action": [
+        0.0,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111609,
+        0.161558,
+        0.909167
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0003124517249898373,
+        "table_collision / gripper0_finger2_collision": -0.0002009667118531011
+      },
+      "eef_after_m": [
+        0.111667,
+        0.161581,
+        0.90914
+      ],
+      "observed_eef_delta_m": [
+        5.8000000000002494e-05,
+        2.2999999999995246e-05,
+        -2.6999999999999247e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00035027546860899594,
+        "table_collision / gripper0_finger2_collision": -0.00021478859348778023
+      },
+      "success": false
+    },
+    {
+      "decision_index": 40,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111667,
+        0.161581,
+        0.90914
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00035027546860899594,
+        "table_collision / gripper0_finger2_collision": -0.00021478859348778023
+      },
+      "eef_after_m": [
+        0.111742,
+        0.161684,
+        0.909068
+      ],
+      "observed_eef_delta_m": [
+        7.499999999999174e-05,
+        0.00010299999999999199,
+        -7.199999999996098e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00041046917848308606,
+        "table_collision / gripper0_finger2_collision": -0.00029158368181425587
+      },
+      "success": false
+    },
+    {
+      "decision_index": 41,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111742,
+        0.161684,
+        0.909068
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00041046917848308606,
+        "table_collision / gripper0_finger2_collision": -0.00029158368181425587
+      },
+      "eef_after_m": [
+        0.111826,
+        0.161755,
+        0.909035
+      ],
+      "observed_eef_delta_m": [
+        8.400000000000074e-05,
+        7.10000000000155e-05,
+        -3.2999999999949736e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004316316160510869,
+        "table_collision / gripper0_finger2_collision": -0.0003304779403796587
+      },
+      "success": false
+    },
+    {
+      "decision_index": 42,
+      "action": [
+        0.0,
+        0.0,
+        -0.55,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111826,
+        0.161755,
+        0.909035
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004316316160510869,
+        "table_collision / gripper0_finger2_collision": -0.0003304779403796587
+      },
+      "eef_after_m": [
+        0.111918,
+        0.161829,
+        0.909003
+      ],
+      "observed_eef_delta_m": [
+        9.200000000000874e-05,
+        7.399999999999074e-05,
+        -3.2000000000032e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00045483390964418113,
+        "table_collision / gripper0_finger2_collision": -0.00036356516252122884
+      },
+      "success": false
+    },
+    {
+      "decision_index": 43,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111918,
+        0.161829,
+        0.909003
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00045483390964418113,
+        "table_collision / gripper0_finger2_collision": -0.00036356516252122884
+      },
+      "eef_after_m": [
+        0.111995,
+        0.161797,
+        0.90906
+      ],
+      "observed_eef_delta_m": [
+        7.699999999999374e-05,
+        -3.200000000000425e-05,
+        5.699999999997374e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004021598056730413,
+        "table_collision / gripper0_finger2_collision": -0.00030035426897079276
+      },
+      "success": false
+    },
+    {
+      "decision_index": 44,
+      "action": [
+        0.0,
+        0.0,
+        -0.14,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.111995,
+        0.161797,
+        0.90906
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004021598056730413,
+        "table_collision / gripper0_finger2_collision": -0.00030035426897079276
+      },
+      "eef_after_m": [
+        0.112009,
+        0.161551,
+        0.9093
+      ],
+      "observed_eef_delta_m": [
+        1.4000000000000123e-05,
+        -0.0002459999999999962,
+        0.00024000000000001798
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0001839625457030758,
+        "table_collision / gripper0_finger2_collision": -4.349805997350131e-05
+      },
+      "success": false
+    },
+    {
+      "decision_index": 45,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112009,
+        0.161551,
+        0.9093
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0001839625457030758,
+        "table_collision / gripper0_finger2_collision": -4.349805997350131e-05
+      },
+      "eef_after_m": [
+        0.112084,
+        0.161831,
+        0.909029
+      ],
+      "observed_eef_delta_m": [
+        7.500000000000562e-05,
+        0.00028000000000000247,
+        -0.0002710000000000212
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004382445722096451,
+        "table_collision / gripper0_finger2_collision": -0.00031987236380548456
+      },
+      "success": false
+    },
+    {
+      "decision_index": 46,
+      "action": [
+        0.0,
+        0.0,
+        -0.55,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112084,
+        0.161831,
+        0.909029
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004382445722096451,
+        "table_collision / gripper0_finger2_collision": -0.00031987236380548456
+      },
+      "eef_after_m": [
+        0.112175,
+        0.16191,
+        0.908999
+      ],
+      "observed_eef_delta_m": [
+        9.099999999999386e-05,
+        7.899999999999574e-05,
+        -2.999999999997449e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00046537317160399994,
+        "table_collision / gripper0_finger2_collision": -0.00034782378330877606
+      },
+      "success": false
+    },
+    {
+      "decision_index": 47,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112175,
+        0.16191,
+        0.908999
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00046537317160399994,
+        "table_collision / gripper0_finger2_collision": -0.00034782378330877606
+      },
+      "eef_after_m": [
+        0.11225,
+        0.161884,
+        0.909054
+      ],
+      "observed_eef_delta_m": [
+        7.500000000000562e-05,
+        -2.5999999999998247e-05,
+        5.500000000002725e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00040698271145978016,
+        "table_collision / gripper0_finger2_collision": -0.00029240985923773
+      },
+      "success": false
+    },
+    {
+      "decision_index": 48,
+      "action": [
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.11225,
+        0.161884,
+        0.909054
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00040698271145978016,
+        "table_collision / gripper0_finger2_collision": -0.00029240985923773
+      },
+      "eef_after_m": [
+        0.112285,
+        0.161739,
+        0.909199
+      ],
+      "observed_eef_delta_m": [
+        3.499999999999337e-05,
+        -0.00014500000000000624,
+        0.00014499999999995072
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0002716808569542817,
+        "table_collision / gripper0_finger2_collision": -0.000138014457054636
+      },
+      "success": false
+    },
+    {
+      "decision_index": 49,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112285,
+        0.161739,
+        0.909199
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0002716808569542817,
+        "table_collision / gripper0_finger2_collision": -0.000138014457054636
+      },
+      "eef_after_m": [
+        0.112353,
+        0.161883,
+        0.909054
+      ],
+      "observed_eef_delta_m": [
+        6.799999999999862e-05,
+        0.00014400000000000523,
+        -0.00014499999999995072
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004182891582694692,
+        "table_collision / gripper0_finger2_collision": -0.0002754303973923067
+      },
+      "success": false
+    },
+    {
+      "decision_index": 50,
+      "action": [
+        0.0,
+        0.0,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112353,
+        0.161883,
+        0.909054
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004182891582694692,
+        "table_collision / gripper0_finger2_collision": -0.0002754303973923067
+      },
+      "eef_after_m": [
+        0.112449,
+        0.162035,
+        0.908966
+      ],
+      "observed_eef_delta_m": [
+        9.599999999999886e-05,
+        0.00015200000000001324,
+        -8.799999999997699e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004892703975067914,
+        "table_collision / gripper0_finger2_collision": -0.0003737007584100338
+      },
+      "success": false
+    },
+    {
+      "decision_index": 51,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112449,
+        0.162035,
+        0.908966
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004892703975067914,
+        "table_collision / gripper0_finger2_collision": -0.0003737007584100338
+      },
+      "eef_after_m": [
+        0.112531,
+        0.162015,
+        0.909017
+      ],
+      "observed_eef_delta_m": [
+        8.200000000001262e-05,
+        -2.0000000000020002e-05,
+        5.099999999991223e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00043729025890315576,
+        "table_collision / gripper0_finger2_collision": -0.00031987395500643334
+      },
+      "success": false
+    },
+    {
+      "decision_index": 52,
+      "action": [
+        0.0,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112531,
+        0.162015,
+        0.909017
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00043729025890315576,
+        "table_collision / gripper0_finger2_collision": -0.00031987395500643334
+      },
+      "eef_after_m": [
+        0.112585,
+        0.161923,
+        0.909114
+      ],
+      "observed_eef_delta_m": [
+        5.3999999999998494e-05,
+        -9.199999999998099e-05,
+        9.700000000001374e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00034515762567999264,
+        "table_collision / gripper0_finger2_collision": -0.00021638323563921702
+      },
+      "success": false
+    },
+    {
+      "decision_index": 53,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112585,
+        0.161923,
+        0.909114
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00034515762567999264,
+        "table_collision / gripper0_finger2_collision": -0.00021638323563921702
+      },
+      "eef_after_m": [
+        0.112654,
+        0.161997,
+        0.909046
+      ],
+      "observed_eef_delta_m": [
+        6.899999999999962e-05,
+        7.399999999999074e-05,
+        -6.799999999995698e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004173451674470696,
+        "table_collision / gripper0_finger2_collision": -0.00027533076577113125
+      },
+      "success": false
+    },
+    {
+      "decision_index": 54,
+      "action": [
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112654,
+        0.161997,
+        0.909046
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004173451674470696,
+        "table_collision / gripper0_finger2_collision": -0.00027533076577113125
+      },
+      "eef_after_m": [
+        0.112685,
+        0.16187,
+        0.90919
+      ],
+      "observed_eef_delta_m": [
+        3.099999999998937e-05,
+        -0.00012699999999998823,
+        0.000144000000000033
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00027567556709218177,
+        "table_collision / gripper0_finger2_collision": -0.00012968129124180106
+      },
+      "success": false
+    },
+    {
+      "decision_index": 55,
+      "action": [
+        0.0,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112685,
+        0.16187,
+        0.90919
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00027567556709218177,
+        "table_collision / gripper0_finger2_collision": -0.00012968129124180106
+      },
+      "eef_after_m": [
+        0.112731,
+        0.161933,
+        0.909113
+      ],
+      "observed_eef_delta_m": [
+        4.600000000000437e-05,
+        6.299999999997974e-05,
+        -7.700000000010476e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00035649558754535793,
+        "table_collision / gripper0_finger2_collision": -0.00019950202927465632
+      },
+      "success": false
+    },
+    {
+      "decision_index": 56,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112731,
+        0.161933,
+        0.909113
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00035649558754535793,
+        "table_collision / gripper0_finger2_collision": -0.00019950202927465632
+      },
+      "eef_after_m": [
+        0.112798,
+        0.162035,
+        0.909044
+      ],
+      "observed_eef_delta_m": [
+        6.699999999999762e-05,
+        0.00010200000000001874,
+        -6.899999999998574e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004235929896327928,
+        "table_collision / gripper0_finger2_collision": -0.0002648981252540983
+      },
+      "success": false
+    },
+    {
+      "decision_index": 57,
+      "action": [
+        0.0,
+        0.0,
+        -0.12,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112798,
+        0.162035,
+        0.909044
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004235929896327928,
+        "table_collision / gripper0_finger2_collision": -0.0002648981252540983
+      },
+      "eef_after_m": [
+        0.112754,
+        0.161781,
+        0.909308
+      ],
+      "observed_eef_delta_m": [
+        -4.400000000000237e-05,
+        -0.0002540000000000042,
+        0.000264000000000042
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00016914537727907852,
+        "table_collision / gripper0_finger2_collision": -7.753272468491477e-10
+      },
+      "success": false
+    },
+    {
+      "decision_index": 58,
+      "action": [
+        0.0,
+        0.0,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112754,
+        0.161781,
+        0.909308
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00016914537727907852,
+        "table_collision / gripper0_finger2_collision": -7.753272468491477e-10
+      },
+      "eef_after_m": [
+        0.112803,
+        0.161988,
+        0.909078
+      ],
+      "observed_eef_delta_m": [
+        4.900000000000737e-05,
+        0.00020699999999998497,
+        -0.00022999999999995246
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0003953812945869384,
+        "table_collision / gripper0_finger2_collision": -0.00022666940328741614
+      },
+      "success": false
+    },
+    {
+      "decision_index": 59,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112803,
+        0.161988,
+        0.909078
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0003953812945869384,
+        "table_collision / gripper0_finger2_collision": -0.00022666940328741614
+      },
+      "eef_after_m": [
+        0.112879,
+        0.16211,
+        0.909011
+      ],
+      "observed_eef_delta_m": [
+        7.599999999999274e-05,
+        0.00012200000000001099,
+        -6.700000000003925e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004492014125119237,
+        "table_collision / gripper0_finger2_collision": -0.00029995856081310723
+      },
+      "success": false
+    },
+    {
+      "decision_index": 60,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112879,
+        0.16211,
+        0.909011
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004492014125119237,
+        "table_collision / gripper0_finger2_collision": -0.00029995856081310723
+      },
+      "eef_after_m": [
+        0.112949,
+        0.162111,
+        0.909039
+      ],
+      "observed_eef_delta_m": [
+        7.000000000000062e-05,
+        1.000000000001e-06,
+        2.8000000000028002e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004204144671990928,
+        "table_collision / gripper0_finger2_collision": -0.0002691212911549723
+      },
+      "success": false
+    },
+    {
+      "decision_index": 61,
+      "action": [
+        0.0,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112949,
+        0.162111,
+        0.909039
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004204144671990928,
+        "table_collision / gripper0_finger2_collision": -0.0002691212911549723
+      },
+      "eef_after_m": [
+        0.112998,
+        0.162056,
+        0.909105
+      ],
+      "observed_eef_delta_m": [
+        4.900000000000737e-05,
+        -5.4999999999999494e-05,
+        6.60000000000105e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00035363414150646477,
+        "table_collision / gripper0_finger2_collision": -0.00020167045944474715
+      },
+      "success": false
+    },
+    {
+      "decision_index": 62,
+      "action": [
+        0.0,
+        0.0,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.112998,
+        0.162056,
+        0.909105
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00035363414150646477,
+        "table_collision / gripper0_finger2_collision": -0.00020167045944474715
+      },
+      "eef_after_m": [
+        0.113035,
+        0.162019,
+        0.909143
+      ],
+      "observed_eef_delta_m": [
+        3.699999999999537e-05,
+        -3.700000000000925e-05,
+        3.799999999998249e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0003173809684573481,
+        "table_collision / gripper0_finger2_collision": -0.0001621508559783713
+      },
+      "success": false
+    },
+    {
+      "decision_index": 63,
+      "action": [
+        0.0,
+        0.0,
+        -0.25,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113035,
+        0.162019,
+        0.909143
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0003173809684573481,
+        "table_collision / gripper0_finger2_collision": -0.0001621508559783713
+      },
+      "eef_after_m": [
+        0.113059,
+        0.16198,
+        0.909183
+      ],
+      "observed_eef_delta_m": [
+        2.4000000000010124e-05,
+        -3.899999999998349e-05,
+        3.999999999992898e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0002783694675099202,
+        "table_collision / gripper0_finger2_collision": -0.00012038003872083536
+      },
+      "success": false
+    },
+    {
+      "decision_index": 64,
+      "action": [
+        0.0,
+        0.0,
+        -0.6,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113059,
+        0.16198,
+        0.909183
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0002783694675099202,
+        "table_collision / gripper0_finger2_collision": -0.00012038003872083536
+      },
+      "eef_after_m": [
+        0.113148,
+        0.162274,
+        0.908948
+      ],
+      "observed_eef_delta_m": [
+        8.899999999999186e-05,
+        0.0002939999999999887,
+        -0.00023499999999998522
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004946428460599339,
+        "table_collision / gripper0_finger2_collision": -0.00036262804414000094
+      },
+      "success": false
+    },
+    {
+      "decision_index": 65,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113148,
+        0.162274,
+        0.908948
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004946428460599339,
+        "table_collision / gripper0_finger2_collision": -0.00036262804414000094
+      },
+      "eef_after_m": [
+        0.113226,
+        0.162252,
+        0.908999
+      ],
+      "observed_eef_delta_m": [
+        7.799999999999474e-05,
+        -2.1999999999994246e-05,
+        5.100000000002325e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00044341777387924,
+        "table_collision / gripper0_finger2_collision": -0.00030739587581329886
+      },
+      "success": false
+    },
+    {
+      "decision_index": 66,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113226,
+        0.162252,
+        0.908999
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00044341777387924,
+        "table_collision / gripper0_finger2_collision": -0.00030739587581329886
+      },
+      "eef_after_m": [
+        0.113303,
+        0.162268,
+        0.908999
+      ],
+      "observed_eef_delta_m": [
+        7.700000000000762e-05,
+        1.5999999999988246e-05,
+        0.0
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004470392883617613,
+        "table_collision / gripper0_finger2_collision": -0.0003015419043307377
+      },
+      "success": false
+    },
+    {
+      "decision_index": 67,
+      "action": [
+        0.0,
+        0.0,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113303,
+        0.162268,
+        0.908999
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004470392883617613,
+        "table_collision / gripper0_finger2_collision": -0.0003015419043307377
+      },
+      "eef_after_m": [
+        0.113361,
+        0.16222,
+        0.90906
+      ],
+      "observed_eef_delta_m": [
+        5.8000000000002494e-05,
+        -4.799999999999249e-05,
+        6.099999999997774e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0003864554408037346,
+        "table_collision / gripper0_finger2_collision": -0.0002368163894538311
+      },
+      "success": false
+    },
+    {
+      "decision_index": 68,
+      "action": [
+        0.0,
+        0.0,
+        -0.4,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113361,
+        0.16222,
+        0.90906
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0003864554408037346,
+        "table_collision / gripper0_finger2_collision": -0.0002368163894538311
+      },
+      "eef_after_m": [
+        0.113416,
+        0.162227,
+        0.90906
+      ],
+      "observed_eef_delta_m": [
+        5.4999999999999494e-05,
+        7.000000000007001e-06,
+        0.0
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.00038935045079957487,
+        "table_collision / gripper0_finger2_collision": -0.00023218493368959425
+      },
+      "success": false
+    },
+    {
+      "decision_index": 69,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113416,
+        0.162227,
+        0.90906
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.00038935045079957487,
+        "table_collision / gripper0_finger2_collision": -0.00023218493368959425
+      },
+      "eef_after_m": [
+        0.11348,
+        0.162274,
+        0.909026
+      ],
+      "observed_eef_delta_m": [
+        6.399999999999462e-05,
+        4.699999999999149e-05,
+        -3.399999999997849e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004254136244619122,
+        "table_collision / gripper0_finger2_collision": -0.0002581961581912262
+      },
+      "success": false
+    },
+    {
+      "decision_index": 70,
+      "action": [
+        0.0,
+        0.0,
+        -0.3,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.11348,
+        0.162274,
+        0.909026
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004254136244619122,
+        "table_collision / gripper0_finger2_collision": -0.0002581961581912262
+      },
+      "eef_after_m": [
+        0.113515,
+        0.162183,
+        0.909131
+      ],
+      "observed_eef_delta_m": [
+        3.500000000000725e-05,
+        -9.100000000000774e-05,
+        0.00010500000000002174
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0003206403057302021,
+        "table_collision / gripper0_finger2_collision": -0.0001539999913885426
+      },
+      "success": false
+    },
+    {
+      "decision_index": 71,
+      "action": [
+        0.0,
+        0.0,
+        -0.35,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113515,
+        0.162183,
+        0.909131
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0003206403057302021,
+        "table_collision / gripper0_finger2_collision": -0.0001539999913885426
+      },
+      "eef_after_m": [
+        0.113557,
+        0.16221,
+        0.909093
+      ],
+      "observed_eef_delta_m": [
+        4.200000000000037e-05,
+        2.6999999999999247e-05,
+        -3.799999999998249e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0003618708105014301,
+        "table_collision / gripper0_finger2_collision": -0.0001855761802249667
+      },
+      "success": false
+    },
+    {
+      "decision_index": 72,
+      "action": [
+        0.0,
+        0.0,
+        -0.45,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113557,
+        0.16221,
+        0.909093
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0003618708105014301,
+        "table_collision / gripper0_finger2_collision": -0.0001855761802249667
+      },
+      "eef_after_m": [
+        0.113618,
+        0.162306,
+        0.909025
+      ],
+      "observed_eef_delta_m": [
+        6.0999999999991616e-05,
+        9.600000000001274e-05,
+        -6.8000000000068e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004313261642951982,
+        "table_collision / gripper0_finger2_collision": -0.00024778436211181365
+      },
+      "success": false
+    },
+    {
+      "decision_index": 73,
+      "action": [
+        0.0,
+        0.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "maximum_logged_proprioception_error": 0.0,
+      "eef_before_m": [
+        0.113618,
+        0.162306,
+        0.909025
+      ],
+      "contacts_before": {
+        "table_collision / gripper0_finger1_collision": -0.0004313261642951982,
+        "table_collision / gripper0_finger2_collision": -0.00024778436211181365
+      },
+      "eef_after_m": [
+        0.113691,
+        0.162376,
+        0.908992
+      ],
+      "observed_eef_delta_m": [
+        7.300000000000362e-05,
+        6.999999999998674e-05,
+        -3.2999999999949736e-05
+      ],
+      "contacts_after": {
+        "table_collision / gripper0_finger1_collision": -0.0004570025447007131,
+        "table_collision / gripper0_finger2_collision": -0.0002832498510579873
+      },
+      "success": false
+    }
+  ],
+  "replay_matches_trace": true,
+  "controller": {
+    "input_min": [
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0
+    ],
+    "input_max": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "output_min": [
+      -0.05,
+      -0.05,
+      -0.05,
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "output_max": [
+      0.05,
+      0.05,
+      0.05,
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "maximum_logged_proprioception_error": 0.0,
+  "final_success": false
+}

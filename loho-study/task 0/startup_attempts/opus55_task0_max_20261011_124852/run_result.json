@@ -1,0 +1,78 @@
+{
+  "run_id": "97c00826-0acb-4a89-b0af-56d4138e83c2",
+  "model_id": "claude-opus-5-5",
+  "provider": "anthropic",
+  "effort": "max",
+  "task_id": 0,
+  "termination_reason": "error",
+  "success": false,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 0,
+    "completion_fraction": 0.0,
+    "completion_percent": 0.0,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 0.0,
+    "last_scored_simulator_step": 5,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      }
+    ]
+  },
+  "decisions_used": 1,
+  "simulator_action_steps": 0,
+  "elapsed_seconds": 302.63822266302304,
+  "api_attempts_total": 1,
+  "cost_complete": true,
+  "estimated_api_cost_usd": 0.6559692,
+  "known_estimated_api_cost_usd": 0.6559692,
+  "total_input_tokens": 2970,
+  "total_output_tokens": 32768,
+  "total_cached_input_tokens": 2966,
+  "total_cache_write_tokens": 0,
+  "setup_output_budget_failure": true,
+  "local_runner_running": false,
+  "automatic_retries": 0,
+  "reason": "32,768 output tokens exhausted entirely on thinking before any tool call.",
+  "output_tokens_details": {
+    "thinking_tokens": 32768
+  },
+  "request_id": "req_011Cfvnuw7dSxHvCQ7HpgKwg"
+}

@@ -1,0 +1,18 @@
+﻿{
+    "requested_model":  "astra",
+    "model_id":  "gpt-6-astra",
+    "task_id":  0,
+    "initial_state_id":  0,
+    "seed":  0,
+    "prompt_profile":  "calibrated-v2",
+    "observation":  "rgb-proprio",
+    "cameras":  "wrist",
+    "wrist_orientation":  "flip_vertical",
+    "action_repeat":  5,
+    "max_decisions":  74,
+    "max_output_tokens":  8192,
+    "max_estimated_api_cost_usd":  10,
+    "reference_fixed_camera_run":  "astra_task0_calibrated_v2_20261010_114617",
+    "launched_at_local":  "2026-10-10T12:26:34.7704446-04:00",
+    "output_directory":  "C:\\Users\\muhha\\OneDrive\\Desktop\\loho\\loho_runs\\astra_task0_wrist_calibrated_v2_20261010_122634"
+}

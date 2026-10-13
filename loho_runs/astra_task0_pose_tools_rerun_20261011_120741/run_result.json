@@ -1,0 +1,141 @@
+{
+  "run_id": "3f22e9de-cd4b-4caf-a9d1-367905312500",
+  "model_id": "gpt-6-astra",
+  "task_id": 0,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "policy": "pose-tools",
+  "action_interface": "absolute_pose_tools",
+  "prompt_profile": "pose-tools-v1",
+  "context_mode": "conversation_and_tool_results",
+  "image_history_observations": 2,
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "camera_configuration": "agentview-wrist",
+  "camera_orientations": {
+    "agentview": "rotate180",
+    "robot0_eye_in_hand": "flip_vertical"
+  },
+  "rgb_resolution": [
+    224,
+    224
+  ],
+  "observation_mode": "rgb-proprio",
+  "effort": "medium",
+  "control_hz": 10,
+  "max_speed_fraction": 0.25,
+  "max_decisions": 40,
+  "max_action_steps": 900,
+  "termination_reason": "step_budget",
+  "trial_status": "budget_exhausted",
+  "success": false,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 1,
+    "completion_fraction": 0.3333333333333333,
+    "completion_percent": 33.333333333333336,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 33.333333333333336,
+    "last_scored_simulator_step": 905,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in butter_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 587
+      },
+      {
+        "predicate": [
+          "in",
+          "chocolate_pudding_1",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "in chocolate_pudding_1 wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "close",
+          "wooden_cabinet_1_top_region"
+        ],
+        "label": "close wooden_cabinet_1_top_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      }
+    ]
+  },
+  "decisions_used": 38,
+  "simulator_action_steps": 900,
+  "elapsed_seconds": 308.2193920050049,
+  "mean_api_latency_seconds": 5.246602905292285,
+  "total_api_latency_seconds": 199.3709104011068,
+  "estimated_api_cost_usd": 7.5646095,
+  "known_estimated_api_cost_usd": 7.5646095,
+  "cost_complete": true,
+  "api_attempts_total": 38,
+  "total_input_tokens": 623457,
+  "total_output_tokens": 6234,
+  "total_cached_input_tokens": 45942,
+  "total_cache_write_tokens": 572727,
+  "tool_error_count": 0,
+  "automatic_retries": 0,
+  "api_errors": 0,
+  "local_runner_running": false,
+  "verification_passed": true,
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 901,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 901,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "tool_counts": {
+    "move_to": 38
+  },
+  "pose_targets_reached": 17,
+  "pose_targets_not_reached": 21,
+  "manual_rerun": true,
+  "reference_astra_run": "astra_task0_pose_tools_20261011_115808",
+  "prior_run_hindsight_injected": false,
+  "last_tool_note": "I will lower the pudding onto the exposed top-drawer area and release it. The remaining time is too short to verify both placements and close the drawer safely.",
+  "final_motion": {
+    "planned_steps": 21,
+    "executed_steps": 11,
+    "playout_complete": false,
+    "stop_reason": "step_budget"
+  }
+}

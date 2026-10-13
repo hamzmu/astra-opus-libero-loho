@@ -1,0 +1,156 @@
+{
+  "run_id": "89b9df05-d9d7-4c2c-ae52-7a5c3d47f1fb",
+  "model_id": "gpt-6-astra",
+  "provider": "openai",
+  "task_id": 1,
+  "initial_state_id": 0,
+  "sim_seed": 0,
+  "policy": "pose-tools",
+  "action_interface": "absolute_pose_tools",
+  "prompt_profile": "pose-tools-v1",
+  "context_mode": "conversation_and_tool_results",
+  "image_history_observations": 0,
+  "media_mode": "video_only",
+  "png_frames_saved": false,
+  "final_video_frames": {
+    "agentview": {
+      "file": "episode.mp4",
+      "frame_index": 537,
+      "timestamp_seconds": 53.7
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "frame_index": 537,
+      "timestamp_seconds": 53.7
+    }
+  },
+  "image_history_mode": "all",
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "camera_configuration": "agentview-wrist",
+  "camera_orientations": {
+    "agentview": "rotate180",
+    "robot0_eye_in_hand": "flip_vertical"
+  },
+  "rgb_resolution": [
+    224,
+    224
+  ],
+  "observation_mode": "rgb-proprio",
+  "effort": "max",
+  "effective_effort": "max",
+  "effort_fallback": "xhigh",
+  "fallback_events": [],
+  "control_hz": 10,
+  "max_speed_fraction": 0.25,
+  "max_decisions": 80,
+  "max_action_steps": 2000,
+  "max_output_tokens_per_call": 128000,
+  "max_estimated_api_cost_usd": null,
+  "termination_reason": "model_done",
+  "trial_status": "model_declared_done",
+  "success": false,
+  "trial_score": {
+    "available": true,
+    "rubric_id": "libero_loho_goal_predicates_v1",
+    "method": "Equal-weight final BDDL goal predicates; no credit for arm motion alone.",
+    "task_complete": false,
+    "goals_total": 3,
+    "goals_satisfied": 2,
+    "completion_fraction": 0.6666666666666666,
+    "completion_percent": 66.66666666666667,
+    "initial_completion_percent": 0.0,
+    "peak_simultaneous_completion_percent": 66.66666666666667,
+    "last_scored_simulator_step": 542,
+    "goals": [
+      {
+        "predicate": [
+          "in",
+          "alphabet_soup_1",
+          "basket_1_contain_region"
+        ],
+        "label": "in alphabet_soup_1 basket_1_contain_region",
+        "initially_satisfied": false,
+        "satisfied": false,
+        "ever_satisfied": false,
+        "first_satisfied_step": null
+      },
+      {
+        "predicate": [
+          "in",
+          "butter_1",
+          "basket_1_contain_region"
+        ],
+        "label": "in butter_1 basket_1_contain_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 332
+      },
+      {
+        "predicate": [
+          "in",
+          "tomato_sauce_1",
+          "basket_1_contain_region"
+        ],
+        "label": "in tomato_sauce_1 basket_1_contain_region",
+        "initially_satisfied": false,
+        "satisfied": true,
+        "ever_satisfied": true,
+        "first_satisfied_step": 117
+      }
+    ]
+  },
+  "decisions_used": 34,
+  "simulator_action_steps": 537,
+  "elapsed_seconds": 572.0595652160118,
+  "mean_api_latency_seconds": 14.973735929913614,
+  "total_api_latency_seconds": 509.10702161706286,
+  "estimated_api_cost_usd": 2.293924,
+  "known_estimated_api_cost_usd": 2.293924,
+  "cost_complete": true,
+  "api_attempts_total": 34,
+  "total_input_tokens": 812645,
+  "total_output_tokens": 18987,
+  "total_cached_input_tokens": 765459,
+  "total_cache_write_tokens": 42902,
+  "tool_error_count": 0,
+  "cost_guard_enabled": false,
+  "budget_policy_change": null,
+  "local_runner_running": false,
+  "automatic_retries": 0,
+  "verification_passed": true,
+  "video_verification": {
+    "agentview": {
+      "file": "episode.mp4",
+      "decoded_frames": 538,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    },
+    "robot0_eye_in_hand": {
+      "file": "wrist_episode.mp4",
+      "decoded_frames": 538,
+      "fps": 10.0,
+      "frame_sizes": [
+        [
+          224,
+          224
+        ]
+      ]
+    }
+  },
+  "api_errors": 0,
+  "pose_targets_reached": 25,
+  "pose_targets_not_reached": 8,
+  "total_thinking_tokens_reported": 16642,
+  "max_effort_requests": 34,
+  "xhigh_effort_requests": 0,
+  "reference_trial": "../../../setup_logs/task1_reference_20261011_233620"
+}
