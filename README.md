@@ -46,11 +46,11 @@ One combined video shows **Tasks 0, 1 and 4 from left to right**, with **Astra o
 
 **Wrist camera view omitted from this video, but used in evaluation.**
 
-| Task | Objective | Results |
-|---|---|---|
-| **0** | Put the front butter and chocolate pudding into the cabinet’s top drawer, then close it. | [Runs and videos](<loho-study/task 0/README.md>) |
-| **1** | Pick up the alphabet soup, butter, and tomato sauce, in that order, and place each into the basket. | [Runs and videos](<loho-study/task 1/README.md>) |
-| **4** | Put the back butter and chocolate pudding into the top drawer, close it, and place the black bowl on top of the cabinet. | [Runs and videos](<loho-study/task 4/README.md>) |
+| Task | Objective |
+|---|---|
+| **0** | Put the front butter and chocolate pudding into the cabinet’s top drawer, then close it. |
+| **1** | Pick up the alphabet soup, butter, and tomato sauce, in that order, and place each into the basket. |
+| **4** | Put the back butter and chocolate pudding into the top drawer, close it, and place the black bowl on top of the cabinet. |
 
 <a href="loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x.mp4?raw=true"><img src="loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x_preview.gif" alt="Animated 4× replay of Astra and Opus on Tasks 0, 1 and 4; select to open the MP4" width="720"></a>
 
