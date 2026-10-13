@@ -77,4 +77,10 @@ Measured wall-clock time averaged **14.8 minutes for Astra vs 34.2 minutes for O
 
 Opus averaged **44.7 model calls and 781 action steps per episode**, compared with Astra’s **53.3 calls and 981 steps**—**16.1% fewer calls and 20.4% fewer steps**. Task 1 reversed this pattern: Astra averaged **41.2 calls and 667.8 steps**, versus Opus’s **58.0 calls and 991.4 steps**.
 
-![Mean API calls and simulator action steps by task, with sample standard deviation](loho-study/plots/calls_and_steps_tasks_0_1_4.png)
+| Task | Astra calls | Opus calls | Astra action steps | Opus action steps |
+|---|---:|---:|---:|---:|
+| 0 | 56.8 ± 7.7 | **34.0** ± 2.9 | 1,071.6 ± 131.3 | **612.0** ± 96.9 |
+| 1 | **41.2** ± 10.6 | 58.0 ± 9.7 | **667.8** ± 213.5 | 991.4 ± 182.7 |
+| 4 | 61.8 ± 7.7 | **42.0** ± 8.7 | 1,204.4 ± 161.5 | **739.8** ± 130.3 |
+
+Mean ± sample SD across five episodes per model/task. **Bold means fewer calls or steps**; task success is scored separately.
