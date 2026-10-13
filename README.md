@@ -18,7 +18,7 @@ Reproduce the runs: [setup.md](docs/setup.md).
 
 <a href="loho-study/videos/astra6_opus55_tasks_0_1_4_static_minimal_4x.mp4?raw=true"><img src="loho-study/videos/astra6_opus55_tasks_0_1_4_static_minimal_4x_preview.gif" alt="Animated 4× replay of Astra 6 and Opus 5.5 on Tasks 0, 1 and 4; select to open the MP4" width="720"></a>
 
-**Wrist camera view omitted from this video, but used in evaluation.**
+**Wrist camera view omitted from this video, but used in evaluation.** API request time is omitted from the video for demonstration purposes.
 
 ## Results
 
@@ -72,13 +72,21 @@ Opus averaged **44.7 model calls and 781 action steps per episode**, compared wi
 
 Both models receive the [same control instructions](prompts/pose-tools-v1_task0_max.txt), task, camera images and robot state, then return one motion-tool call with a short explanation.
 
-For Task 0, an example model response is a `move_to` call with these arguments:
+This recorded Astra `move_to` call from [Task 0, trial 1](<loho-study/task 0/astra_task0_max_nocost_trial1_task0_uncapped_20261011_203025/conversation.json>) specifies all six pose coordinates plus the gripper:
 
 ```json
 {
-  "targets": {"x": 0.14, "y": 0.26, "z": 1.12, "gripper": 1.0},
-  "note": "Move above the front butter with open fingers before descending."
+  "targets": {
+    "x": -0.005,
+    "y": 0.005,
+    "z": 1.19,
+    "roll": 0.0,
+    "pitch": 0.0,
+    "yaw": 0.0,
+    "gripper": 0.0
+  },
+  "note": "Both the butter and pudding are now visibly resting inside the drawer. I am moving the empty, closed gripper in front of the top-drawer handle to push the drawer shut."
 }
 ```
 
-Targets are absolute positions in metres; gripper `1` opens and `0` closes. After execution, fresh images and measured feedback guide the next call until success, a stop call or a limit. The simulator determines the score.
+XYZ targets are absolute world positions in metres; roll, pitch and yaw are in radians relative to the episode's starting orientation. Gripper `1` opens and `0` closes. Omitted pose fields hold their measured values. After execution, fresh images and measured feedback guide the next call until success, a stop call or a limit. The simulator determines the score.

@@ -203,6 +203,8 @@ task_python="$HOME/projects/LIBERO-LOHO/.venv/bin/python"
 
 The last command uses the source manifests produced by the per-task video command. The combined video shows static cameras only and omits API waiting; both cameras were supplied during evaluation.
 
+Published logs and launch records replace personal workspace prefixes with `{WORKSPACE}`. The [redaction manifest](../loho-study/public_redactions.json) records the original and public SHA-256 hashes; affected artifact hashes were refreshed. Untouched originals are preserved in an ignored local backup. Episode summaries, scores, usage ledgers, videos and figures are unchanged. Run `python scripts/verify_public_redactions.py` to check the public copies. Generated `loho_runs/` outputs are ignored, apart from the baseline prompt fixture and retained cost receipt.
+
 ## Native Windows alternative
 
 The included Windows installer creates `.venv-windows`, applies two local robosuite binding fixes, omits robomimic's Linux-only build dependency, and creates the short `C:\loho-libero` junction for long Task 4 filenames. WSL is the study's validated runtime; native Python is currently blocked by Windows Application Control on the study machine.

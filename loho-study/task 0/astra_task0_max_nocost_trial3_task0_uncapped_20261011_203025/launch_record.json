@@ -6,7 +6,7 @@
   "command": [
     "/root/projects/LIBERO-LOHO/.venv/bin/python",
     "-u",
-    "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_frontier_eval.py",
+    "{WORKSPACE}/loho_frontier_eval.py",
     "control",
     "--repo",
     "/root/projects/LIBERO-LOHO",
@@ -45,7 +45,7 @@
     "--image-history-observations",
     "0",
     "--outdir",
-    "/mnt/c/Users/muhha/OneDrive/Desktop/loho/results/astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025",
+    "{WORKSPACE}/results/astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025",
     "--effort-fallback",
     "xhigh"
   ],

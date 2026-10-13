@@ -6,7 +6,7 @@
   "command": [
     "/root/projects/LIBERO-LOHO/.venv/bin/python",
     "-u",
-    "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_frontier_eval.py",
+    "{WORKSPACE}/loho_frontier_eval.py",
     "control",
     "--repo",
     "/root/projects/LIBERO-LOHO",
@@ -45,7 +45,7 @@
     "--image-history-observations",
     "0",
     "--outdir",
-    "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho-study/task 1/opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048"
+    "{WORKSPACE}/loho-study/task 1/opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048"
   ],
   "shared_defaults": {
     "task_id": 1,

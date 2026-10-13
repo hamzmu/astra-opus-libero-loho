@@ -1,9 +1,0 @@
-{
-  "passed": true,
-  "real_api_calls": 0,
-  "run_directory": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/loho_runs/opus_test_posix/run_mh83m0ed",
-  "calls": 2,
-  "action_steps": 4,
-  "provider": "anthropic",
-  "effort": "max"
-}

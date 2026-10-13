@@ -6,7 +6,7 @@
   "initial_state_id": 0,
   "sim_seed": 0,
   "goal": "pick up the alphabet soup, then the butter, then the tomato sauce, and place each one into the basket",
-  "reference_trial": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/setup_logs/task1_reference_20261011_233620",
+  "reference_trial": "{WORKSPACE}/setup_logs/task1_reference_20261011_233620",
   "reference_summary_sha256": "11303ad000e7fe65fce9228f4c388a536f36098dad1957ee25c04da8c9825a30",
   "shared_defaults": {
     "task_id": 1,

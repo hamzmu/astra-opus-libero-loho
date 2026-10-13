@@ -1,7 +1,7 @@
 {
     "Status":  "complete",
     "RequestedMediaPolicy":  "Only MP4 camera views; retain JSON, prompts, traces and cost records",
-    "Root":  "C:\\Users\\muhha\\OneDrive\\Desktop\\loho\\results",
+    "Root":  "{WORKSPACE}\\results",
     "PNGCount":  1140,
     "PNGBytes":  55854489,
     "DeletedPNGFiles":  [

@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "description": "Local workspace prefixes were replaced with {WORKSPACE}. The editable local simulator path in windows-freeze.txt is documented as a relative checkout. Original records are preserved in an ignored private archive; both digests are recorded below. The affected artifact-hash manifest was refreshed. Episode summaries, scores, request usage, source-code hashes, videos and figures are unchanged.",
+  "files": [
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial1_task0_uncapped_20261011_203025/controller.log",
+      "original_sha256": "3304aae60a7d489d650eb9807ce8af8e396feb096201bed649a7703f65a8cf22",
+      "public_sha256": "052a3073da590740c8d30c847c911ae2501769d7a2013600d42e4e6586849332"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial1_task0_uncapped_20261011_203025/launch_record.json",
+      "original_sha256": "dd920eb4719bb43df6de7148d5edf073909d43702f39930291e30cbe1a2c42e3",
+      "public_sha256": "228a0494bf65f2ba875f8bb9173a7cd026779052150c36998499dc181561cf34"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial2_task0_uncapped_20261011_203025/controller.log",
+      "original_sha256": "5905c6c899b53ba796fda9a4d795a27fefc0cf08fe2d3d6b87115f10b2ac7ae7",
+      "public_sha256": "15bbbd510ec5d82dd3d6f147665fde26770691b15aaab918a57d81cc988c0176"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial2_task0_uncapped_20261011_203025/launch_record.json",
+      "original_sha256": "dd9680135f5a96b6511fb354d4a9c8aa4af6b982679b1087ec63b90ff6d4efdc",
+      "public_sha256": "6a20fbee238d7745a71eb543f43ca07914879123c041fbb47881d56cc4bcd6b0"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025/controller.log",
+      "original_sha256": "bc8bc95d21e69d18fd51abd6914229225892b7b0a99c6795fec9be5b654c3bdf",
+      "public_sha256": "9079014dea4f70596a035c2ad4db091cbbb18d1b8907334797963c590964e7a6"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial3_task0_uncapped_20261011_203025/launch_record.json",
+      "original_sha256": "16d37e622b19f61785fd409a9f092b90abe649182062f81277fcb9cc63889499",
+      "public_sha256": "28fb910b9ed571f4da5c87c853e001cebfd753e3f73983a0759487062e71fe24"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/controller.log",
+      "original_sha256": "790558ecf282f9c2901bca5ab80ca98f7f47d6ae4eaf887c1e1a0b2e1d5fde38",
+      "public_sha256": "4aa1ee5805abaaf61d278e059a472546991031e7306640903866be5de7e97583"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/launch_record.json",
+      "original_sha256": "038a8d2978966faabb9b0feff36d2a13fe41b8a9658cd07e27c3d8553f6d4f3c",
+      "public_sha256": "701c5cc70ecf05d3ad880cee8ad22cc7c3b91a83f83fc684e829a109b7fba30d"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/controller.log",
+      "original_sha256": "9fda28b7ef5ad16505bfbc8b1c51f134fbd58228cec546bc4c2e50473f4d769b",
+      "public_sha256": "c718c354a32045711e42104408b2949a2c0a34d0567a479ef883ac46ace08d26"
+    },
+    {
+      "file": "loho-study/task 0/astra_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/launch_record.json",
+      "original_sha256": "6a22f635c1077dd299585eb0f79e0aaf8fe7c597a3c42e1b6f7e815bf475938a",
+      "public_sha256": "a32a9c412500005d5fceeeea406f0157194887a1836f99f83c559c4fff5ffca2"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025/controller.log",
+      "original_sha256": "76c6a0b69e5dba42df9a40561f8100773542ad9db708356b146f3a42196d64b6",
+      "public_sha256": "fdd4abc80dca4c106494bb2e7925648c524d7377499ced90c8ebf27260524860"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial1_task0_uncapped_20261011_203025/launch_record.json",
+      "original_sha256": "07c448baadbb23038d62060e927c3817bdc978981b9ab275b14287c2477600c7",
+      "public_sha256": "8e8678337b454f4f72fb08b04479237154c67ac5924dc6d8ae48d3f107873837"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial2_task0_uncapped_20261011_203025/controller.log",
+      "original_sha256": "a194c52eae7668db74b9ee4bb8bc46918ff59e90234f173f2515f0c2d2fbc171",
+      "public_sha256": "b860b94a9e770756047ecf4abb978d33df18bf8acb70abfd5ad7b502a742752b"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial2_task0_uncapped_20261011_203025/launch_record.json",
+      "original_sha256": "83f3a09a28bfbfef7925bca6de54116a763d97e1c7d3f231a1955b4fd20b673e",
+      "public_sha256": "2537c32cea2d623ca36411865a8687939247830fa19a42160a47d80ebc2f018b"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial3_task0_uncapped_20261011_203025/controller.log",
+      "original_sha256": "a262b9df597ee39712f362f60f6e09c93bfb37cf79a55d85bf7b8ac137ee3039",
+      "public_sha256": "df66fe6ac62190ac56141adb366fe57c4ae92ef28542d0a2266adfe8de214116"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial3_task0_uncapped_20261011_203025/launch_record.json",
+      "original_sha256": "df9ea528acf09be83521afdb23807d87fdfc4c1e1c74770e3041a5f97993e173",
+      "public_sha256": "2fb7fe4a106b37bef743d16c0eb83d80713636ea30db1d4109f5c706bfbefee6"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/controller.log",
+      "original_sha256": "08374141d20221cc803dc08d19f4c484e534332481118d6cae8b212ae36906d8",
+      "public_sha256": "d15d03616a377058f34168b07f3a87bc3b6f3b246e7d1acc850b1ed82423627b"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112/launch_record.json",
+      "original_sha256": "424f8e4a5e4e5b665050fa4258a7f197403ecabbfe68c2e12f1686c7eb096acc",
+      "public_sha256": "a3f77aed2799c5e2357339d824970dabbe04270a3e9954e07dfc068ceb16018a"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/controller.log",
+      "original_sha256": "bdb8bf10d8bf51c4c640aa48ac79d32b6d4543a4720cb82f7ed301b7a1d9104a",
+      "public_sha256": "e0912f14ce0f033462ec57d7837dc3ee95a2fb8551ea0b691e1a56be80beee13"
+    },
+    {
+      "file": "loho-study/task 0/opus55_task0_max_nocost_trial5_task0_uncapped_extend_20261011_221112/launch_record.json",
+      "original_sha256": "ab4c33b52dd674b17c50b9c901f7427292891e7d678cd6f2bdfe050aa46cf6b4",
+      "public_sha256": "e802e8a921aa4b31ed36d196655f00ad01e08992f12e7f5b1cafa48442977a7e"
+    },
+    {
+      "file": "loho-study/task 0/png_cleanup_20261011_220849.json",
+      "original_sha256": "b2a6da47c7a1e694e78018b27b6418c41f4d58723798920b36b28c3db2f9f379",
+      "public_sha256": "ed7414024710046c2191cd1c415d414512b1d2b1b0ac91c371c974683e37bba2"
+    },
+    {
+      "file": "loho-study/task 0/task0_uncapped_extend_20261011_221112.json",
+      "original_sha256": "5a3e487200d044614e8a8e229d59c32e059233291ca216c275ec33258df6e251",
+      "public_sha256": "f7e10ef4f09e312efd97eadd10fc62ed8200821ceb7b94fa1f9d46d21daa6780"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "7923f59b7863e565cedeebe2b2f1914367689a6baf27374c3a8f78b2f407d4bb",
+      "public_sha256": "56756baefc5384768c4359f9508b0436822daa2bc5710a5e7ce7e9e52e6715fb"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial1_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "d91b5f47e5a7f2c07dc69476bf1e96383643b6d891e474f4bcfa0cc88055f6e1",
+      "public_sha256": "6198eb691458ef8ae360b4b975f9a76dcbc6f2d478a73f5d731db1deed3bba51"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial2_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "904f0a3c7e7dd7a5bc9fd7f6298f5763268e6a4169f43f4d72e3cbab0bf290a0",
+      "public_sha256": "479cb6e596b562cb24dcbd234932c059a582b0ff1187ab2cbe6e9b31a649a041"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial2_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "85b98d650e4c17ec319a61811414c795a60e1f5defb0239073c78a57e7a5cdcc",
+      "public_sha256": "d41fd627dc7fc1f6e72ac86f7403bff045faeef0642f069bc6402490b7ccf604"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial3_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "106e44dac9f3f1889fcec2957008da701ddaba8139c382833a52603eb003a60c",
+      "public_sha256": "27fac2e5001b4fcfcd1e4bf5ce74c1691cee30ec1b8a94002b55b41a8f297946"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial3_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "4fb7c3ec599c9ce0a98759d928d53c4ec7bad01db7ce181bc6bd9d7a2354be94",
+      "public_sha256": "6dfcb593217dc76c19d9a87c50707cbced5f60ae999a8b48bb25f690b4ef6a33"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial4_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "ba2c64fb5223235ff944c0faa1b6cf43f6e25be16602fe1cf8757b1fd285de33",
+      "public_sha256": "2b0d4e9f6c7653ee0b48a98baf04cff5f34c4872ac14bf0b1d651779d789d3a0"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial4_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "efd676776efc5fe68f5279b19296cea55d0fa2be99524ac4ed9c5c0866961166",
+      "public_sha256": "9a50058b314e49237cc32f0d9e2e0305b2a23c03069eb8d2aab634e0ad043966"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial5_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "52b0b0bfa170a1891dc6bc0c52e2b1a3a37f45ca5ee487c5a299f3714edbf825",
+      "public_sha256": "9fc29e607dad82a92a5ccd3bd7d99b29349514dc136b671e25dbcc71e641bc87"
+    },
+    {
+      "file": "loho-study/task 1/astra_task1_max_nocost_trial5_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "77b0e1feea02b82126bdfc036869e69ed35e8f346fb96865301eb46ecceaaabb",
+      "public_sha256": "bdce945e46390638fec840ce07771c1cf5c20e73ced5a443e92d0005fcd76304"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "83e7d2a1f3089d6b317b6f75b389947f32809674c1de2450e8fa4201d3b33c75",
+      "public_sha256": "d29091c311e0081d53124db91b68fe152eecfcb0dcacecb82ea024d77c1f7f3b"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial1_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "330d8386209beae2415d0b20bf6612bd8da941b37cc7e6faf346a00d6cdf2946",
+      "public_sha256": "55e05126879167382102d5f8af424faddcc450041dee289581d8485931e07257"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial2_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "76ebba178ca22b1c31b7972ca4669693e136537cabe11912d48e13c2b652e541",
+      "public_sha256": "30038754f6c2a812025ddd0a9c6f36ae9b001556d5b7c34f5ca56122707de79f"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial2_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "9c848e103d4edf501392c5a1d6c664d25a2d69d61b140ea7c72d1aedc0919062",
+      "public_sha256": "4b42c2f168a4401cc7cf3cdb35833515ffc6692ddcb31727209718ca096d0e0d"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "debdca3d4a5091511c18e4027f8ac347137cb8b112b4f4bc9222b6f996009899",
+      "public_sha256": "beee2d231f110a25562d10c97ba753be5502667016746ba445acbafb611a7497"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial3_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "8632f8605640785976169193ff9a043ecfec3a93975b3cdea13f026959a40e2e",
+      "public_sha256": "37cf8e89c7e2f6189ea67ed66ac7cfbc056399983cbec3d3f5636f73af5c1e7c"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial4_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "b6156182dbf9f9a9f36e4f13b6c8a24dfa562a206a34389d8e2c0d55d30f8712",
+      "public_sha256": "93db0e32116212fbcc996c878200d019aa0fe7e669ee400fcee381717c3ef1b0"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial4_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "41960cec185890974f0b9d358c38443030480bf620784d17c1791282f384b7cd",
+      "public_sha256": "2899da1b98ac66d4cec6dbcb5d93869d9e5c570cead01689221f6611db74d4fc"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial5_task1_uncapped_20261011_234048/controller.log",
+      "original_sha256": "395e9a42fce3833149fb2cb6c907b45cf838ad1e937f7c474262e84392ee4ad8",
+      "public_sha256": "b0c2c96158bf7046c499c56b320d442546586da223d6227481db7c0abf857f1e"
+    },
+    {
+      "file": "loho-study/task 1/opus55_task1_max_nocost_trial5_task1_uncapped_20261011_234048/launch_record.json",
+      "original_sha256": "3e6fca83864de5d51145a6eed729532dce83efb12cf278a541ab79889b6db09f",
+      "public_sha256": "b4e5242e542375664c7f6232558a955f4acfc76b5681064bc05d7428835f5b10"
+    },
+    {
+      "file": "loho-study/task 1/task1_uncapped_20261011_234048.json",
+      "original_sha256": "f04e1a342edba5b0aadb60c5ef01be2ad819a5fd1f70eb04131da5d1882e708d",
+      "public_sha256": "3ead36431038aba84aa8928e96ad2f279f5922dca2c6f1840066712d2f82ee2e"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial1_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "cbd5b619d4e3f51ea7344a4412cfdfbb16bfd98ba61b6669d72d75178f9086ce",
+      "public_sha256": "f7c3f08d2211da13eeabf13e9e1f56355fda3f44c1c8fec831017ffad45bb506"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial1_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "a211e2722338578ef9c213f09d225c6e070f28775c1244fd5abcc5a69e27809a",
+      "public_sha256": "0ab7e5a5fbb57c4d7d0581ea7f0dc050ab459c24cf9a65b6ae115f888fd97a16"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial2_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "f64056c1a15930f2e92857ffb88f43c58f4a6c033662e470ee7db911b7b4452f",
+      "public_sha256": "0d22e1cefce4bd983c4f6782e0e6cdc95931560e6015cb9cd84959302096dcff"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial2_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "12af3a16b69228abc6e2e9e86b12d57e62e9ccd82f4c5a9dc6b1aba12641f662",
+      "public_sha256": "59186f3b5c4a81d2f437421ef9e57ca8d356b8c9b3810b6380ec46a4408efce2"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial3_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "d7ac5ba8bc048e71e1c70ad7cfc0bcc73aefff570d2cf2b502f22c7661642f22",
+      "public_sha256": "dd39044bd4c34a9e76f4c73b798b719ba08c2719636e2e2a3d1b9515d89d7936"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial3_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "eb10e4ee676253e87ef2e92cdc86841718f8722c730ea8c8a0ed74b7b9cc52e6",
+      "public_sha256": "9f6368e6d019635dcfbb425c423b653dc951be2e8a5846f86a5a3e867e772962"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial4_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "1cf478cac23def5d5e5472a07727e3cebee8ca778642c744b64f148e5f4a3813",
+      "public_sha256": "64815c473c176f21b7b3c8d4a96c2b07bae335e9098286553dc845ce318cb23b"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial4_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "aeb12ad2f799da7c4c23ae841f3b8c10e719d777caec880a00c5034506f47753",
+      "public_sha256": "2690585594f36de42f4528b3d605fe38a569aa19011896ac2a619b052d6d4c47"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial5_task4_20261012_132742/controller.log",
+      "original_sha256": "e9646e01dbbfcb0d469f7f5fde2773d9f951eef4c530e18c3b5e75febfc7a022",
+      "public_sha256": "c76101bccfebbf80759f1ce9fffb15b3143fe069b1cdc8fc86a5c8875a2f30dc"
+    },
+    {
+      "file": "loho-study/task 4/astra_task4_max_nocost_trial5_task4_20261012_132742/launch_record.json",
+      "original_sha256": "0fafa4baf9aa471518751a9e08d062f52f5f8874aa51a1e2dc1a23109489f6a1",
+      "public_sha256": "f00efa3c6834bb01fddf002045ea2adbf84c80b9332dfd3657a33617254a2423"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial1_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "b1209ed4164c1d1d7ee507a9ed2e39805de6cacfadfc57e5016c96598d493749",
+      "public_sha256": "afa6e2b9abb3d9a5e50bbae43bc0fedf22a188d806466437f0d65857a71de04e"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial1_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "07eaa1027ae4946ccc5b9a9594c24c84547eb32713c703172871c1ec08c3285d",
+      "public_sha256": "92b9bb50e6f7f203dcd56cb3594850c7cfef5262dd8e7e5699d8eb4476db8a65"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial2_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "6ff33e724bba3acd6188e61575b24a4586ca6d48a9bfda9fa6f62cfd72792070",
+      "public_sha256": "99f9fd99fcef6474dcada0cacdb06d702edc0934e2012923e6f481197552cdeb"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial2_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "540b80040f3acb806dfd788a563fd1f7655c438b60d499329c4c096cf9732469",
+      "public_sha256": "83d7136488d94c2652dbf7afce5ed0c0706a4ddc6204d1230733c012ad287747"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial3_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "2fd740b265b36c7ee0aa03b682a76d6fe5f7ed40bec4632aa174b6d66b1502df",
+      "public_sha256": "cb0e4f1ab50e4d36b766dae21c20d9371b485e39cf5aa6a661fe1cf82622d787"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial3_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "b43f876acff7b77141dfd3c7ff016e573eece411bd1046c9947e8b20509e8555",
+      "public_sha256": "5c66663c9181251dae4478841c59d76650da41c527fc74a98c482c6e487e9bde"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial4_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "6d256c6e34bd458fd8d87960686e391b339627cdcf510b167e644bc47f59ef3d",
+      "public_sha256": "a6c2fe7a4a2e394ccc34e5a0454f462366f75e9e559ccccf5c0a5bd1cdbee86a"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial4_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "e87c3a089195ec837ad75d2887b3cf9ac758adda0b80f4e7490af9c438154195",
+      "public_sha256": "e52b0ee1dbfd2bf4dc4c4232b8480ee81eec021e8bb995d499cfcad6c93ac2ff"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial5_task4_uncapped_20261012_110427/controller.log",
+      "original_sha256": "2a7cfa2d741e5d03a7ce0bdcda4125c8c7f603981369dc7ae466a9a90c3bb7ad",
+      "public_sha256": "754023e50a91dd06de8a64c0f40a037d9b9cddc3b428b49ec760ea18013911a0"
+    },
+    {
+      "file": "loho-study/task 4/opus55_task4_max_nocost_trial5_task4_uncapped_20261012_110427/launch_record.json",
+      "original_sha256": "db48300ae5d378a5b7c2140d75c3dbb6b940d79d9116ea6bbe03ef0932b868a2",
+      "public_sha256": "2af7098eb3e6fc6ec241e8b25913361ef9c21c492fa7fb494bf73ff41007047a"
+    },
+    {
+      "file": "loho-study/task 4/task4_retained_20261012_135134.json",
+      "original_sha256": "e391cbc5615e34a366a0bb42276a3686392c54d526ee9e3ca8941ac1aa6c29a9",
+      "public_sha256": "b2753e079e87c10e526718aae625f495574dee4026901e52ce6ace4b2f598a31"
+    },
+    {
+      "file": "setup_logs/windows-freeze.txt",
+      "original_sha256": "8565caa926e889b560f6ae4dce0c58be2153305853c9318900efad12dffdaf6f",
+      "public_sha256": "bfa4b1234fb3171be084b00b9c73a6f0d92e98e4ac67e4cf407c70c71e40d13c"
+    },
+    {
+      "file": "loho-study/task 4/retained_artifact_hashes.json",
+      "original_sha256": "09430d6ad0c2d9c1dd97f7e1b1dcfc0394084a04032715743153ced0dd25a559",
+      "public_sha256": "1fb69a8df96ac433e46d2b443352a2a0fbb00f2faec325ea8e457ffcc42fae09",
+      "change": "verification_hash_refresh"
+    }
+  ]
+}

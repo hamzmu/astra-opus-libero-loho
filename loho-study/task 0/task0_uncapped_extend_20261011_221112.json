@@ -47,7 +47,7 @@
     5
   ],
   "extends_batch_id": "task0_uncapped_20261011_203025",
-  "existing_trials_manifest": "/mnt/c/Users/muhha/OneDrive/Desktop/loho/results/task0_uncapped_20261011_203025.json",
+  "existing_trials_manifest": "{WORKSPACE}/results/task0_uncapped_20261011_203025.json",
   "provider_concurrency": "One fresh trial at a time per provider; two providers run concurrently.",
   "automatic_episode_retries": 0,
   "runs": [

@@ -12,3 +12,11 @@ setup_logs/*
 !setup_logs/task4_reference_20261012_110427/
 LIBERO-LOHO/
 references/
+
+# Generated runs and test outputs stay local; publish the study under loho-study/.
+loho_runs/*
+!loho_runs/README.md
+!loho_runs/removed_run_costs.json
+!loho_runs/luna_wsl_smoke/
+loho_runs/luna_wsl_smoke/*
+!loho_runs/luna_wsl_smoke/summary.json

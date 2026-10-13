@@ -6,7 +6,7 @@
     "initial_state_id":  0,
     "sim_seed":  0,
     "goal":  "put the butter at the back and the chocolate pudding into the cabinet top drawer, and then close the cabinet top drawer. Place the black bowl on top of the cabinet",
-    "reference_trial":  "/mnt/c/Users/muhha/OneDrive/Desktop/loho/setup_logs/task4_reference_20261012_110427",
+    "reference_trial":  "{WORKSPACE}/setup_logs/task4_reference_20261012_110427",
     "reference_summary_sha256":  "0d4e1fa5e3d47278e287b7948a6e38c9228ed7f4a0dd6e0c99d7e8e5ce2d82c5",
     "shared_defaults":  {
                             "task_id":  4,

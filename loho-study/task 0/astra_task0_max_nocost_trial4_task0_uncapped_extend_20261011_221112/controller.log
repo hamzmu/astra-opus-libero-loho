@@ -1,4 +1,4 @@
-control on Linux, output=/mnt/c/Users/muhha/OneDrive/Desktop/loho/results/astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112
+control on Linux, output={WORKSPACE}/results/astra_task0_max_nocost_trial4_task0_uncapped_extend_20261011_221112
 [robosuite WARNING] No private macro file found! (__init__.py:7)
 [robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
 [robosuite WARNING] To setup, run: python /root/projects/LIBERO-LOHO/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
