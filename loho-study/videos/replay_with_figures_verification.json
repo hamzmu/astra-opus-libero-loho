@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "output_file": "astra_opus_tasks_0_1_4_replay_with_figures_4x.mp4",
+  "output_sha256": "c21c50ccdbbca81414a8b00da06bef88c622b46c94246b33b3428f347dc77ac7",
+  "output_video": {
+    "codec_name": "h264",
+    "width": 3840,
+    "height": 2160,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "40/1",
+    "nb_read_frames": "1336",
+    "duration_seconds": 33.4,
+    "fps": 40.0,
+    "frames": 1336
+  },
+  "source_files_unchanged": true,
+  "sources": [
+    {
+      "file": "loho-study/videos/astra_opus_tasks_0_1_4_static_grid_4x_preview.gif",
+      "sha256": "021d7860ee09ba56b5a35803aba7c9cb80bd955e72acbde2752b140c14d5835b"
+    },
+    {
+      "file": "loho-study/plots/completion_percent.png",
+      "sha256": "5a8d6c33191a8cc709088de101f55a52b8d19760444dbe56bc5a803de1fae3aa"
+    },
+    {
+      "file": "loho-study/plots/tokens_and_cost_tasks_0_1_4.png",
+      "sha256": "4fe4a99fd7fabcd4cbed48c7bf9fc8fc3c5f15276f8be24c22ac0a5addbe8be2"
+    },
+    {
+      "file": "loho-study/plots/options/02_wallclock_breakdown.png",
+      "sha256": "d6e0ae230a17028793d2b5c7cb35be59cc4dff4fe6bcfc3d63127cc52981fd52"
+    }
+  ],
+  "layout": "Minimal six-view static-camera replay on the left; three README figures stacked on the right.",
+  "figure_order": [
+    "Goal completion",
+    "Total tokens and estimated API cost",
+    "Wall-clock breakdown"
+  ],
+  "playback": "Same full 4x simulation animation as the README GIF; API waiting omitted from replay.",
+  "figure_scope": "Means and sample SD over five saved episodes per model/task; not just the six illustrated episodes.",
+  "frame_rate_note": "40-fps container repeats the GIF frames; no motion interpolation."
+}

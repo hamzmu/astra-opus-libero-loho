@@ -1,0 +1,5 @@
+[0:v]fps=40,scale=2480:2064:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad=2480:2064:(ow-iw)/2:(oh-ih)/2:color=white,setsar=1,tpad=stop_mode=clone:stop_duration=1,trim=end_frame=1336,setpts=N/(40*TB),drawbox=x=0:y=0:w=iw:h=ih:color=0xd8d8d8:t=2[replay];
+[1:v]scale=1216:672:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad=1216:672:(ow-iw)/2:(oh-ih)/2:color=white,setsar=1,trim=end_frame=1336,setpts=N/(40*TB)[chart1];
+[2:v]scale=1216:672:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad=1216:672:(ow-iw)/2:(oh-ih)/2:color=white,setsar=1,trim=end_frame=1336,setpts=N/(40*TB)[chart2];
+[3:v]scale=1216:672:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad=1216:672:(ow-iw)/2:(oh-ih)/2:color=white,setsar=1,trim=end_frame=1336,setpts=N/(40*TB)[chart3];
+[replay][chart1][chart2][chart3]xstack=inputs=4:layout=48_48|2576_48|2576_744|2576_1440:fill=white:shortest=1,pad=3840:2160:0:0:color=white,setsar=1[final]
